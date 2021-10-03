@@ -1,1 +1,3 @@
 # LegislativeDataAnalytics
+
+# How to run
