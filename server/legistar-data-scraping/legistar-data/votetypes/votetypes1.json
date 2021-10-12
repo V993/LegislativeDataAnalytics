@@ -1,0 +1,192 @@
+[
+{
+	"VoteTypeId":4,
+	"VoteTypeGuid":"F6E1E6A4-8279-4774-BCAA-08D6A6F7B62B",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM60=",
+	"VoteTypeName":"Excused",
+	"VoteTypePluralName":"Excused",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":4
+},
+
+{
+	"VoteTypeId":9,
+	"VoteTypeGuid":"D33CB318-E5E3-49A4-BCB3-02169D525686",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAB+0neA=",
+	"VoteTypeName":"Non-voting",
+	"VoteTypePluralName":"Non-voting",
+	"VoteTypeUsedFor":2,
+	"VoteTypeResult":0,
+	"VoteTypeSort":7
+},
+
+{
+	"VoteTypeId":11,
+	"VoteTypeGuid":"85AF53FF-5E99-4BA3-A6C3-DFFCCD55ECDF",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAB+Vmtw=",
+	"VoteTypeName":"Abstain",
+	"VoteTypePluralName":"Abstain",
+	"VoteTypeUsedFor":2,
+	"VoteTypeResult":0,
+	"VoteTypeSort":5
+},
+
+{
+	"VoteTypeId":12,
+	"VoteTypeGuid":"3675CCDF-DC7C-4F5C-9742-665C2E068046",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7E=",
+	"VoteTypeName":"Negative",
+	"VoteTypePluralName":"Negative",
+	"VoteTypeUsedFor":2,
+	"VoteTypeResult":2,
+	"VoteTypeSort":3
+},
+
+{
+	"VoteTypeId":13,
+	"VoteTypeGuid":"237AE6E1-1FAB-49F4-9188-033581B43C24",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7I=",
+	"VoteTypeName":"Present",
+	"VoteTypePluralName":"Present",
+	"VoteTypeUsedFor":1,
+	"VoteTypeResult":0,
+	"VoteTypeSort":1
+},
+
+{
+	"VoteTypeId":14,
+	"VoteTypeGuid":"6CA4974A-A084-4C33-94ED-869858E49DAE",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7M=",
+	"VoteTypeName":"Recused",
+	"VoteTypePluralName":"Recused",
+	"VoteTypeUsedFor":2,
+	"VoteTypeResult":0,
+	"VoteTypeSort":6
+},
+
+{
+	"VoteTypeId":15,
+	"VoteTypeGuid":"4A1E622A-1D4F-4BD8-951A-4292F14822DE",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAB+0nd4=",
+	"VoteTypeName":"Affirmative",
+	"VoteTypePluralName":"Affirmative",
+	"VoteTypeUsedFor":2,
+	"VoteTypeResult":1,
+	"VoteTypeSort":2
+},
+
+{
+	"VoteTypeId":16,
+	"VoteTypeGuid":"F50DA462-42C5-4993-9FB4-09D9C0F47E27",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM64=",
+	"VoteTypeName":"Absent",
+	"VoteTypePluralName":"Absent",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":8
+},
+
+{
+	"VoteTypeId":22,
+	"VoteTypeGuid":"0B79F3E0-F357-4EB0-9719-A065451C6523",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7U=",
+	"VoteTypeName":"Maternity",
+	"VoteTypePluralName":"Maternity",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":9
+},
+
+{
+	"VoteTypeId":23,
+	"VoteTypeGuid":"DAACA236-2301-4A97-B92B-EAFDF66AB390",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7Y=",
+	"VoteTypeName":"Suspended",
+	"VoteTypePluralName":"Suspended",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":10
+},
+
+{
+	"VoteTypeId":43,
+	"VoteTypeGuid":"BB0C4B4C-D01E-4307-AD28-BFA916648BC3",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7c=",
+	"VoteTypeName":"Conflict",
+	"VoteTypePluralName":"Conflict",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":11
+},
+
+{
+	"VoteTypeId":44,
+	"VoteTypeGuid":"7D5B061C-0426-451F-9AE9-3552ADE05421",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7g=",
+	"VoteTypeName":"Paternity",
+	"VoteTypePluralName":"Paternity",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":12
+},
+
+{
+	"VoteTypeId":45,
+	"VoteTypeGuid":"8A2E9754-A9AC-4C8D-A4B3-98F1443AF1EB",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7k=",
+	"VoteTypeName":"Jury Duty",
+	"VoteTypePluralName":"Jury Duty",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":13
+},
+
+{
+	"VoteTypeId":46,
+	"VoteTypeGuid":"5FA0AC7A-4F7B-49BE-A055-7DAB8BD986A1",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAAAmM7o=",
+	"VoteTypeName":"Medical",
+	"VoteTypePluralName":"Medical",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":14
+},
+
+{
+	"VoteTypeId":64,
+	"VoteTypeGuid":"9B61AB2A-F96F-4887-970D-8A6299BB231C",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAB9ev70=",
+	"VoteTypeName":"Simultaneous",
+	"VoteTypePluralName":"Simultaneous",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":15
+},
+
+{
+	"VoteTypeId":65,
+	"VoteTypeGuid":"369963E3-E903-4C5C-AADA-205663ADBEEE",
+	"VoteTypeLastModifiedUtc":"2015-08-25T15:54:40.817",
+	"VoteTypeRowVersion":"AAAAAB+0ndw=",
+	"VoteTypeName":"Bereavement",
+	"VoteTypePluralName":"Bereavement",
+	"VoteTypeUsedFor":3,
+	"VoteTypeResult":0,
+	"VoteTypeSort":16
+}]
