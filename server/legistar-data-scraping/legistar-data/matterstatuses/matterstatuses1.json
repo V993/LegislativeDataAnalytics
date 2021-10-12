@@ -1,0 +1,416 @@
+[
+{
+	"MatterStatusId":2,
+	"MatterStatusGuid":"F0186610-DE3D-4219-83A8-F93BE4CAB251",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNEI=",
+	"MatterStatusName":"Introduced",
+	"MatterStatusSort":13,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":3,
+	"MatterStatusGuid":"46F358BB-1148-404C-A1B0-30C96544C822",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNCM=",
+	"MatterStatusName":"Committee",
+	"MatterStatusSort":2,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5,
+	"MatterStatusGuid":"DE9505D3-CB0C-4952-B67C-3A605C835C69",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAACuQpU=",
+	"MatterStatusName":"Failed",
+	"MatterStatusSort":9,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":6,
+	"MatterStatusGuid":"0A4FD122-743A-4707-82C4-FE8E720E699A",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAOYfaGQ=",
+	"MatterStatusName":"General Orders Calendar",
+	"MatterStatusSort":11,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":8,
+	"MatterStatusGuid":"F9706552-FBE3-43AE-9FC4-21402FF23D98",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApLfM=",
+	"MatterStatusName":"Filed",
+	"MatterStatusSort":10,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":null,
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":10,
+	"MatterStatusGuid":"0ED9AC90-6E54-4F25-9243-3AA7519D03B5",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNDY=",
+	"MatterStatusName":"Enacted (Mayor's Desk for Signature)",
+	"MatterStatusSort":8,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":11,
+	"MatterStatusGuid":"8686ACB7-6252-42B6-B6DA-C7F7DECB7633",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNFY=",
+	"MatterStatusName":"Vetoed",
+	"MatterStatusSort":19,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":17,
+	"MatterStatusGuid":"FEC85889-CD20-4594-87D9-ADC46C7A990E",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNCk=",
+	"MatterStatusName":"Coupled on Call-Up Vote",
+	"MatterStatusSort":4,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":20,
+	"MatterStatusGuid":"F451B53D-1D21-43ED-A49A-F57B8A610594",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNFk=",
+	"MatterStatusName":"Withdrawn",
+	"MatterStatusSort":20,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":24,
+	"MatterStatusGuid":"BC70D073-0AC8-4F03-9F28-8187F9BB3433",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNFA=",
+	"MatterStatusName":"Reported from Committee",
+	"MatterStatusSort":16,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":25,
+	"MatterStatusGuid":"69F8D0BD-B541-4017-8BD3-6A60780F591B",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNE0=",
+	"MatterStatusName":"Laid Over in Committee",
+	"MatterStatusSort":14,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":29,
+	"MatterStatusGuid":"C556B7F3-929F-46B1-B3B3-6FBF892EE5D3",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNEY=",
+	"MatterStatusName":"Received, Ordered, Printed and Filed",
+	"MatterStatusSort":15,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":32,
+	"MatterStatusGuid":"4A8EBD21-FC2A-47C6-9958-A12597FDA904",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApLfQ=",
+	"MatterStatusName":"Adopted",
+	"MatterStatusSort":1,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":null,
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":35,
+	"MatterStatusGuid":"ADA014BD-E2BF-43E9-A5A1-A5428C9FD98F",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApLfU=",
+	"MatterStatusName":"Enacted",
+	"MatterStatusSort":7,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":null,
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":37,
+	"MatterStatusGuid":"F5577DD3-9232-4C56-97F4-381CB9247F52",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNFM=",
+	"MatterStatusName":"Reported from Committee and Introduced",
+	"MatterStatusSort":17,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5001,
+	"MatterStatusGuid":"BA02B1C8-66F1-4355-BC32-1DB25CE094D4",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNC8=",
+	"MatterStatusName":"Disapproved",
+	"MatterStatusSort":5,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5003,
+	"MatterStatusGuid":"42EBF322-4E0D-4B1E-8428-6A67FF3DFB4F",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNCY=",
+	"MatterStatusName":"Companion Pending Approval by Council",
+	"MatterStatusSort":3,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5026,
+	"MatterStatusGuid":"D310A9C9-4F12-41E2-AD4D-AA7FDD1B0FC3",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAAApNFw=",
+	"MatterStatusName":"Defeated",
+	"MatterStatusSort":26,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5027,
+	"MatterStatusGuid":"0ABEB45B-73B4-4177-970B-0AE337A7C11A",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAGuB+No=",
+	"MatterStatusName":"Deferred",
+	"MatterStatusSort":27,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5029,
+	"MatterStatusGuid":"C35575C7-0B97-4374-8265-D2E29E0A703E",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAADUy2A=",
+	"MatterStatusName":"Special Event Scheduled",
+	"MatterStatusSort":29,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5030,
+	"MatterStatusGuid":"7EA1131A-9F3E-4673-A0E4-5A7E91DD878B",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAACpcZo=",
+	"MatterStatusName":"Special Event Filed",
+	"MatterStatusSort":30,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5031,
+	"MatterStatusGuid":"0E7BB55D-8F10-4365-B5A2-7C3FC81C988B",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAADDub4=",
+	"MatterStatusName":"Press Conference Scheduled",
+	"MatterStatusSort":31,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5032,
+	"MatterStatusGuid":"DBA6226B-D529-474A-BC67-F40AD8BAC486",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAADDucE=",
+	"MatterStatusName":"Press Conference Filed",
+	"MatterStatusSort":32,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5033,
+	"MatterStatusGuid":"FD09C04F-E6CE-427E-97C0-198346CD112E",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAADonXQ=",
+	"MatterStatusName":"Discharged from Committee",
+	"MatterStatusSort":33,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5034,
+	"MatterStatusGuid":"E8544DD0-5D8F-4269-B0CA-3F0585DAD3F6",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAB483Ic=",
+	"MatterStatusName":"Town Hall Meeting Scheduled",
+	"MatterStatusSort":34,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5035,
+	"MatterStatusGuid":"DB81EA2F-B828-47E8-9C93-1B7C92AF987F",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAAB483Ik=",
+	"MatterStatusName":"Town Hall Meeting Filed",
+	"MatterStatusSort":35,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5038,
+	"MatterStatusGuid":"F28A687A-A646-4697-A38E-1D7BCF3E62D7",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAACAxG88=",
+	"MatterStatusName":"Hearing Transcripts ",
+	"MatterStatusSort":38,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"Hearing Transcripts",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5039,
+	"MatterStatusGuid":"82EAD602-2187-4681-93FD-126617E11EBA",
+	"MatterStatusLastModifiedUtc":"2015-08-25T15:56:38.093",
+	"MatterStatusRowVersion":"AAAAACAyATE=",
+	"MatterStatusName":"Local Laws",
+	"MatterStatusSort":39,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"Local Laws",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5040,
+	"MatterStatusGuid":"2C2CB0B0-B2C6-49CA-BAA4-0192BB529AAC",
+	"MatterStatusLastModifiedUtc":"2017-12-05T15:53:56.463",
+	"MatterStatusRowVersion":"AAAAAOV1rts=",
+	"MatterStatusName":"Filed (End of Session)",
+	"MatterStatusSort":40,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5041,
+	"MatterStatusGuid":"E7BC7767-B26A-4E28-B742-AAAC2F6CB531",
+	"MatterStatusLastModifiedUtc":"2018-01-16T16:24:59.85",
+	"MatterStatusRowVersion":"AAAAAOV9ELg=",
+	"MatterStatusName":"Returned Unsigned by Mayor",
+	"MatterStatusSort":41,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5042,
+	"MatterStatusGuid":"943CA9FB-BA24-44D9-9E03-8CA6452D4EE3",
+	"MatterStatusLastModifiedUtc":"2018-11-16T18:43:19.41",
+	"MatterStatusRowVersion":"AAAAAOW1cHQ=",
+	"MatterStatusName":"Enacted (Charter Referendum)",
+	"MatterStatusSort":42,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+},
+
+{
+	"MatterStatusId":5043,
+	"MatterStatusGuid":"86BD520F-7DB2-4E0E-B952-C0DDF8480986",
+	"MatterStatusLastModifiedUtc":"2020-04-23T20:56:30.423",
+	"MatterStatusRowVersion":"AAAAAOYA1as=",
+	"MatterStatusName":"Approved",
+	"MatterStatusSort":43,
+	"MatterStatusActiveFlag":1,
+	"MatterStatusDescription":"",
+	"MatterStatusUsedFlag":0,
+	"MatterStatusPublicFlag":1
+}]

@@ -1,0 +1,208 @@
+[
+{
+	"BodyTypeId":1,
+	"BodyTypeGuid":"BDC7C82C-5B83-4D6D-8E1E-B30ACCA6C009",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaKX4=",
+	"BodyTypeName":"Primary Legislative Body"
+},
+
+{
+	"BodyTypeId":2,
+	"BodyTypeGuid":"09DA1082-2B59-4D7E-9445-B03786D75318",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaKZk=",
+	"BodyTypeName":"Committee"
+},
+
+{
+	"BodyTypeId":3,
+	"BodyTypeGuid":"1504CB61-4FA8-4FFF-9ADD-7F5DF5A425E2",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaMs4=",
+	"BodyTypeName":"Mayor"
+},
+
+{
+	"BodyTypeId":4,
+	"BodyTypeGuid":"887A3DE1-2CE8-4587-8FCD-B266AA2B509D",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaM70=",
+	"BodyTypeName":"Speaker' Office"
+},
+
+{
+	"BodyTypeId":5,
+	"BodyTypeGuid":"ADFCCEA1-F1CE-48DA-AC8D-58F783EC2C5C",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaKak=",
+	"BodyTypeName":"Department"
+},
+
+{
+	"BodyTypeId":7,
+	"BodyTypeGuid":"0CFA7529-F9FA-424E-BCF9-D39D2AAD4CB9",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaM7A=",
+	"BodyTypeName":"Public Advocate"
+},
+
+{
+	"BodyTypeId":8,
+	"BodyTypeGuid":"FABD7AAF-8A1C-4D14-8C22-68FF4DF4C68B",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaKYk=",
+	"BodyTypeName":"Land Use"
+},
+
+{
+	"BodyTypeId":9,
+	"BodyTypeGuid":"093DF8E8-4572-4A08-831B-961E0BB4C517",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaM8o=",
+	"BodyTypeName":"Clerk"
+},
+
+{
+	"BodyTypeId":12,
+	"BodyTypeGuid":"76071B3E-BD82-45F7-924F-5BE3B3F50ED1",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaNIA=",
+	"BodyTypeName":"Other"
+},
+
+{
+	"BodyTypeId":5000,
+	"BodyTypeGuid":"31C8C7F0-2B21-44CD-98F8-EAD14F08E15B",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaNPg=",
+	"BodyTypeName":"Former Council Members"
+},
+
+{
+	"BodyTypeId":5001,
+	"BodyTypeGuid":"0F7212F6-8923-48D5-8584-1BB3B9EB2C50",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAOWpRBM=",
+	"BodyTypeName":"Inactive Committee"
+},
+
+{
+	"BodyTypeId":5002,
+	"BodyTypeGuid":"6153D79F-25AC-4761-8DC2-F91CE849E055",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaNEQ=",
+	"BodyTypeName":"Joint Committees"
+},
+
+{
+	"BodyTypeId":5003,
+	"BodyTypeGuid":"F14172CD-47E5-4EE4-BA9F-4D47683E36D3",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaKaQ=",
+	"BodyTypeName":"Subcommittee"
+},
+
+{
+	"BodyTypeId":5004,
+	"BodyTypeGuid":"64CE541A-3E8D-43CC-9002-96B3B9E4DB50",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaNXo=",
+	"BodyTypeName":"New Council Membes"
+},
+
+{
+	"BodyTypeId":5005,
+	"BodyTypeGuid":"5C12F363-6576-4CC5-BAA6-03D773D73636",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaM90=",
+	"BodyTypeName":"Select Committee"
+},
+
+{
+	"BodyTypeId":5006,
+	"BodyTypeGuid":"C21FC01F-9E54-471E-B8AC-93FD670F2829",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaNA0=",
+	"BodyTypeName":"Task Force"
+},
+
+{
+	"BodyTypeId":5008,
+	"BodyTypeGuid":"F50D3D0B-5595-47B9-B6BE-C3BEEADBF8A4",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaNvU=",
+	"BodyTypeName":"The Speaker"
+},
+
+{
+	"BodyTypeId":5009,
+	"BodyTypeGuid":"B06E884E-12F1-4E38-B387-7E5B697D42FE",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAACAigaM=",
+	"BodyTypeName":"Special Event"
+},
+
+{
+	"BodyTypeId":5010,
+	"BodyTypeGuid":"04596C0B-9EE4-470F-8DD7-DF13E2A28CD5",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAAGaNxM=",
+	"BodyTypeName":"Press Conference"
+},
+
+{
+	"BodyTypeId":5012,
+	"BodyTypeGuid":"B107A6C5-1B71-4F07-977C-A798B53ED944",
+	"BodyTypeLastModifiedUtc":"2015-08-25T15:59:49.96",
+	"BodyTypeRowVersion":"AAAAAB49BZo=",
+	"BodyTypeName":"Town Hall Meeting"
+},
+
+{
+	"BodyTypeId":5013,
+	"BodyTypeGuid":"C46FB94D-0152-4278-8DA2-54158B11EB5A",
+	"BodyTypeLastModifiedUtc":"2018-07-16T21:13:56.197",
+	"BodyTypeRowVersion":"AAAAAOW4j8Y=",
+	"BodyTypeName":"Charter Revision Commission 2019"
+},
+
+{
+	"BodyTypeId":5014,
+	"BodyTypeGuid":"4BB7CE7B-932E-4E37-9E5A-EF6AFB3D6082",
+	"BodyTypeLastModifiedUtc":"2018-08-29T14:53:17.257",
+	"BodyTypeRowVersion":"AAAAAOXeiDU=",
+	"BodyTypeName":"New York City Advisory Commission on Property Tax Reform"
+},
+
+{
+	"BodyTypeId":5015,
+	"BodyTypeGuid":"206152D0-5C40-4206-8277-E4EBA43E3E35",
+	"BodyTypeLastModifiedUtc":"2019-02-27T21:41:33.917",
+	"BodyTypeRowVersion":"AAAAAOXeiC4=",
+	"BodyTypeName":"Democratic Conference of the Council of the City of New York "
+},
+
+{
+	"BodyTypeId":5016,
+	"BodyTypeGuid":"A0DB7C79-D9E1-4577-B065-60F846C60890",
+	"BodyTypeLastModifiedUtc":"2019-07-22T14:46:56.58",
+	"BodyTypeRowVersion":"AAAAAOXeiCc=",
+	"BodyTypeName":"Manhattan Borough Board "
+},
+
+{
+	"BodyTypeId":5017,
+	"BodyTypeGuid":"6AD2C8AE-0F39-4C76-BF89-DAF5DE2C1AB6",
+	"BodyTypeLastModifiedUtc":"2020-02-27T19:39:35.683",
+	"BodyTypeRowVersion":"AAAAAOX9Tys=",
+	"BodyTypeName":"Minority (Republican) Conference of the Council of the City of New York "
+},
+
+{
+	"BodyTypeId":5019,
+	"BodyTypeGuid":"07292D79-B7DF-4369-A888-B84FAC85BD94",
+	"BodyTypeLastModifiedUtc":"2021-08-26T16:04:07.76",
+	"BodyTypeRowVersion":"AAAAAOY4ZwE=",
+	"BodyTypeName":"Withdrawn"
+}]
