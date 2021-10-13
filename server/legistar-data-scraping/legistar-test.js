@@ -66,16 +66,15 @@ const coptions = {
     uri: 'https://webapi.legistar.com/v1/nyc/matters',
     qs: {
         token: token, // -> uri + '?access_token=xxxxx%20xxxxx'
-        stop: 1000,
-        skip: 0
+        //$top: 1000,
+        $skip: 10
     },
-    //headers: {
-    //    'User-Agent': 'Request-Promise'
-    //},
     json: true // Automatically parses the JSON string in the response
 };
 
 var options = coptions;
+
+var matterIDs = new Array(0);
 
 async function pullAndWrite(term) {
   options.uri = 'https://webapi.legistar.com/v1/nyc/' + term;
@@ -103,50 +102,151 @@ async function pullAndWrite(term) {
       });
 }
 
-console.log(options);
-pullAndWrite("actions");
-options = coptions;
-pullAndWrite("bodies");
-options = coptions;
-pullAndWrite("bodytypes");
-options = coptions;
-pullAndWrite("codesections");
-options = coptions;
-pullAndWrite("eventitems");
-options = coptions;
-pullAndWrite("events");
-options = coptions;
-pullAndWrite("indexes");
-options = coptions;
-pullAndWrite("matterattachments");
-options = coptions;
-pullAndWrite("mattercodesections");
-options = coptions;
-pullAndWrite("matterhistories");
-options = coptions;
-pullAndWrite("matterindexes");
-options = coptions;
-pullAndWrite("matterrelations");
-options = coptions;
-pullAndWrite("matterrequesters");
-options = coptions;
-pullAndWrite("matters");
-options = coptions;
-pullAndWrite("mattersponsors");
-options = coptions;
-pullAndWrite("matterstatuses");
-options = coptions;
-pullAndWrite("mattertexts");
-options = coptions;
-pullAndWrite("mattertypes");
-options = coptions;
-pullAndWrite("officerecords");
-options = coptions;
-pullAndWrite("persons");
-options = coptions;
-pullAndWrite("rollcalls");
-options = coptions;
-pullAndWrite("votes");
-options = coptions;
-pullAndWrite("votetypes");
-options = coptions;
+async function fetchMatters(skip) {
+
+  // Set options for API call
+  var nops = coptions;
+  nops.uri = 'https://webapi.legistar.com/v1/nyc/matters';
+  nops.qs.$skip = skip;
+
+  // Make API call
+  return rp(options)
+    .then(repos => {
+      console.log('Fetched %d matters', repos.length);
+      // Format JSON as string, set filename
+      out = jsonStringify(repos);
+      fname = "matters/matters" + (nops.qs.$skip / 1000).toString() + ".json";
+
+      // Store all matterIDs in array, call fetchMatterSponsors() on them
+      for (var i = 0; i < repos.length; i++) {
+        matterIDs.push(repos[i].MatterId);
+        fetchMatterSponsors(repos[i].MatterId);
+      }
+
+      // Write file, call next batch
+      fs.writeFile(fname, out, (err) => {
+        if (err) { console.log(err); }
+        else {
+          if (repos.length == 1000) {
+              fetchMatters(skip + 1000);
+              console.log("Survived past next call");
+          }
+        }
+      });
+    })
+    .catch(err => {
+      console.log(err);
+    })
+}
+
+async function fetchMatterSponsors(matterID) {
+
+    // Set options for API call
+    var nops = coptions;
+    nops.uri = 'https://webapi.legistar.com/v1/nyc/matters/' + matterID + '/Sponsors';
+    nops.qs.$skip = 0;
+
+    // Make API call
+    return rp(options)
+      .then(repos => {
+        //console.log('Fetched sponsors of matter %d ', matterID);
+        // Format JSON as string, set filename
+        out = jsonStringify(repos);
+        fname = "mattersponsors/mattersonsors" + matterID.toString() + ".json";
+
+        // Write file, call next batch
+        fs.writeFile(fname, out, (err) => {
+          if (err) { console.log(err); }
+          else {
+            /*  Commented out, since I assume there won't be more than 1000 sponsors ever
+            if (repos.length == 1000) {
+                fetchMatters(skip + 1000);
+            }
+            */
+          }
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      })
+}
+
+async function fetchBodies(skip) {
+
+  // Set options for API call
+  var nops = coptions;
+  nops.uri = 'https://webapi.legistar.com/v1/nyc/bodies';
+  nops.qs.$skip = skip;
+
+  // Make API call
+  return rp(options)
+    .then(repos => {
+      console.log('Fetched %d bodies', repos.length);
+      // Format JSON as string, set filename
+      out = jsonStringify(repos);
+      fname = "bodies/bodies" + (nops.qs.$skip / 1000).toString() + ".json";
+
+      // Store all matterIDs in array, call fetchMatterSponsors() on them
+      //for (var i = 0; i < repos.length; i++) {
+      //  matterIDs.push(repos[i].MatterId);
+      //  fetchMatterSponsors(repos[i].MatterId);
+      //}
+
+      // Write file, call next batch
+      fs.writeFile(fname, out, (err) => {
+        if (err) { console.log(err); }
+        else {
+          if (repos.length == 1000) {
+              fetchBodies(skip + 1000);
+              console.log("Survived past next call");
+          }
+        }
+      });
+    })
+    .catch(err => {
+      console.log(err);
+    })
+}
+
+async function fetchPersons(skip) {
+
+  // Set options for API call
+  var nops = coptions;
+  nops.uri = 'https://webapi.legistar.com/v1/nyc/persons';
+  nops.qs.$skip = skip;
+
+  // Make API call
+  return rp(options)
+    .then(repos => {
+      console.log('Fetched %d persons', repos.length);
+      // Format JSON as string, set filename
+      out = jsonStringify(repos);
+      fname = "persons/persons" + (nops.qs.$skip / 1000).toString() + ".json";
+
+      // Store all matterIDs in array, call fetchMatterSponsors() on them
+      //for (var i = 0; i < repos.length; i++) {
+      //  matterIDs.push(repos[i].MatterId);
+      //  fetchMatterSponsors(repos[i].MatterId);
+      //}
+
+      // Write file, call next batch
+      fs.writeFile(fname, out, (err) => {
+        if (err) { console.log(err); }
+        else {
+          if (repos.length == 1000) {
+              fetchBodies(skip + 1000);
+              console.log("Survived past next call");
+          }
+        }
+      });
+    })
+    .catch(err => {
+      console.log(err);
+    })
+}
+
+//console.log(options);
+//fetchMatters(0);
+fetchBodies(0);
+fetchPersons(0);
+//fetchMatterSponsors(17071);
