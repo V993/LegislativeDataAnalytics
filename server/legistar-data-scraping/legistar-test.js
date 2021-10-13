@@ -129,7 +129,6 @@ async function fetchMatters(skip) {
         else {
           if (repos.length == 1000) {
               fetchMatters(skip + 1000);
-              console.log("Survived past next call");
           }
         }
       });
@@ -149,7 +148,7 @@ async function fetchMatterSponsors(matterID) {
     // Make API call
     return rp(options)
       .then(repos => {
-        //console.log('Fetched sponsors of matter %d ', matterID);
+        console.log('Fetched sponsors of matter %d ', matterID);
         // Format JSON as string, set filename
         out = jsonStringify(repos);
         fname = "mattersponsors/mattersonsors" + matterID.toString() + ".json";
@@ -246,7 +245,7 @@ async function fetchPersons(skip) {
 }
 
 //console.log(options);
-//fetchMatters(0);
+fetchMatters(0);
 fetchBodies(0);
 fetchPersons(0);
 //fetchMatterSponsors(17071);
