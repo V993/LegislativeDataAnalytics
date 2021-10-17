@@ -18,7 +18,7 @@ class Local extends Component {
 
   handleSearchClick = async () => {
     let address = this.state.address;
-    let key = ""; // Google Cloud API key
+    let key = "AIzaSyDGm2WMjPhv1Ddn9C3ML24u_HtTcT4l6B4"; // Google Cloud API key
     let linkToAPI =
       "https://www.googleapis.com/civicinfo/v2/representatives?key=" +
       key +
@@ -113,32 +113,40 @@ class Local extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="search">
-          <h1>Find Your Representatives</h1>
-          <p>
-            Enter an address followed by a zipcode to learn about your
-            representatives. Discover valuable information in their profile such
-            as their beliefs and bills voted on or simply find out how to
-            contact them.
-          </p>
-          <input
-            type="text"
-            value={this.state.address}
-            onChange={this.handleInputChange}
-            placeholder="695 Park Ave 10065"
-          />
-          <button onClick={this.handleSearchClick}>Search</button>
-        </div>
-        {this.state.found ? (
-          <div>
-            <h1>{this.state.apiData.name}</h1>
-            <h4>Your Representatives</h4>
-            <ul>{this.makeList()}</ul>
+      <div className="local">
+        <div class="container">
+          <div class="row align-items-center my-5">
+            <div class="col-lg-5">
+              <h1 class="font-weight-light">Find Your Representatives</h1>
+              <p class="row align-items-left my-5">
+                Enter an address followed by a zipcode to learn about your
+                representatives. Discover valuable information in their profile such
+                as their beliefs and bills voted on or simply find out how to
+                contact them.
+              </p>
+              <input className="search"
+                type="text"
+                value={this.state.address}
+                onChange={this.handleInputChange}
+                placeholder="695 Park Ave 10065"
+              />
+              <button onClick={this.handleSearchClick}>Search</button>
+            </div>
           </div>
-        ) : (
-          <h4>No results</h4>
-        )}
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col-lg-5">
+            {this.state.found ? (
+              <div>
+                <h1>{this.state.apiData.name}</h1>
+                <h4>Your Representatives</h4>
+                <ul>{this.makeList()}</ul>
+              </div>
+            ) : (
+              <h4>No results</h4>
+            )}
+          </div>
+        </div>
       </div>
     );
   }

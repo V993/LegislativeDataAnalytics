@@ -1,4 +1,5 @@
 import React from "react"
+import { BarChart } from "./Bar"
 
 function Data() {
     return (
@@ -9,7 +10,7 @@ function Data() {
                         <h1 class="font-weight-light">
                             Data Stuff
                         </h1>
-
+                        <BarChart />
                     </div>
                 </div>
             </div>
