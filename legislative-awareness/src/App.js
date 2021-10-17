@@ -4,7 +4,7 @@ import icon from "./icon.jpg"
 import React, { Component } from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-import { Navigation, Footer, Home} from "./components"
+import { Navigation, Footer, Home, Data } from "./components"
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
             <Navigation />
                 <Switch>
                     <Route path="/" exact component={() => <Home />}></Route>
+                    <Route path="/data" exact component={() => <Data />}></Route>
                     {/* <Route path="/" exact component={() => <Home />} /> */}
                 </Switch>
             <Footer />
