@@ -112,13 +112,19 @@ async function fetchMatters(skip) {
     .then(repos => {
       console.log('Fetched %d matters', repos.length);
       // Format JSON as string, set filename
-      out = jsonStringify(repos);
-      fname = "matters/matters" + (nops.qs.$skip / 1000).toString() + ".json";
+      out = "";
+      for (repo in repos) {
+        out += JSON.stringify(repos[repo], null, 4);
+        out += ",";
+      }
+      rname = "";
+      if ((nops.qs.$skip / 1000).toString().length == 1) { rname += "0"; }
+      fname = "matters/matters" + rname + (nops.qs.$skip / 1000).toString() + ".json";
 
       // Store all matterIDs in array, call fetchMatterSponsors() on them
       for (var i = 0; i < repos.length; i++) {
         matterIDs.push(repos[i].MatterId);
-        fetchMatterSponsors(repos[i].MatterId);
+        //fetchMatterSponsors(repos[i].MatterId);
       }
 
       // Write file, call next batch
@@ -265,9 +271,9 @@ function findAndReplace(fname, oname, find, replace) {
   });
 }
 
-findAndReplace("mattersponsors/nspon/mattersponsors10000.json", "mattersponsors/nspon/nmattersponsors10000.json", "[", "");
+//findAndReplace("mattersponsors/nspon/mattersponsors10000.json", "mattersponsors/nspon/nmattersponsors10000.json", "[", "");
 //console.log(options);
-//fetchMatters(0);
+fetchMatters(0);
 //fetchBodies(0);
 //fetchPersons(0);
 //fetchMatterSponsors(17071);
