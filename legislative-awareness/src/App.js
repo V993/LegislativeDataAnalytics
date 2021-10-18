@@ -1,56 +1,28 @@
-import './App.css'
-import icon from "./icon.jpg"
+import "./App.css";
+import icon from "./icon.jpg";
 
 import React, { Component } from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import axios from "axios"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-import ZipData from "./components/zip-data"
-import DataTest from "./components/data-test"
+import { Navigation, Footer, Home, Local, Data, Information } from "./components";
 
-class App extends Component {
-
-  constructor() {
-    super()
-    this.state = {}
-  };
-
-  render() {
-    const testAPI = () => {
-      <DataTest></DataTest>
-    }
-    const zipInfo = () => {
-      <ZipData></ZipData>
-    }
-  
+function App() {
     return (
-      <div className="page">
-        <div className="wrapper">
-          <img src={icon} alt="Logo"></img>
-          <h3> Welcome!</h3>
+        <div className="App">
+            <Router>
+                <Navigation />
+                    <Switch>
+                        <Route path="/" exact component={() => <Home />}></Route>
+                        <Route path="/data" exact component={() => <Data />}></Route>
+                        <Route path="/local-info" exact component={Local}></Route>
+                        <Route path="/information" exact component={Information}></Route>
+                        {/* <Route path="/" exact component={() => <Home />} /> */}
+                    </Switch>
+                <Footer />
+            </Router>   
         </div>
+    );
 
-        <div className="content">
-          <div id="flashy">
-            <h3> Get info based on your location </h3>
-          </div>
-          <div className="spacer">
-
-          </div>
-          <div id="flashy">
-            <h3> Get data from government repositories </h3>
-          </div>
-          <Router>
-            <Switch>
-              <Route exact path="/api-query/" render={testAPI} />
-              <Route exact path="/zip-info/" render={zipInfo} />
-            </Switch>
-          </Router>
-        </div>
-        
-      </div>
-  );
-};
 }
 
 export default App;
