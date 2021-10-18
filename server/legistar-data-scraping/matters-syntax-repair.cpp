@@ -6,6 +6,7 @@ using namespace std;
 void repair (string ifname, string ofname)
 {
   bool within_block = false;
+  bool within_quotes = false;
 
   string line;
   ifstream ifile;
@@ -16,7 +17,7 @@ void repair (string ifname, string ofname)
   {
     while (getline (ifile, line))
     {
-      cout << line << endl;
+      //cout << line << endl;
 
       // Check if within MatterNotes
       if (line.find("MatterNotes") != string::npos) { within_block = true; }
@@ -29,12 +30,29 @@ void repair (string ifname, string ofname)
         //{
         //  if (line[i] != '\n') { nline += line[i]; }
         //}
-        cout << nline << endl;
+        //cout << nline << endl;
         ofile << nline;
+      }
+      else if (line.find("MatterReports") != string::npos)
+      {
       }
       else
       {
-        ofile << line + '\n';
+        string nline = "";
+        for (int i = 0; i < line.length(); i++)
+        {
+            if (line[i] == '"') { within_quotes = !within_quotes; }
+            if (within_quotes && line[i] != '\n')
+            {
+              nline += line[i];
+            }
+            if (!within_quotes)
+            {
+              nline += line[i];
+            }
+        }
+        ofile << nline;
+        if (!within_quotes) { ofile << '\n'; }
       }
     }
   }
