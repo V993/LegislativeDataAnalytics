@@ -2,13 +2,10 @@ const request = require('request');
 const fs = require('fs');
 const https = require('https');
 const rp = require('request-promise');
-
 const token = "Uvxb0j9syjm3aI8h46DhQvnX5skN4aSUL0x_Ee3ty9M.ew0KICAiVmVyc2lvbiI6IDEsDQogICJOYW1lIjogIk5ZQyByZWFkIHRva2VuIDIwMTcxMDI2IiwNCiAgIkRhdGUiOiAiMjAxNy0xMC0yNlQxNjoyNjo1Mi42ODM0MDYtMDU6MDAiLA0KICAiV3JpdGUiOiBmYWxzZQ0KfQ"
 
-let obj = {
-  table: []
-}
 
+// Indents <indent> number of times
 function catIndent(indent) {
   let s = "";
   for (var i = 0; i < indent; i++) {
@@ -17,6 +14,7 @@ function catIndent(indent) {
   return s;
 }
 
+// Turns a JSON object into a nicely formatted string
 function jsonStringify(obj) {
   let indent = 0;
   let source = JSON.stringify(obj);
@@ -24,11 +22,11 @@ function jsonStringify(obj) {
   let quote = false;
   for (var i = 0; i < source.length; i++) {
     if (source[i] == '"') { quote = !quote; }
-    if (source[i] == '{') { indent++; output += '\n'; }
-    if (source[i] == '}') { indent--; output += '\n'; output += catIndent(indent); }
+    if (source[i] == '{' && !quote) { indent++; output += '\n'; }
+    if (source[i] == '}' && !quote) { indent--; output += '\n'; output += catIndent(indent); }
     output += source[i];
     if (source[i] == ',' && !quote ) { output += '\n'; output += catIndent(indent); }
-    if (source[i] == '{') { output += '\n'; output += catIndent(indent); }
+    if (source[i] == '{' && !quote) { output += '\n'; output += catIndent(indent); }
   }
   output += '\n';
   return output;
@@ -244,8 +242,32 @@ async function fetchPersons(skip) {
     })
 }
 
+function findAndReplace(fname, oname, find, replace) {
+  fs.readFile(fname, 'utf8', function(err,data){
+    if (err) { console.log(err); }
+    ndat = "";
+    for (var i = 0; i < data.length - find.length + 1; i++) {
+      if (data.substring(i,i+find.length) == find) {
+        console.log("REPLACING '" + data.substring(i,i+find.length) + "' WITH '" + replace + "'");
+        ndat += replace;
+        i += find.length - 2;
+        console.log("NDAT: '" + ndat.substring(ndat.length - 10,ndat.length) + "'");
+      }
+      else {
+        ndat += data[i];
+      }
+    }
+
+    console.log("NDAT: '" + ndat.substring(ndat.length - 10,ndat.length) + "'");
+    fs.writeFile(oname, ndat, (err) => {
+      if (err) { console.log(err); }
+    });
+  });
+}
+
+findAndReplace("mattersponsors/nspon/mattersponsors10000.json", "mattersponsors/nspon/nmattersponsors10000.json", "[", "");
 //console.log(options);
-fetchMatters(0);
-fetchBodies(0);
-fetchPersons(0);
+//fetchMatters(0);
+//fetchBodies(0);
+//fetchPersons(0);
 //fetchMatterSponsors(17071);
