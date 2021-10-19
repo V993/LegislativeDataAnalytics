@@ -12,7 +12,7 @@ app.get("/", function(req, res) {
 
 //responses with a list of representatives and the number of bills they proposed since a given date
 app.get("/graph-apis/representative-bills", async function(req, res) {
-    const date = req.query.start_date;
+    const date = req.query.startDate;
     const query = `
         SELECT MatterSponsorName, count(*) as numOfBills
         FROM mattersponsors 
