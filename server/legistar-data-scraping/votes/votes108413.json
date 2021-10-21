@@ -1,0 +1,93 @@
+[
+    {
+        "VoteId": 479352,
+        "VoteGuid": "5AA29AFD-B871-4DE3-98E9-62E9E7551E2E",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj2CM=",
+        "VotePersonId": 12,
+        "VotePersonName": "Stanley E. Michels",
+        "VoteValueId": 16,
+        "VoteValueName": "Absent",
+        "VoteSort": 20,
+        "VoteResult": 0,
+        "VoteEventItemId": 108413
+    },
+    {
+        "VoteId": 479353,
+        "VoteGuid": "EA5F90AB-6194-4BD8-BCFC-2456A1F0B524",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj2CQ=",
+        "VotePersonId": 397,
+        "VotePersonName": "Lawrence A. Warden",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 10,
+        "VoteResult": 1,
+        "VoteEventItemId": 108413
+    },
+    {
+        "VoteId": 479354,
+        "VoteGuid": "EC700335-DB10-4BB5-A509-91F7D4BE020C",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj2CU=",
+        "VotePersonId": 34,
+        "VotePersonName": "Victor L. Robles",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 30,
+        "VoteResult": 1,
+        "VoteEventItemId": 108413
+    },
+    {
+        "VoteId": 479355,
+        "VoteGuid": "06A7B39F-C1DA-4C3B-A4A8-38C1F65EA98A",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj2CY=",
+        "VotePersonId": 27,
+        "VotePersonName": "Walter L. McCaffrey",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 40,
+        "VoteResult": 1,
+        "VoteEventItemId": 108413
+    },
+    {
+        "VoteId": 479356,
+        "VoteGuid": "66A7D7BB-6C9B-4E28-BD6D-5CF6628E7C0D",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj2Cc=",
+        "VotePersonId": 57,
+        "VotePersonName": "Ronnie M. Eldridge",
+        "VoteValueId": 12,
+        "VoteValueName": "Negative",
+        "VoteSort": 50,
+        "VoteResult": 2,
+        "VoteEventItemId": 108413
+    },
+    {
+        "VoteId": 479357,
+        "VoteGuid": "20D0A5A4-D4B2-4225-B7F0-92F00208E8F9",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj2Cg=",
+        "VotePersonId": 431,
+        "VotePersonName": "Madeline T. Provenzano",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 60,
+        "VoteResult": 1,
+        "VoteEventItemId": 108413
+    },
+    {
+        "VoteId": 479358,
+        "VoteGuid": "820A89C5-AC83-422D-8672-11EE23269F5F",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj2Ck=",
+        "VotePersonId": 436,
+        "VotePersonName": "James S. Oddo",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 70,
+        "VoteResult": 1,
+        "VoteEventItemId": 108413
+    }
+]
