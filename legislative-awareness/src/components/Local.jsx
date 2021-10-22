@@ -18,7 +18,7 @@ class Local extends Component {
 
   handleSearchClick = async () => {
     let address = this.state.address;
-    let key = ""; // Google Cloud API key
+    let key = "AIzaSyDGm2WMjPhv1Ddn9C3ML24u_HtTcT4l6B4"; // Google Cloud API key
     let linkToAPI =
       "https://www.googleapis.com/civicinfo/v2/representatives?key=" +
       key +
@@ -63,13 +63,17 @@ class Local extends Component {
       });
     });
 
+    // Remove president & VP
+    for (let i = 0; i < result.length; ++i) {
+      if (result[i].office.includes("President")) result.shift();
+    }
+
     let list = result.map((official, index) => {
       return (
         <>
           <ul key={index}>
             <img
-              height={100}
-              weight={100}
+              className={"rep-image"}
               alt={official.name}
               src={
                 official.photoUrl
@@ -103,8 +107,18 @@ class Local extends Component {
                   official.urls.map((website) => <li>{website}</li>)}
               </ul>
             </li>
+            <li>
+              Social media:{" "}
+              <ul>
+                {official.channels &&
+                  official.channels.map((channel) => (
+                    <li>
+                      {channel.type}: {channel.id}
+                    </li>
+                  ))}
+              </ul>
+            </li>
           </ul>
-          <hr />
         </>
       );
     });
@@ -134,6 +148,15 @@ class Local extends Component {
           <div>
             <h1>{this.state.apiData.name}</h1>
             <h4>Your Representatives</h4>
+            <small>
+              Your address:{" "}
+              <strong>
+                {this.state.apiData.normalizedInput.line1},{" "}
+                {this.state.apiData.normalizedInput.city},{" "}
+                {this.state.apiData.normalizedInput.state}
+              </strong>
+              .
+            </small>
             <ul>{this.makeList()}</ul>
           </div>
         ) : (
