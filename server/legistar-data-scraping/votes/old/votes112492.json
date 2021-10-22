@@ -1,0 +1,67 @@
+[
+    {
+        "VoteId": 482136,
+        "VoteGuid": "27F4DDF2-EEFB-4A6D-B117-7CDA0789EE92",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj3uc=",
+        "VotePersonId": 31,
+        "VotePersonName": "Priscilla A. Wooten",
+        "VoteValueId": 16,
+        "VoteValueName": "Absent",
+        "VoteSort": 20,
+        "VoteResult": 0,
+        "VoteEventItemId": 112497
+    },
+    {
+        "VoteId": 482137,
+        "VoteGuid": "1BED6739-1203-4376-B9AD-18A13985152C",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj3ug=",
+        "VotePersonId": 5227,
+        "VotePersonName": "Michael J. Abel",
+        "VoteValueId": 16,
+        "VoteValueName": "Absent",
+        "VoteSort": 50,
+        "VoteResult": 0,
+        "VoteEventItemId": 112497
+    },
+    {
+        "VoteId": 482138,
+        "VoteGuid": "FE2B45F7-E7E9-45A4-97D3-8B178DDA8DB3",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj3uk=",
+        "VotePersonId": 402,
+        "VotePersonName": "John D. Sabini",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 10,
+        "VoteResult": 1,
+        "VoteEventItemId": 112497
+    },
+    {
+        "VoteId": 482139,
+        "VoteGuid": "45014AB5-42F2-42CA-BC49-338FC200DF70",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj3uo=",
+        "VotePersonId": 425,
+        "VotePersonName": "Adolfo Carrion",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 40,
+        "VoteResult": 1,
+        "VoteEventItemId": 112497
+    },
+    {
+        "VoteId": 482140,
+        "VoteGuid": "AE67759A-BAAF-4CB3-91C2-DF024ECBF0F7",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj3us=",
+        "VotePersonId": 430,
+        "VotePersonName": "Bill Perkins",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 45,
+        "VoteResult": 1,
+        "VoteEventItemId": 112497
+    }
+]

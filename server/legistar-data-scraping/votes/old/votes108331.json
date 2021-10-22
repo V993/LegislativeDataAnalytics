@@ -1,0 +1,67 @@
+[
+    {
+        "VoteId": 479299,
+        "VoteGuid": "C39C8E34-2125-4624-9222-06B49D2233B9",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj4cc=",
+        "VotePersonId": 402,
+        "VotePersonName": "John D. Sabini",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 10,
+        "VoteResult": 1,
+        "VoteEventItemId": 108331
+    },
+    {
+        "VoteId": 479300,
+        "VoteGuid": "A747E994-3DB5-4C4E-92DB-FA33C5F5FF26",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj4cg=",
+        "VotePersonId": 31,
+        "VotePersonName": "Priscilla A. Wooten",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 20,
+        "VoteResult": 1,
+        "VoteEventItemId": 108331
+    },
+    {
+        "VoteId": 479301,
+        "VoteGuid": "ECFD541B-7040-406D-98FA-89F27D855FEC",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj4ck=",
+        "VotePersonId": 425,
+        "VotePersonName": "Adolfo Carrion",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 40,
+        "VoteResult": 1,
+        "VoteEventItemId": 108331
+    },
+    {
+        "VoteId": 479302,
+        "VoteGuid": "292FF575-A080-4C74-9E86-FB87DAB7D5D0",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj4co=",
+        "VotePersonId": 430,
+        "VotePersonName": "Bill Perkins",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 45,
+        "VoteResult": 1,
+        "VoteEventItemId": 108331
+    },
+    {
+        "VoteId": 479303,
+        "VoteGuid": "2655971B-3D9B-49BA-A85E-702C75B5F593",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAj6kk=",
+        "VotePersonId": 5227,
+        "VotePersonName": "Michael J. Abel",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 50,
+        "VoteResult": 1,
+        "VoteEventItemId": 108331
+    }
+]
