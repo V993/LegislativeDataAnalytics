@@ -12,6 +12,8 @@ SAMUEL EBERSOLE
 #include <vector>
 #include <string>
 #include <array>
+#include <cmath>
+#include <iostream>
 
 namespace ld_proximity
 {
@@ -47,8 +49,19 @@ namespace ld_proximity
     std::vector<Proximity> proximities;
 
     // ---- Private Methods ----
+    // Rep vote records
+    std::vector<std::array<int,2>> fetch_vote_record(std::string n);
+    // Creates representativeXVotes
     void calc_rep_x();
+    // Creates representativeYVotes
     void calc_rep_y();
+    // Calculates the distance of the rep whose name == n
+    // From rep X, returning it as a double
+    double calc_dist_x(std::string n);
+    // Calculates the distance of the rep whose name == n
+    // From rep Y, returning it as a double
+    double calc_dist_y(std::string n);
+
 
   public:
     // ---- Constructors ----
@@ -93,6 +106,8 @@ namespace ld_proximity
     std::vector<Proximity> get_proximities();
     bool voting_data_contains(int m);
     bool voting_data_contains(std::string n);
+    double distance_x(std::string n);
+    double distance_y(std::string n);
 
   };
 }

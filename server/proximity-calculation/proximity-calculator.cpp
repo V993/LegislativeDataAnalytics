@@ -8,29 +8,63 @@ SAMUEL EBERSOLE
 using namespace ld_proximity;
 
 // ---- Private Methods ----
+
+std::vector<std::array<int,2>> ProximityCalculator::fetch_vote_record(std::string n)
+{
+  std::vector<std::array<int,2>> a;
+  for (int i = 0; i < votingData.size(); i++)
+  {
+    if (votingData[i].repName == n)
+    {
+      a.push_back({votingData[i].matterId, votingData[i].vote});
+    }
+  }
+  return a;
+}
 // Calculate representativeXVotes
 void ProximityCalculator::calc_rep_x()
 {
-  representativeXVotes.clear();
-  for (int i = 0; i < votingData.size(); i++)
-  {
-    if (votingData[i].repName == representativeXName)
-    {
-      representativeXVotes.push_back({votingData[i].matterId, votingData[i].vote});
-    }
-  }
+  representativeXVotes = fetch_vote_record(representativeXName);
 }
 // Calculate representativeYVotes
 void ProximityCalculator::calc_rep_y()
 {
-  representativeYVotes.clear();
-  for (int i = 0; i < votingData.size(); i++)
+  representativeYVotes = fetch_vote_record(representativeYName);
+}
+// Calculate rep n's distance from rep x
+double ProximityCalculator::calc_dist_x(std::string n)
+{
+  double dimensions = 0.0;
+  double sum = 0.0;
+  std::vector<std::array<int,2>> nvotes = fetch_vote_record(n);
+  for (int i = 0; i < representativeXVotes.size(); i++)
   {
-    if (votingData[i].repName == representativeYName)
+    for (int j = 0; j < nvotes.size(); j++)
     {
-      representativeYVotes.push_back({votingData[i].matterId, votingData[i].vote});
+      if (representativeXVotes[i][0] == nvotes[j][0])
+      {
+        sum += pow(representativeXVotes[i][1] - nvotes[j][1],2);
+      }
     }
   }
+  return pow(sum, .5);
+}
+// Calculate rep n's distance from rep y
+double ProximityCalculator::calc_dist_y(std::string n)
+{
+  double sum = 0.0;
+  std::vector<std::array<int,2>> nvotes = fetch_vote_record(n);
+  for (int i = 0; i < representativeYVotes.size(); i++)
+  {
+    for (int j = 0; j < nvotes.size(); j++)
+    {
+      if (representativeYVotes[i][0] == nvotes[j][0])
+      {
+        sum += pow(representativeYVotes[i][1] - nvotes[j][1],2);
+      }
+    }
+  }
+  return pow(sum, .5);
 }
 
 // ---- Constructors ----
@@ -146,3 +180,5 @@ bool ProximityCalculator::voting_data_contains(std::string n)
   }
   return false;
 }
+double ProximityCalculator::distance_x(std::string n) { return calc_dist_x(n); }
+double ProximityCalculator::distance_y(std::string n) { return calc_dist_y(n); }
