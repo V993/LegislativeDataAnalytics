@@ -1,7 +1,6 @@
 /* GENERAL STYLING */
-footer {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.footer {
+  margin-top: 3rem;
 }
 
 /* ADDRESS SEARCH STYLING */
@@ -25,11 +24,18 @@ footer {
   text-align: center;
 }
 
+.rep-image {
+  height: 100px;
+  width: 100px;
+}
+
 ul {
   text-align: left;
 }
 
 ul > ul {
-  background-color: #494e60;
-  padding: 1em;
+  background-color: #f4f4f4;
+  padding: 2em;
+  border: 1px solid #fdfdfd;
+  margin-bottom: 1rem !important;
 }
