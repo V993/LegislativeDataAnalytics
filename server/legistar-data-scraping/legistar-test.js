@@ -2,6 +2,7 @@ const request = require('request');
 const fs = require('fs');
 const https = require('https');
 const rp = require('request-promise');
+const readline = require('readline');
 const token = "Uvxb0j9syjm3aI8h46DhQvnX5skN4aSUL0x_Ee3ty9M.ew0KICAiVmVyc2lvbiI6IDEsDQogICJOYW1lIjogIk5ZQyByZWFkIHRva2VuIDIwMTcxMDI2IiwNCiAgIkRhdGUiOiAiMjAxNy0xMC0yNlQxNjoyNjo1Mi42ODM0MDYtMDU6MDAiLA0KICAiV3JpdGUiOiBmYWxzZQ0KfQ"
 
 
@@ -271,9 +272,76 @@ function findAndReplace(fname, oname, find, replace) {
   });
 }
 
+async function fetchVotes(fnumber) {
+  if (fnumber < 18875)
+  {
+    var percentage = fnumber;
+    //percentage = (Math.round(percentage * 100) / 100).toFixed(2);
+    var fname = "eventitems/eventitems" + fnumber + ".json";
+    if (fs.existsSync("eventitems/eventitems" + fnumber + ".json"))
+    {
+      console.log(percentage + " - Found " + fname);
+      const iStream = fs.createReadStream(fname);
+      const rl = readline.createInterface(
+        {
+          input: iStream,
+          crlfDelay: Infinity
+        }
+      );
+      for await (const line of rl)
+      {
+        if (line.includes("EventItemId"))
+        {
+          let eventItemId = line.substring(19, line.length-1);
+          // Set options for API call
+          var nops = coptions;
+          nops.uri = 'https://webapi.legistar.com/v1/nyc/eventitems/' + eventItemId + '/votes';
+          nops.qs.$skip = 0;
+          //console.log(percentage + " -  - Pinged " + nops.uri);
+
+          // Make API call
+          await rp(nops)
+            .then(repos => {
+              //console.log(percentage + ' -  - Fetched %d votes', repos.length);
+              // Format JSON as string, set filename
+              out = JSON.stringify(repos, null, 4);
+              fname = "votes/votes" + eventItemId + ".json";
+
+              // Store all matterIDs in array, call fetchMatterSponsors() on them
+              //for (var i = 0; i < repos.length; i++) {
+              //  matterIDs.push(repos[i].MatterId);
+              //  fetchMatterSponsors(repos[i].MatterId);
+              //}
+
+              // Write file, call next batch
+              fs.writeFile(fname, out, (err) => {
+                if (err) { console.log(err); }
+                else
+                {
+                  //console.log(percentage + " -  - Wrote " + fname);
+                }
+              });
+            })
+            .catch(err => {
+              //console.log(err);
+              //console.log(percentage + " -  - FAILED CALL");
+              fetchVotes(fnumber);
+            })
+        }
+      }
+      fetchVotes(fnumber + 1);
+    }
+    else
+    {
+      console.log(percentage + " - Did not find " + fname);
+      fetchVotes(fnumber + 1);
+    }
+  }
+}
+
 //findAndReplace("mattersponsors/nspon/mattersponsors10000.json", "mattersponsors/nspon/nmattersponsors10000.json", "[", "");
 //console.log(options);
-fetchMatters(0);
+fetchVotes(700);
 //fetchBodies(0);
 //fetchPersons(0);
 //fetchMatterSponsors(17071);
