@@ -144,24 +144,26 @@ class Local extends Component {
           />
           <button onClick={this.handleSearchClick}>Search</button>
         </div>
-        {this.state.found ? (
-          <div>
-            <h1>{this.state.apiData.name}</h1>
-            <h4>Your Representatives</h4>
-            <small>
-              Your address:{" "}
-              <strong>
-                {this.state.apiData.normalizedInput.line1},{" "}
-                {this.state.apiData.normalizedInput.city},{" "}
-                {this.state.apiData.normalizedInput.state}
-              </strong>
-              .
-            </small>
-            <ul>{this.makeList()}</ul>
-          </div>
-        ) : (
-          <h4>No results</h4>
-        )}
+        <div class="row align-items-center my-5">
+          {this.state.found ? (
+            <div>
+              <h1>{this.state.apiData.name}</h1>
+              <h4>Your Representatives</h4>
+              <small>
+                Your address:{" "}
+                <strong>
+                  {this.state.apiData.normalizedInput.line1},{" "}
+                  {this.state.apiData.normalizedInput.city},{" "}
+                  {this.state.apiData.normalizedInput.state}
+                </strong>
+                .
+              </small>
+              <ul>{this.makeList()}</ul>
+            </div>
+          ) : (
+            <h4>No results</h4>
+          )}
+        </div>
       </div>
     );
   }

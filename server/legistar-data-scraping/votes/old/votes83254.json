@@ -1,0 +1,67 @@
+[
+    {
+        "VoteId": 459868,
+        "VoteGuid": "09FDE9E4-A68B-48F1-A47F-AFDD7D837251",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAjgkI=",
+        "VotePersonId": 395,
+        "VotePersonName": "Guillermo Linares",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 1,
+        "VoteResult": 1,
+        "VoteEventItemId": 83405
+    },
+    {
+        "VoteId": 459869,
+        "VoteGuid": "A242D0BD-97BE-436D-B036-7FC564470DC4",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAjgkM=",
+        "VotePersonId": 402,
+        "VotePersonName": "John D. Sabini",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 20,
+        "VoteResult": 1,
+        "VoteEventItemId": 83405
+    },
+    {
+        "VoteId": 459870,
+        "VoteGuid": "8D3781F1-0778-4A34-9E67-2FA8E06F9649",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAjgkQ=",
+        "VotePersonId": 422,
+        "VotePersonName": "Gifford Miller",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 30,
+        "VoteResult": 1,
+        "VoteEventItemId": 83405
+    },
+    {
+        "VoteId": 459871,
+        "VoteGuid": "766BD344-81FE-4017-8DA6-7A4AC928D085",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAjgkU=",
+        "VotePersonId": 425,
+        "VotePersonName": "Adolfo Carrion",
+        "VoteValueId": 15,
+        "VoteValueName": "Affirmative",
+        "VoteSort": 40,
+        "VoteResult": 1,
+        "VoteEventItemId": 83405
+    },
+    {
+        "VoteId": 459872,
+        "VoteGuid": "14629443-9520-4334-A9E3-A512FDEF438D",
+        "VoteLastModifiedUtc": "2015-08-25T15:56:08.773",
+        "VoteRowVersion": "AAAAAAAjgkY=",
+        "VotePersonId": 5227,
+        "VotePersonName": "Michael J. Abel",
+        "VoteValueId": 4,
+        "VoteValueName": "Excused",
+        "VoteSort": 50,
+        "VoteResult": 0,
+        "VoteEventItemId": 83405
+    }
+]
