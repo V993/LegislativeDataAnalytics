@@ -63,13 +63,17 @@ class Local extends Component {
       });
     });
 
+    // Remove president & VP
+    for (let i = 0; i < result.length; ++i) {
+      if (result[i].office.includes("President")) result.shift();
+    }
+
     let list = result.map((official, index) => {
       return (
         <>
           <ul key={index}>
             <img
-              height={100}
-              weight={100}
+              className={"rep-image"}
               alt={official.name}
               src={
                 official.photoUrl
@@ -103,8 +107,18 @@ class Local extends Component {
                   official.urls.map((website) => <li>{website}</li>)}
               </ul>
             </li>
+            <li>
+              Social media:{" "}
+              <ul>
+                {official.channels &&
+                  official.channels.map((channel) => (
+                    <li>
+                      {channel.type}: {channel.id}
+                    </li>
+                  ))}
+              </ul>
+            </li>
           </ul>
-          <hr />
         </>
       );
     });
@@ -113,39 +127,42 @@ class Local extends Component {
 
   render() {
     return (
-      <div className="local">
-        <div class="container">
-          <div class="row align-items-center my-5">
-            <div class="col-lg-5">
-              <h1 class="font-weight-light">Find Your Representatives</h1>
-              <p class="row align-items-left my-5">
-                Enter an address followed by a zipcode to learn about your
-                representatives. Discover valuable information in their profile such
-                as their beliefs and bills voted on or simply find out how to
-                contact them.
-              </p>
-              <input className="search"
-                type="text"
-                value={this.state.address}
-                onChange={this.handleInputChange}
-                placeholder="695 Park Ave 10065"
-              />
-              <button onClick={this.handleSearchClick}>Search</button>
-            </div>
-          </div>
+      <div className="container">
+        <div className="search">
+          <h1>Find Your Representatives</h1>
+          <p>
+            Enter an address followed by a zipcode to learn about your
+            representatives. Discover valuable information in their profile such
+            as their beliefs and bills voted on or simply find out how to
+            contact them.
+          </p>
+          <input
+            type="text"
+            value={this.state.address}
+            onChange={this.handleInputChange}
+            placeholder="695 Park Ave 10065"
+          />
+          <button onClick={this.handleSearchClick}>Search</button>
         </div>
         <div class="row align-items-center my-5">
-          <div class="col-lg-5">
-            {this.state.found ? (
-              <div>
-                <h1>{this.state.apiData.name}</h1>
-                <h4>Your Representatives</h4>
-                <ul>{this.makeList()}</ul>
-              </div>
-            ) : (
-              <h4>No results</h4>
-            )}
-          </div>
+          {this.state.found ? (
+            <div>
+              <h1>{this.state.apiData.name}</h1>
+              <h4>Your Representatives</h4>
+              <small>
+                Your address:{" "}
+                <strong>
+                  {this.state.apiData.normalizedInput.line1},{" "}
+                  {this.state.apiData.normalizedInput.city},{" "}
+                  {this.state.apiData.normalizedInput.state}
+                </strong>
+                .
+              </small>
+              <ul>{this.makeList()}</ul>
+            </div>
+          ) : (
+            <h4>No results</h4>
+          )}
         </div>
       </div>
     );
