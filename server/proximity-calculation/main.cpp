@@ -1,4 +1,5 @@
 #include "proximity-calculator.hpp"
+#include "vote-parser.hpp"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -56,6 +57,16 @@ std::vector<VoteRollItem> testVoteDataConstructor()
   vi_j.repName = "Jerry Seinfeld";
   vi_j.vote = 1;
 
+  VoteRollItem vi_k;
+  vi_k.matterId = 0003;
+  vi_k.repName = "Cosmo Kramer";
+  vi_k.vote = 1;
+
+  VoteRollItem vi_l;
+  vi_l.matterId = 0003;
+  vi_l.repName = "George Constanza";
+  vi_l.vote = -1;
+
   std::vector<VoteRollItem> v;
   v.push_back(vi_a);
   v.push_back(vi_b);
@@ -67,6 +78,8 @@ std::vector<VoteRollItem> testVoteDataConstructor()
   v.push_back(vi_h);
   v.push_back(vi_i);
   v.push_back(vi_j);
+  v.push_back(vi_k);
+  v.push_back(vi_l);
 
   return v;
 }
@@ -75,86 +88,16 @@ int main()
 {
   std::vector<VoteRollItem> testVoteData = testVoteDataConstructor();
   ProximityCalculator pc = ProximityCalculator(testVoteData);
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Matter ID: " << pc.get_voting_data()[0].matterId << std::endl;
-  std::cout << "Rep. Name: " << pc.get_voting_data()[0].repName << std::endl;
-  std::cout << "Vote     : " << pc.get_voting_data()[0].vote << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Matter ID: " << pc.get_voting_data()[1].matterId << std::endl;
-  std::cout << "Rep. Name: " << pc.get_voting_data()[1].repName << std::endl;
-  std::cout << "Vote     : " << pc.get_voting_data()[1].vote << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Matter ID: " << pc.get_voting_data()[2].matterId << std::endl;
-  std::cout << "Rep. Name: " << pc.get_voting_data()[2].repName << std::endl;
-  std::cout << "Vote     : " << pc.get_voting_data()[2].vote << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Matter ID: " << pc.get_voting_data()[3].matterId << std::endl;
-  std::cout << "Rep. Name: " << pc.get_voting_data()[3].repName << std::endl;
-  std::cout << "Vote     : " << pc.get_voting_data()[3].vote << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Matter ID: " << pc.get_voting_data()[4].matterId << std::endl;
-  std::cout << "Rep. Name: " << pc.get_voting_data()[4].repName << std::endl;
-  std::cout << "Vote     : " << pc.get_voting_data()[4].vote << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
   bool assignRep = pc.set_rep_x("Cosmo Kramer");
-  if (assignRep)
-  {
-    std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "Successfully assigned Kramer as Rep. X." << std::endl;
-    std::cout << "-----------------------------------------------" << std::endl;
-  }
-  else
-  {
-    std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "Failed to assign Kramer as Rep. X." << std::endl;
-    std::cout << "-----------------------------------------------" << std::endl;
-  }
   assignRep = pc.set_rep_y("Cosmo Kramer");
-  if (assignRep)
-  {
-    std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "Successfully assigned Kramer as Rep. Y." << std::endl;
-    std::cout << "-----------------------------------------------" << std::endl;
-  }
-  else
-  {
-    std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "Failed to assign Kramer as Rep. Y." << std::endl;
-    std::cout << "-----------------------------------------------" << std::endl;
-  }
   assignRep = pc.set_rep_y("Elaine Benes");
-  if (assignRep)
+  std::vector<Proximity> prox = pc.get_proximities();
+  for (int i = 0; i < prox.size(); i++)
   {
-    std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "Successfully assigned Elaine as Rep. Y." << std::endl;
-    std::cout << "-----------------------------------------------" << std::endl;
+    std::cout << "--------------------------------" << std::endl;
+    std::cout << prox[i].repName << ": (" << prox[i].x << ", " << prox[i].y << ")" << std::endl;
+    std::cout << "--------------------------------" << std::endl;
   }
-  else
-  {
-    std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "Failed to assign Elaine as Rep. Y." << std::endl;
-    std::cout << "-----------------------------------------------" << std::endl;
-  }
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Rep. X: " << pc.get_rep_x() << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Rep. Y: " << pc.get_rep_y() << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Rep. X Votes Size: " << pc.get_rep_x_votes().size() << std::endl;
-  std::cout << "Rep. X Votes[0]  : " << pc.get_rep_x_votes()[0][0] << ", " << pc.get_rep_x_votes()[0][1] << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  std::cout << "Rep. Y Votes Size: " << pc.get_rep_y_votes().size() << std::endl;
-  std::cout << "Rep. Y Votes[0]  : " << pc.get_rep_y_votes()[0][0] << ", " << pc.get_rep_y_votes()[0][1] << std::endl;
-  std::cout << "-----------------------------------------------" << std::endl;
-  double gx = pc.distance_x("George Constanza");
-  std::cout << "George's X Value: " << gx << std::endl;
-  double jx = pc.distance_x("Jerry Seinfeld");
-  std::cout << "Jerry's X Value: " << jx << std::endl;
-  double gy = pc.distance_y("George Constanza");
-  std::cout << "George's Y Value: " << gy << std::endl;
-  double jy = pc.distance_y("Jerry Seinfeld");
-  std::cout << "Jerry's Y Value: " << jy << std::endl;
 
   return 0;
 }

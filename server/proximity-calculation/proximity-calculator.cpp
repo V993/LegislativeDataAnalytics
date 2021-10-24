@@ -163,7 +163,33 @@ std::string ProximityCalculator::get_rep_x() { return representativeXName; }
 std::string ProximityCalculator::get_rep_y() { return representativeYName; }
 std::vector<std::array<int,2>> ProximityCalculator::get_rep_x_votes() { return representativeXVotes; }
 std::vector<std::array<int,2>> ProximityCalculator::get_rep_y_votes() { return representativeYVotes; }
-//std::vector<Proximity> ProximityCalculator::get_proximities();
+std::vector<Proximity> ProximityCalculator::get_proximities()
+{
+  // Assemble list of representatives as Proximities
+  // For each representative, find and assign distance_x and distance_y
+  std::vector<Proximity> prox;
+  for (int i = 0; i < votingData.size(); i++)
+  {
+    bool in = (votingData[i].repName == representativeXName || votingData[i].repName == representativeYName);
+    for (int j = 0; j < prox.size(); j++)
+    {
+      if (votingData[i].repName == prox[j].repName)
+      {
+        in = true;
+        j = prox.size();
+      }
+    }
+    if (!in)
+    {
+      Proximity n;
+      n.repName = votingData[i].repName;
+      n.x = distance_x(n.repName);
+      n.y = distance_y(n.repName);
+      prox.push_back(n);
+    }
+  }
+  return prox;
+}
 bool ProximityCalculator::voting_data_contains(int m)
 {
   for (int i = 0; i < votingData.size(); i++)
