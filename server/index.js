@@ -28,7 +28,7 @@ app.get("/graph-apis/representative-bills", async function(req, res) {
     }
 });
 
-//responses with a list of representatives and the number of bills they proposed since a given date
+//responses with a list of committees and the number of bills they proposed since a given date
 app.get("/graph-apis/committee-bills", async function(req, res) {
     date = req.query.startDate;
     const query = `
