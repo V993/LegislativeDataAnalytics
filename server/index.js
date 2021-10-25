@@ -28,6 +28,22 @@ app.get("/graph-apis/representative-bills", async function(req, res) {
     }
 });
 
+//responses with a list of representatives and the number of bills they proposed since a given date
+app.get("/graph-apis/committee-bills", async function(req, res) {
+    date = req.query.startDate;
+    const query = `
+        SELECT MatterBodyName, COUNT(*) as numOfBills
+		FROM matters
+        ${date ? `WHERE MatterIntroDate >= '${date}'` : ""}
+        GROUP BY MatterBodyName;`
+    try {
+        const committeeBillCount = await pool.query(query);
+        res.json(committeeBillCount.rows)
+    } catch (error) {
+        console.error(error.message)
+    }
+});
+
 app.listen(PORT, function() {
     console.log(`Server is running on port ${PORT}`);
 });
