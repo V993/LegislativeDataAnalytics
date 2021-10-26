@@ -1,6 +1,7 @@
 import React from "react";
 import { BarChart } from "./Bar";
 import Bills from "./Bills";
+import Committees from "./Committees";
 
 function Data() {
   return (
@@ -10,6 +11,7 @@ function Data() {
           <div class="col-lg-12">
             <h1 class="font-weight-light">Representatives' Data</h1>
             <Bills />
+            <Committees />
           </div>
         </div>
       </div>
