@@ -12,13 +12,15 @@ app.get("/", function(req, res) {
 
 //responses with a list of representatives and the number of bills they proposed since a given date
 app.get("/graph-apis/representative-bills", async function(req, res) {
-    const date = req.query.startDate;
+    const startDate = req.query.startDate;
+    const endDate = req.query.endDate;
     const query = `
         SELECT MatterSponsorName, count(*) as numOfBills
         FROM mattersponsors 
         INNER JOIN matters
         ON mattersponsors.MatterSponsorMatterId = matters.MatterId
-        ${date ? `WHERE matters.MatterIntroDate >= '${date}'` : ""}
+        ${startDate ? `WHERE matters.MatterIntroDate >= '${startDate}'` : ""}
+        ${endDate ? `AND matters.MatterIntroDate <= '${endDate}'` : ""}
         GROUP BY MatterSponsorName;`
     try {
         const representativeBillCount = await pool.query(query);
@@ -43,6 +45,18 @@ app.get("/graph-apis/committee-bills", async function(req, res) {
         console.error(error.message)
     }
 });
+
+
+app.get("/graph-apis/proximity-calculation", async function(req, res) {
+    try {
+        const votes = await pool.query("SELECT VoteId, VotePersonName, VoteValueName, VoteEventItemId FROM votes")
+        let data = JSON.stringify(votes.rows);
+        fs.writeFileSync('result.json', data);
+    } catch (error) {
+        console.error(error.message)
+    }
+});
+
 
 app.listen(PORT, function() {
     console.log(`Server is running on port ${PORT}`);
