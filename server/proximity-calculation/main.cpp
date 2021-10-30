@@ -86,7 +86,8 @@ std::vector<VoteRollItem> testVoteDataConstructor()
 
 int main()
 {
-  std::vector<VoteRollItem> testVoteData = testVoteDataConstructor();
+  VoteParser vp;
+  std::vector<VoteRollItem> testVoteData = vp.read_file("calls/test.json");
   ProximityCalculator pc = ProximityCalculator(testVoteData);
   bool assignRep = pc.set_rep_x("Cosmo Kramer");
   assignRep = pc.set_rep_y("Cosmo Kramer");
@@ -98,6 +99,7 @@ int main()
     std::cout << prox[i].repName << ": (" << prox[i].x << ", " << prox[i].y << ")" << std::endl;
     std::cout << "--------------------------------" << std::endl;
   }
+  vp.write_file(prox,"responses/test.json");
 
   return 0;
 }
