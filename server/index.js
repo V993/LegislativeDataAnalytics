@@ -32,11 +32,13 @@ app.get("/graph-apis/representative-bills", async function(req, res) {
 
 //responses with a list of committees and the number of bills they proposed since a given date
 app.get("/graph-apis/committee-bills", async function(req, res) {
-    date = req.query.startDate;
+    const startDate = req.query.startDate;
+    const endDate = req.query.endDate;
     const query = `
         SELECT MatterBodyName, COUNT(*) as numOfBills
 		FROM matters
-        ${date ? `WHERE MatterIntroDate >= '${date}'` : ""}
+        ${startDate ? `WHERE MatterIntroDate >= '${startDate}'` : ""}
+        ${endDate ? `AND MatterIntroDate <= '${endDate}'` : ""}
         GROUP BY MatterBodyName;`
     try {
         const committeeBillCount = await pool.query(query);
