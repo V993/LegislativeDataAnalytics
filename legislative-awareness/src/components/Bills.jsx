@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Bar } from "react-chartjs-2";
+import Calendar from "./Calendar";
 
 const options = {
   indexAxis: "x",
@@ -22,6 +23,7 @@ const options = {
 };
 
 export default class Bills extends React.Component {
+  API_URL = "http://localhost:5000/graph-apis/representative-bills";
   constructor(props) {
     super(props);
     this.state = {
@@ -29,24 +31,28 @@ export default class Bills extends React.Component {
       reps: [],
       votes: [],
       found: false,
+      startDate: null,
+      endDate: null,
     };
   }
 
-  componentDidMount = async () => {
-    let apiUrl =
-      "http://localhost:5000/graph-apis/representative-bills?startDate=2021-01-01";
-
+  fetchData = async () => {
+    const url = this.getApiUrl(this.state.startDate, this.state.endDate);
     try {
-      let response = await axios.get(apiUrl);
+      let response = await axios.get(url);
       this.setState({ apiData: response.data, found: true });
       this.parseData();
     } catch (error) {
       if (error.response) {
         this.setState({ found: false });
-        console.log(`Error: Not Found - ${error.response.data}`); // Not Found
-        console.log(`Error: ${error.response.status}`); // 404
+        console.error(`Error: Not Found - ${error.response.data}`); // Not Found
+        console.error(`Error: ${error.response.status}`); // 404
       }
     }
+  };
+
+  componentDidMount = async () => {
+    await this.fetchData();
   };
 
   parseData = () => {
@@ -61,9 +67,30 @@ export default class Bills extends React.Component {
     this.setState({ reps, votes });
   };
 
+  getApiUrl = (start, end) => {
+    start = this.state.startDate || "2021-01-01";
+    end = this.state.endDate || new Date().toISOString().slice(0, 10);
+    if (!start && !end) {
+      return this.API_URL;
+    }
+    return `${this.API_URL}?startDate=${start}&endDate=${end}`;
+  };
+
+  handleFromDate = (startDate) => {
+    this.setState({ startDate });
+    this.fetchData();
+  };
+
+  handleToDate = (endDate) => {
+    this.setState({ endDate });
+    this.fetchData();
+  };
+
   render() {
     return (
       <div>
+        <h4>Select a range of dates to preview data</h4>
+        <Calendar from={this.handleFromDate} to={this.handleToDate} />
         <Bar
           data={{
             labels: this.state.reps,
