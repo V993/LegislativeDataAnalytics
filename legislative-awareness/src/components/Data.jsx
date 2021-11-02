@@ -9,7 +9,7 @@ function Data() {
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-12">
-            <h1 class="font-weight-light">Representatives' Data</h1>
+            <h1 class="font-weight-light">Legislative Data</h1>
             <Bills />
             <Committees />
           </div>
