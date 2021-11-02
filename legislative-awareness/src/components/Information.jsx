@@ -13,7 +13,7 @@ function Information() {
 
 			<p class="row align-items-left my-4"> 			
 				This product aims to make educating oneself about the goings-on in 	
-				government a <Link class="nav-link" to="/"> click away! </Link> Whether that involves 
+				government a click away! Whether that involves 
 				knowing who your representatives are, or what your government is
  				up to. 
 			</p>
