@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 app.get("/", function(req, res) {
-    res.send('hello')
+    res.send('This is the port with the DB API')
 });
 
 //responses with a list of representatives and the number of bills they proposed since a given date
@@ -16,7 +16,7 @@ app.get("/graph-apis/representative-bills", async function(req, res) {
     const endDate = req.query.endDate;
     const query = `
         SELECT MatterSponsorName, count(*) as numOfBills
-        FROM mattersponsors 
+        FROM mattersponsors
         INNER JOIN matters
         ON mattersponsors.MatterSponsorMatterId = matters.MatterId
         ${startDate ? `WHERE matters.MatterIntroDate >= '${startDate}'` : ""}
