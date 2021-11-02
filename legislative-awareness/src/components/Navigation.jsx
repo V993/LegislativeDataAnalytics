@@ -18,17 +18,10 @@ function Navigation(props) {
                 class={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
+
               >
-                <Link class="nav-link" to="/">
-                  Home
-                  {/* <span class="sr-only">(current)</span> */}
-                </Link>
-              </li>
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/local-info" ? "active" : ""
-                }`}
-              >
+         
+
                 <Link class="nav-link" to="/local-info">
                   Local
                 </Link>
