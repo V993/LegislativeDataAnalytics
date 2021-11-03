@@ -23,7 +23,7 @@ const options = {
 };
 
 export default class Bills extends React.Component {
-  API_URL = "http://localhost:5000/graph-apis/representative-bills";
+  API_URL = "http://206.81.7.63:5000/graph-apis/representative-bills";
   constructor(props) {
     super(props);
     this.state = {
