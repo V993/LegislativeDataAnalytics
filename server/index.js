@@ -1,8 +1,7 @@
-var fs = require('fs');
+require('dotenv').config();
 const express = require("express");
 const pool = require("./db")
 const app = express();
-pool.password = fs.readFileSync("cred.env").toString();
 
 const PORT = process.env.PORT || 5000;
 
@@ -14,7 +13,6 @@ app.get("/", function(req, res) {
 
 //responses with a list of representatives and the number of bills they proposed since a given date
 app.get("/graph-apis/representative-bills", async function(req, res) {
-    res.send("hit /graph-apis/representative-bills endpoint");
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
     const query = `
