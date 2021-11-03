@@ -1,5 +1,6 @@
 # Database API
 ### Our API is hosted using AWS and contains a subset of data from the Legistar API.
+### Additionally, you can see the data we have scraped from Legistar which is stored in our database here in the legistar-data-scraping directory.
 ### We have an accompanying API for our database which you can see here. Information about the API endpoints is below:
 
 ####/graph-apis/representative-bills
@@ -10,3 +11,5 @@ Contains sums of bills for every committee in NYC City Council. The data is orga
 
 ####graph-apis/proximity-calculation
 Contains voting records for each representative in NYC City Council. Used in our algorithm to determine politican similarity based off of voting histories. 
+
+### In the proximity-calculation directory, you'll find the C++ scripts we use to calculate distance between representatives.
