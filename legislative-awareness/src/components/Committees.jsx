@@ -23,7 +23,7 @@ const options = {
 };
 
 export default class Committees extends React.Component {
-  API_URL = "http://localhost:5000/graph-apis/committee-bills";
+  API_URL = "http://206.81.7.63:5000/graph-apis/committee-bills";
   constructor(props) {
     super(props);
     this.state = {
