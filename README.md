@@ -1,7 +1,7 @@
-# LegislativeDataAnalytics
+# Legislative Awareness
 
 ### Welcome to our project!
-Legislative Data Analytics is a project aimed at making complex data repositories more digestible. Our frontend work is stored in **legislative-awareness** and the backend API is stored in **server**. Instructions for running our web application and the backend API are included in each respective folder.
+Legislative Awareness (name in-progress) is a project aimed at making complex data repositories more digestible. Our frontend work is stored in **legislative-awareness** and the backend API is stored in **server**. Instructions for running our web application and the backend API are included in each respective folder.
 
 For quick reference, here are two ocean droplets corresponding to both the API and the frontend work we have done so far:
 
