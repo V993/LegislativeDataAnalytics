@@ -14,6 +14,7 @@ app.get("/", function(req, res) {
 
 //responses with a list of representatives and the number of bills they proposed since a given date
 app.get("/graph-apis/representative-bills", async function(req, res) {
+    conole.log("/graph-apis/representative-bills");
     console.log(pool);
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
