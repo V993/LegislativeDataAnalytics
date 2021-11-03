@@ -1,4 +1,5 @@
 require('dotenv').config();
+const cors = require('cors');
 const express = require("express");
 const pool = require("./db")
 const app = express();
@@ -8,6 +9,7 @@ const PORT = process.env.PORT || 5000;
 console.log(pool);
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/", function(req, res) {
     res.send('This is the port with the DB API')
