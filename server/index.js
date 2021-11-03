@@ -1,6 +1,8 @@
+var fs = require('fs');
 const express = require("express");
 const pool = require("./db")
 const app = express();
+pool.password = fs.readFileSync("cred.env").toString();
 
 const PORT = process.env.PORT || 5000;
 
