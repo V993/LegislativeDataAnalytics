@@ -2,6 +2,8 @@ import { Component } from "react";
 import axios from "axios";
 import "./style.css";
 
+import Navigation from "./Navigation"
+
 class Local extends Component {
   constructor(props) {
     super(props);
@@ -23,6 +25,7 @@ class Local extends Component {
       "https://www.googleapis.com/civicinfo/v2/representatives?key=" +
       key +
       "&address=" +
+      // "695 Park Ave 10065";
       address;
 
     try {
@@ -70,21 +73,26 @@ class Local extends Component {
 
     let list = result.map((official, index) => {
       return (
-        <>
-          <ul key={index}>
-            <img
-              className={"rep-image"}
-              alt={official.name}
-              src={
-                official.photoUrl
-                  ? official.photoUrl
-                  : "https://www.pinclipart.com/picdir/middle/169-1692839_default-avatar-transparent-clipart.png"
-              }
-            />
-            <div>
-              {official.name} ({official.party && official.party.charAt(0)})
+        <div className="box">
+          <ul className="" key={index}>
+            <div className="split">
+              <img
+                // className="rep-image"
+                alt={official.name}
+                src={
+                  official.photoUrl
+                    ? official.photoUrl
+                    : "https://www.pinclipart.com/picdir/middle/169-1692839_default-avatar-transparent-clipart.png"
+                }
+              />
+              <div className="splitItem">
+                <h4>{official.name} ({official.party && official.party.charAt(0)})</h4>
+                <h4>{official.office}</h4>
+              </div>
             </div>
-            <div>{official.office}</div>
+            <br></br>
+
+           
             <li>
               Address:{" "}
               {official.address &&
@@ -119,7 +127,8 @@ class Local extends Component {
               </ul>
             </li>
           </ul>
-        </>
+          <br></br>
+        </div>
       );
     });
     return list;
@@ -127,42 +136,58 @@ class Local extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="search">
-          <h1>Find Your Representatives</h1>
-          <p>
-            Enter an address followed by a zipcode to learn about your
-            representatives. Discover valuable information in their profile such
-            as their beliefs and bills voted on or simply find out how to
-            contact them.
-          </p>
-          <input
-            type="text"
-            value={this.state.address}
-            onChange={this.handleInputChange}
-            placeholder="695 Park Ave 10065"
-          />
-          <button onClick={this.handleSearchClick}>Search</button>
-        </div>
-        <div class="row align-items-center my-5">
-          {this.state.found ? (
-            <div>
-              <h1>{this.state.apiData.name}</h1>
-              <h4>Your Representatives</h4>
-              <small>
-                Your address:{" "}
-                <strong>
-                  {this.state.apiData.normalizedInput.line1},{" "}
-                  {this.state.apiData.normalizedInput.city},{" "}
-                  {this.state.apiData.normalizedInput.state}
-                </strong>
-                .
-              </small>
-              <ul>{this.makeList()}</ul>
+      <div>
+        <Navigation/>
+        <div className="split">
+
+          {/* First Half: */}
+          <div className="splitItem Smol">
+            <h1 className="headerText">Find Your Representatives:</h1>
+            <p className="descriptionText">
+              Enter an address followed by a zipcode to learn about your
+              representatives. Discover valuable information in their profile such
+              as their beliefs and bills voted on or simply find out how to
+              contact them.
+            </p>
+            <br></br>
+            <div className="descriptionText">
+              <input className="searchbar input"
+                type="text"
+                value={this.state.address}
+                onChange={this.handleInputChange}
+                placeholder="695 Park Ave 10065"
+              />
+              <button onClick={this.handleSearchClick} className="searchbar">Search</button>
             </div>
-          ) : (
-            <h4>No results</h4>
-          )}
+          </div>
+
+          {/* Second Half: */}
+
+          <div className="splitItem Beeg">
+            <div className="">
+              {this.state.found ? (
+                <div>
+                  <h1>{this.state.apiData.name}</h1>
+                  <h4>Your Representatives:</h4>
+                  <small>
+                    Searched address:{" "}
+                    <strong>
+                      {this.state.apiData.normalizedInput.line1},{" "}
+                      {this.state.apiData.normalizedInput.city},{" "}
+                      {this.state.apiData.normalizedInput.state}
+                    </strong>
+                  </small>
+                  <br></br>
+                  <br></br>
+        
+                  <ul className="list">{this.makeList()}</ul>
+                </div>
+              ) : (
+                <h4>No results</h4>
+              )}
+            </div>
+          </div>
+          
         </div>
       </div>
     );
