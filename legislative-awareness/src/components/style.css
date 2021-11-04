@@ -1,11 +1,59 @@
-
-
-
 /* GENERAL STYLING */
 .footer {
   margin-top: 3em;
 }
 
+.navigation {
+  border-bottom: solid black;
+  border-radius: 20px;
+}
+
+/* HEADER */
+
+.underline {
+  border-bottom: solid black 3px;
+  border-radius: 10%;
+  padding-left:1em;
+  padding-bottom:.3em;
+}
+
+header {
+  color:black;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 3em;
+  border-bottom: solid black 5px;
+  border-radius:3em;
+
+}
+
+.textBlock {
+  color: black;
+  text-align: left;
+  padding-top: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2em;
+  max-width: 50%;
+}
+
+.textBlock.medium {
+  padding-top: 6em !important;
+}
+
+.smallBlock {
+  text-align: left;
+  padding-top: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2em;
+  max-width:33%;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
 
 /* HOME STYLING */
 
@@ -32,6 +80,8 @@
   /* GRID CELL:   */
 
   display: flex;
+  transform:scale(1);
+  transition-duration: 0.6s;
 }
 
 .cell:hover {
@@ -50,21 +100,29 @@
 .cell.beegboi {
   flex-grow: 2;
   color: black;
+
 }
 
 .cell.data {
   background-image: url("./assets/dataImg2.png");
-  backdrop-filter: 2px;
+  backdrop-filter: blur(4px);
+  background-position: -20em;
 }
 
 .cell.local {
   background-image: url("./assets/localImg.jpg");
-  backdrop-filter: 2px;
 }
 
 .cell.information {
   background-image: url("./assets/informationImg.jpg");
-  backdrop-filter: 2px;
+  backdrop-filter: blur(4px);
+}
+
+.cell.about {
+  background-image: url("./assets/aboutImg.jpg");
+  background-position: -14em -25.5em;
+
+  backdrop-filter: blur(4px);
 }
 
 .item {
@@ -88,13 +146,120 @@
   color:white;
 }
 
+.white:hover {
+  color:dodgerblue;
+  transition-duration: 0.6s;
+}
+
 .black {
   color: black;
 }
 
+.black:hover {
+  color: dodgerblue;
+  transition-duration: 0.6s;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
 /* ADDRESS SEARCH STYLING */
 
+.search-icon {
+  position: absolute;
+  top:6px;
+  left:8px;
+  width:14px;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 10px;
+  cursor: pointer;
+  /* <!-- visibility: hidden; --> */
+}
+
+.searchbar {
+  border: 2px solid grey;
+  border-radius: 5px;
+
+  padding: 2px 23px 2px 10px;
+  outline: 0;
+
+  border: 2px solid grey;
+  transition: 0.6s;
+}
+
+.searchbar:hover {
+  border: 2px solid dodgerblue;
+  transition: 0.6s;
+}
+
+.searchbar.input {
+  transform:scale(1.00);
+  transition: .2s;
+}
+
+.searchbar.input:hover {
+  transform:scale(1.20);
+  transition: .2s;
+}
+
+/* For the reps: */
+
+/* .box-grid {
+
+} */
+
 .box {
+  padding:1em;
+  background-image: linear-gradient(rgba(138, 182, 169, 0.5), rgba(255,255,255,0));
+  /* border:2px solid rgb(170, 241, 232); */
+  border-radius: 20px;
+  margin: .6em;
+
+  transform:scale(1);
+  transition-duration: 0.6s;
+}
+
+.box:hover {
+  transform:scale(1.02);
+  transition-duration: 0.6s;
+}
+
+/* For the layout: */
+
+.splitItem {
+  align-content: left;
+  padding:1em;
+  color:black;
+}
+
+.splitItem.Beeg {
+  max-width: 55%;
+  padding-left: 7em;
+}
+
+.splitItem.Smol {
+  max-width: 33%;
+}
+
+.headerText {
+  padding-top:2em;
+  padding-right:2em;
+  padding-left: 2em;
+  padding-bottom: .3em;
+}
+
+.descriptionText {
+  padding-left:5em;
+}
+
+/* .box {
   color: #fff;
   align-items: center;
   text-align: center;
@@ -105,6 +270,10 @@
   border: 1px solid white;
   padding: 1em;
   border-radius: 5px;
+} */
+
+.list {
+  align-content: left;
 }
 
 .container {
@@ -127,4 +296,12 @@ ul > ul {
   padding: 2em;
   border: 1px solid #fdfdfd;
   margin-bottom: 1rem !important;
+}
+
+
+/* FOOTER: */
+
+/* needs work */
+.foot {
+  background: linear-gradient(0deg, rgba(67,67,67,1) 0%, rgba(255,255,255,1) 55%);
 }
