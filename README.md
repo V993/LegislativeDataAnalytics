@@ -1,4 +1,4 @@
-# Legislative Awareness
+# LegislativeDataAnalytics
 
 ### Welcome to our project!
 Legislative Awareness (name in-progress) is a project aimed at making complex data repositories more digestible. Our frontend work is stored in **legislative-awareness** and the backend API is stored in **server**. Instructions for running our web application and the backend API are included in each respective folder.
