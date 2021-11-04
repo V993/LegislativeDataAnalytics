@@ -30,6 +30,7 @@ namespace ld_proximity
     std::vector<VoteRollItem> read_file(std::string fname);
     bool write_file(std::vector<Proximity> prox, std::string fname);
     // ---- Constructors ----
+    VoteParser();
     // ---- Mutators ----
     // ---- Accessors ----
   };
