@@ -1,26 +1,44 @@
 import React from "react";
+import "./style.css";
+import { useHistory } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
+
+const HomeComponent = () => {
+  const history = useHistory()
+
+  const handleClick = () => {
+    history.push("/")
+  }
+}
+
 
 function Home() {
   return (
-    <div className="home">
-      <div class="container">
-        <div class="row align-items-center my-5">
-          <div class="col-lg-7">
-            {/* <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            /> */}
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">Public Awareness</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. Fun shit
-            </p>
-          </div>
+    <div className="">
+
+      <div className="grid">
+        <div className="cell normal data">
+          <Link to="/data">
+            <h1>Data</h1>
+          </Link>
+        </div>
+        <div className="cell beegboi local">
+          <Link to="/local-info">
+            <h1>Local Representation</h1>
+          </Link>
+        </div>
+      </div>
+      <div className="grid">
+        <div className="cell beegboi information">
+          <Link to="/information">
+            <h1 className="white">Government Information</h1>
+          </Link> 
+        </div>
+        <div className="cell normal about">
+          <Link to="/about">
+            <h1>About</h1>
+          </Link>
         </div>
       </div>
     </div>
@@ -28,3 +46,13 @@ function Home() {
 }
 
 export default Home;
+
+{/* <div className="row">
+<div className="cell normal">box1</div>
+<div className="cell normal">box2</div>
+</div>
+<div className="row">
+<div className="cell normal">box3</div>
+<div className="cell normal">box4</div>
+</div>
+</div> */}

@@ -1,6 +1,95 @@
+
+
+
 /* GENERAL STYLING */
 .footer {
-  margin-top: 3rem;
+  margin-top: 3em;
+}
+
+
+/* HOME STYLING */
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.cell {
+  /* AESTHETICS:  */
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 7em;
+  text-align: center;
+  margin: .6em;
+  background-color: gray;
+  cursor:pointer;
+  flex-shrink: 1;
+  opacity: 1;
+
+  /* GRID CELL:   */
+
+  display: flex;
+}
+
+.cell:hover {
+  opacity: 4;
+  transform: scale(1.01);
+  /* transform: rotate(2deg); */
+  transform-origin: center;
+  transition-duration: 0.6s;
+}
+
+.cell.normal {
+  flex-grow: 1;
+  color: black;
+}
+
+.cell.beegboi {
+  flex-grow: 2;
+  color: black;
+}
+
+.cell.data {
+  background-image: url("./assets/dataImg2.png");
+  backdrop-filter: 2px;
+}
+
+.cell.local {
+  background-image: url("./assets/localImg.jpg");
+  backdrop-filter: 2px;
+}
+
+.cell.information {
+  background-image: url("./assets/informationImg.jpg");
+  backdrop-filter: 2px;
+}
+
+.item {
+  border: black 1px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  width:150%;
+}
+.item.text {
+  border: black 1px;
+  padding: 2em
+}
+
+.item.img {
+  border: black 1px;
+  /* padding: 2em; */
+}
+
+.white {
+  color:white;
+}
+
+.black {
+  color: black;
 }
 
 /* ADDRESS SEARCH STYLING */
