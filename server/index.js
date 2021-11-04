@@ -17,7 +17,7 @@ app.get("/", function(req, res) {
     res.send('This is the port with the DB API')
 });
 
-//responses with a list of representatives and the number of bills they proposed since a given date
+//responds with a list of representatives and the number of bills they proposed since a given date
 app.get("/graph-apis/representative-bills", async function(req, res) {
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
@@ -37,7 +37,7 @@ app.get("/graph-apis/representative-bills", async function(req, res) {
     }
 });
 
-//responses with a list of committees and the number of bills they proposed since a given date
+//responds with a list of committees and the number of bills they proposed since a given date
 app.get("/graph-apis/committee-bills", async function(req, res) {
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
@@ -55,6 +55,27 @@ app.get("/graph-apis/committee-bills", async function(req, res) {
     }
 });
 
+//responds with the list of representatives and the number of bills they proposed for each month in a given year
+app.get("/graph-apis/activeness-by-month", async function(req, res) {
+    const year = req.query.year;
+    if (!year) {
+        const err = new Error("Year is missing");
+        err.status = 400;
+        next(err);
+    }
+    const query = `
+        SELECT MatterSponsorName, EXTRACT(MONTH FROM matters.MatterIntroDate) as month, COUNT(*) as numOfBills FROM mattersponsors
+        INNER JOIN matters ON mattersponsors.MatterSponsorMatterId = matters.MatterId
+        WHERE matters.MatterIntroDate >= '${year}-01-01' AND matters.MatterIntroDate <= '${year}-12-31'
+        GROUP BY EXTRACT(MONTH FROM matters.MatterIntroDate), MatterSponsorName
+        ORDER BY month;`
+    try {
+        const activenessByMonth = await pool.query(query);
+        res.json(activenessByMonth.rows)
+    } catch (error) {
+        console.error(error.message)
+    }
+});
 
 app.get("/graph-apis/proximity-calculation", async function(req, res) {
     try {
