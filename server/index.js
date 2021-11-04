@@ -61,6 +61,7 @@ app.get("/graph-apis/proximity-calculation", async function(req, res) {
         const votes = await pool.query("SELECT VoteId, VotePersonName, VoteValueName, VoteEventItemId FROM votes")
         let data = JSON.stringify(votes.rows);
         fs.writeFileSync('result.json', data);
+        res.json(data);
     } catch (error) {
         console.error(error.message)
     }
