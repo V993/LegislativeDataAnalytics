@@ -1,8 +1,8 @@
 import { Component } from "react";
 import axios from "axios";
 import "./style.css";
-
-import Navigation from "./Navigation"
+import { SocialIcon } from "react-social-icons";
+import Navigation from "./Navigation";
 
 class Local extends Component {
   constructor(props) {
@@ -14,9 +14,7 @@ class Local extends Component {
     };
   }
 
-  handleInputChange = (event) => {
-    this.setState({ address: event.target.value });
-  };
+  handleInputChange = (e) => this.setState({ address: e.target.value });
 
   handleSearchClick = async () => {
     let address = this.state.address;
@@ -25,7 +23,6 @@ class Local extends Component {
       "https://www.googleapis.com/civicinfo/v2/representatives?key=" +
       key +
       "&address=" +
-      // "695 Park Ave 10065";
       address;
 
     try {
@@ -33,10 +30,6 @@ class Local extends Component {
       this.setState({ apiData: response.data, found: true });
     } catch (error) {
       if (error.response) {
-        /*
-         * The request was made and the server responded with a
-         * status code that falls out of the range of 2xx
-         */
         this.setState({ found: false });
         console.log(`Error: Not Found - ${error.response.data}`); // Not Found
         console.log(`Error: ${error.response.status}`); // 404
@@ -86,13 +79,14 @@ class Local extends Component {
                 }
               />
               <div className="splitItem">
-                <h4>{official.name} ({official.party && official.party.charAt(0)})</h4>
+                <h4>
+                  {official.name} ({official.party && official.party.charAt(0)})
+                </h4>
                 <h4>{official.office}</h4>
               </div>
             </div>
             <br></br>
 
-           
             <li>
               Address:{" "}
               {official.address &&
@@ -106,22 +100,37 @@ class Local extends Component {
             <li>
               Phone:{" "}
               {official.phones &&
-                official.phones.map((number) => <span>{number}</span>)}
+                official.phones.map((number) => (
+                  <a href={`tel:${number}`}>{number}</a>
+                ))}
             </li>
             <li>
               Website:{" "}
               <ul>
                 {official.urls &&
-                  official.urls.map((website) => <li>{website}</li>)}
+                  official.urls.map((website) => (
+                    <li>
+                      <small>
+                        <a href={website}>{website}</a>
+                      </small>
+                    </li>
+                  ))}
               </ul>
             </li>
             <li>
               Social media:{" "}
-              <ul>
+              <ul className="social-media">
                 {official.channels &&
                   official.channels.map((channel) => (
                     <li>
-                      {channel.type}: {channel.id}
+                      <SocialIcon
+                        url={
+                          "https://" +
+                          channel.type.toString().toLowerCase() +
+                          ".com/" +
+                          channel.id.toString().toLowerCase()
+                        }
+                      />
                     </li>
                   ))}
               </ul>
@@ -137,27 +146,29 @@ class Local extends Component {
   render() {
     return (
       <div>
-        <Navigation/>
+        <Navigation />
         <div className="split">
-
           {/* First Half: */}
           <div className="splitItem Smol">
             <h1 className="headerText">Find Your Representatives:</h1>
             <p className="descriptionText">
               Enter an address followed by a zipcode to learn about your
-              representatives. Discover valuable information in their profile such
-              as their beliefs and bills voted on or simply find out how to
+              representatives. Discover valuable information in their profile
+              such as their beliefs and bills voted on or simply find out how to
               contact them.
             </p>
             <br></br>
             <div className="descriptionText">
-              <input className="searchbar input"
+              <input
+                className="searchbar input"
                 type="text"
                 value={this.state.address}
                 onChange={this.handleInputChange}
                 placeholder="695 Park Ave 10065"
               />
-              <button onClick={this.handleSearchClick} className="searchbar">Search</button>
+              <button onClick={this.handleSearchClick} className="searchbar">
+                Search
+              </button>
             </div>
           </div>
 
@@ -179,15 +190,14 @@ class Local extends Component {
                   </small>
                   <br></br>
                   <br></br>
-        
+
                   <ul className="list">{this.makeList()}</ul>
                 </div>
               ) : (
-                <h4>No results</h4>
+                <p>No results found.</p>
               )}
             </div>
           </div>
-          
         </div>
       </div>
     );
