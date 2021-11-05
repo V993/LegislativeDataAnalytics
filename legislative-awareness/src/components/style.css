@@ -330,3 +330,9 @@ ul > ul {
     rgba(255, 255, 255, 1) 55%
   );
 }
+
+.proximity-dropdown-div {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
