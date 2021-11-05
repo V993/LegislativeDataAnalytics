@@ -98,6 +98,31 @@ bool unused(std::vector<std::string> v, std::string n)
   return true;
 }
 
+std::string underscoreSpaces(std::string s)
+{
+  std::string n = "";
+  bool leading = true;
+  for (int i = 0; i < s.length(); i++)
+  {
+    if (s[i] == ' ')
+    {
+      if (leading)
+      {
+      }
+      else
+      {
+        n += '_';
+      }
+    }
+    else
+    {
+      leading = false;
+      n += s[i];
+    }
+  }
+  return n;
+}
+
 int main()
 {
   // Parse input
@@ -139,7 +164,7 @@ int main()
 
   std::cout << pc.get_rep_x() << " " << pc.get_rep_y() << std::endl;
   std::vector<Proximity> prox = pc.get_proximities();
-  vp.write_file(prox,"responses/" + pc.get_rep_x() + "_" + pc.get_rep_y() + ".json");
+  vp.write_file(prox,"responses/" + underscoreSpaces(pc.get_rep_x()) + "_" + underscoreSpaces(pc.get_rep_y()) + ".json");
   for (int i = 0; i < testVoteData.size(); i++)
   {
     // Loop through all Y values
@@ -151,7 +176,7 @@ int main()
         alreadyCalculatedY.push_back(testVoteData[j].repName);
         std::cout << pc.get_rep_x() << " " << pc.get_rep_y() << std::endl;
         std::vector<Proximity> prox = pc.get_proximities();
-        vp.write_file(prox,"responses/" + pc.get_rep_x() + "_" + pc.get_rep_y() + ".json");
+        vp.write_file(prox,"responses/" + underscoreSpaces(pc.get_rep_x()) + "_" + underscoreSpaces(pc.get_rep_y()) + ".json");
       }
     }
     // Go to next valid X value

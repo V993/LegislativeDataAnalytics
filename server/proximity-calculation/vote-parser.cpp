@@ -120,10 +120,17 @@ bool VoteParser::write_file(std::vector<Proximity> prox, std::string fname)
     for (int i = 0; i < prox.size(); i++)
     {
       ofile << "\t{" << std::endl;
-      ofile << "\t\t" << '"' << "repName" << '"' << ": " << prox[i].repName << std::endl;
-      ofile << "\t\t" << '"' << "x" << '"' << ": " << prox[i].x << std::endl;
+      ofile << "\t\t" << '"' << "repName" << '"' << ": \"" << prox[i].repName << "\"," << std::endl;
+      ofile << "\t\t" << '"' << "x" << '"' << ": " << prox[i].x << "," << std::endl;
       ofile << "\t\t" << '"' << "y" << '"' << ": " << prox[i].y << std::endl;
-      ofile << "\t}" << std::endl;
+      if (i == prox.size() - 1)
+      {
+        ofile << "\t}" << std::endl;
+      }
+      else
+      {
+        ofile << "\t}," << std::endl;
+      }
     }
     ofile << "]" << std::endl;
   }
