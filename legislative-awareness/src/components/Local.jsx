@@ -3,6 +3,23 @@ import axios from "axios";
 import "./style.css";
 import { SocialIcon } from "react-social-icons";
 import Navigation from "./Navigation";
+import Button from "@mui/material/Button";
+import { styled } from '@mui/material/styles';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Typography from '@mui/material/Typography';
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  backgroundColor: "#648a64",
+  '&:hover': {
+    backgroundColor: "#1b5e20",
+  },
+  backgroundImage: "linear-gradient( rgba(138, 182, 169, 0.5), rgba(255, 255, 255, 0) )",
+  width: "16.2rem",
+  marginTop: "0.5rem"
+}));
 
 class Local extends Component {
   constructor(props) {
@@ -150,13 +167,11 @@ class Local extends Component {
         <div className="split">
           {/* First Half: */}
           <div className="splitItem Smol">
-            <h1 className="headerText">Find Your Representatives:</h1>
-            <p className="descriptionText">
-              Enter an address followed by a zipcode to learn about your
+            <h1 className="headerText">Find Your Representatives</h1>
+            <Typography variant="body1" className="descriptionText" component="div" gutterBottom>Enter an address followed by a zipcode to learn about your
               representatives. Discover valuable information in their profile
               such as their beliefs and bills voted on or simply find out how to
-              contact them.
-            </p>
+              contact them.</Typography>
             <br></br>
             <div className="descriptionText">
               <input
@@ -166,9 +181,13 @@ class Local extends Component {
                 onChange={this.handleInputChange}
                 placeholder="695 Park Ave 10065"
               />
-              <button onClick={this.handleSearchClick} className="searchbar">
-                Search
-              </button>
+              <ColorButton
+                      variant="contained"
+                      color="success"
+                      onClick={this.handleSearchClick}
+                    >
+                      Search
+                    </ColorButton>
             </div>
           </div>
 
@@ -179,7 +198,7 @@ class Local extends Component {
               {this.state.found ? (
                 <div>
                   <h1>{this.state.apiData.name}</h1>
-                  <h4>Your Representatives:</h4>
+                  <Typography variant="h6" component="div" gutterBottom>Your Representatives:</Typography>
                   <small>
                     Searched address:{" "}
                     <strong>
@@ -194,7 +213,7 @@ class Local extends Component {
                   <ul className="list">{this.makeList()}</ul>
                 </div>
               ) : (
-                <p>No results found.</p>
+                <Typography variant="body2" className="descriptionText" component="div" gutterBottom>No results found.</Typography>
               )}
             </div>
           </div>
