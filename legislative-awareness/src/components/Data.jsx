@@ -28,6 +28,7 @@ export default class Data extends React.Component {
           sidebar={<h3>Representative Info</h3>}
           open={this.state.sidebarOpen}
           onSetOpen={this.onSetSidebarOpen}
+          pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
           <button onClick={() => this.onSetSidebarOpen(true)}>
