@@ -59,11 +59,18 @@ export default class Proximity extends React.Component {
     await this.fetchData();
   };
 
+  nameToColor = (name) => {
+    if (name == "George Costanza") { return "rgba(255, 173, 255, 255)"; }
+    if (name == "Jerry Seinfeld") { return "rgba(255, 255, 247, 255)"; }
+    if (name == "Elaine Benes") { return "rgba(255, 104, 192, 255)"; }
+    if (name == "Cosmo Kramer") { return "rgba(255, 255, 0, 255)"; }
+  }
+
   parseData = () => {
     let datasets = [];
 
     this.state.apiData.map((obj) => {
-      datasets.push({label: obj.repName, data: [{ x: obj.x, y: obj.y }], backgroundColor: 'rgba(255, 99, 132, 1)'})
+      datasets.push({label: obj.repName, data: [{ x: obj.x, y: obj.y }], backgroundColor: this.nameToColor(obj.repName)})
     });
     console.log(datasets);
     this.setState({ datasets });
