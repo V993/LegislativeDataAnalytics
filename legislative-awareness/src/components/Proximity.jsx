@@ -91,14 +91,12 @@ export default class Proximity extends React.Component {
 
   handleRepX = (repx) => {
     console.log("repx changed to " + repx);
-    this.setState({ repx });
-    this.fetchData();
+    this.setState({ repx }, function() {this.fetchData();});
   };
 
   handleRepY = (repy) => {
     console.log("repy changed to " + repy);
-    this.setState({ repy });
-    this.fetchData();
+    this.setState({ repy }, function() {this.fetchData();});
   };
 
   render() {
