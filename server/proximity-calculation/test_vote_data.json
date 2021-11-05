@@ -1,0 +1,62 @@
+[
+  {
+    "matterId" : 0001,
+    "repName" : "George Constanza",
+    "vote" : "Affirmative"
+  },
+  {
+    "matterId" : 0001,
+    "repName" : "Jerry Seinfeld",
+    "vote" : "Affirmative"
+  },
+  {
+    "matterId" : 0001,
+    "repName" : "Elaine Benes",
+    "vote" : "Affirmative"
+  },
+  {
+    "matterId" : 0001,
+    "repName" : "Cosmo Kramer",
+    "vote" : "Absent"
+  },
+  {
+    "matterId" : 0002,
+    "repName" : "George Constanza",
+    "vote" : "Affirmative"
+  },
+  {
+    "matterId" : 0002,
+    "repName" : "Jerry Seinfeld",
+    "vote" : "Affirmative"
+  },
+  {
+    "matterId" : 0002,
+    "repName" : "Elaine Benes",
+    "vote" : "Absent"
+  },
+  {
+    "matterId" : 0002,
+    "repName" : "Cosmo Kramer",
+    "vote" : "Absent"
+  },
+  {
+    "matterId" : 0003,
+    "repName" : "George Constanza",
+    "vote" : "Absent"
+  },
+  {
+    "matterId" : 0003,
+    "repName" : "Jerry Seinfeld",
+    "vote" : "Absent"
+  },
+  {
+    "matterId" : 0003,
+    "repName" : "Elaine Benes",
+    "vote" : "Absent"
+  },
+  {
+    "matterId" : 0003,
+    "repName" : "Cosmo Kramer",
+    "vote" : "Affirmative"
+  }
+]
