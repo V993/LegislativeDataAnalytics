@@ -1,45 +1,49 @@
 import React from "react";
 import axios from "axios";
-import { Bar } from "react-chartjs-2";
+import { Scatter } from 'react-chartjs-2';
 import Calendar from "./Calendar";
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 const options = {
-  indexAxis: "x",
-  elements: {
-    bar: {
-      borderWidth: 2,
-    },
-  },
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "right",
-    },
-    title: {
-      display: true,
-      text: "Representatives and Number of Bills Voted On",
-    },
+  scales: {
+    yAxes: [
+      {
+        ticks: {
+          beginAtZero: true,
+        },
+      },
+    ],
   },
 };
 
+const dropOptions = [
+  'George Costanza','Jerry Seinfeld','Elaine Benes','Cosmo Kramer'
+];
+
 export default class Proximity extends React.Component {
-  API_URL = "http://206.81.7.63:5000/graph-apis/representative-bills";
+  API_URL = "http://206.81.7.63:5000/graph-apis/proximity-calculation";
   constructor(props) {
     super(props);
     this.state = {
       apiData: {},
-      reps: [],
-      votes: [],
+      datasets: [],
+      names: [],
+      x: [],
+      y: [],
       found: false,
-      startDate: null,
-      endDate: null,
+      repx: "George Costanza",
+      repy: "Jerry Seinfeld",
     };
   }
 
   fetchData = async () => {
-    const url = this.getApiUrl(this.state.startDate, this.state.endDate);
+    console.log("fetchData()");
+    const url = this.getApiUrl(this.state.repx, this.state.repy);
+    console.log(url);
     try {
       let response = await axios.get(url);
+      console.log(response);
       this.setState({ apiData: response.data, found: true });
       this.parseData();
     } catch (error) {
@@ -55,57 +59,57 @@ export default class Proximity extends React.Component {
     await this.fetchData();
   };
 
+  nameToColor = (name) => {
+    if (name == "George Costanza") { return "rgba(255, 173, 255, 255)"; }
+    if (name == "Jerry Seinfeld") { return "rgba(255, 255, 247, 255)"; }
+    if (name == "Elaine Benes") { return "rgba(255, 104, 192, 255)"; }
+    if (name == "Cosmo Kramer") { return "rgba(255, 255, 0, 255)"; }
+  }
+
   parseData = () => {
-    let reps = [],
-      votes = [];
+    let datasets = [];
 
     this.state.apiData.map((obj) => {
-      reps.push(obj.mattersponsorname);
-      votes.push(obj.numofbills);
+      datasets.push({label: obj.repName, data: [{ x: obj.x, y: obj.y }], backgroundColor: this.nameToColor(obj.repName)})
     });
-
-    this.setState({ reps, votes });
+    console.log(datasets);
+    this.setState({ datasets });
   };
 
-  getApiUrl = (start, end) => {
-    start = this.state.startDate || "2021-01-01";
-    end = this.state.endDate || new Date().toISOString().slice(0, 10);
-    if (!start && !end) {
+  getApiUrl = (repx, repy) => {
+    if (!repx && !repy) {
       return this.API_URL;
     }
-    return `${this.API_URL}?startDate=${start}&endDate=${end}`;
+    return `${this.API_URL}?repx=${repx.replace(' ','_')}&repy=${repy.replace(' ','_')}`;
   };
 
-  handleFromDate = (startDate) => {
-    this.setState({ startDate });
+  handleRepX = (repx) => {
+    console.log("repx changed to " + repx);
+    this.setState({ repx });
     this.fetchData();
   };
 
-  handleToDate = (endDate) => {
-    this.setState({ endDate });
+  handleRepY = (repy) => {
+    console.log("repy changed to " + repy);
+    this.setState({ repy });
     this.fetchData();
   };
 
   render() {
     return (
       <div>
-        <h4>Select a range of dates to preview data</h4>
-        <Calendar from={this.handleFromDate} to={this.handleToDate} />
-        <Bar
-          data={{
-            labels: this.state.reps,
-            datasets: [
-              {
-                label: "# of Bills Voted On",
-                backgroundColor: "rgba(75,192,192,1)",
-                borderColor: "rgba(0,0,0,1)",
-                borderWidth: 1,
-                data: this.state.votes,
-              },
-            ],
-          }}
-          options={options}
-        />
+        <h4>Select two representatives to preview data</h4>
+        <div>
+          <div class="proximity-dropdown-div">
+            <h4>X Axis Representative</h4>
+            <Dropdown options={dropOptions} value={dropOptions[0]} onChange={e => this.handleRepX(e.value)}/>
+          </div>
+          <div class="proximity-dropdown-div">
+            <h4>Y Axis Representative</h4>
+            <Dropdown options={dropOptions} value={dropOptions[1]} onChange={e => this.handleRepY(e.value)}/>
+          </div>
+        </div>
+        <Scatter data={this.state} options={options} />
       </div>
     );
   }
