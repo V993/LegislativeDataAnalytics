@@ -2,6 +2,11 @@ import React from "react";
 import axios from "axios";
 import { Scatter } from 'react-chartjs-2';
 import Calendar from "./Calendar";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Typography from '@mui/material/Typography';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
@@ -98,7 +103,7 @@ export default class Proximity extends React.Component {
   render() {
     return (
       <div>
-        <h4>Select two representatives to preview data</h4>
+        <Typography variant="h6" component="div" gutterBottom>Select two representatives to preview data</Typography>
         <div>
           <div class="proximity-dropdown-div">
             <h4>X Axis Representative</h4>
@@ -109,7 +114,7 @@ export default class Proximity extends React.Component {
             <Dropdown options={dropOptions} value={dropOptions[1]} onChange={e => this.handleRepY(e.value)}/>
           </div>
         </div>
-        <Scatter data={this.state} options={options} />
+        <Scatter data={this.state} options={options} />main
       </div>
     );
   }
