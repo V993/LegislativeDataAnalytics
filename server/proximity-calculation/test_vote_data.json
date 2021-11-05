@@ -20,6 +20,11 @@
     "vote" : "Absent"
   },
   {
+    "matterId" : 0001,
+    "repName" : "Newman",
+    "vote" : "Absent"
+  },
+  {
     "matterId" : 0002,
     "repName" : "George Constanza",
     "vote" : "Affirmative"
@@ -40,6 +45,11 @@
     "vote" : "Absent"
   },
   {
+    "matterId" : 0002,
+    "repName" : "Newman",
+    "vote" : "Absent"
+  },
+  {
     "matterId" : 0003,
     "repName" : "George Constanza",
     "vote" : "Absent"
@@ -58,5 +68,10 @@
     "matterId" : 0003,
     "repName" : "Cosmo Kramer",
     "vote" : "Affirmative"
+  },
+  {
+    "matterId" : 0003,
+    "repName" : "Newman",
+    "vote" : "Absent"
   }
 ]
