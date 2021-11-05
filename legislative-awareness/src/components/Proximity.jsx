@@ -65,10 +65,11 @@ export default class Proximity extends React.Component {
   };
 
   nameToColor = (name) => {
-    if (name == "George Costanza") { return "rgba(255, 173, 255, 255)"; }
-    if (name == "Jerry Seinfeld") { return "rgba(255, 255, 247, 255)"; }
-    if (name == "Elaine Benes") { return "rgba(255, 104, 192, 255)"; }
-    if (name == "Cosmo Kramer") { return "rgba(255, 255, 0, 255)"; }
+    if (name == "George Costanza") { return "rgba(255, 247, 0, 1.0)"; }
+    if (name == "Jerry Seinfeld") { return "rgba(233, 0, 255, 1.0)"; }
+    if (name == "Elaine Benes") { return "rgba(0, 204, 255, 1.0)"; }
+    if (name == "Cosmo Kramer") { return "rgba(255, 0, 0, 1.0)"; }
+    if (name == "Newman") { return "rgba(5, 255, 0, 1.0)"; }
   }
 
   parseData = () => {
