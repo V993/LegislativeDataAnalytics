@@ -40,6 +40,11 @@ header {
   padding-top: 6em !important;
 }
 
+/* Confused yet? Good */
+.textBlock.medium.small {
+  padding-top: 4.7em !important;
+}
+
 .smallBlock {
   text-align: left;
   padding-top: 2em;
@@ -256,17 +261,20 @@ button.searchbar {
 /* For the layout: */
 
 .splitItem {
-  align-content: left;
   padding: 1em;
   color: black;
 }
 
 .splitItem.Beeg {
-  max-width: 55%;
-  padding-left: 7em;
+  /* float: left; */
+  /* overflow: scroll; */
+  max-width: 96%;
+  padding-left: 40em;
 }
 
 .splitItem.Smol {
+  /* float: left; */
+  position:fixed;
   max-width: 33%;
 }
 
@@ -319,6 +327,35 @@ ul > ul {
   border: 1px solid #fdfdfd;
   margin-bottom: 1rem !important;
 }
+
+
+/* INFORMATION PAGE: */
+
+.center-header {
+  text-align: center;
+  align-content: center;
+  padding: 1em;
+  border-bottom:ridge black ;
+  /* border-radius: 10%; */
+}
+
+.thin {
+  margin: auto;
+  /* border: solid black; */
+  max-width: 70%;
+}
+
+.middle {
+  justify-content: center;
+}
+
+.centeredText {
+  text-align: center;
+  max-width:50%;
+  padding: 2em;
+  border-bottom: ridge black;
+}
+
 
 /* FOOTER: */
 
