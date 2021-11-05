@@ -186,6 +186,12 @@ header {
   /* <!-- visibility: hidden; --> */
 }
 
+.toggle-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .searchbar {
   width: 16.2rem;
   margin-top: 0.5rem;

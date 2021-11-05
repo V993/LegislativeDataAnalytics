@@ -39,7 +39,7 @@ export default class Data extends React.Component {
               <div class="col-lg-12">
                 <h1 class="font-weight-light">Legislative Data</h1>
                 <div>
-                  <Stack spacing={2} direction="row">
+                  <Stack spacing={2} direction="row" className="toggle-buttons">
                     <ColorButton
                       variant="contained"
                       color="success"
