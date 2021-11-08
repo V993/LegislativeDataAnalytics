@@ -2,6 +2,11 @@ import React from "react";
 import axios from "axios";
 import { Scatter } from 'react-chartjs-2';
 import Calendar from "./Calendar";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Typography from '@mui/material/Typography';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
@@ -60,10 +65,11 @@ export default class Proximity extends React.Component {
   };
 
   nameToColor = (name) => {
-    if (name == "George Costanza") { return "rgba(255, 173, 255, 255)"; }
-    if (name == "Jerry Seinfeld") { return "rgba(255, 255, 247, 255)"; }
-    if (name == "Elaine Benes") { return "rgba(255, 104, 192, 255)"; }
-    if (name == "Cosmo Kramer") { return "rgba(255, 255, 0, 255)"; }
+    if (name == "George Costanza") { return "rgba(255, 247, 0, 1.0)"; }
+    if (name == "Jerry Seinfeld") { return "rgba(233, 0, 255, 1.0)"; }
+    if (name == "Elaine Benes") { return "rgba(0, 204, 255, 1.0)"; }
+    if (name == "Cosmo Kramer") { return "rgba(255, 0, 0, 1.0)"; }
+    if (name == "Newman") { return "rgba(5, 255, 0, 1.0)"; }
   }
 
   parseData = () => {
@@ -85,20 +91,18 @@ export default class Proximity extends React.Component {
 
   handleRepX = (repx) => {
     console.log("repx changed to " + repx);
-    this.setState({ repx });
-    this.fetchData();
+    this.setState({ repx }, function() {this.fetchData();});
   };
 
   handleRepY = (repy) => {
     console.log("repy changed to " + repy);
-    this.setState({ repy });
-    this.fetchData();
+    this.setState({ repy }, function() {this.fetchData();});
   };
 
   render() {
     return (
       <div>
-        <h4>Select two representatives to preview data</h4>
+        <Typography variant="h6" component="div" gutterBottom>Select two representatives to preview data</Typography>
         <div>
           <div class="proximity-dropdown-div">
             <h4>X Axis Representative</h4>
@@ -109,7 +113,7 @@ export default class Proximity extends React.Component {
             <Dropdown options={dropOptions} value={dropOptions[1]} onChange={e => this.handleRepY(e.value)}/>
           </div>
         </div>
-        <Scatter data={this.state} options={options} />
+        <Scatter data={this.state} options={options} />main
       </div>
     );
   }
