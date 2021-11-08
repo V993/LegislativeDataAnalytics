@@ -6,6 +6,7 @@
 .navigation {
   border-bottom: solid black;
   border-radius: 20px;
+  position: fixed sticky;
 }
 
 /* HEADER */
@@ -147,6 +148,7 @@ header {
 
 .white {
   color: white;
+  transition-duration: 0.8s;
 }
 
 .white:hover {
@@ -156,6 +158,7 @@ header {
 
 .black {
   color: black;
+  transition-duration: 0.8s;
 }
 
 .black:hover {
@@ -267,14 +270,14 @@ button.searchbar {
 
 .splitItem.Beeg {
   /* float: left; */
-  /* overflow: scroll; */
+  overflow: scroll;
   max-width: 96%;
   padding-left: 40em;
 }
 
 .splitItem.Smol {
   /* float: left; */
-  position:fixed;
+  /* position: fixed; */
   max-width: 33%;
 }
 
