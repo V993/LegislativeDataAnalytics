@@ -1,7 +1,7 @@
 CREATE TABLE persons (
-    PersonId INT NOT NULL PRIMARY KEY,
-    PersonGuid VARCHAR(255),
-    PersonLastModifiedUtc DATE,
+	PersonId INT NOT NULL PRIMARY KEY,
+	PersonGuid VARCHAR(255),
+	PersonLastModifiedUtc DATE,
 	PersonFirstName VARCHAR(255),
 	PersonLastName VARCHAR(255),
 	PersonFullName VARCHAR(255)
