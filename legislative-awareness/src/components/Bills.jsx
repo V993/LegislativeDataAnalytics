@@ -39,7 +39,6 @@ const options = {
 };
 
 export default function Bills() {
-  const chartRef = useRef(null);
   let API_URL = "http://206.81.7.63:5000/graph-apis/representative-bills";
   const [apiData, setApidata] = useState({});
   const [reps, setReps] = useState([]);
@@ -120,21 +119,6 @@ export default function Bills() {
           ],
         }}
         options={options}
-        ref={chartRef}
-        getElementAtEvent={(i, event) => {
-          if (chartRef.current) {
-            const chart = Chart.getChart(chartRef.current);
-            const clickedElements = chart.getElementsAtEventForMode(
-              event,
-              "y",
-              { axis: "x", intersect: false },
-              true
-            );
-            if (clickedElements.length > 0) {
-              console.log(clickedElements[0]); // Here clicked label | data index
-            }
-          }
-        }}
       />
     </div>
   );
