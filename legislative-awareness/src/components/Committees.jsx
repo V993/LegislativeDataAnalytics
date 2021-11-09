@@ -25,6 +25,20 @@ const options = {
       text: "Committees and Number of Bills Voted On",
     },
   },
+  events: ['click','mousemove'],
+  onClick: (event,item) => {
+    if (item.length == 0) return // <--- If the item is canvas and not a bar, dip
+
+    var index_for_click = item[0].index
+    var data_for_click = event.chart.config._config.data.datasets[0].data[index_for_click]
+    var label_for_click = event.chart.config._config.data.labels[index_for_click]
+
+    console.log(index_for_click)
+    console.log('this is what i got for label:', data_for_click);
+    console.log('this is what i got for datasets:', label_for_click);
+
+    
+  },
 };
 
 export default class Committees extends React.Component {

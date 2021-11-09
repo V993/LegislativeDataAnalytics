@@ -255,7 +255,7 @@ header {
 
 .splitItem.Beeg {
   /* float: left; */
-  overflow: scroll;
+  /* overflow: scroll; */
   max-width: 96%;
   padding-left: 40em;
 }
