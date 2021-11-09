@@ -1,5 +1,4 @@
 import React from "react";
-import { BarChart } from "./Bar";
 import Bills from "./Bills";
 import Committees from "./Committees";
 import Proximity from "./Proximity";
@@ -8,7 +7,6 @@ import "./style.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from '@mui/material/styles';
-import { purple } from '@mui/material/colors';
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -63,9 +61,9 @@ export default class Data extends React.Component {
                     </ColorButton>
                   </Stack>
                 </div>
-                {this.state.chart == "bills" ? <Bills /> : <div />}
-                {this.state.chart == "committees" ? <Committees /> : <div />}
-                {this.state.chart == "proximity" ? <Proximity /> : <div />}
+                {this.state.chart === "bills" ? <Bills /> : <div />}
+                {this.state.chart === "committees" ? <Committees /> : <div />}
+                {this.state.chart === "proximity" ? <Proximity /> : <div />}
               </div>
             </div>
           </div>

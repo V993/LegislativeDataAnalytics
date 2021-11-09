@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Scatter } from 'react-chartjs-2';
-import Calendar from "./Calendar";
+// import Calendar from "./Calendar";
 import Typography from '@mui/material/Typography';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
@@ -18,7 +18,7 @@ const options = {
   },
   events: ['click','mousemove'],
   onClick: (event,item) => {
-    if (item.length == 0) return // <--- If the item is canvas and not a bar, dip
+    if (item.length === 0) return // <--- If the item is canvas and not a bar, dip
 
     var index_for_click = item[0].index
     var data_for_click = event.chart.config._config.data.datasets[0].data[index_for_click]
@@ -75,17 +75,17 @@ export default class Proximity extends React.Component {
   };
 
   nameToColor = (name) => {
-    if (name == "George Costanza") { return "rgba(255, 247, 0, 1.0)"; }
-    if (name == "Jerry Seinfeld") { return "rgba(233, 0, 255, 1.0)"; }
-    if (name == "Elaine Benes") { return "rgba(0, 204, 255, 1.0)"; }
-    if (name == "Cosmo Kramer") { return "rgba(255, 0, 0, 1.0)"; }
-    if (name == "Newman") { return "rgba(5, 255, 0, 1.0)"; }
+    if (name === "George Costanza") { return "rgba(255, 247, 0, 1.0)"; }
+    if (name === "Jerry Seinfeld") { return "rgba(233, 0, 255, 1.0)"; }
+    if (name === "Elaine Benes") { return "rgba(0, 204, 255, 1.0)"; }
+    if (name === "Cosmo Kramer") { return "rgba(255, 0, 0, 1.0)"; }
+    if (name === "Newman") { return "rgba(5, 255, 0, 1.0)"; }
   }
 
   parseData = () => {
     let datasets = [];
 
-    this.state.apiData.map((obj) => {
+    this.state.apiData.forEach((obj) => {
       datasets.push({label: obj.repName, data: [{ x: obj.x, y: obj.y }], backgroundColor: this.nameToColor(obj.repName)})
     });
     console.log(datasets);
