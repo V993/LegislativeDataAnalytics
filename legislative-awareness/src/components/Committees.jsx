@@ -23,7 +23,7 @@ const options = {
   },
   events: ['click','mousemove'],
   onClick: (event,item) => {
-    if (item.length == 0) return // <--- If the item is canvas and not a bar, dip
+    if (item.length === 0) return // <--- If the item is canvas and not a bar, dip
 
     var index_for_click = item[0].index
     var data_for_click = event.chart.config._config.data.datasets[0].data[index_for_click]
@@ -74,7 +74,7 @@ export default class Committees extends React.Component {
     let committees = [],
       votes = [];
 
-    this.state.apiData.map((obj) => {
+    this.state.apiData.forEach((obj) => {
       committees.push(obj.matterbodyname);
       votes.push(obj.numofbills);
     });

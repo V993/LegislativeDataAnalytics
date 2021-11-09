@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Bar } from "react-chartjs-2";
-import { Chart } from "chart.js";
 import Calendar from "./Calendar";
 import Typography from "@mui/material/Typography";
 
@@ -24,7 +23,7 @@ const options = {
   },
   events: ['click','mousemove'],
   onClick: (event,item) => {
-    if (item.length == 0) return // <--- If the item is canvas and not a bar, dip
+    if (item.length === 0) return // <--- If the item is canvas and not a bar, dip
 
     var index_for_click = item[0].index
     var data_for_click = event.chart.config._config.data.datasets[0].data[index_for_click]
@@ -47,8 +46,12 @@ export default function Bills() {
   const [startDate, setStart] = useState(null);
   const [endDate, setEnd] = useState(null);
 
-  useEffect(async () => {
-    await fetchData();
+  useEffect(() => {
+    async function getData() {
+      const response = await fetchData();
+      console.log(response);
+    }
+    getData();
   });
 
   const getApiUrl = (start, end) => {
@@ -80,7 +83,7 @@ export default function Bills() {
     let reps = [],
       votes = [];
 
-    apiData.map((obj) => {
+    apiData.forEach((obj) => {
       reps.push(obj.mattersponsorname);
       votes.push(obj.numofbills);
     });
