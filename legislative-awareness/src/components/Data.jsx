@@ -7,14 +7,15 @@ import Sidebar from "react-sidebar";
 import "./style.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
-  '&:hover': {
+  "&:hover": {
     backgroundColor: "#1b5e20",
   },
-  backgroundImage: "linear-gradient( rgba(138, 182, 169, 0.5), rgba(255, 255, 255, 0) )"
+  backgroundImage:
+    "linear-gradient( rgba(138, 182, 169, 0.5), rgba(255, 255, 255, 0) )",
 }));
 
 export default class Data extends React.Component {
@@ -48,10 +49,10 @@ export default class Data extends React.Component {
           </button>
         </Sidebar>
         <div className="data">
-          <div class="container">
-            <div class="row align-items-center my-5">
-              <div class="col-lg-12">
-                <h1 class="font-weight-light">Legislative Data</h1>
+          <div className="container">
+            <div className="row align-items-center my-5">
+              <div className="col-lg-12">
+                <h1 className="font-weight-light">Legislative Data</h1>
                 <div>
                   <Stack spacing={2} direction="row" className="toggle-buttons">
                     <ColorButton
