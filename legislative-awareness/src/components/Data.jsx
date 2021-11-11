@@ -3,6 +3,7 @@ import Bills from "./Bills";
 import Committees from "./Committees";
 import Proximity from "./Proximity";
 import Navigation from "./Navigation";
+import Sidebar from "react-sidebar";
 import "./style.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -21,16 +22,31 @@ export default class Data extends React.Component {
     super(props);
     this.state = {
       chart: "bills",
+      sidebarOpen: false,
     };
     this.showBills = (e) => this.setState({ chart: "bills" });
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
+
+  onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
   render() {
     return (
       <>
         <Navigation />
+        <Sidebar
+          sidebar={<h3>Representative Info</h3>}
+          open={this.state.sidebarOpen}
+          onSetOpen={this.onSetSidebarOpen}
+          pullRight={true}
+          styles={{ sidebar: { background: "white", padding: "1rem" } }}
+        >
+          <button onClick={() => this.onSetSidebarOpen(true)}>
+            Open sidebar
+          </button>
+        </Sidebar>
         <div className="data">
           <div class="container">
             <div class="row align-items-center my-5">
