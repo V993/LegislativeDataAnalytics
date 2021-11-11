@@ -1,20 +1,9 @@
 import "./App.css";
-import icon from "./icon.jpg";
 
-import React, { Component } from "react"
+import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-import { Navigation, Footer, Home, Local, Data, Information } from "./components";
-
-import { useHistory } from 'react-router-dom';
-
-const HomeComponent = () => {
-    const history = useHistory()
-  
-    const handleClick = () => {
-      history.push("/")
-    }
-}
+import { Footer, Home, Local, Data, Information } from "./components";
 
 function App() {
     return (

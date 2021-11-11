@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import Header from './Header'
@@ -41,13 +40,3 @@ function Home() {
 }
 
 export default Home;
-
-{/* <div className="row">
-<div className="cell normal">box1</div>
-<div className="cell normal">box2</div>
-</div>
-<div className="row">
-<div className="cell normal">box3</div>
-<div className="cell normal">box4</div>
-</div>
-</div> */}

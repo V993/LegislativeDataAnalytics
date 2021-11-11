@@ -1,60 +1,55 @@
 import React from "react"
-import {Link, withRouter } from "react-router-dom";
+// import {Link, withRouter } from "react-router-dom";
 import { Navigation } from ".";
 
 function Information() {
     return (
-        <div className="information">
+		<div>
 			<Navigation/>
-            <div class="container">
-                <div class="row align-items-center my-5">
-                        <h1 class="font-weight-light">
-                            Welcome to the Information Page!
-                        </h1>
-
-				<p class="row align-items-left my-4"> 			
-					This product aims to make educating oneself about the goings-on in 	
-					government a click away! Whether that involves 
-					knowing who your representatives are, or what your government is
-					up to. 
-				</p>
+			<div className="thin">
+				<h1 className="center-header">
+					The New York State Government
+				</h1>
+				<div className="">
+					<div className="split">
+						<h2 className="textBlock">
+							Transparency through Centralized Information
+						</h2>
+						<p className="textBlock medium small"> 			
+							Below you'll find basic information about how our government functions
+							here in New York State. As complicated as it may be, learning about 
+							how representation works and what you can do to participate in 
+							our government is essential to preserving our democracy and the voice
+							we all should have in our laws and governance. 
+						</p>
+					</div>	
+					<div className="middle">
+						<p className="centeredText"> 
+							As a representative democracy, the U.S. is relatively transparent
+							with its legislative decision-making but this data is massive and 
+							difficult to understand without a good amount of time for research. 
+							That is where we come in.
+						</p>
+					</div>
+					<h2 className="middle"> 
+						Elected Officers & Appointed Officials
+					</h2>
 					
-				<h2 class="font-weight-light">
-						Transparency through Centralized Information
-				</h2>
-
-				<p class="row align-items-left my-3"> 
-					As a representative democracy, the U.S. is relatively transparent
-					with its legislative decision-making but this data is massive and 
-					difficult to understand without a good amount of time for research. 
-					That is where we come in!
-				</p>
-		
-				<h2 class="font-weight-light">
-					Our Motivation for the Page!
-				</h2>
-
-				<p class="row align-items-left my-4">
-					After speaking with lobbyist for city hall about the complexity of 
-					all this readily-available data, we decided that the best way to represent 
-					it all is through data manipulation and analytics! 
-				</p>
-				
-				<h2 class="font-weight-light"> 
-					Elected Officers & Appointed Officials
-				</h2>
-				
-				<p class="row align-items-left my-4">
-					Surprisingly, not many people living in New York know that their are only four 
-					statewide goverment officers who are directly elected:
-				</p>
+					<p className="middle">
+						Surprisingly, not many people living in New York know that their are only four 
+						statewide goverment officers who are directly elected:
+					</p>
 					<li> <span> The Governor, who heads the Executive Department, and Lieutenant Governor (who are elected on a joint ballot). </span> </li>
 					<li> <span> The State Comptroller, who heads the Department of Audit and Control. </span> </li> 
-					<li> <span> The Attorney General, who heads the Department of Law. </span> </li>
-			</div>		
+					<li> <span> The Attorney General, who heads the Department of Law. </span> </li>	
+
+					<h2 className="middle">More information to come.</h2> 
+				</div>
+			</div>
+			<br></br>
+			<br></br>
+			<br></br>
 		</div>
-	</div>
-		
     )
 }
 

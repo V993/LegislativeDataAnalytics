@@ -32,6 +32,15 @@ export const BarChart = ({ chartData }) => {
       <Bar
         data={state}
         options={{
+          animations: {
+            tension: {
+              duration: 1000,
+              easing: 'linear',
+              from: 1,
+              to: 0,
+              loop: true,
+            }
+          },
           title: {
             display: true,
             text: "Title Goes Here",

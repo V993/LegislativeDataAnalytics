@@ -3,6 +3,24 @@ import axios from "axios";
 import "./style.css";
 import { SocialIcon } from "react-social-icons";
 import Navigation from "./Navigation";
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import Typography from "@mui/material/Typography";
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  backgroundColor: "#648a64",
+  "&:hover": {
+    backgroundColor: "#1b5e20",
+  },
+  backgroundImage:
+    "linear-gradient( rgba(138, 182, 169, 0.5), rgba(255, 255, 255, 0) )",
+  width: "16.2rem",
+  marginTop: "0.5rem",
+}));
 
 class Local extends Component {
   constructor(props) {
@@ -79,62 +97,63 @@ class Local extends Component {
                 }
               />
               <div className="splitItem">
-                <h4>
+                <Typography variant="h4" component="div" gutterBottom>
                   {official.name} ({official.party && official.party.charAt(0)})
-                </h4>
-                <h4>{official.office}</h4>
+                  <Typography variant="h5" component="div" gutterBottom>
+                    {official.office}
+                  </Typography>
+                </Typography>
               </div>
             </div>
             <br></br>
-
-            <li>
-              Address:{" "}
-              {official.address &&
-                official.address.map((address) => (
-                  <span>
-                    {address.line1}, {address.city}, {address.state}{" "}
-                    {address.zip}
-                  </span>
-                ))}
-            </li>
-            <li>
-              Phone:{" "}
-              {official.phones &&
-                official.phones.map((number) => (
-                  <a href={`tel:${number}`}>{number}</a>
-                ))}
-            </li>
-            <li>
-              Website:{" "}
-              <ul>
-                {official.urls &&
-                  official.urls.map((website) => (
-                    <li>
-                      <small>
+            <Typography variant="body1" component="div" gutterBottom>
+              <li>
+                Address:{" "}
+                {official.address &&
+                  official.address.map((address) => (
+                    <span>
+                      {address.line1}, {address.city}, {address.state}{" "}
+                      {address.zip}
+                    </span>
+                  ))}
+              </li>
+              <li>
+                Phone:{" "}
+                {official.phones &&
+                  official.phones.map((number) => (
+                    <a href={`tel:${number}`}>{number}</a>
+                  ))}
+              </li>
+              <li>
+                Website:{" "}
+                <ul>
+                  {official.urls &&
+                    official.urls.map((website) => (
+                      <li>
                         <a href={website}>{website}</a>
-                      </small>
-                    </li>
-                  ))}
-              </ul>
-            </li>
-            <li>
-              Social media:{" "}
-              <ul className="social-media">
-                {official.channels &&
-                  official.channels.map((channel) => (
-                    <li>
-                      <SocialIcon
-                        url={
-                          "https://" +
-                          channel.type.toString().toLowerCase() +
-                          ".com/" +
-                          channel.id.toString().toLowerCase()
-                        }
-                      />
-                    </li>
-                  ))}
-              </ul>
-            </li>
+                      </li>
+                    ))}
+                </ul>
+              </li>
+              <li>
+                Social media:{" "}
+                <ul className="social-media">
+                  {official.channels &&
+                    official.channels.map((channel) => (
+                      <li>
+                        <SocialIcon
+                          url={
+                            "https://" +
+                            channel.type.toString().toLowerCase() +
+                            ".com/" +
+                            channel.id.toString().toLowerCase()
+                          }
+                        />
+                      </li>
+                    ))}
+                </ul>
+              </li>
+            </Typography>
           </ul>
           <br></br>
         </div>
@@ -148,15 +167,22 @@ class Local extends Component {
       <div>
         <Navigation />
         <div className="split">
+
           {/* First Half: */}
+          
           <div className="splitItem Smol">
-            <h1 className="headerText">Find Your Representatives:</h1>
-            <p className="descriptionText">
+            <h1 className="headerText">Find Your Representatives</h1>
+            <Typography
+              variant="body1"
+              className="descriptionText"
+              component="div"
+              gutterBottom
+            >
               Enter an address followed by a zipcode to learn about your
               representatives. Discover valuable information in their profile
               such as their beliefs and bills voted on or simply find out how to
               contact them.
-            </p>
+            </Typography>
             <br></br>
             <div className="descriptionText">
               <input
@@ -166,9 +192,13 @@ class Local extends Component {
                 onChange={this.handleInputChange}
                 placeholder="695 Park Ave 10065"
               />
-              <button onClick={this.handleSearchClick} className="searchbar">
+              <ColorButton
+                variant="contained"
+                color="success"
+                onClick={this.handleSearchClick}
+              >
                 Search
-              </button>
+              </ColorButton>
             </div>
           </div>
 
@@ -179,22 +209,32 @@ class Local extends Component {
               {this.state.found ? (
                 <div>
                   <h1>{this.state.apiData.name}</h1>
-                  <h4>Your Representatives:</h4>
-                  <small>
+                  <Typography variant="h6" component="div" gutterBottom>
+                    Your Representatives:
+                  </Typography>
+                  <Typography variant="body2" component="div" gutterBottom>
                     Searched address:{" "}
                     <strong>
                       {this.state.apiData.normalizedInput.line1},{" "}
                       {this.state.apiData.normalizedInput.city},{" "}
                       {this.state.apiData.normalizedInput.state}
                     </strong>
-                  </small>
+                    .
+                  </Typography>
                   <br></br>
                   <br></br>
 
                   <ul className="list">{this.makeList()}</ul>
                 </div>
               ) : (
-                <p>No results found.</p>
+                <Typography
+                  variant="body2"
+                  className="descriptionText"
+                  component="div"
+                  gutterBottom
+                >
+                  No results found.
+                </Typography>
               )}
             </div>
           </div>

@@ -3,6 +3,7 @@ const cors = require('cors');
 const express = require("express");
 const pool = require("./db")
 const app = express();
+const fs = require('fs');
 
 const PORT = process.env.PORT || 5000;
 
@@ -78,10 +79,13 @@ app.get("/graph-apis/activeness-by-month", async function(req, res) {
 });
 
 app.get("/graph-apis/proximity-calculation", async function(req, res) {
+    const repx = req.query.repx.replace(' ','_');
+    const repy = req.query.repy.replace(' ','_');
     try {
-        const votes = await pool.query("SELECT VoteId, VotePersonName, VoteValueName, VoteEventItemId FROM votes")
-        let data = JSON.stringify(votes.rows);
-        fs.writeFileSync('result.json', data);
+        fname = "./proximity-calculation/responses/" + repx + "_" + repy + ".json";
+        data = fs.readFileSync('proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
+        console.log(data);
+        res.json(JSON.parse(data));
     } catch (error) {
         console.error(error.message)
     }
