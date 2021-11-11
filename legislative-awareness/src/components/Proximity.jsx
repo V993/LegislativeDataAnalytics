@@ -114,11 +114,11 @@ export default class Proximity extends React.Component {
       <div>
         <Typography variant="h6" component="div" gutterBottom>Select two representatives to preview data</Typography>
         <div>
-          <div class="proximity-dropdown-div">
+          <div className="proximity-dropdown-div">
             <h4>X Axis Representative</h4>
             <Dropdown options={dropOptions} value={dropOptions[0]} onChange={e => this.handleRepX(e.value)}/>
           </div>
-          <div class="proximity-dropdown-div">
+          <div className="proximity-dropdown-div">
             <h4>Y Axis Representative</h4>
             <Dropdown options={dropOptions} value={dropOptions[1]} onChange={e => this.handleRepY(e.value)}/>
           </div>
