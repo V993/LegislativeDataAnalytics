@@ -49,10 +49,10 @@ export default class Data extends React.Component {
           <Navigation />
 
           <div className="data">
-            <div class="container">
-              <div class="row align-items-center my-5">
-                <div class="col-lg-12">
-                  <h1 class="font-weight-light">Legislative Data</h1>
+            <div className="container">
+              <div className="row align-items-center my-5">
+                <div className="col-lg-12">
+                  <h1 className="font-weight-light">Legislative Data</h1>
                   <div>
                     <Stack
                       spacing={2}
