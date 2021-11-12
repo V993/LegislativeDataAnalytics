@@ -1,9 +1,8 @@
 import React from "react";
 import "./style.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import Header from './Header'
-
+import Header from "./Header";
 
 function Home() {
   return (
@@ -25,9 +24,9 @@ function Home() {
         <div className="cell beegboi information">
           <Link to="/information" className="link">
             <h1 className="white">Government Information</h1>
-          </Link> 
+          </Link>
         </div>
-        <div className="cell normal about" >
+        <div className="cell normal about">
           <Link to="/about" className="link">
             <h1 className="black">About</h1>
           </Link>

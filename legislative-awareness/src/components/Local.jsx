@@ -167,9 +167,8 @@ class Local extends Component {
       <div>
         <Navigation />
         <div className="split">
-
           {/* First Half: */}
-          
+
           <div className="splitItem Smol">
             <h1 className="headerText">Find Your Representatives</h1>
             <Typography
