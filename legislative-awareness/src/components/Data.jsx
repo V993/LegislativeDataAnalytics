@@ -33,6 +33,10 @@ export default class Data extends React.Component {
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
+  handleData = (data) => {
+    console.log(`from data page: ${data}`);
+  };
+
   render() {
     return (
       <>
@@ -82,7 +86,11 @@ export default class Data extends React.Component {
                       </ColorButton>
                     </Stack>
                   </div>
-                  {this.state.chart === "bills" ? <Bills /> : <div />}
+                  {this.state.chart === "bills" ? (
+                    <Bills clickedLabel={this.handleData} />
+                  ) : (
+                    <div />
+                  )}
                   {this.state.chart === "committees" ? <Committees /> : <div />}
                   {this.state.chart === "proximity" ? <Proximity /> : <div />}
                 </div>
