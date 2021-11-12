@@ -200,7 +200,6 @@ header {
   margin-top: 0.5rem;
 }
 
-
 .searchbar.input {
   transform: scale(1);
   transition: 0.2s;
@@ -316,14 +315,13 @@ ul > ul {
   margin-bottom: 1rem !important;
 }
 
-
 /* INFORMATION PAGE: */
 
 .center-header {
   text-align: center;
   align-content: center;
   padding: 1em;
-  border-bottom:ridge black ;
+  border-bottom: ridge black;
   /* border-radius: 10%; */
 }
 
@@ -339,11 +337,10 @@ ul > ul {
 
 .centeredText {
   text-align: center;
-  max-width:50%;
+  max-width: 50%;
   padding: 2em;
   border-bottom: ridge black;
 }
-
 
 /* FOOTER: */
 

@@ -10,7 +10,6 @@ function Navigation(props) {
             <h3>Legislative Awareness</h3>
           </Link>
 
-
           {/* Code taken from technomoro*/}
           <div>
             <ul className="navbar-nav ml-auto">
@@ -18,10 +17,7 @@ function Navigation(props) {
                 className={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
-
               >
-         
-
                 <Link className="nav-link" to="/local-info">
                   Local
                 </Link>
