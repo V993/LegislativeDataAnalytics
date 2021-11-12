@@ -30,20 +30,21 @@ export default class Data extends React.Component {
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+    this.handleData = this.handleData.bind(this);
   }
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
   handleData = (data) => {
-    this.setState({label: data, sidebarOpen: true})
+    this.setState({ label: data, sidebarOpen: true });
   };
 
   render() {
     const sidebarContent = (
-      <div >
+      <div>
         <h3>Representative Information</h3>
         <p>{this.state.label}</p>
-      </div>   
+      </div>
     );
     return (
       <>
