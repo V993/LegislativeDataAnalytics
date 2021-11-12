@@ -24,6 +24,7 @@ export default class Data extends React.Component {
     this.state = {
       chart: "bills",
       sidebarOpen: false,
+      label: "",
     };
     this.showBills = (e) => this.setState({ chart: "bills" });
     this.showCommittees = (e) => this.setState({ chart: "committees" });
@@ -34,14 +35,20 @@ export default class Data extends React.Component {
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
   handleData = (data) => {
-    console.log(`from data page: ${data}`);
+    this.setState({label: data, sidebarOpen: true})
   };
 
   render() {
+    const sidebarContent = (
+      <div >
+        <h3>Representative Information</h3>
+        <p>{this.state.label}</p>
+      </div>   
+    );
     return (
       <>
         <Sidebar
-          sidebar={<h3>Representative Info</h3>}
+          sidebar={sidebarContent}
           open={this.state.sidebarOpen}
           onSetOpen={this.onSetSidebarOpen}
           pullRight={true}
