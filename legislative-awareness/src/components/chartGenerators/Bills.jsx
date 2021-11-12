@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Bar } from "react-chartjs-2";
 import Calendar from "./Calendar";
-import Typography from '@mui/material/Typography';
+import Typography from "@mui/material/Typography";
 
 const options = {
   indexAxis: "x",
@@ -18,32 +18,32 @@ const options = {
     },
     title: {
       display: true,
-      text: "Committees and Number of Bills Voted On",
+      text: "Representatives and Number of Bills Put Forward",
     },
   },
-  events: ['click','mousemove'],
-  onClick: (event,item) => {
-    if (item.length === 0) return // <--- If the item is canvas and not a bar, dip
+  events: ["click", "mousemove"],
+  onClick: (event, item) => {
+    if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
 
-    var index_for_click = item[0].index
-    var data_for_click = event.chart.config._config.data.datasets[0].data[index_for_click]
-    var label_for_click = event.chart.config._config.data.labels[index_for_click]
+    var index_for_click = item[0].index;
+    var data_for_click =
+      event.chart.config._config.data.datasets[0].data[index_for_click];
+    var label_for_click =
+      event.chart.config._config.data.labels[index_for_click];
 
-    console.log(index_for_click)
-    console.log('this is what i got for label:', data_for_click);
-    console.log('this is what i got for datasets:', label_for_click);
-
-    
+    console.log(index_for_click);
+    console.log("this is what i got for label:", label_for_click);
+    console.log("this is what i got for datasets:", data_for_click);
   },
 };
 
-export default class Committees extends React.Component {
-  API_URL = "http://206.81.7.63:5000/graph-apis/committee-bills";
+export default class Bills extends React.Component {
+  API_URL = "http://206.81.7.63:5000/graph-apis/representative-bills";
   constructor(props) {
     super(props);
     this.state = {
       apiData: {},
-      committees: [],
+      reps: [],
       votes: [],
       found: false,
       startDate: null,
@@ -51,35 +51,8 @@ export default class Committees extends React.Component {
     };
   }
 
-  fetchData = async () => {
-    const url = this.getApiUrl(this.state.startDate, this.state.endDate);
-    try {
-      let response = await axios.get(url);
-      this.setState({ apiData: response.data, found: true });
-      this.parseData();
-    } catch (error) {
-      if (error.response) {
-        this.setState({ found: false });
-        console.error(`Error: Not Found - ${error.response.data}`); // Not Found
-        console.error(`Error: ${error.response.status}`); // 404
-      }
-    }
-  };
-
   componentDidMount = async () => {
     await this.fetchData();
-  };
-
-  parseData = () => {
-    let committees = [],
-      votes = [];
-
-    this.state.apiData.forEach((obj) => {
-      committees.push(obj.matterbodyname);
-      votes.push(obj.numofbills);
-    });
-
-    this.setState({ committees, votes });
   };
 
   getApiUrl = (start, end) => {
@@ -89,6 +62,33 @@ export default class Committees extends React.Component {
       return this.API_URL;
     }
     return `${this.API_URL}?startDate=${start}&endDate=${end}`;
+  };
+
+  fetchData = async () => {
+    const url = this.getApiUrl(this.state.startDate, this.state.endDate);
+    try {
+      let response = await axios.get(url);
+      this.setState({ apiData: response.data, found: true });
+      this.handleData();
+    } catch (error) {
+      if (error.response) {
+        this.setState({ found: false });
+        console.error(`Error: Not Found - ${error.response.data}`); // Not Found
+        console.error(`Error: ${error.response.status}`); // 404
+      }
+    }
+  };
+
+  handleData = () => {
+    let reps = [],
+      votes = [];
+
+    this.state.apiData.forEach((obj) => {
+      reps.push(obj.mattersponsorname);
+      votes.push(obj.numofbills);
+    });
+
+    this.setState({ reps, votes });
   };
 
   handleFromDate = (startDate) => {
@@ -104,15 +104,17 @@ export default class Committees extends React.Component {
   render() {
     return (
       <div>
-        <Typography variant="h6" component="div" gutterBottom>Select a range of dates to preview data</Typography>
+        <Typography variant="h6" component="div" gutterBottom>
+          Select a range of dates to preview data
+        </Typography>
         <Calendar from={this.handleFromDate} to={this.handleToDate} />
         <Bar
           data={{
-            labels: this.state.committees,
+            labels: this.state.reps,
             datasets: [
               {
                 label: "# of Bills Voted On",
-                backgroundColor: "rgba(75,192,192,1)",
+                backgroundColor: "rgba(138, 182, 169, 0.5)",
                 borderColor: "rgba(0,0,0,1)",
                 borderWidth: 1,
                 data: this.state.votes,

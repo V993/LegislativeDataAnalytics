@@ -25,8 +25,8 @@ const options = {
     var label_for_click = event.chart.config._config.data.labels[index_for_click]
 
     console.log(index_for_click)
-    console.log('this is what i got for label:', data_for_click);
-    console.log('this is what i got for datasets:', label_for_click);
+    console.log("this is what i got for label:", label_for_click);
+    console.log("this is what i got for datasets:", data_for_click);
 
     
   },

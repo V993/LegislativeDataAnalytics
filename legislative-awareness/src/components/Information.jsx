@@ -1,8 +1,10 @@
 import React from "react"
 // import {Link, withRouter } from "react-router-dom";
-import { Navigation } from ".";
+import Navigation from "./Navigation";
+
 
 function Information() {
+
     return (
 		<div>
 			<Navigation/>

@@ -1,9 +1,9 @@
 import React from "react";
-import Bills from "./Bills";
-import Committees from "./Committees";
-import Proximity from "./Proximity";
+import Bills from "./chartGenerators/Bills";
+import Committees from "./chartGenerators/Committees";
+import Proximity from "./chartGenerators/Proximity";
 import Navigation from "./Navigation";
-import "./style.css";
+// import "./style.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from '@mui/material/styles';

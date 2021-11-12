@@ -18,10 +18,7 @@ function Navigation(props) {
                 class={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
-
               >
-         
-
                 <Link class="nav-link" to="/local-info">
                   Local
                 </Link>
@@ -44,6 +41,15 @@ function Navigation(props) {
                   Information
                 </Link>
               </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/about" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -52,4 +58,6 @@ function Navigation(props) {
   );
 }
 
-export default withRouter(Navigation);
+var NavigationBar = withRouter(Navigation)
+
+export default NavigationBar;
