@@ -91,6 +91,16 @@ app.get("/graph-apis/proximity-calculation", async function(req, res) {
     }
 });
 
+//returns a single object with council member given their name
+app.get("/info-apis/council-member-info", async function(req, res) {
+    const name = req.query.name;
+    try {
+        const councilMemberInfo = await pool.query("SELECT * FROM councilmembers WHERE Name = $1", [name]);
+        res.json(councilMemberInfo.rows[0]);
+    } catch (error) {
+        console.error(error.message)
+    }
+});
 
 app.listen(PORT, function() {
     console.log(`Server is running on port ${PORT}`);
