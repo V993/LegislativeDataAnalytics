@@ -8,6 +8,7 @@ import "./style.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
+import axios from "axios";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -25,6 +26,7 @@ export default class Data extends React.Component {
       chart: "bills",
       sidebarOpen: false,
       label: "",
+      member: {},
     };
     this.showBills = (e) => this.setState({ chart: "bills" });
     this.showCommittees = (e) => this.setState({ chart: "committees" });
@@ -35,15 +37,35 @@ export default class Data extends React.Component {
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
-  handleData = (data) => {
-    this.setState({ label: data, sidebarOpen: true });
+  handleData = async (query) => {
+    let url =
+      "http://localhost:5000/info-apis/council-member-info?name=" + query;
+
+    try {
+      let response = await axios.get(url);
+      this.setState({ member: response.data, label: query, sidebarOpen: true });
+      console.log(typeof this.state.member);
+    } catch (error) {
+      console.error(`Error: ${error}`);
+    }
   };
 
   render() {
     const sidebarContent = (
       <div>
-        <h3>Representative Information</h3>
-        <p>{this.state.label}</p>
+        <h2>Representative Information</h2>
+        {this.state.member === "" ? (
+          "Empty string"
+        ) : (
+          <>
+            <h4>{this.state.member.name}</h4>
+            <small>
+              <p>{this.state.member.politicalparty}</p>
+              <p>District {this.state.member.district}</p>
+              <p>{this.state.member.borough}</p>
+            </small>
+          </>
+        )}
       </div>
     );
     return (
