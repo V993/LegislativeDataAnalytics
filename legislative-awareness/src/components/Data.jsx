@@ -45,7 +45,10 @@ export default class Data extends React.Component {
       let response = await axios.get(url);
       this.setState({ member: response.data, label: query, sidebarOpen: true });
     } catch (error) {
-      console.error(`Error: ${error}`);
+      if (error.response) {
+        console.error(`Error: Not Found - ${error.response.data}`);
+        console.error(`Error: ${error.response.status}`); 
+      }
     }
   };
 
@@ -54,7 +57,7 @@ export default class Data extends React.Component {
       <div>
         <h2>Representative Information</h2>
         {this.state.member === "" ? (
-          "Empty string"
+          <p>No results for "{this.state.label}"</p>
         ) : (
           <>
             <h4>{this.state.member.name}</h4>
