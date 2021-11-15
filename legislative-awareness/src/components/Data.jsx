@@ -44,7 +44,6 @@ export default class Data extends React.Component {
     try {
       let response = await axios.get(url);
       this.setState({ member: response.data, label: query, sidebarOpen: true });
-      console.log(typeof this.state.member);
     } catch (error) {
       console.error(`Error: ${error}`);
     }
