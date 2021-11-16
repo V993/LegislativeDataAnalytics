@@ -110,14 +110,14 @@ export default class Bills extends React.Component {
               if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
 
               var idx = item[0].index;
-              var value =
-                event.chart.config._config.data.datasets[0].data[
-                  idx
-                ];
+              // var value =
+              //   event.chart.config._config.data.datasets[0].data[
+              //     idx
+              //   ];
               var label =
                 event.chart.config._config.data.labels[idx];
 
-              console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
+              // console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
               this.props.clickedLabel(label);
             },
           }}
