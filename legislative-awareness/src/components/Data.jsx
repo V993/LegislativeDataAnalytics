@@ -79,9 +79,6 @@ export default class Data extends React.Component {
           pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
-          <button onClick={() => this.onSetSidebarOpen(true)}>
-            Open sidebar
-          </button>
           <Navigation />
 
           <div className="data">
