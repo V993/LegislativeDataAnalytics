@@ -39,7 +39,7 @@ export default class Data extends React.Component {
 
   handleData = async (query) => {
     let url =
-      "http://localhost:5000/info-apis/council-member-info?name=" + query;
+      "http://206.81.7.63:5000/info-apis/council-member-info?name=" + query;
 
     try {
       let response = await axios.get(url);
