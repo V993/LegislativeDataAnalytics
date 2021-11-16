@@ -2,7 +2,7 @@ import React from "react";
 import { BarChart } from "./Bar";
 import Bills from "./Bills";
 import Committees from "./Committees";
-import Proximity from "./Proximity"
+import Proximity from "./Proximity";
 
 export default class DataNavigation extends React.Component {
   constructor(props) {
@@ -20,15 +20,9 @@ export default class DataNavigation extends React.Component {
   render() {
     return (
       <div>
-        <button>
-          Bills Sponsored by a Representative
-        </button>
-        <button>
-          Bills Considered by a Committee
-        </button>
-        <button>
-          Voting Proximity Between Representatives
-        </button>
+        <button>Bills Sponsored by a Representative</button>
+        <button>Bills Considered by a Committee</button>
+        <button>Voting Proximity Between Representatives</button>
       </div>
     );
   }
