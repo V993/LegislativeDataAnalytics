@@ -85,7 +85,7 @@ app.get("/graph-apis/proximity-calculation", async function(req, res) {
         fname = "./proximity-calculation/responses/" + repx + "_" + repy + ".json";
         data = fs.readFileSync('proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
         console.log(data);
-        res.json(JSON.parse(data));
+        res.json(data);
     } catch (error) {
         console.error(error.message)
     }
