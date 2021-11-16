@@ -47,7 +47,7 @@ export default class Data extends React.Component {
     } catch (error) {
       if (error.response) {
         console.error(`Error: Not Found - ${error.response.data}`);
-        console.error(`Error: ${error.response.status}`); 
+        console.error(`Error: ${error.response.status}`);
       }
     }
   };
@@ -60,8 +60,8 @@ export default class Data extends React.Component {
           <p>No results for "{this.state.label}"</p>
         ) : (
           <div className="rep-info">
-            <h4>{this.state.member.name}</h4>
-            <small>
+            <h4 className="rep-name">{this.state.member.name}</h4>
+            <small className="rep-details">
               <p>{this.state.member.politicalparty}</p>
               <p>District {this.state.member.district}</p>
               <p>{this.state.member.borough}</p>
