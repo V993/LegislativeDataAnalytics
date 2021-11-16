@@ -2,7 +2,7 @@ import React from "react";
 import Bills from "./chartGenerators/Bills";
 import Committees from "./chartGenerators/Committees";
 import Proximity from "./chartGenerators/Proximity";
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 import Sidebar from "react-sidebar";
 import "./style.css";
 import Stack from "@mui/material/Stack";
@@ -46,7 +46,7 @@ export default class Data extends React.Component {
           <button onClick={() => this.onSetSidebarOpen(true)}>
             Open sidebar
           </button>
-          <Navigation />
+          {/* <Navigation /> */}
 
           <div className="data">
             <div className="container">
