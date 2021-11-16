@@ -169,13 +169,13 @@ header {
 .link {
   color: black;
   text-decoration: none;
-  transform:scale(1);
+  transform: scale(1);
   transition-duration: 0.6s;
 }
 
 .link:hover {
   color: dodgerblue;
-  transform:scale(1.01);
+  transform: scale(1.01);
   transition-duration: 0.6s;
 }
 
@@ -207,7 +207,6 @@ header {
   width: 16.2rem;
   margin-top: 0.5rem;
 }
-
 
 .searchbar.input {
   transform: scale(1);
@@ -329,14 +328,13 @@ ul > ul {
   margin-bottom: 1rem !important;
 }
 
-
 /* INFORMATION PAGE: */
 
 .center-header {
   text-align: center;
   align-content: center;
   padding: 1em;
-  border-bottom:ridge black ;
+  border-bottom: ridge black;
   /* border-radius: 10%; */
 }
 
@@ -352,13 +350,12 @@ ul > ul {
 
 .centeredText {
   text-align: center;
-  max-width:50%;
+  max-width: 50%;
   padding: 2em;
   border-bottom: ridge black;
 }
 
-
-/* FOOTER: */
+/* FOOTER PAGE */
 
 /* needs work */
 .foot {
@@ -375,6 +372,23 @@ ul > ul {
   padding: 20px;
 }
 
+/* DATA PAGE */
+.rep-title {
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.rep-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.rep-name {
+  margin-bottom: 1rem;
+}
+
+.rep-details > p {
+  margin-bottom: 0.5rem;
+}
 
 /* Old Styling: */
 .page {
@@ -497,42 +511,40 @@ td {
   margin: 10px;
 }
 
-
-
 #center {
   /* background-image: linear-gradient(rgb(167, 255, 140), rgba(255,255,255, 0)); */
   background-image: url("components/assets/404NotFound.jpg");
- 
+
   background-size: cover;
-  
+
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top:5em;
+  padding-top: 5em;
   width: 100%;
   padding-bottom: 40em;
   /* padding-bottom: 30em; */
 }
 
 .smolButton {
-  height:3em;
+  height: 3em;
   width: 9em;
   border-radius: 5px;
 
-  padding:8px;
+  padding: 8px;
   text-align: center;
 
-  background:linear-gradient(rgba(255, 255, 255, 0),rgba(138, 182, 169, 0.5));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(138, 182, 169, 0.5));
   transform: scale(1);
   transition: 0.5s;
 }
 
 .smolButton:hover {
   transform: scale(1.2);
-  background:rgba(138, 182, 169, 0.5);
+  background: rgba(138, 182, 169, 0.5);
   transition: 0.3s;
-  cursor:pointer;
+  cursor: pointer;
 }
