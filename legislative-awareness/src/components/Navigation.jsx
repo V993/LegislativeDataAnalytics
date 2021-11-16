@@ -6,7 +6,7 @@ function Navigation(props) {
     <div className="navigation">
       <nav className="navbar navbar-expand navbar-light bg-white">
         <div className="container">
-          <Link className="navbar-brand link" to="/">
+          <Link className="link" to="/">
             <h3>Legislative Awareness</h3>
           </Link>
 

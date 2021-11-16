@@ -239,7 +239,7 @@ class Local extends Component {
                     <div className="split">
                       <img 
                         alt="Rep Image"
-                        src={"https://www.pinclipart.com/picdir/middle/169-1692839_default-avatar-transparent-clipart.png"}
+                        src="bobbobberson.jpg"
                       />
                       <div className="splitItem">
                       <Typography variant="h4" component="div" gutterBottom>
