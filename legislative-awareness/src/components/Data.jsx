@@ -55,18 +55,18 @@ export default class Data extends React.Component {
   render() {
     const sidebarContent = (
       <div>
-        <h2>Representative Information</h2>
+        <h2 className="rep-title">Representative Information</h2>
         {this.state.member === "" ? (
           <p>No results for "{this.state.label}"</p>
         ) : (
-          <>
+          <div className="rep-info">
             <h4>{this.state.member.name}</h4>
             <small>
               <p>{this.state.member.politicalparty}</p>
               <p>District {this.state.member.district}</p>
               <p>{this.state.member.borough}</p>
             </small>
-          </>
+          </div>
         )}
       </div>
     );
