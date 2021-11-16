@@ -117,8 +117,8 @@ app.get("/info-apis/senate-info", async function(req, res) {
 app.get("/info-apis/assembly-info", async function(req, res) {
     const name = req.query.name;
     try {
-        const assemblyMemberInfo = await pool.query("SELECT * FROM assembly WHERE Name = $1", [name]);
-        res.json(assemblyMemberInfo.rows[0]);
+        const assemblyInfo = await pool.query("SELECT * FROM assembly WHERE Name = $1", [name]);
+        res.json(assemblyInfo.rows[0]);
     } catch (error) {
         console.error(error.message)
     }
