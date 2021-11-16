@@ -1,5 +1,5 @@
 CREATE TABLE persons (
-	PersonId INT NOT NULL PRIMARY KEY,
+	PersonId INT PRIMARY KEY,
 	PersonGuid VARCHAR(255),
 	PersonLastModifiedUtc DATE,
 	PersonFirstName VARCHAR(255),
@@ -8,7 +8,7 @@ CREATE TABLE persons (
 );
 
 CREATE TABLE bodies (
-	BodyId INT NOT NULL PRIMARY KEY,
+	BodyId INT PRIMARY KEY,
 	BodyGuid VARCHAR(255),
 	BodyLastModifiedUtc DATE,
 	BodyName VARCHAR(255),
@@ -19,7 +19,7 @@ CREATE TABLE bodies (
 );
 
 CREATE TABLE matters (
-	MatterId INT NOT NULL PRIMARY KEY,
+	MatterId INT PRIMARY KEY,
 	MatterGuid VARCHAR(255),
 	MatterLastModifiedUtc DATE,
 	MatterName VARCHAR(255),
@@ -35,10 +35,17 @@ CREATE TABLE matters (
 );
 
 CREATE TABLE mattersponsors (
-	MatterSponsorId INT NOT NULL PRIMARY KEY,
+	MatterSponsorId INT PRIMARY KEY,
 	MatterSponsorGuid VARCHAR(255),
 	MatterSponsorLastModifiedUtc DATE,
 	MatterSponsorMatterId INT FOREIGN KEY,
 	MatterSponsorNameId INT FOREIGN KEY,
 	MatterSponsorName VARCHAR(255)
+);
+
+CREATE TABLE councilmembers (
+	Name VARCHAR(255) PRIMARY KEY,
+	District INT,
+	Borough VARCHAR(255),
+	PoliticalParty VARCHAR(255)
 );
