@@ -238,7 +238,7 @@ class Local extends Component {
                   <div className="">
                     <div className="split">
                       <img 
-                        alt="Rep Image"
+                        alt="Rep"
                         src="bobbobberson.jpg"
                       />
                       <div className="splitItem">
