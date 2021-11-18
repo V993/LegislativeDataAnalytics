@@ -11,12 +11,8 @@ fs.readFile('./senate.json', 'utf8', (err, senate) => {
 	senateData.forEach((e) => {
 	   delete e.person;
 	   delete e.sessionShortNameMap;
-	   delete e.incumbent;
 	   delete e.shortName;
 	   delete e.alternate;
- 	   delete e.memberId;
-	   delete e.sessionMemberId;
-	   delete e.sessionYear;
 }); 	
 
 fs.readFile('./assembly.json', 'utf8', (err, assembly) => {
@@ -30,12 +26,8 @@ fs.readFile('./assembly.json', 'utf8', (err, assembly) => {
 	assemblyData.forEach((e) => {
 	   delete e.person;
 	   delete e.sessionShortNameMap;
-	   delete e.incumbent;
 	   delete e.shortName;
 	   delete e.alternate;
-	   delete e.memberId;
-	   delete e.sessionMemberId;
-	   delete e.sessionYear;
 });
 
 	const strSenateData = JSON.stringify(senateData);
