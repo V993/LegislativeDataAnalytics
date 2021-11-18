@@ -1,0 +1,3340 @@
+{
+  "success" : true,
+  "message" : "",
+  "responseType" : "member-sessions list",
+  "total" : 63,
+  "offsetStart" : 1,
+  "offsetEnd" : 63,
+  "limit" : 1000,
+  "result" : {
+    "items" : [ {
+      "memberId" : 384,
+      "chamber" : "SENATE",
+      "incumbent" : false,
+      "fullName" : "Joseph P. Addabbo Jr.",
+      "shortName" : "ADDABBO",
+      "imgName" : "384_joseph_p._addabbo_jr..jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 919,
+          "shortName" : "ADDABBO",
+          "sessionYear" : 2017,
+          "districtCode" : 15,
+          "alternate" : false,
+          "memberId" : 384
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1193,
+          "shortName" : "ADDABBO",
+          "sessionYear" : 2019,
+          "districtCode" : 15,
+          "alternate" : false,
+          "memberId" : 384
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1795,
+          "shortName" : "ADDABBO",
+          "sessionYear" : 2021,
+          "districtCode" : 15,
+          "alternate" : false,
+          "memberId" : 384
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 16,
+          "shortName" : "ADDABBO",
+          "sessionYear" : 2009,
+          "districtCode" : 15,
+          "alternate" : false,
+          "memberId" : 384
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 78,
+          "shortName" : "ADDABBO",
+          "sessionYear" : 2011,
+          "districtCode" : 15,
+          "alternate" : false,
+          "memberId" : 384
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 139,
+          "shortName" : "ADDABBO",
+          "sessionYear" : 2013,
+          "districtCode" : 15,
+          "alternate" : false,
+          "memberId" : 384
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 726,
+          "shortName" : "ADDABBO",
+          "sessionYear" : 2015,
+          "districtCode" : 15,
+          "alternate" : false,
+          "memberId" : 384
+        } ]
+      },
+      "person" : {
+        "personId" : 203,
+        "fullName" : "Joseph P. Addabbo Jr.",
+        "firstName" : "Joseph",
+        "middleName" : "P.",
+        "lastName" : "Addabbo",
+        "email" : "addabbo@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : "Jr.",
+        "verified" : true,
+        "imgName" : "384_joseph_p._addabbo_jr..jpg"
+      },
+      "sessionMemberId" : 1795,
+      "sessionYear" : 2021,
+      "districtCode" : 15,
+      "alternate" : false
+    }, {
+      "memberId" : 913,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Fredrick J Akshar II",
+      "shortName" : "AKSHAR",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 952,
+          "shortName" : "AKSHAR",
+          "sessionYear" : 2017,
+          "districtCode" : 52,
+          "alternate" : false,
+          "memberId" : 913
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1381,
+          "shortName" : "AKSHAR",
+          "sessionYear" : 2019,
+          "districtCode" : 52,
+          "alternate" : false,
+          "memberId" : 913
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1796,
+          "shortName" : "AKSHAR",
+          "sessionYear" : 2021,
+          "districtCode" : 52,
+          "alternate" : false,
+          "memberId" : 913
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 907,
+          "shortName" : "AKSHAR",
+          "sessionYear" : 2015,
+          "districtCode" : 52,
+          "alternate" : false,
+          "memberId" : 913
+        } ]
+      },
+      "person" : {
+        "personId" : 735,
+        "fullName" : "Fredrick J Akshar II",
+        "firstName" : "Fredrick",
+        "middleName" : "J",
+        "lastName" : "Akshar",
+        "email" : "akshar@nysenate.gov",
+        "prefix" : "",
+        "suffix" : "II",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1796,
+      "sessionYear" : 2021,
+      "districtCode" : 52,
+      "alternate" : false
+    }, {
+      "memberId" : 1102,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Jamaal Bailey",
+      "shortName" : "BAILEY",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1098,
+          "shortName" : "BAILEY",
+          "sessionYear" : 2017,
+          "districtCode" : 36,
+          "alternate" : false,
+          "memberId" : 1102
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1199,
+          "shortName" : "BAILEY",
+          "sessionYear" : 2019,
+          "districtCode" : 36,
+          "alternate" : false,
+          "memberId" : 1102
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1797,
+          "shortName" : "BAILEY",
+          "sessionYear" : 2021,
+          "districtCode" : 36,
+          "alternate" : false,
+          "memberId" : 1102
+        } ]
+      },
+      "person" : {
+        "personId" : 924,
+        "fullName" : "Jamaal Bailey",
+        "firstName" : "Jamaal",
+        "middleName" : null,
+        "lastName" : "Bailey",
+        "email" : "bailey@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1797,
+      "sessionYear" : 2021,
+      "districtCode" : 36,
+      "alternate" : false
+    }, {
+      "memberId" : 1136,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Brian Benjamin",
+      "shortName" : "BENJAMIN",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1133,
+          "shortName" : "BENJAMIN",
+          "sessionYear" : 2017,
+          "districtCode" : 30,
+          "alternate" : false,
+          "memberId" : 1136
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1200,
+          "shortName" : "BENJAMIN",
+          "sessionYear" : 2019,
+          "districtCode" : 30,
+          "alternate" : false,
+          "memberId" : 1136
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1798,
+          "shortName" : "BENJAMIN",
+          "sessionYear" : 2021,
+          "districtCode" : 30,
+          "alternate" : false,
+          "memberId" : 1136
+        } ]
+      },
+      "person" : {
+        "personId" : 958,
+        "fullName" : "Brian Benjamin",
+        "firstName" : "Brian",
+        "middleName" : "",
+        "lastName" : "Benjamin",
+        "email" : "bbenjamin@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1798,
+      "sessionYear" : 2021,
+      "districtCode" : 30,
+      "alternate" : false
+    }, {
+      "memberId" : 1231,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Alessandra Biaggi",
+      "shortName" : "BIAGGI",
+      "imgName" : "1051_Alessandra_Biaggi.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1229,
+          "shortName" : "BIAGGI",
+          "sessionYear" : 2019,
+          "districtCode" : 34,
+          "alternate" : false,
+          "memberId" : 1231
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1799,
+          "shortName" : "BIAGGI",
+          "sessionYear" : 2021,
+          "districtCode" : 34,
+          "alternate" : false,
+          "memberId" : 1231
+        } ]
+      },
+      "person" : {
+        "personId" : 1051,
+        "fullName" : "Alessandra Biaggi",
+        "firstName" : "Alessandra",
+        "middleName" : "",
+        "lastName" : "Biaggi",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1051_Alessandra_Biaggi.jpg"
+      },
+      "sessionMemberId" : 1799,
+      "sessionYear" : 2021,
+      "districtCode" : 34,
+      "alternate" : false
+    }, {
+      "memberId" : 1370,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "George Borrello",
+      "shortName" : "BORRELLO",
+      "imgName" : "57_george_borrello.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1549,
+          "shortName" : "BORRELLO",
+          "sessionYear" : 2019,
+          "districtCode" : 57,
+          "alternate" : false,
+          "memberId" : 1370
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1800,
+          "shortName" : "BORRELLO",
+          "sessionYear" : 2021,
+          "districtCode" : 57,
+          "alternate" : false,
+          "memberId" : 1370
+        } ]
+      },
+      "person" : {
+        "personId" : 1190,
+        "fullName" : "George Borrello",
+        "firstName" : "George",
+        "middleName" : "",
+        "lastName" : "Borrello",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "57_george_borrello.jpg"
+      },
+      "sessionMemberId" : 1800,
+      "sessionYear" : 2021,
+      "districtCode" : 57,
+      "alternate" : false
+    }, {
+      "memberId" : 433,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Phil Boyle",
+      "shortName" : "BOYLE",
+      "imgName" : "433_phil_boyle.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 944,
+          "shortName" : "BOYLE",
+          "sessionYear" : 2017,
+          "districtCode" : 4,
+          "alternate" : false,
+          "memberId" : 433
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1289,
+          "shortName" : "BOYLE",
+          "sessionYear" : 2019,
+          "districtCode" : 4,
+          "alternate" : false,
+          "memberId" : 433
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1801,
+          "shortName" : "BOYLE",
+          "sessionYear" : 2021,
+          "districtCode" : 4,
+          "alternate" : false,
+          "memberId" : 433
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 141,
+          "shortName" : "BOYLE",
+          "sessionYear" : 2013,
+          "districtCode" : 4,
+          "alternate" : false,
+          "memberId" : 433
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 716,
+          "shortName" : "BOYLE",
+          "sessionYear" : 2015,
+          "districtCode" : 4,
+          "alternate" : false,
+          "memberId" : 433
+        } ]
+      },
+      "person" : {
+        "personId" : 254,
+        "fullName" : "Phil Boyle",
+        "firstName" : "Phil",
+        "middleName" : null,
+        "lastName" : "Boyle",
+        "email" : "pboyle@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "433_phil_boyle.jpg"
+      },
+      "sessionMemberId" : 1801,
+      "sessionYear" : 2021,
+      "districtCode" : 4,
+      "alternate" : false
+    }, {
+      "memberId" : 372,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Neil D. Breslin",
+      "shortName" : "BRESLIN",
+      "imgName" : "372_neil_d._breslin.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 946,
+          "shortName" : "BRESLIN",
+          "sessionYear" : 2017,
+          "districtCode" : 44,
+          "alternate" : false,
+          "memberId" : 372
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1201,
+          "shortName" : "BRESLIN",
+          "sessionYear" : 2019,
+          "districtCode" : 44,
+          "alternate" : false,
+          "memberId" : 372
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1802,
+          "shortName" : "BRESLIN",
+          "sessionYear" : 2021,
+          "districtCode" : 44,
+          "alternate" : false,
+          "memberId" : 372
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 4,
+          "shortName" : "BRESLIN",
+          "sessionYear" : 2009,
+          "districtCode" : 46,
+          "alternate" : false,
+          "memberId" : 372
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 66,
+          "shortName" : "BRESLIN",
+          "sessionYear" : 2011,
+          "districtCode" : 46,
+          "alternate" : false,
+          "memberId" : 372
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 174,
+          "shortName" : "BRESLIN",
+          "sessionYear" : 2013,
+          "districtCode" : 44,
+          "alternate" : false,
+          "memberId" : 372
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 727,
+          "shortName" : "BRESLIN",
+          "sessionYear" : 2015,
+          "districtCode" : 44,
+          "alternate" : false,
+          "memberId" : 372
+        } ]
+      },
+      "person" : {
+        "personId" : 191,
+        "fullName" : "Neil D. Breslin",
+        "firstName" : "Neil",
+        "middleName" : "D.",
+        "lastName" : "Breslin",
+        "email" : "breslin@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "372_neil_d._breslin.jpg"
+      },
+      "sessionMemberId" : 1802,
+      "sessionYear" : 2021,
+      "districtCode" : 44,
+      "alternate" : false
+    }, {
+      "memberId" : 1494,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Jabari Brisport",
+      "shortName" : "BRISPORT",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1849,
+          "shortName" : "BRISPORT",
+          "sessionYear" : 2021,
+          "districtCode" : 25,
+          "alternate" : false,
+          "memberId" : 1494
+        } ]
+      },
+      "person" : {
+        "personId" : 1311,
+        "fullName" : "Jabari Brisport",
+        "firstName" : "Jabari",
+        "middleName" : "",
+        "lastName" : "Brisport",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1849,
+      "sessionYear" : 2021,
+      "districtCode" : 25,
+      "alternate" : false
+    }, {
+      "memberId" : 1101,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "John E. Brooks",
+      "shortName" : "BROOKS",
+      "imgName" : "923_John_Brooks.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1097,
+          "shortName" : "BROOKS",
+          "sessionYear" : 2017,
+          "districtCode" : 8,
+          "alternate" : false,
+          "memberId" : 1101
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1198,
+          "shortName" : "BROOKS",
+          "sessionYear" : 2019,
+          "districtCode" : 8,
+          "alternate" : false,
+          "memberId" : 1101
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1803,
+          "shortName" : "BROOKS",
+          "sessionYear" : 2021,
+          "districtCode" : 8,
+          "alternate" : false,
+          "memberId" : 1101
+        } ]
+      },
+      "person" : {
+        "personId" : 923,
+        "fullName" : "John E. Brooks",
+        "firstName" : "John",
+        "middleName" : "E.",
+        "lastName" : "Brooks",
+        "email" : "Brooks@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "923_John_Brooks.jpg"
+      },
+      "sessionMemberId" : 1803,
+      "sessionYear" : 2021,
+      "districtCode" : 8,
+      "alternate" : false
+    }, {
+      "memberId" : 1500,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Samra Brouk",
+      "shortName" : "BROUK",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1856,
+          "shortName" : "BROUK",
+          "sessionYear" : 2021,
+          "districtCode" : 55,
+          "alternate" : false,
+          "memberId" : 1500
+        } ]
+      },
+      "person" : {
+        "personId" : 1317,
+        "fullName" : "Samra Brouk",
+        "firstName" : "Samra",
+        "middleName" : "",
+        "lastName" : "Brouk",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1856,
+      "sessionYear" : 2021,
+      "districtCode" : 55,
+      "alternate" : false
+    }, {
+      "memberId" : 888,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Leroy Comrie",
+      "shortName" : "COMRIE",
+      "imgName" : "888_leroy_comrie.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 936,
+          "shortName" : "COMRIE",
+          "sessionYear" : 2017,
+          "districtCode" : 14,
+          "alternate" : false,
+          "memberId" : 888
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1202,
+          "shortName" : "COMRIE",
+          "sessionYear" : 2019,
+          "districtCode" : 14,
+          "alternate" : false,
+          "memberId" : 888
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1804,
+          "shortName" : "COMRIE",
+          "sessionYear" : 2021,
+          "districtCode" : 14,
+          "alternate" : false,
+          "memberId" : 888
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 882,
+          "shortName" : "COMRIE",
+          "sessionYear" : 2015,
+          "districtCode" : 14,
+          "alternate" : false,
+          "memberId" : 888
+        } ]
+      },
+      "person" : {
+        "personId" : 710,
+        "fullName" : "Leroy Comrie",
+        "firstName" : "Leroy",
+        "middleName" : null,
+        "lastName" : "Comrie",
+        "email" : "comrie@nysenate.gov",
+        "prefix" : null,
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "888_leroy_comrie.jpg"
+      },
+      "sessionMemberId" : 1804,
+      "sessionYear" : 2021,
+      "districtCode" : 14,
+      "alternate" : false
+    }, {
+      "memberId" : 1501,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Jeremy Cooney",
+      "shortName" : "COONEY",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1857,
+          "shortName" : "COONEY",
+          "sessionYear" : 2021,
+          "districtCode" : 56,
+          "alternate" : false,
+          "memberId" : 1501
+        } ]
+      },
+      "person" : {
+        "personId" : 1318,
+        "fullName" : "Jeremy Cooney",
+        "firstName" : "Jeremy",
+        "middleName" : "",
+        "lastName" : "Cooney",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1857,
+      "sessionYear" : 2021,
+      "districtCode" : 56,
+      "alternate" : false
+    }, {
+      "memberId" : 439,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Simcha Felder",
+      "shortName" : "FELDER",
+      "imgName" : "439_simcha_felder.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1013,
+          "shortName" : "FELDER",
+          "sessionYear" : 2017,
+          "districtCode" : 17,
+          "alternate" : false,
+          "memberId" : 439
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1290,
+          "shortName" : "FELDER",
+          "sessionYear" : 2019,
+          "districtCode" : 17,
+          "alternate" : false,
+          "memberId" : 439
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1805,
+          "shortName" : "FELDER",
+          "sessionYear" : 2021,
+          "districtCode" : 17,
+          "alternate" : false,
+          "memberId" : 439
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 181,
+          "shortName" : "FELDER",
+          "sessionYear" : 2013,
+          "districtCode" : 17,
+          "alternate" : false,
+          "memberId" : 439
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 851,
+          "shortName" : "FELDER",
+          "sessionYear" : 2015,
+          "districtCode" : 17,
+          "alternate" : false,
+          "memberId" : 439
+        } ]
+      },
+      "person" : {
+        "personId" : 261,
+        "fullName" : "Simcha Felder",
+        "firstName" : "Simcha",
+        "middleName" : null,
+        "lastName" : "Felder",
+        "email" : "felder@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "439_simcha_felder.jpg"
+      },
+      "sessionMemberId" : 1805,
+      "sessionYear" : 2021,
+      "districtCode" : 17,
+      "alternate" : false
+    }, {
+      "memberId" : 427,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Patrick M. Gallivan",
+      "shortName" : "GALLIVAN",
+      "imgName" : "427_patrick_m._gallivan.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 956,
+          "shortName" : "GALLIVAN",
+          "sessionYear" : 2017,
+          "districtCode" : 59,
+          "alternate" : false,
+          "memberId" : 427
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1417,
+          "shortName" : "GALLIVAN",
+          "sessionYear" : 2019,
+          "districtCode" : 59,
+          "alternate" : false,
+          "memberId" : 427
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1806,
+          "shortName" : "GALLIVAN",
+          "sessionYear" : 2021,
+          "districtCode" : 59,
+          "alternate" : false,
+          "memberId" : 427
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 121,
+          "shortName" : "GALLIVAN",
+          "sessionYear" : 2011,
+          "districtCode" : 59,
+          "alternate" : false,
+          "memberId" : 427
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 182,
+          "shortName" : "GALLIVAN",
+          "sessionYear" : 2013,
+          "districtCode" : 59,
+          "alternate" : false,
+          "memberId" : 427
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 696,
+          "shortName" : "GALLIVAN",
+          "sessionYear" : 2015,
+          "districtCode" : 59,
+          "alternate" : false,
+          "memberId" : 427
+        } ]
+      },
+      "person" : {
+        "personId" : 246,
+        "fullName" : "Patrick M. Gallivan",
+        "firstName" : "Patrick",
+        "middleName" : "M.",
+        "lastName" : "Gallivan",
+        "email" : "gallivan@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "427_patrick_m._gallivan.jpg"
+      },
+      "sessionMemberId" : 1806,
+      "sessionYear" : 2021,
+      "districtCode" : 59,
+      "alternate" : false
+    }, {
+      "memberId" : 1222,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Jim Gaughran",
+      "shortName" : "GAUGHRAN",
+      "imgName" : "1042_Jim_Gaughran.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1220,
+          "shortName" : "GAUGHRAN",
+          "sessionYear" : 2019,
+          "districtCode" : 5,
+          "alternate" : false,
+          "memberId" : 1222
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1807,
+          "shortName" : "GAUGHRAN",
+          "sessionYear" : 2021,
+          "districtCode" : 5,
+          "alternate" : false,
+          "memberId" : 1222
+        } ]
+      },
+      "person" : {
+        "personId" : 1042,
+        "fullName" : "Jim Gaughran",
+        "firstName" : "Jim",
+        "middleName" : "",
+        "lastName" : "Gaughran",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1042_Jim_Gaughran.jpg"
+      },
+      "sessionMemberId" : 1807,
+      "sessionYear" : 2021,
+      "districtCode" : 5,
+      "alternate" : false
+    }, {
+      "memberId" : 383,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Michael Gianaris",
+      "shortName" : "GIANARIS",
+      "imgName" : "383_michael_gianaris.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 928,
+          "shortName" : "GIANARIS",
+          "sessionYear" : 2017,
+          "districtCode" : 12,
+          "alternate" : false,
+          "memberId" : 383
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1203,
+          "shortName" : "GIANARIS",
+          "sessionYear" : 2019,
+          "districtCode" : 12,
+          "alternate" : false,
+          "memberId" : 383
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1808,
+          "shortName" : "GIANARIS",
+          "sessionYear" : 2021,
+          "districtCode" : 12,
+          "alternate" : false,
+          "memberId" : 383
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 77,
+          "shortName" : "GIANARIS",
+          "sessionYear" : 2011,
+          "districtCode" : 12,
+          "alternate" : false,
+          "memberId" : 383
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 138,
+          "shortName" : "GIANARIS",
+          "sessionYear" : 2013,
+          "districtCode" : 12,
+          "alternate" : false,
+          "memberId" : 383
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 706,
+          "shortName" : "GIANARIS",
+          "sessionYear" : 2015,
+          "districtCode" : 12,
+          "alternate" : false,
+          "memberId" : 383
+        } ]
+      },
+      "person" : {
+        "personId" : 202,
+        "fullName" : "Michael Gianaris",
+        "firstName" : "Michael",
+        "middleName" : null,
+        "lastName" : "Gianaris",
+        "email" : "gianaris@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "383_michael_gianaris.jpg"
+      },
+      "sessionMemberId" : 1808,
+      "sessionYear" : 2021,
+      "districtCode" : 12,
+      "alternate" : false
+    }, {
+      "memberId" : 1229,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Andrew Gounardes",
+      "shortName" : "GOUNARDES",
+      "imgName" : "1049_Andrew_Gounardes.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1227,
+          "shortName" : "GOUNARDES",
+          "sessionYear" : 2019,
+          "districtCode" : 22,
+          "alternate" : false,
+          "memberId" : 1229
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1809,
+          "shortName" : "GOUNARDES",
+          "sessionYear" : 2021,
+          "districtCode" : 22,
+          "alternate" : false,
+          "memberId" : 1229
+        } ]
+      },
+      "person" : {
+        "personId" : 1049,
+        "fullName" : "Andrew Gounardes",
+        "firstName" : "Andrew",
+        "middleName" : "",
+        "lastName" : "Gounardes",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1049_Andrew_Gounardes.jpg"
+      },
+      "sessionMemberId" : 1809,
+      "sessionYear" : 2021,
+      "districtCode" : 22,
+      "alternate" : false
+    }, {
+      "memberId" : 393,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Joseph A. Griffo",
+      "shortName" : "GRIFFO",
+      "imgName" : "393_joseph_a._griffo.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1017,
+          "shortName" : "GRIFFO",
+          "sessionYear" : 2017,
+          "districtCode" : 47,
+          "alternate" : false,
+          "memberId" : 393
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1281,
+          "shortName" : "GRIFFO",
+          "sessionYear" : 2019,
+          "districtCode" : 47,
+          "alternate" : false,
+          "memberId" : 393
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1810,
+          "shortName" : "GRIFFO",
+          "sessionYear" : 2021,
+          "districtCode" : 47,
+          "alternate" : false,
+          "memberId" : 393
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 24,
+          "shortName" : "GRIFFO",
+          "sessionYear" : 2009,
+          "districtCode" : 47,
+          "alternate" : false,
+          "memberId" : 393
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 87,
+          "shortName" : "GRIFFO",
+          "sessionYear" : 2011,
+          "districtCode" : 47,
+          "alternate" : false,
+          "memberId" : 393
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 149,
+          "shortName" : "GRIFFO",
+          "sessionYear" : 2013,
+          "districtCode" : 47,
+          "alternate" : false,
+          "memberId" : 393
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 702,
+          "shortName" : "GRIFFO",
+          "sessionYear" : 2015,
+          "districtCode" : 47,
+          "alternate" : false,
+          "memberId" : 393
+        } ]
+      },
+      "person" : {
+        "personId" : 212,
+        "fullName" : "Joseph A. Griffo",
+        "firstName" : "Joseph",
+        "middleName" : "A.",
+        "lastName" : "Griffo",
+        "email" : "griffo@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "393_joseph_a._griffo.jpg"
+      },
+      "sessionMemberId" : 1810,
+      "sessionYear" : 2021,
+      "districtCode" : 47,
+      "alternate" : false
+    }, {
+      "memberId" : 1233,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Pete Harckham",
+      "shortName" : "HARCKHAM",
+      "imgName" : "1053_Pete_Harckham.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1231,
+          "shortName" : "HARCKHAM",
+          "sessionYear" : 2019,
+          "districtCode" : 40,
+          "alternate" : false,
+          "memberId" : 1233
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1811,
+          "shortName" : "HARCKHAM",
+          "sessionYear" : 2021,
+          "districtCode" : 40,
+          "alternate" : false,
+          "memberId" : 1233
+        } ]
+      },
+      "person" : {
+        "personId" : 1053,
+        "fullName" : "Pete Harckham",
+        "firstName" : "Pete",
+        "middleName" : "",
+        "lastName" : "Harckham",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1053_Pete_Harckham.jpg"
+      },
+      "sessionMemberId" : 1811,
+      "sessionYear" : 2021,
+      "districtCode" : 40,
+      "alternate" : false
+    }, {
+      "memberId" : 951,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Pamela Helming",
+      "shortName" : "HELMING",
+      "imgName" : "773_Pamela_Helming.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 945,
+          "shortName" : "HELMING",
+          "sessionYear" : 2017,
+          "districtCode" : 54,
+          "alternate" : false,
+          "memberId" : 951
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1382,
+          "shortName" : "HELMING",
+          "sessionYear" : 2019,
+          "districtCode" : 54,
+          "alternate" : false,
+          "memberId" : 951
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1812,
+          "shortName" : "HELMING",
+          "sessionYear" : 2021,
+          "districtCode" : 54,
+          "alternate" : false,
+          "memberId" : 951
+        } ]
+      },
+      "person" : {
+        "personId" : 773,
+        "fullName" : "Pamela Helming",
+        "firstName" : "Pamela",
+        "middleName" : "",
+        "lastName" : "Helming",
+        "email" : "Helming@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "773_Pamela_Helming.jpg"
+      },
+      "sessionMemberId" : 1812,
+      "sessionYear" : 2021,
+      "districtCode" : 54,
+      "alternate" : false
+    }, {
+      "memberId" : 1497,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Michelle Hinchey",
+      "shortName" : "HINCHEY",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1852,
+          "shortName" : "HINCHEY",
+          "sessionYear" : 2021,
+          "districtCode" : 46,
+          "alternate" : false,
+          "memberId" : 1497
+        } ]
+      },
+      "person" : {
+        "personId" : 1314,
+        "fullName" : "Michelle Hinchey",
+        "firstName" : "Michelle",
+        "middleName" : "",
+        "lastName" : "Hinchey",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1852,
+      "sessionYear" : 2021,
+      "districtCode" : 46,
+      "alternate" : false
+    }, {
+      "memberId" : 438,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Brad Hoylman",
+      "shortName" : "HOYLMAN",
+      "imgName" : "438_brad_hoylman.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 921,
+          "shortName" : "HOYLMAN",
+          "sessionYear" : 2017,
+          "districtCode" : 27,
+          "alternate" : false,
+          "memberId" : 438
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1190,
+          "shortName" : "HOYLMAN",
+          "sessionYear" : 2019,
+          "districtCode" : 27,
+          "alternate" : false,
+          "memberId" : 438
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1813,
+          "shortName" : "HOYLMAN",
+          "sessionYear" : 2021,
+          "districtCode" : 27,
+          "alternate" : false,
+          "memberId" : 438
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 176,
+          "shortName" : "HOYLMAN",
+          "sessionYear" : 2013,
+          "districtCode" : 27,
+          "alternate" : false,
+          "memberId" : 438
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 705,
+          "shortName" : "HOYLMAN",
+          "sessionYear" : 2015,
+          "districtCode" : 27,
+          "alternate" : false,
+          "memberId" : 438
+        } ]
+      },
+      "person" : {
+        "personId" : 259,
+        "fullName" : "Brad Hoylman",
+        "firstName" : "Brad",
+        "middleName" : null,
+        "lastName" : "Hoylman",
+        "email" : "hoylman@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "438_brad_hoylman.jpg"
+      },
+      "sessionMemberId" : 1813,
+      "sessionYear" : 2021,
+      "districtCode" : 27,
+      "alternate" : false
+    }, {
+      "memberId" : 1230,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Robert Jackson",
+      "shortName" : "JACKSON",
+      "imgName" : "1050_Robert_Jackson.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1228,
+          "shortName" : "JACKSON",
+          "sessionYear" : 2019,
+          "districtCode" : 31,
+          "alternate" : false,
+          "memberId" : 1230
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1814,
+          "shortName" : "JACKSON",
+          "sessionYear" : 2021,
+          "districtCode" : 31,
+          "alternate" : false,
+          "memberId" : 1230
+        } ]
+      },
+      "person" : {
+        "personId" : 1050,
+        "fullName" : "Robert Jackson",
+        "firstName" : "Robert",
+        "middleName" : "",
+        "lastName" : "Jackson",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1050_Robert_Jackson.jpg"
+      },
+      "sessionMemberId" : 1814,
+      "sessionYear" : 2021,
+      "districtCode" : 31,
+      "alternate" : false
+    }, {
+      "memberId" : 1235,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Daphne Jordan",
+      "shortName" : "JORDAN",
+      "imgName" : "1055_Daphne_Jordan.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1233,
+          "shortName" : "JORDAN",
+          "sessionYear" : 2019,
+          "districtCode" : 43,
+          "alternate" : false,
+          "memberId" : 1235
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1815,
+          "shortName" : "JORDAN",
+          "sessionYear" : 2021,
+          "districtCode" : 43,
+          "alternate" : false,
+          "memberId" : 1235
+        } ]
+      },
+      "person" : {
+        "personId" : 1055,
+        "fullName" : "Daphne Jordan",
+        "firstName" : "Daphne",
+        "middleName" : "",
+        "lastName" : "Jordan",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1055_Daphne_Jordan.jpg"
+      },
+      "sessionMemberId" : 1815,
+      "sessionYear" : 2021,
+      "districtCode" : 43,
+      "alternate" : false
+    }, {
+      "memberId" : 918,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Todd Kaminsky",
+      "shortName" : "KAMINSKY",
+      "imgName" : "903_todd_kaminsky.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 918,
+          "shortName" : "KAMINSKY",
+          "sessionYear" : 2017,
+          "districtCode" : 9,
+          "alternate" : false,
+          "memberId" : 918
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1204,
+          "shortName" : "KAMINSKY",
+          "sessionYear" : 2019,
+          "districtCode" : 9,
+          "alternate" : false,
+          "memberId" : 918
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1816,
+          "shortName" : "KAMINSKY",
+          "sessionYear" : 2021,
+          "districtCode" : 9,
+          "alternate" : false,
+          "memberId" : 918
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 912,
+          "shortName" : "KAMINSKY",
+          "sessionYear" : 2015,
+          "districtCode" : 9,
+          "alternate" : false,
+          "memberId" : 918
+        } ]
+      },
+      "person" : {
+        "personId" : 725,
+        "fullName" : "Todd Kaminsky",
+        "firstName" : "Todd",
+        "middleName" : null,
+        "lastName" : "Kaminsky",
+        "email" : null,
+        "prefix" : null,
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "903_todd_kaminsky.jpg"
+      },
+      "sessionMemberId" : 1816,
+      "sessionYear" : 2021,
+      "districtCode" : 9,
+      "alternate" : false
+    }, {
+      "memberId" : 1224,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Anna Kaplan",
+      "shortName" : "KAPLAN",
+      "imgName" : "1044_Anna_Kaplan.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1222,
+          "shortName" : "KAPLAN",
+          "sessionYear" : 2019,
+          "districtCode" : 7,
+          "alternate" : false,
+          "memberId" : 1224
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1817,
+          "shortName" : "KAPLAN",
+          "sessionYear" : 2021,
+          "districtCode" : 7,
+          "alternate" : false,
+          "memberId" : 1224
+        } ]
+      },
+      "person" : {
+        "personId" : 1044,
+        "fullName" : "Anna Kaplan",
+        "firstName" : "Anna",
+        "middleName" : "",
+        "lastName" : "Kaplan",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1044_Anna_Kaplan.jpg"
+      },
+      "sessionMemberId" : 1817,
+      "sessionYear" : 2021,
+      "districtCode" : 7,
+      "alternate" : false
+    }, {
+      "memberId" : 1140,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Brian Kavanagh",
+      "shortName" : "KAVANAGH",
+      "imgName" : "526_brian_kavanagh.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1137,
+          "shortName" : "KAVANAGH",
+          "sessionYear" : 2017,
+          "districtCode" : 26,
+          "alternate" : false,
+          "memberId" : 1140
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1407,
+          "shortName" : "KAVANAGH",
+          "sessionYear" : 2019,
+          "districtCode" : 26,
+          "alternate" : false,
+          "memberId" : 1140
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1818,
+          "shortName" : "KAVANAGH",
+          "sessionYear" : 2021,
+          "districtCode" : 26,
+          "alternate" : false,
+          "memberId" : 1140
+        } ]
+      },
+      "person" : {
+        "personId" : 350,
+        "fullName" : "Brian Kavanagh",
+        "firstName" : "Brian",
+        "middleName" : "",
+        "lastName" : "Kavanagh",
+        "email" : "kavanagh@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "526_brian_kavanagh.jpg"
+      },
+      "sessionMemberId" : 1818,
+      "sessionYear" : 2021,
+      "districtCode" : 26,
+      "alternate" : false
+    }, {
+      "memberId" : 429,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Timothy M. Kennedy",
+      "shortName" : "KENNEDY",
+      "imgName" : "429_timothy_m._kennedy.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 929,
+          "shortName" : "KENNEDY",
+          "sessionYear" : 2017,
+          "districtCode" : 63,
+          "alternate" : false,
+          "memberId" : 429
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1205,
+          "shortName" : "KENNEDY",
+          "sessionYear" : 2019,
+          "districtCode" : 63,
+          "alternate" : false,
+          "memberId" : 429
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1819,
+          "shortName" : "KENNEDY",
+          "sessionYear" : 2021,
+          "districtCode" : 63,
+          "alternate" : false,
+          "memberId" : 429
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 123,
+          "shortName" : "KENNEDY",
+          "sessionYear" : 2011,
+          "districtCode" : 58,
+          "alternate" : false,
+          "memberId" : 429
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 146,
+          "shortName" : "KENNEDY",
+          "sessionYear" : 2013,
+          "districtCode" : 63,
+          "alternate" : false,
+          "memberId" : 429
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 712,
+          "shortName" : "KENNEDY",
+          "sessionYear" : 2015,
+          "districtCode" : 63,
+          "alternate" : false,
+          "memberId" : 429
+        } ]
+      },
+      "person" : {
+        "personId" : 248,
+        "fullName" : "Timothy M. Kennedy",
+        "firstName" : "Timothy",
+        "middleName" : "M.",
+        "lastName" : "Kennedy",
+        "email" : "kennedy@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "429_timothy_m._kennedy.jpg"
+      },
+      "sessionMemberId" : 1819,
+      "sessionYear" : 2021,
+      "districtCode" : 63,
+      "alternate" : false
+    }, {
+      "memberId" : 401,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Liz Krueger",
+      "shortName" : "KRUEGER",
+      "imgName" : "401_liz_krueger.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 935,
+          "shortName" : "KRUEGER",
+          "sessionYear" : 2017,
+          "districtCode" : 28,
+          "alternate" : false,
+          "memberId" : 401
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1206,
+          "shortName" : "KRUEGER",
+          "sessionYear" : 2019,
+          "districtCode" : 28,
+          "alternate" : false,
+          "memberId" : 401
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1820,
+          "shortName" : "KRUEGER",
+          "sessionYear" : 2021,
+          "districtCode" : 28,
+          "alternate" : false,
+          "memberId" : 401
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 31,
+          "shortName" : "KRUEGER",
+          "sessionYear" : 2009,
+          "districtCode" : 26,
+          "alternate" : false,
+          "memberId" : 401
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 95,
+          "shortName" : "KRUEGER",
+          "sessionYear" : 2011,
+          "districtCode" : 26,
+          "alternate" : false,
+          "memberId" : 401
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 129,
+          "shortName" : "KRUEGER",
+          "sessionYear" : 2013,
+          "districtCode" : 28,
+          "alternate" : false,
+          "memberId" : 401
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 707,
+          "shortName" : "KRUEGER",
+          "sessionYear" : 2015,
+          "districtCode" : 28,
+          "alternate" : false,
+          "memberId" : 401
+        } ]
+      },
+      "person" : {
+        "personId" : 220,
+        "fullName" : "Liz Krueger",
+        "firstName" : "Liz",
+        "middleName" : null,
+        "lastName" : "Krueger",
+        "email" : "lkrueger@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "401_liz_krueger.jpg"
+      },
+      "sessionMemberId" : 1820,
+      "sessionYear" : 2021,
+      "districtCode" : 28,
+      "alternate" : false
+    }, {
+      "memberId" : 409,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Andrew J Lanza",
+      "shortName" : "LANZA",
+      "imgName" : "409_andrew_j_lanza.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1084,
+          "shortName" : "LANZA",
+          "sessionYear" : 2017,
+          "districtCode" : 24,
+          "alternate" : false,
+          "memberId" : 409
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1286,
+          "shortName" : "LANZA",
+          "sessionYear" : 2019,
+          "districtCode" : 24,
+          "alternate" : false,
+          "memberId" : 409
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1821,
+          "shortName" : "LANZA",
+          "sessionYear" : 2021,
+          "districtCode" : 24,
+          "alternate" : false,
+          "memberId" : 409
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 39,
+          "shortName" : "LANZA",
+          "sessionYear" : 2009,
+          "districtCode" : 24,
+          "alternate" : false,
+          "memberId" : 409
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 103,
+          "shortName" : "LANZA",
+          "sessionYear" : 2011,
+          "districtCode" : 24,
+          "alternate" : false,
+          "memberId" : 409
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 165,
+          "shortName" : "LANZA",
+          "sessionYear" : 2013,
+          "districtCode" : 24,
+          "alternate" : false,
+          "memberId" : 409
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 730,
+          "shortName" : "LANZA",
+          "sessionYear" : 2015,
+          "districtCode" : 24,
+          "alternate" : false,
+          "memberId" : 409
+        } ]
+      },
+      "person" : {
+        "personId" : 228,
+        "fullName" : "Andrew J Lanza",
+        "firstName" : "Andrew",
+        "middleName" : null,
+        "lastName" : "Lanza",
+        "email" : "lanza@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "409_andrew_j_lanza.jpg"
+      },
+      "sessionMemberId" : 1821,
+      "sessionYear" : 2021,
+      "districtCode" : 24,
+      "alternate" : false
+    }, {
+      "memberId" : 1225,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "John Liu",
+      "shortName" : "LIU",
+      "imgName" : "1045_John_Liu.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1223,
+          "shortName" : "LIU",
+          "sessionYear" : 2019,
+          "districtCode" : 11,
+          "alternate" : false,
+          "memberId" : 1225
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1822,
+          "shortName" : "LIU",
+          "sessionYear" : 2021,
+          "districtCode" : 11,
+          "alternate" : false,
+          "memberId" : 1225
+        } ]
+      },
+      "person" : {
+        "personId" : 1045,
+        "fullName" : "John Liu",
+        "firstName" : "John",
+        "middleName" : "",
+        "lastName" : "Liu",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1045_John_Liu.jpg"
+      },
+      "sessionMemberId" : 1822,
+      "sessionYear" : 2021,
+      "districtCode" : 11,
+      "alternate" : false
+    }, {
+      "memberId" : 1498,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "John Mannion",
+      "shortName" : "MANNION",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1853,
+          "shortName" : "MANNION",
+          "sessionYear" : 2019,
+          "districtCode" : 50,
+          "alternate" : false,
+          "memberId" : 1498
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1854,
+          "shortName" : "MANNION",
+          "sessionYear" : 2021,
+          "districtCode" : 50,
+          "alternate" : false,
+          "memberId" : 1498
+        } ]
+      },
+      "person" : {
+        "personId" : 1315,
+        "fullName" : "John Mannion",
+        "firstName" : "John",
+        "middleName" : "",
+        "lastName" : "Mannion",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1854,
+      "sessionYear" : 2021,
+      "districtCode" : 50,
+      "alternate" : false
+    }, {
+      "memberId" : 1496,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Mike Martucci",
+      "shortName" : "MARTUCCI",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1851,
+          "shortName" : "MARTUCCI",
+          "sessionYear" : 2021,
+          "districtCode" : 42,
+          "alternate" : false,
+          "memberId" : 1496
+        } ]
+      },
+      "person" : {
+        "personId" : 1313,
+        "fullName" : "Mike Martucci",
+        "firstName" : "Mike",
+        "middleName" : "",
+        "lastName" : "Martucci",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1851,
+      "sessionYear" : 2021,
+      "districtCode" : 42,
+      "alternate" : false
+    }, {
+      "memberId" : 1492,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Mario Mattera",
+      "shortName" : "MATTERA",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1847,
+          "shortName" : "MATTERA",
+          "sessionYear" : 2021,
+          "districtCode" : 2,
+          "alternate" : false,
+          "memberId" : 1492
+        } ]
+      },
+      "person" : {
+        "personId" : 1309,
+        "fullName" : "Mario Mattera",
+        "firstName" : "Mario",
+        "middleName" : "",
+        "lastName" : "Mattera",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1847,
+      "sessionYear" : 2021,
+      "districtCode" : 2,
+      "alternate" : false
+    }, {
+      "memberId" : 1237,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Rachel May",
+      "shortName" : "MAY",
+      "imgName" : "1057_Rachel_May.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1235,
+          "shortName" : "MAY",
+          "sessionYear" : 2019,
+          "districtCode" : 53,
+          "alternate" : false,
+          "memberId" : 1237
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1823,
+          "shortName" : "MAY",
+          "sessionYear" : 2021,
+          "districtCode" : 53,
+          "alternate" : false,
+          "memberId" : 1237
+        } ]
+      },
+      "person" : {
+        "personId" : 1057,
+        "fullName" : "Rachel May",
+        "firstName" : "Rachel",
+        "middleName" : "",
+        "lastName" : "May",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1057_Rachel_May.jpg"
+      },
+      "sessionMemberId" : 1823,
+      "sessionYear" : 2021,
+      "districtCode" : 53,
+      "alternate" : false
+    }, {
+      "memberId" : 1143,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Shelley Mayer",
+      "shortName" : "MAYER",
+      "imgName" : "623_shelley_mayer.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1141,
+          "shortName" : "MAYER",
+          "sessionYear" : 2017,
+          "districtCode" : 37,
+          "alternate" : false,
+          "memberId" : 1143
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1210,
+          "shortName" : "MAYER",
+          "sessionYear" : 2019,
+          "districtCode" : 37,
+          "alternate" : false,
+          "memberId" : 1143
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1824,
+          "shortName" : "MAYER",
+          "sessionYear" : 2021,
+          "districtCode" : 37,
+          "alternate" : false,
+          "memberId" : 1143
+        } ]
+      },
+      "person" : {
+        "personId" : 445,
+        "fullName" : "Shelley Mayer",
+        "firstName" : "Shelley",
+        "middleName" : null,
+        "lastName" : "Mayer",
+        "email" : null,
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "623_shelley_mayer.jpg"
+      },
+      "sessionMemberId" : 1824,
+      "sessionYear" : 2021,
+      "districtCode" : 37,
+      "alternate" : false
+    }, {
+      "memberId" : 1228,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Zellnor Myrie",
+      "shortName" : "MYRIE",
+      "imgName" : "1048_Zellnor_Myrie.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1226,
+          "shortName" : "MYRIE",
+          "sessionYear" : 2019,
+          "districtCode" : 20,
+          "alternate" : false,
+          "memberId" : 1228
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1825,
+          "shortName" : "MYRIE",
+          "sessionYear" : 2021,
+          "districtCode" : 20,
+          "alternate" : false,
+          "memberId" : 1228
+        } ]
+      },
+      "person" : {
+        "personId" : 1048,
+        "fullName" : "Zellnor Myrie",
+        "firstName" : "Zellnor",
+        "middleName" : "",
+        "lastName" : "Myrie",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1048_Zellnor_Myrie.jpg"
+      },
+      "sessionMemberId" : 1825,
+      "sessionYear" : 2021,
+      "districtCode" : 20,
+      "alternate" : false
+    }, {
+      "memberId" : 415,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Thomas F. O'Mara",
+      "shortName" : "O'MARA",
+      "imgName" : "415_thomas_f._o'mara.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 941,
+          "shortName" : "O'MARA",
+          "sessionYear" : 2017,
+          "districtCode" : 58,
+          "alternate" : false,
+          "memberId" : 415
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1416,
+          "shortName" : "O'MARA",
+          "sessionYear" : 2019,
+          "districtCode" : 58,
+          "alternate" : false,
+          "memberId" : 415
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1826,
+          "shortName" : "O'MARA",
+          "sessionYear" : 2021,
+          "districtCode" : 58,
+          "alternate" : false,
+          "memberId" : 415
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 109,
+          "shortName" : "O'MARA",
+          "sessionYear" : 2011,
+          "districtCode" : 53,
+          "alternate" : false,
+          "memberId" : 415
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 183,
+          "shortName" : "O'MARA",
+          "sessionYear" : 2013,
+          "districtCode" : 58,
+          "alternate" : false,
+          "memberId" : 415
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 872,
+          "shortName" : "O'MARA",
+          "sessionYear" : 2015,
+          "districtCode" : 58,
+          "alternate" : false,
+          "memberId" : 415
+        } ]
+      },
+      "person" : {
+        "personId" : 234,
+        "fullName" : "Thomas F. O'Mara",
+        "firstName" : "Thomas",
+        "middleName" : "F.",
+        "lastName" : "O'Mara",
+        "email" : "omara@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "415_thomas_f._o'mara.jpg"
+      },
+      "sessionMemberId" : 1826,
+      "sessionYear" : 2021,
+      "districtCode" : 58,
+      "alternate" : false
+    }, {
+      "memberId" : 1499,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Peter Oberacker",
+      "shortName" : "OBERACKER",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1855,
+          "shortName" : "OBERACKER",
+          "sessionYear" : 2021,
+          "districtCode" : 51,
+          "alternate" : false,
+          "memberId" : 1499
+        } ]
+      },
+      "person" : {
+        "personId" : 1316,
+        "fullName" : "Peter Oberacker",
+        "firstName" : "Peter",
+        "middleName" : "",
+        "lastName" : "Oberacker",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1855,
+      "sessionYear" : 2021,
+      "districtCode" : 51,
+      "alternate" : false
+    }, {
+      "memberId" : 885,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Robert Ortt",
+      "shortName" : "ORTT",
+      "imgName" : "885_robert_ortt.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 957,
+          "shortName" : "ORTT",
+          "sessionYear" : 2017,
+          "districtCode" : 62,
+          "alternate" : false,
+          "memberId" : 885
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1365,
+          "shortName" : "ORTT",
+          "sessionYear" : 2019,
+          "districtCode" : 62,
+          "alternate" : false,
+          "memberId" : 885
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1827,
+          "shortName" : "ORTT",
+          "sessionYear" : 2021,
+          "districtCode" : 62,
+          "alternate" : false,
+          "memberId" : 885
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 879,
+          "shortName" : "ORTT",
+          "sessionYear" : 2015,
+          "districtCode" : 62,
+          "alternate" : false,
+          "memberId" : 885
+        } ]
+      },
+      "person" : {
+        "personId" : 707,
+        "fullName" : "Robert Ortt",
+        "firstName" : "Robert",
+        "middleName" : null,
+        "lastName" : "Ortt",
+        "email" : null,
+        "prefix" : null,
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "885_robert_ortt.jpg"
+      },
+      "sessionMemberId" : 1827,
+      "sessionYear" : 2021,
+      "districtCode" : 62,
+      "alternate" : false
+    }, {
+      "memberId" : 1489,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Anthony H. Palumbo",
+      "shortName" : "PALUMBO",
+      "imgName" : "666_anthony_h._palumbo.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1844,
+          "shortName" : "PALUMBO",
+          "sessionYear" : 2021,
+          "districtCode" : 1,
+          "alternate" : false,
+          "memberId" : 1489
+        } ]
+      },
+      "person" : {
+        "personId" : 488,
+        "fullName" : "Anthony H. Palumbo",
+        "firstName" : "Anthony",
+        "middleName" : "H.",
+        "lastName" : "Palumbo",
+        "email" : null,
+        "prefix" : "Assemblymember",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "666_anthony_h._palumbo.jpg"
+      },
+      "sessionMemberId" : 1844,
+      "sessionYear" : 2021,
+      "districtCode" : 1,
+      "alternate" : false
+    }, {
+      "memberId" : 416,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Kevin S. Parker",
+      "shortName" : "PARKER",
+      "imgName" : "416_kevin_s._parker.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 925,
+          "shortName" : "PARKER",
+          "sessionYear" : 2017,
+          "districtCode" : 21,
+          "alternate" : false,
+          "memberId" : 416
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1194,
+          "shortName" : "PARKER",
+          "sessionYear" : 2019,
+          "districtCode" : 21,
+          "alternate" : false,
+          "memberId" : 416
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1828,
+          "shortName" : "PARKER",
+          "sessionYear" : 2021,
+          "districtCode" : 21,
+          "alternate" : false,
+          "memberId" : 416
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 46,
+          "shortName" : "PARKER",
+          "sessionYear" : 2009,
+          "districtCode" : 21,
+          "alternate" : false,
+          "memberId" : 416
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 110,
+          "shortName" : "PARKER",
+          "sessionYear" : 2011,
+          "districtCode" : 21,
+          "alternate" : false,
+          "memberId" : 416
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 172,
+          "shortName" : "PARKER",
+          "sessionYear" : 2013,
+          "districtCode" : 21,
+          "alternate" : false,
+          "memberId" : 416
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 713,
+          "shortName" : "PARKER",
+          "sessionYear" : 2015,
+          "districtCode" : 21,
+          "alternate" : false,
+          "memberId" : 416
+        } ]
+      },
+      "person" : {
+        "personId" : 235,
+        "fullName" : "Kevin S. Parker",
+        "firstName" : "Kevin",
+        "middleName" : "S.",
+        "lastName" : "Parker",
+        "email" : "parker@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "416_kevin_s._parker.jpg"
+      },
+      "sessionMemberId" : 1828,
+      "sessionYear" : 2021,
+      "districtCode" : 21,
+      "alternate" : false
+    }, {
+      "memberId" : 914,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Roxanne J Persaud",
+      "shortName" : "PERSAUD",
+      "imgName" : "736_Roxanne_Persaud.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1086,
+          "shortName" : "PERSAUD",
+          "sessionYear" : 2017,
+          "districtCode" : 19,
+          "alternate" : false,
+          "memberId" : 914
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1207,
+          "shortName" : "PERSAUD",
+          "sessionYear" : 2019,
+          "districtCode" : 19,
+          "alternate" : false,
+          "memberId" : 914
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1829,
+          "shortName" : "PERSAUD",
+          "sessionYear" : 2021,
+          "districtCode" : 19,
+          "alternate" : false,
+          "memberId" : 914
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 908,
+          "shortName" : "PERSAUD",
+          "sessionYear" : 2015,
+          "districtCode" : 19,
+          "alternate" : false,
+          "memberId" : 914
+        } ]
+      },
+      "person" : {
+        "personId" : 736,
+        "fullName" : "Roxanne J Persaud",
+        "firstName" : "Roxanne",
+        "middleName" : "J",
+        "lastName" : "Persaud",
+        "email" : "persaud@nysenate.gov",
+        "prefix" : "",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "736_Roxanne_Persaud.jpg"
+      },
+      "sessionMemberId" : 1829,
+      "sessionYear" : 2021,
+      "districtCode" : 19,
+      "alternate" : false
+    }, {
+      "memberId" : 1226,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Jessica Ramos",
+      "shortName" : "RAMOS",
+      "imgName" : "1046_Jessica_Ramos.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1224,
+          "shortName" : "RAMOS",
+          "sessionYear" : 2019,
+          "districtCode" : 13,
+          "alternate" : false,
+          "memberId" : 1226
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1830,
+          "shortName" : "RAMOS",
+          "sessionYear" : 2021,
+          "districtCode" : 13,
+          "alternate" : false,
+          "memberId" : 1226
+        } ]
+      },
+      "person" : {
+        "personId" : 1046,
+        "fullName" : "Jessica Ramos",
+        "firstName" : "Jessica",
+        "middleName" : "",
+        "lastName" : "Ramos",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1046_Jessica_Ramos.jpg"
+      },
+      "sessionMemberId" : 1830,
+      "sessionYear" : 2021,
+      "districtCode" : 13,
+      "alternate" : false
+    }, {
+      "memberId" : 1502,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Edward Rath",
+      "shortName" : "RATH",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1858,
+          "shortName" : "RATH",
+          "sessionYear" : 2021,
+          "districtCode" : 61,
+          "alternate" : false,
+          "memberId" : 1502
+        } ]
+      },
+      "person" : {
+        "personId" : 1319,
+        "fullName" : "Edward Rath",
+        "firstName" : "Edward",
+        "middleName" : "",
+        "lastName" : "Rath",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1858,
+      "sessionYear" : 2021,
+      "districtCode" : 61,
+      "alternate" : false
+    }, {
+      "memberId" : 1495,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Elijah Reichlin-Melnick",
+      "shortName" : "REICHLIN-MELNICK",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1850,
+          "shortName" : "REICHLIN-MELNICK",
+          "sessionYear" : 2021,
+          "districtCode" : 38,
+          "alternate" : false,
+          "memberId" : 1495
+        } ]
+      },
+      "person" : {
+        "personId" : 1312,
+        "fullName" : "Elijah Reichlin-Melnick",
+        "firstName" : "Elijah",
+        "middleName" : "",
+        "lastName" : "Reichlin-Melnick",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1850,
+      "sessionYear" : 2021,
+      "districtCode" : 38,
+      "alternate" : false
+    }, {
+      "memberId" : 423,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Patty Ritchie",
+      "shortName" : "RITCHIE",
+      "imgName" : "423_patty_ritchie.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 949,
+          "shortName" : "RITCHIE",
+          "sessionYear" : 2017,
+          "districtCode" : 48,
+          "alternate" : false,
+          "memberId" : 423
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1418,
+          "shortName" : "RITCHIE",
+          "sessionYear" : 2019,
+          "districtCode" : 48,
+          "alternate" : false,
+          "memberId" : 423
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1831,
+          "shortName" : "RITCHIE",
+          "sessionYear" : 2021,
+          "districtCode" : 48,
+          "alternate" : false,
+          "memberId" : 423
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 117,
+          "shortName" : "RITCHIE",
+          "sessionYear" : 2011,
+          "districtCode" : 48,
+          "alternate" : false,
+          "memberId" : 423
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 179,
+          "shortName" : "RITCHIE",
+          "sessionYear" : 2013,
+          "districtCode" : 48,
+          "alternate" : false,
+          "memberId" : 423
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 701,
+          "shortName" : "RITCHIE",
+          "sessionYear" : 2015,
+          "districtCode" : 48,
+          "alternate" : false,
+          "memberId" : 423
+        } ]
+      },
+      "person" : {
+        "personId" : 242,
+        "fullName" : "Patty Ritchie",
+        "firstName" : "Patty",
+        "middleName" : null,
+        "lastName" : "Ritchie",
+        "email" : "ritchie@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "423_patty_ritchie.jpg"
+      },
+      "sessionMemberId" : 1831,
+      "sessionYear" : 2021,
+      "districtCode" : 48,
+      "alternate" : false
+    }, {
+      "memberId" : 377,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Gustavo Rivera",
+      "shortName" : "RIVERA",
+      "imgName" : "377_gustavo_rivera.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 926,
+          "shortName" : "RIVERA",
+          "sessionYear" : 2017,
+          "districtCode" : 33,
+          "alternate" : false,
+          "memberId" : 377
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1196,
+          "shortName" : "RIVERA",
+          "sessionYear" : 2019,
+          "districtCode" : 33,
+          "alternate" : false,
+          "memberId" : 377
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1832,
+          "shortName" : "RIVERA",
+          "sessionYear" : 2021,
+          "districtCode" : 33,
+          "alternate" : false,
+          "memberId" : 377
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 71,
+          "shortName" : "RIVERA",
+          "sessionYear" : 2011,
+          "districtCode" : 33,
+          "alternate" : false,
+          "memberId" : 377
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 133,
+          "shortName" : "RIVERA",
+          "sessionYear" : 2013,
+          "districtCode" : 33,
+          "alternate" : false,
+          "memberId" : 377
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 723,
+          "shortName" : "RIVERA",
+          "sessionYear" : 2015,
+          "districtCode" : 33,
+          "alternate" : false,
+          "memberId" : 377
+        } ]
+      },
+      "person" : {
+        "personId" : 196,
+        "fullName" : "Gustavo Rivera",
+        "firstName" : "Gustavo",
+        "middleName" : null,
+        "lastName" : "Rivera",
+        "email" : "grivera@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "377_gustavo_rivera.jpg"
+      },
+      "sessionMemberId" : 1832,
+      "sessionYear" : 2021,
+      "districtCode" : 33,
+      "alternate" : false
+    }, {
+      "memberId" : 1491,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Sean Ryan",
+      "shortName" : "RYAN",
+      "imgName" : "638_sean_ryan.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1846,
+          "shortName" : "RYAN",
+          "sessionYear" : 2021,
+          "districtCode" : 60,
+          "alternate" : false,
+          "memberId" : 1491
+        } ]
+      },
+      "person" : {
+        "personId" : 460,
+        "fullName" : "Sean Ryan",
+        "firstName" : "Sean",
+        "middleName" : null,
+        "lastName" : "Ryan",
+        "email" : null,
+        "prefix" : "Assembly Member",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "638_sean_ryan.jpg"
+      },
+      "sessionMemberId" : 1846,
+      "sessionYear" : 2021,
+      "districtCode" : 60,
+      "alternate" : false
+    }, {
+      "memberId" : 1227,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Julia Salazar",
+      "shortName" : "SALAZAR",
+      "imgName" : "1047_Julia_Salazar.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1225,
+          "shortName" : "SALAZAR",
+          "sessionYear" : 2019,
+          "districtCode" : 18,
+          "alternate" : false,
+          "memberId" : 1227
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1833,
+          "shortName" : "SALAZAR",
+          "sessionYear" : 2021,
+          "districtCode" : 18,
+          "alternate" : false,
+          "memberId" : 1227
+        } ]
+      },
+      "person" : {
+        "personId" : 1047,
+        "fullName" : "Julia Salazar",
+        "firstName" : "Julia",
+        "middleName" : "",
+        "lastName" : "Salazar",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1047_Julia_Salazar.jpg"
+      },
+      "sessionMemberId" : 1833,
+      "sessionYear" : 2021,
+      "districtCode" : 18,
+      "alternate" : false
+    }, {
+      "memberId" : 432,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "James Sanders Jr.",
+      "shortName" : "SANDERS",
+      "imgName" : "432_james_sanders_jr..jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 932,
+          "shortName" : "SANDERS",
+          "sessionYear" : 2017,
+          "districtCode" : 10,
+          "alternate" : false,
+          "memberId" : 432
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1208,
+          "shortName" : "SANDERS",
+          "sessionYear" : 2019,
+          "districtCode" : 10,
+          "alternate" : false,
+          "memberId" : 432
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1834,
+          "shortName" : "SANDERS",
+          "sessionYear" : 2021,
+          "districtCode" : 10,
+          "alternate" : false,
+          "memberId" : 432
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 134,
+          "shortName" : "SANDERS",
+          "sessionYear" : 2013,
+          "districtCode" : 10,
+          "alternate" : false,
+          "memberId" : 432
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 875,
+          "shortName" : "SANDERS",
+          "sessionYear" : 2015,
+          "districtCode" : 10,
+          "alternate" : false,
+          "memberId" : 432
+        } ]
+      },
+      "person" : {
+        "personId" : 251,
+        "fullName" : "James Sanders Jr.",
+        "firstName" : "James",
+        "middleName" : null,
+        "lastName" : "Sanders",
+        "email" : "sanders@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : "Jr.",
+        "verified" : true,
+        "imgName" : "432_james_sanders_jr..jpg"
+      },
+      "sessionMemberId" : 1834,
+      "sessionYear" : 2021,
+      "districtCode" : 10,
+      "alternate" : false
+    }, {
+      "memberId" : 403,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Diane J. Savino",
+      "shortName" : "SAVINO",
+      "imgName" : "403_diane_j._savino.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 933,
+          "shortName" : "SAVINO",
+          "sessionYear" : 2017,
+          "districtCode" : 23,
+          "alternate" : false,
+          "memberId" : 403
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1284,
+          "shortName" : "SAVINO",
+          "sessionYear" : 2019,
+          "districtCode" : 23,
+          "alternate" : false,
+          "memberId" : 403
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1835,
+          "shortName" : "SAVINO",
+          "sessionYear" : 2021,
+          "districtCode" : 23,
+          "alternate" : false,
+          "memberId" : 403
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 33,
+          "shortName" : "SAVINO",
+          "sessionYear" : 2009,
+          "districtCode" : 23,
+          "alternate" : false,
+          "memberId" : 403
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 97,
+          "shortName" : "SAVINO",
+          "sessionYear" : 2011,
+          "districtCode" : 23,
+          "alternate" : false,
+          "memberId" : 403
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 159,
+          "shortName" : "SAVINO",
+          "sessionYear" : 2013,
+          "districtCode" : 23,
+          "alternate" : false,
+          "memberId" : 403
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 724,
+          "shortName" : "SAVINO",
+          "sessionYear" : 2015,
+          "districtCode" : 23,
+          "alternate" : false,
+          "memberId" : 403
+        } ]
+      },
+      "person" : {
+        "personId" : 222,
+        "fullName" : "Diane J. Savino",
+        "firstName" : "Diane",
+        "middleName" : "J.",
+        "lastName" : "Savino",
+        "email" : "savino@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "403_diane_j._savino.jpg"
+      },
+      "sessionMemberId" : 1835,
+      "sessionYear" : 2021,
+      "districtCode" : 23,
+      "alternate" : false
+    }, {
+      "memberId" : 1142,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Luis R. Sepúlveda",
+      "shortName" : "SEPULVEDA",
+      "imgName" : "493_Luis_Sepúlveda.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1140,
+          "shortName" : "SEPULVEDA",
+          "sessionYear" : 2017,
+          "districtCode" : 32,
+          "alternate" : false,
+          "memberId" : 1142
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1197,
+          "shortName" : "SEPULVEDA",
+          "sessionYear" : 2019,
+          "districtCode" : 32,
+          "alternate" : false,
+          "memberId" : 1142
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1836,
+          "shortName" : "SEPULVEDA",
+          "sessionYear" : 2021,
+          "districtCode" : 32,
+          "alternate" : false,
+          "memberId" : 1142
+        } ]
+      },
+      "person" : {
+        "personId" : 493,
+        "fullName" : "Luis R. Sepúlveda",
+        "firstName" : "Luis",
+        "middleName" : "R.",
+        "lastName" : "Sepúlveda",
+        "email" : null,
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "493_Luis_Sepúlveda.jpg"
+      },
+      "sessionMemberId" : 1836,
+      "sessionYear" : 2021,
+      "districtCode" : 32,
+      "alternate" : false
+    }, {
+      "memberId" : 890,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Susan Serino",
+      "shortName" : "SERINO",
+      "imgName" : "890_susan_serino.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1018,
+          "shortName" : "SERINO",
+          "sessionYear" : 2017,
+          "districtCode" : 41,
+          "alternate" : false,
+          "memberId" : 890
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1368,
+          "shortName" : "SERINO",
+          "sessionYear" : 2019,
+          "districtCode" : 41,
+          "alternate" : false,
+          "memberId" : 890
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1837,
+          "shortName" : "SERINO",
+          "sessionYear" : 2021,
+          "districtCode" : 41,
+          "alternate" : false,
+          "memberId" : 890
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 884,
+          "shortName" : "SERINO",
+          "sessionYear" : 2015,
+          "districtCode" : 41,
+          "alternate" : false,
+          "memberId" : 890
+        } ]
+      },
+      "person" : {
+        "personId" : 712,
+        "fullName" : "Susan Serino",
+        "firstName" : "Susan",
+        "middleName" : null,
+        "lastName" : "Serino",
+        "email" : null,
+        "prefix" : null,
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "890_susan_serino.jpg"
+      },
+      "sessionMemberId" : 1837,
+      "sessionYear" : 2021,
+      "districtCode" : 41,
+      "alternate" : false
+    }, {
+      "memberId" : 373,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "José M. Serrano",
+      "shortName" : "SERRANO",
+      "imgName" : "373_jose_m._serrano.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 934,
+          "shortName" : "SERRANO",
+          "sessionYear" : 2017,
+          "districtCode" : 29,
+          "alternate" : false,
+          "memberId" : 373
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1192,
+          "shortName" : "SERRANO",
+          "sessionYear" : 2019,
+          "districtCode" : 29,
+          "alternate" : false,
+          "memberId" : 373
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1838,
+          "shortName" : "SERRANO",
+          "sessionYear" : 2021,
+          "districtCode" : 29,
+          "alternate" : false,
+          "memberId" : 373
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 5,
+          "shortName" : "SERRANO",
+          "sessionYear" : 2009,
+          "districtCode" : 28,
+          "alternate" : false,
+          "memberId" : 373
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 67,
+          "shortName" : "SERRANO",
+          "sessionYear" : 2011,
+          "districtCode" : 28,
+          "alternate" : false,
+          "memberId" : 373
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 142,
+          "shortName" : "SERRANO",
+          "sessionYear" : 2013,
+          "districtCode" : 29,
+          "alternate" : false,
+          "memberId" : 373
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 709,
+          "shortName" : "SERRANO",
+          "sessionYear" : 2015,
+          "districtCode" : 29,
+          "alternate" : false,
+          "memberId" : 373
+        } ]
+      },
+      "person" : {
+        "personId" : 192,
+        "fullName" : "José M. Serrano",
+        "firstName" : "José",
+        "middleName" : "M.",
+        "lastName" : "Serrano",
+        "email" : "serrano@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "373_jose_m._serrano.jpg"
+      },
+      "sessionMemberId" : 1838,
+      "sessionYear" : 2021,
+      "districtCode" : 29,
+      "alternate" : false
+    }, {
+      "memberId" : 1232,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "James Skoufis",
+      "shortName" : "SKOUFIS",
+      "imgName" : "672_james_skoufis.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1230,
+          "shortName" : "SKOUFIS",
+          "sessionYear" : 2019,
+          "districtCode" : 39,
+          "alternate" : false,
+          "memberId" : 1232
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1839,
+          "shortName" : "SKOUFIS",
+          "sessionYear" : 2021,
+          "districtCode" : 39,
+          "alternate" : false,
+          "memberId" : 1232
+        } ]
+      },
+      "person" : {
+        "personId" : 494,
+        "fullName" : "James Skoufis",
+        "firstName" : "James",
+        "middleName" : "",
+        "lastName" : "Skoufis",
+        "email" : null,
+        "prefix" : "Assemblymember",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "672_james_skoufis.jpg"
+      },
+      "sessionMemberId" : 1839,
+      "sessionYear" : 2021,
+      "districtCode" : 39,
+      "alternate" : false
+    }, {
+      "memberId" : 400,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Toby Ann Stavisky",
+      "shortName" : "STAVISKY",
+      "imgName" : "400_toby_ann_stavisky.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 924,
+          "shortName" : "STAVISKY",
+          "sessionYear" : 2017,
+          "districtCode" : 16,
+          "alternate" : false,
+          "memberId" : 400
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1209,
+          "shortName" : "STAVISKY",
+          "sessionYear" : 2019,
+          "districtCode" : 16,
+          "alternate" : false,
+          "memberId" : 400
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1840,
+          "shortName" : "STAVISKY",
+          "sessionYear" : 2021,
+          "districtCode" : 16,
+          "alternate" : false,
+          "memberId" : 400
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 30,
+          "shortName" : "STAVISKY",
+          "sessionYear" : 2009,
+          "districtCode" : 16,
+          "alternate" : false,
+          "memberId" : 400
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 94,
+          "shortName" : "STAVISKY",
+          "sessionYear" : 2011,
+          "districtCode" : 16,
+          "alternate" : false,
+          "memberId" : 400
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 156,
+          "shortName" : "STAVISKY",
+          "sessionYear" : 2013,
+          "districtCode" : 16,
+          "alternate" : false,
+          "memberId" : 400
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 710,
+          "shortName" : "STAVISKY",
+          "sessionYear" : 2015,
+          "districtCode" : 16,
+          "alternate" : false,
+          "memberId" : 400
+        } ]
+      },
+      "person" : {
+        "personId" : 219,
+        "fullName" : "Toby Ann Stavisky",
+        "firstName" : "Toby",
+        "middleName" : null,
+        "lastName" : "Stavisky",
+        "email" : "stavisky@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "400_toby_ann_stavisky.jpg"
+      },
+      "sessionMemberId" : 1840,
+      "sessionYear" : 2021,
+      "districtCode" : 16,
+      "alternate" : false
+    }, {
+      "memberId" : 1490,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Dan Stec",
+      "shortName" : "STEC",
+      "imgName" : "674_dan_stec.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1845,
+          "shortName" : "STEC",
+          "sessionYear" : 2021,
+          "districtCode" : 45,
+          "alternate" : false,
+          "memberId" : 1490
+        } ]
+      },
+      "person" : {
+        "personId" : 496,
+        "fullName" : "Dan Stec",
+        "firstName" : "Dan",
+        "middleName" : "",
+        "lastName" : "Stec",
+        "email" : null,
+        "prefix" : "Assemblymember",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "674_dan_stec.jpg"
+      },
+      "sessionMemberId" : 1845,
+      "sessionYear" : 2021,
+      "districtCode" : 45,
+      "alternate" : false
+    }, {
+      "memberId" : 396,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Andrea Stewart-Cousins",
+      "shortName" : "STEWART-COUSINS",
+      "imgName" : "396_andrea_stewart-cousins.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1087,
+          "shortName" : "STEWART-COUSINS",
+          "sessionYear" : 2017,
+          "districtCode" : 35,
+          "alternate" : false,
+          "memberId" : 396
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1282,
+          "shortName" : "STEWART-COUSINS",
+          "sessionYear" : 2019,
+          "districtCode" : 35,
+          "alternate" : false,
+          "memberId" : 396
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1841,
+          "shortName" : "STEWART-COUSINS",
+          "sessionYear" : 2021,
+          "districtCode" : 35,
+          "alternate" : false,
+          "memberId" : 396
+        } ],
+        "2009" : [ {
+          "sessionMemberId" : 27,
+          "shortName" : "STEWART-COUSINS",
+          "sessionYear" : 2009,
+          "districtCode" : 35,
+          "alternate" : false,
+          "memberId" : 396
+        } ],
+        "2011" : [ {
+          "sessionMemberId" : 90,
+          "shortName" : "STEWART-COUSINS",
+          "sessionYear" : 2011,
+          "districtCode" : 35,
+          "alternate" : false,
+          "memberId" : 396
+        } ],
+        "2013" : [ {
+          "sessionMemberId" : 152,
+          "shortName" : "STEWART-COUSINS",
+          "sessionYear" : 2013,
+          "districtCode" : 35,
+          "alternate" : false,
+          "memberId" : 396
+        } ],
+        "2015" : [ {
+          "sessionMemberId" : 728,
+          "shortName" : "STEWART-COUSINS",
+          "sessionYear" : 2015,
+          "districtCode" : 35,
+          "alternate" : false,
+          "memberId" : 396
+        } ]
+      },
+      "person" : {
+        "personId" : 215,
+        "fullName" : "Andrea Stewart-Cousins",
+        "firstName" : "Andrea",
+        "middleName" : null,
+        "lastName" : "Stewart-Cousins",
+        "email" : "scousins@senate.state.ny.us",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "396_andrea_stewart-cousins.jpg"
+      },
+      "sessionMemberId" : 1841,
+      "sessionYear" : 2021,
+      "districtCode" : 35,
+      "alternate" : false
+    }, {
+      "memberId" : 1103,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "James Tedisco",
+      "shortName" : "TEDISCO",
+      "imgName" : "925_James_Tedisco.jpg",
+      "sessionShortNameMap" : {
+        "2017" : [ {
+          "sessionMemberId" : 1099,
+          "shortName" : "TEDISCO",
+          "sessionYear" : 2017,
+          "districtCode" : 49,
+          "alternate" : false,
+          "memberId" : 1103
+        } ],
+        "2019" : [ {
+          "sessionMemberId" : 1386,
+          "shortName" : "TEDISCO",
+          "sessionYear" : 2019,
+          "districtCode" : 49,
+          "alternate" : false,
+          "memberId" : 1103
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1842,
+          "shortName" : "TEDISCO",
+          "sessionYear" : 2021,
+          "districtCode" : 49,
+          "alternate" : false,
+          "memberId" : 1103
+        } ]
+      },
+      "person" : {
+        "personId" : 925,
+        "fullName" : "James Tedisco",
+        "firstName" : "James",
+        "middleName" : null,
+        "lastName" : "Tedisco",
+        "email" : "Tedisco@nysenate.gov",
+        "prefix" : "Senator",
+        "suffix" : null,
+        "verified" : true,
+        "imgName" : "925_James_Tedisco.jpg"
+      },
+      "sessionMemberId" : 1842,
+      "sessionYear" : 2021,
+      "districtCode" : 49,
+      "alternate" : false
+    }, {
+      "memberId" : 1223,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Kevin Thomas",
+      "shortName" : "THOMAS",
+      "imgName" : "1043_Kevin_Thomas.jpg",
+      "sessionShortNameMap" : {
+        "2019" : [ {
+          "sessionMemberId" : 1221,
+          "shortName" : "THOMAS",
+          "sessionYear" : 2019,
+          "districtCode" : 6,
+          "alternate" : false,
+          "memberId" : 1223
+        } ],
+        "2021" : [ {
+          "sessionMemberId" : 1843,
+          "shortName" : "THOMAS",
+          "sessionYear" : 2021,
+          "districtCode" : 6,
+          "alternate" : false,
+          "memberId" : 1223
+        } ]
+      },
+      "person" : {
+        "personId" : 1043,
+        "fullName" : "Kevin Thomas",
+        "firstName" : "Kevin",
+        "middleName" : "",
+        "lastName" : "Thomas",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "1043_Kevin_Thomas.jpg"
+      },
+      "sessionMemberId" : 1843,
+      "sessionYear" : 2021,
+      "districtCode" : 6,
+      "alternate" : false
+    }, {
+      "memberId" : 1493,
+      "chamber" : "SENATE",
+      "incumbent" : true,
+      "fullName" : "Alexis Weik",
+      "shortName" : "WEIK",
+      "imgName" : "no_image.jpg",
+      "sessionShortNameMap" : {
+        "2021" : [ {
+          "sessionMemberId" : 1848,
+          "shortName" : "WEIK",
+          "sessionYear" : 2021,
+          "districtCode" : 3,
+          "alternate" : false,
+          "memberId" : 1493
+        } ]
+      },
+      "person" : {
+        "personId" : 1310,
+        "fullName" : "Alexis Weik",
+        "firstName" : "Alexis",
+        "middleName" : "",
+        "lastName" : "Weik",
+        "email" : "",
+        "prefix" : "Senator",
+        "suffix" : "",
+        "verified" : true,
+        "imgName" : "no_image.jpg"
+      },
+      "sessionMemberId" : 1848,
+      "sessionYear" : 2021,
+      "districtCode" : 3,
+      "alternate" : false
+    } ],
+    "size" : 63
+  }
+}
