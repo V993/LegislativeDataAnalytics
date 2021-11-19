@@ -9,7 +9,7 @@ import { City, Assembly, Senate } from "./components";
 
 function App() {
     return (
-        <div className="">
+        <html>
             <div>
                 <Router>
                         <Navigation/>
@@ -21,14 +21,14 @@ function App() {
                             <Route path="/data/SenateData" exact component={() => <Senate />}></Route>
                             <Route path="/local-info" exact component={Local}></Route>
                             <Route path="/information" exact component={Information}></Route>
-                            <Route component={NotFound}></Route>
                             {/* <Route path="/about" exact component={() => <About />}></Route> */}
+                            <Route component={NotFound}></Route>
                         </Switch>
                     <Footer />
                 </Router>   
             </div>
             
-        </div>
+        </html>
     );
 
 }
