@@ -31,9 +31,11 @@ const options = {
     var label_for_click =
       event.chart.config._config.data.labels[index_for_click];
 
-    console.log(index_for_click);
-    console.log("this is what i got for label:", data_for_click);
-    console.log("this is what i got for datasets:", label_for_click);
+    console.log(index_for_click)
+    console.log("this is what i got for label:", label_for_click);
+    console.log("this is what i got for datasets:", data_for_click);
+
+    
   },
 };
 
@@ -114,7 +116,8 @@ export default class Committees extends React.Component {
             datasets: [
               {
                 label: "# of Bills Voted On",
-                backgroundColor: "rgba(75,192,192,1)",
+                backgroundColor: "rgba(138, 182, 169, 0.9)",
+                // linear-gradient( rgba(138, 182, 169, 0.5), rgba(255, 255, 255, 0) )
                 borderColor: "rgba(0,0,0,1)",
                 borderWidth: 1,
                 data: this.state.votes,

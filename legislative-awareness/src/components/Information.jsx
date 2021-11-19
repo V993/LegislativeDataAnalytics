@@ -1,11 +1,12 @@
 import React from "react";
 // import {Link, withRouter } from "react-router-dom";
-import { Navigation } from ".";
+// import Navigation from "./Navigation";
+
 
 function Information() {
   return (
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       <div className="thin">
         <h1 className="center-header">The New York State Government</h1>
         <div className="">

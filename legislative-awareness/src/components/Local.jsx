@@ -1,8 +1,8 @@
 import { Component } from "react";
 import axios from "axios";
-import "./style.css";
+// import "./style.css";
 import { SocialIcon } from "react-social-icons";
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import "@fontsource/roboto/300.css";
@@ -165,7 +165,7 @@ class Local extends Component {
   render() {
     return (
       <div>
-        <Navigation />
+
         <div className="split">
           {/* First Half: */}
 
@@ -224,16 +224,44 @@ class Local extends Component {
                   <br></br>
 
                   <ul className="list">{this.makeList()}</ul>
+
+                  <br></br>
+                  <br></br>
+
+                  <div className="smolButton">
+                    Top
+                  </div>
                 </div>
+        
               ) : (
-                <Typography
-                  variant="body2"
-                  className="descriptionText"
-                  component="div"
-                  gutterBottom
-                >
-                  No results found.
-                </Typography>
+                <div className="box">
+                  <div className="">
+                    <div className="split">
+                      <img 
+                        alt="Rep"
+                        src="bobbobberson.jpg"
+                      />
+                      <div className="splitItem">
+                      <Typography variant="h4" component="div" gutterBottom>
+                        Bob Bobberson (D)
+                        <Typography variant="h5" component="div" gutterBottom>
+                          Representative of Representation
+                        </Typography>
+                      </Typography>
+                      </div>
+                    </div>
+                    <br></br>
+                    <Typography variant="body1" component="div" gutterBottom>
+                      <li>Address: Main St, Somewhere, NY </li>
+                      <li>Phone: (XXX) XXX-XXXX </li>
+                      <li>Website: chasethemoney.com </li>
+                      <li>Social Media: Bob Bobberson is off the grid and hiding 
+                        from federal representatives. If you see him, please 
+                        contact the appropriate authorities.</li>
+
+                    </Typography>
+                  </div>
+                </div>
               )}
             </div>
           </div>

@@ -6,7 +6,7 @@ function Navigation(props) {
     <div className="navigation">
       <nav className="navbar navbar-expand navbar-light bg-white">
         <div className="container">
-          <Link className="navbar-brand link" to="/">
+          <Link className="link" to="/">
             <h3>Legislative Awareness</h3>
           </Link>
 
@@ -40,6 +40,15 @@ function Navigation(props) {
                   Information
                 </Link>
               </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/about" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -48,4 +57,6 @@ function Navigation(props) {
   );
 }
 
-export default withRouter(Navigation);
+var NavigationBar = withRouter(Navigation)
+
+export default NavigationBar;

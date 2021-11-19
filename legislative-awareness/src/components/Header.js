@@ -1,14 +1,13 @@
-import { Link } from "react-router-dom";
-import "./style.css";
+// import "./style.css";
 
 export default function Header() {
   return (
     <div>
-      <header>
+      {/* <header>
         <Link to="/" className="link">
           <h1>Legislative Awareness</h1>
         </Link>
-      </header>
+      </header> */}
       <div className="split">
         <div className="textBlock">
           <h3 className="underline">What we are:</h3>

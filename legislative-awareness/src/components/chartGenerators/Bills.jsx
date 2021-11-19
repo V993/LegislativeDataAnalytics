@@ -81,7 +81,7 @@ export default class Bills extends React.Component {
             datasets: [
               {
                 label: "# of Bills Voted On",
-                backgroundColor: "rgba(75,192,192,1)",
+                backgroundColor: "rgba(138, 182, 169, 0.5)",
                 borderColor: "rgba(0,0,0,1)",
                 borderWidth: 1,
                 data: this.state.votes,
