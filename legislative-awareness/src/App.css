@@ -137,7 +137,7 @@ header {
 
 .cell.pillar:hover {
   border: 10px yellow;
-  transform: scale(1.10);
+  transform: scale(1.02);
   transition-duration: 0.8s;
 }
 
