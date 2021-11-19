@@ -49,3 +49,21 @@ CREATE TABLE councilmembers (
 	Borough VARCHAR(255),
 	PoliticalParty VARCHAR(255)
 );
+
+CREATE TABLE assembly (
+	memberId INT PRIMARY KEY,
+	incumbent BOOLEAN,
+	fullName VARCHAR(255),
+	imgName VARCHAR(255),
+	sessionMemberId INT,
+	districtCode INT
+);
+
+CREATE TABLE senate (
+	memberId INT PRIMARY KEY,
+	incumbent BOOLEAN,
+	fullName VARCHAR(255),
+	imgName VARCHAR(255),
+	sessionMemberId INT,
+	districtCode INT
+);
