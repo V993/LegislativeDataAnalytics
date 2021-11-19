@@ -1,29 +1,29 @@
-import React from "react";
-import { BarChart } from "./Bar";
-import Bills from "./Bills";
-import Committees from "./Committees";
-import Proximity from "./Proximity";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-export default class DataNavigation extends React.Component {
+class DataNavigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      apiData: {},
-      reps: [],
-      votes: [],
-      found: false,
-      startDate: null,
-      endDate: null,
+      
     };
   }
 
   render() {
     return (
-      <div>
-        <button>Bills Sponsored by a Representative</button>
-        <button>Bills Considered by a Committee</button>
-        <button>Voting Proximity Between Representatives</button>
+      <div className="pillars">
+
+        <Link to="data/CityData" className="cell pillar city"></Link>
+        <Link to="data/AssemblyData" className="cell pillar assembly"></Link>
+        <Link to="data/SenateData" className="cell pillar senate"></Link>
+
+        {/* <div className="cell pillar city"><Link to="data/CityData" className="Link">New York City Council</Link></div>
+        <div className="cell pillar assembly"><Link to="data/AssemblyData" className="Link">New York State Assembly</Link></div>
+        <div className="cell pillar senate"><Link to="data/SenateData" className="Link">New York State Senate</Link></div> */}
       </div>
     );
   }
 }
+
+
+export default DataNavigation;

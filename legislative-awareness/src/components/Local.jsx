@@ -165,7 +165,6 @@ class Local extends Component {
   render() {
     return (
       <div>
-
         <div className="split">
           {/* First Half: */}
 

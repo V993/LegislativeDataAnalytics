@@ -77,7 +77,7 @@ header {
   padding: 7em;
   text-align: center;
   margin: 0.6em;
-  background-color: gray;
+  background-color: rgba(138, 182, 169, 0.5);
   cursor: pointer;
   flex-shrink: 1;
   opacity: 1;
@@ -129,6 +129,37 @@ header {
   backdrop-filter: blur(4px);
 }
 
+.cell.pillar {
+  border-radius: 10px !important;
+  width: 33% !important;
+  height: 100%;
+}
+
+.cell.pillar:hover {
+  border: 10px yellow;
+  transform: scale(1.02);
+  transition-duration: 0.8s;
+}
+
+.cell.pillar.city {
+  background-image: url("./components/assets/cityLogo.png");
+  background-size: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cell.pillar.assembly {
+  background-image: url("./components/assets/assemblyLogo.svg");
+  background-size: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cell.pillar.senate {
+  background-image: url("./components/assets/senateLogo.png");
+  background-size: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .item {
   border: black 1px;
   display: block;
@@ -177,6 +208,16 @@ header {
   color: dodgerblue;
   transform: scale(1.01);
   transition-duration: 0.6s;
+}
+
+
+/* DATA PAGE STYLING */
+
+.pillars {
+  padding-top: 1em;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
 }
 
 /* ADDRESS SEARCH STYLING */
@@ -288,19 +329,6 @@ header {
 .descriptionText {
   padding-left: 5em;
 }
-
-/* .box {
-  color: #fff;
-  align-items: center;
-  text-align: center;
-  max-width: flex;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: flex;
-  border: 1px solid white;
-  padding: 1em;
-  border-radius: 5px;
-} */
 
 .list {
   align-content: left;
