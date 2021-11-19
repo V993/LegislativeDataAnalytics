@@ -342,7 +342,7 @@ ul > ul {
   border-bottom: ridge black;
 }
 
-/* FOOTER: */
+/* FOOTER PAGE */
 
 /* needs work */
 .foot {
@@ -357,4 +357,22 @@ ul > ul {
   width: 50%;
   float: left;
   padding: 20px;
+}
+
+/* DATA PAGE */
+.rep-title {
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.rep-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.rep-name {
+  margin-bottom: 1rem;
+}
+
+.rep-details > p {
+  margin-bottom: 0.5rem;
 }

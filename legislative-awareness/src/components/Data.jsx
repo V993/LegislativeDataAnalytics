@@ -8,6 +8,7 @@ import "./style.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
+import axios from "axios";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -24,28 +25,60 @@ export default class Data extends React.Component {
     this.state = {
       chart: "bills",
       sidebarOpen: false,
+      label: "",
+      member: {},
     };
     this.showBills = (e) => this.setState({ chart: "bills" });
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+    this.handleData = this.handleData.bind(this);
   }
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
+  handleData = async (query) => {
+    let url =
+      "http://206.81.7.63:5000/info-apis/council-member-info?name=" + query;
+
+    try {
+      let response = await axios.get(url);
+      this.setState({ member: response.data, label: query, sidebarOpen: true });
+    } catch (error) {
+      if (error.response) {
+        console.error(`Error: Not Found - ${error.response.data}`);
+        console.error(`Error: ${error.response.status}`);
+      }
+    }
+  };
+
   render() {
+    const sidebarContent = (
+      <div>
+        <h2 className="rep-title">Representative Information</h2>
+        {this.state.member === "" ? (
+          <p>No results for "{this.state.label}"</p>
+        ) : (
+          <div className="rep-info">
+            <h4 className="rep-name">{this.state.member.name}</h4>
+            <small className="rep-details">
+              <p>{this.state.member.politicalparty}</p>
+              <p>District {this.state.member.district}</p>
+              <p>{this.state.member.borough}</p>
+            </small>
+          </div>
+        )}
+      </div>
+    );
     return (
       <>
         <Sidebar
-          sidebar={<h3>Representative Info</h3>}
+          sidebar={sidebarContent}
           open={this.state.sidebarOpen}
           onSetOpen={this.onSetSidebarOpen}
           pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
-          <button onClick={() => this.onSetSidebarOpen(true)}>
-            Open sidebar
-          </button>
           <Navigation />
 
           <div className="data">
@@ -82,7 +115,11 @@ export default class Data extends React.Component {
                       </ColorButton>
                     </Stack>
                   </div>
-                  {this.state.chart === "bills" ? <Bills /> : <div />}
+                  {this.state.chart === "bills" ? (
+                    <Bills clickedLabel={this.handleData} />
+                  ) : (
+                    <div />
+                  )}
                   {this.state.chart === "committees" ? <Committees /> : <div />}
                   {this.state.chart === "proximity" ? <Proximity /> : <div />}
                 </div>
