@@ -2,9 +2,7 @@ import React from "react";
 import Bills from "./chartGenerators/Bills";
 import Committees from "./chartGenerators/Committees";
 import Proximity from "./chartGenerators/Proximity";
-import Navigation from "./Navigation";
 import Sidebar from "react-sidebar";
-// import "./style.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
@@ -79,7 +77,6 @@ export default class Data extends React.Component {
           pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
-          <Navigation />
 
           <div className="data">
             <div className="container">
