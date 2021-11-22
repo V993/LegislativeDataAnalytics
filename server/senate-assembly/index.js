@@ -30,8 +30,23 @@ fs.readFile('./assembly.json', 'utf8', (err, assembly) => {
 	   delete e.alternate;
 });
 
+fs.readFile('./search.json',  'utf8', (err, bills) => {
+	
+	if (err) console.error(err)
+
+	JSON.parse(JSON.stringify(bills));
+	parsedBills = JSON.parse(bills);
+	billData = parsedBills.result.items;
+	//parsedBillData = JSON.parse(billData);
+
+	billData.forEach((e) => {
+	   delete e.rank;
+	   delete e.highlights;
+});	
+	const strBillData = JSON.stringify(billData);
 	const strSenateData = JSON.stringify(senateData);
 	const strAssemblyData = JSON.stringify(assemblyData); 
+
 
 fs.writeFile('./senateData.json', strSenateData, err => {
 	
@@ -42,7 +57,14 @@ fs.writeFile('./assemblyData.json', strAssemblyData, err => {
 
 	if (err) console.error(err)
 });
+
+fs.writeFile('./billData.json', strBillData, err => {
+
+	if (err) console.error(err)
+});
 	console.log(senateData)
 	console.log(assemblyData)
+	console.log(billData)
+});
 });
 });
