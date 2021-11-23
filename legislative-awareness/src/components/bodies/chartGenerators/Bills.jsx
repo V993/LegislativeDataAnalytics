@@ -4,39 +4,6 @@ import { Bar } from "react-chartjs-2";
 import Calendar from "./Calendar";
 import Typography from "@mui/material/Typography";
 
-const options = {
-  indexAxis: "x",
-  elements: {
-    bar: {
-      borderWidth: 2,
-    },
-  },
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "right",
-    },
-    title: {
-      display: true,
-      text: "Representatives and Number of Bills Put Forward",
-    },
-  },
-  events: ["click", "mousemove"],
-  onClick: (event, item) => {
-    if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
-
-    var index_for_click = item[0].index;
-    var data_for_click =
-      event.chart.config._config.data.datasets[0].data[index_for_click];
-    var label_for_click =
-      event.chart.config._config.data.labels[index_for_click];
-
-    console.log(index_for_click);
-    console.log("this is what i got for label:", data_for_click);
-    console.log("this is what i got for datasets:", label_for_click);
-  },
-};
-
 export default class Bills extends React.Component {
   API_URL = "http://206.81.7.63:5000/graph-apis/representative-bills";
   constructor(props) {
@@ -114,14 +81,46 @@ export default class Bills extends React.Component {
             datasets: [
               {
                 label: "# of Bills Voted On",
-                backgroundColor: "rgba(75,192,192,1)",
+                backgroundColor: "rgba(138, 182, 169, 0.5)",
                 borderColor: "rgba(0,0,0,1)",
                 borderWidth: 1,
                 data: this.state.votes,
               },
             ],
           }}
-          options={options}
+          options={{
+            indexAxis: "x",
+            elements: {
+              bar: {
+                borderWidth: 2,
+              },
+            },
+            responsive: true,
+            plugins: {
+              legend: {
+                position: "right",
+              },
+              title: {
+                display: true,
+                text: "Representatives and Number of Bills Put Forward",
+              },
+            },
+            events: ["click", "mousemove"],
+            onClick: (event, item) => {
+              if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
+
+              var idx = item[0].index;
+              // var value =
+              //   event.chart.config._config.data.datasets[0].data[
+              //     idx
+              //   ];
+              var label =
+                event.chart.config._config.data.labels[idx];
+
+              // console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
+              this.props.clickedLabel(label);
+            },
+          }}
         />
       </div>
     );
