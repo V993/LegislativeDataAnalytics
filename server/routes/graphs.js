@@ -4,7 +4,7 @@ const pool = require("../db")
 const fs = require('fs');
 
 //responds with a list of representatives and the number of bills they proposed since a given date
-router.get("/graph-apis/representative-bills", async function(req, res) {
+router.get("/representative-bills", async function(req, res) {
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
     const query = `
@@ -24,7 +24,7 @@ router.get("/graph-apis/representative-bills", async function(req, res) {
 });
 
 //responds with a list of committees and the number of bills they proposed since a given date
-router.get("/graph-apis/committee-bills", async function(req, res) {
+router.get("/committee-bills", async function(req, res) {
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
     const query = `
@@ -42,7 +42,7 @@ router.get("/graph-apis/committee-bills", async function(req, res) {
 });
 
 //responds with the list of representatives and the number of bills they proposed for each month in a given year
-router.get("/graph-apis/activeness-by-month", async function(req, res) {
+router.get("/activeness-by-month", async function(req, res) {
     const year = req.query.year;
     if (!year) {
         const err = new Error("Year is missing");
@@ -63,7 +63,7 @@ router.get("/graph-apis/activeness-by-month", async function(req, res) {
     }
 });
 
-router.get("/graph-apis/proximity-calculation", async function(req, res) {
+router.get("/proximity-calculation", async function(req, res) {
     const repx = req.query.repx.replace(' ','_');
     const repy = req.query.repy.replace(' ','_');
     try {
