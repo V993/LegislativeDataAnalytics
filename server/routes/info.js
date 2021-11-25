@@ -34,3 +34,5 @@ router.get("/info-apis/assembly-info", async function(req, res) {
         console.error(error.message)
     }
 });
+
+module.exports = router;
