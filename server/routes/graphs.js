@@ -75,3 +75,5 @@ router.get("/proximity-calculation", async function(req, res) {
         console.error(error.message)
     }
 });
+
+module.exports = router;
