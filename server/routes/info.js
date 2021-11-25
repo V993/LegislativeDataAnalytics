@@ -3,7 +3,7 @@ const router = express.Router();
 const pool = require("../db")
 
 router.get("/", function(req, res) {
-    res.send("This route is for the info data");
+    res.send("This route is for the representative info data");
 });
 
 //returns a single object with council member info given their name
