@@ -3,7 +3,6 @@ const cors = require('cors');
 const express = require("express");
 const pool = require("./db")
 const app = express();
-const fs = require('fs');
 
 const PORT = process.env.PORT || 5000;
 
@@ -17,6 +16,9 @@ app.use(cors({
 app.get("/", function(req, res) {
     res.send('This is the port with the DB API')
 });
+
+//routes for graph apis
+app.use("/graph-apis", require("./routes/graphs"));
 
 //returns a single object with council member info given their name
 app.get("/info-apis/council-member-info", async function(req, res) {
