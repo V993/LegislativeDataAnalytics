@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const pool = require("../db")
+const fs = require('fs');
 
 //responds with a list of representatives and the number of bills they proposed since a given date
 router.get("/graph-apis/representative-bills", async function(req, res) {
