@@ -2,6 +2,10 @@ const express = require("express");
 const router = express.Router();
 const pool = require("../db")
 
+router.get("/", function(req, res) {
+    res.send("This route is for the graph data");
+});
+
 //returns a single object with council member info given their name
 router.get("/council-member-info", async function(req, res) {
     const name = req.query.name;

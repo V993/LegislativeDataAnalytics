@@ -4,7 +4,7 @@ const pool = require("../db")
 const fs = require('fs');
 
 router.get("/", function(req, res) {
-    res.send("This route is for the graph data")
+    res.send("This route is for the graph data");
 });
 
 //responds with a list of representatives and the number of bills they proposed since a given date
