@@ -19,6 +19,8 @@ app.get("/", function(req, res) {
 //routes for graph apis
 app.use("/graph-apis", require("./routes/graphs"));
 
+//routes for info apis
+app.use("/info-apis", require("./routes/info"));
 
 app.listen(PORT, function() {
     console.log(`Server is running on port ${PORT}`);
