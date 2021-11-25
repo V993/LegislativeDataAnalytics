@@ -67,8 +67,8 @@ router.get("/proximity-calculation", async function(req, res) {
     const repx = req.query.repx.replace(' ','_');
     const repy = req.query.repy.replace(' ','_');
     try {
-        fname = "./proximity-calculation/responses/" + repx + "_" + repy + ".json";
-        data = fs.readFileSync('proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
+        fname = "../proximity-calculation/responses/" + repx + "_" + repy + ".json";
+        data = fs.readFileSync('../proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
         console.log(data);
         res.json(JSON.parse(data));
     } catch (error) {
