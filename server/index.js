@@ -5,8 +5,6 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-console.log(pool);
-
 app.use(express.json());
 app.use(cors({
   origin: '*'
