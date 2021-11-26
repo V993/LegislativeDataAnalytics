@@ -69,6 +69,7 @@ router.get("/activeness-by-month", async function(req, res) {
 });
 
 router.get("/proximity-calculation", async function(req, res) {
+    console.log("called proximity-calculation");
     const repx = req.query.repx.replace(' ','_');
     const repy = req.query.repy.replace(' ','_');
     try {
@@ -76,11 +77,15 @@ router.get("/proximity-calculation", async function(req, res) {
         let command = "./proximity-calculation/prox George_Costanza Jerry_Seinfeld targets Elaine_Benes Cosmo_Kramer Newman";
         exec(command, (err, stdout, stderr) => {
           if (err) {
-
+		console.log("Error after cl call");
           }
           else {
-            // Await output file
-            // Read and return output file
+		console.log("No error after cl call " + command);
+            	// Await output file
+        	data = fs.readFileSync('./proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
+		// Read and return output file
+        	console.log(data);
+      		res.json(JSON.parse(data));
           }
         });
         // Await output file
