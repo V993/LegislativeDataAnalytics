@@ -1,0 +1,126 @@
+[
+{
+	"VoteId":530902,
+	"VoteGuid":"2BA8CC63-891C-4968-8B61-BF087B209FAF",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkgg0=",
+	"VotePersonId":5273,
+	"VotePersonName":"James F. Gennaro",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":10,
+	"VoteResult":0,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530903,
+	"VoteGuid":"CD8E5763-8BC5-47FE-8A48-3AD7DEF0527B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkgg4=",
+	"VotePersonId":429,
+	"VotePersonName":"Margarita Lopez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530904,
+	"VoteGuid":"13005961-3582-467D-AFDE-A7BB3F55D6A4",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkgg8=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530905,
+	"VoteGuid":"8FA88C20-BF3F-415E-A41B-1FE07BD43CE8",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkghA=",
+	"VotePersonId":5277,
+	"VotePersonName":"Allan W. Jennings, Jr.",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":40,
+	"VoteResult":0,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530906,
+	"VoteGuid":"A09C68DC-02F2-45E2-9D34-2C38E3735A73",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkghE=",
+	"VotePersonId":5262,
+	"VotePersonName":"G. Oliver Koppell",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":50,
+	"VoteResult":0,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530907,
+	"VoteGuid":"6546F4E1-A01F-4464-B7D2-1E96AF9E580B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkghI=",
+	"VotePersonId":5292,
+	"VotePersonName":"Domenic M. Recchia, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":60,
+	"VoteResult":1,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530908,
+	"VoteGuid":"1A2FEF8A-F162-4303-AB5C-AD9DFF553FA6",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkghM=",
+	"VotePersonId":5266,
+	"VotePersonName":"Jose M. Serrano",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530909,
+	"VoteGuid":"C521EEA5-53A4-452D-BBB0-6F039DD97908",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkghQ=",
+	"VotePersonId":5271,
+	"VotePersonName":"Peter F. Vallone, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":80,
+	"VoteResult":1,
+	"VoteEventItemId":162405
+},
+
+{
+	"VoteId":530910,
+	"VoteGuid":"85BD8A83-7AC4-489F-8F74-7A1F8C8C9BB8",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkghU=",
+	"VotePersonId":5279,
+	"VotePersonName":"Dennis P. Gallagher",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":90,
+	"VoteResult":1,
+	"VoteEventItemId":162405
+}]

@@ -1,0 +1,84 @@
+[
+{
+	"VoteId":512604,
+	"VoteGuid":"E7FD5A88-3653-4FFD-A154-5D5DC694AC63",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkc8M=",
+	"VotePersonId":5287,
+	"VotePersonName":"Yvette D. Clarke",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":142602
+},
+
+{
+	"VoteId":512605,
+	"VoteGuid":"3AD9F2F9-721E-4220-95A4-A63E25F87EB8",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkc8Q=",
+	"VotePersonId":424,
+	"VotePersonName":"Tracy L. Boyland",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":20,
+	"VoteResult":0,
+	"VoteEventItemId":142602
+},
+
+{
+	"VoteId":512606,
+	"VoteGuid":"795414B3-1711-42AC-B622-737CA89EF877",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkc8U=",
+	"VotePersonId":5268,
+	"VotePersonName":"Tony Avella",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":142602
+},
+
+{
+	"VoteId":512607,
+	"VoteGuid":"3B54863D-4FAD-4F54-A4BB-C4B5B2AA1FDB",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkc8Y=",
+	"VotePersonId":5270,
+	"VotePersonName":"Hiram Monserrate",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":142602
+},
+
+{
+	"VoteId":512608,
+	"VoteGuid":"88AD764C-E341-4D63-BF3C-81A88DC698B5",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkc8c=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":60,
+	"VoteResult":1,
+	"VoteEventItemId":142602
+},
+
+{
+	"VoteId":512609,
+	"VoteGuid":"116A03CA-1638-4346-BE7D-A56F5DCBD90A",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkc8g=",
+	"VotePersonId":5282,
+	"VotePersonName":"David Yassky",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":65,
+	"VoteResult":1,
+	"VoteEventItemId":142602
+}]

@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":660728,
+	"VoteGuid":"A702B80F-85F6-4F6B-ABBB-C5D6E41C5123",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABKPQw=",
+	"VotePersonId":7566,
+	"VotePersonName":"Brad S. Lander",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":238941
+},
+
+{
+	"VoteId":660729,
+	"VoteGuid":"884303F0-25CC-4A3C-8AE1-E90EC3CFB874",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABKPQ0=",
+	"VotePersonId":5911,
+	"VotePersonName":"Maria Del Carmen Arroyo",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":2,
+	"VoteResult":1,
+	"VoteEventItemId":238941
+},
+
+{
+	"VoteId":660730,
+	"VoteGuid":"8D6C16CD-65BC-4181-9637-36F4C98BA80B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABKPQc=",
+	"VotePersonId":6274,
+	"VotePersonName":"Rosie Mendez",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":3,
+	"VoteResult":0,
+	"VoteEventItemId":238941
+},
+
+{
+	"VoteId":660731,
+	"VoteGuid":"09157824-E7B6-49F5-9C22-66369E841D80",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABbHKk=",
+	"VotePersonId":5416,
+	"VotePersonName":"Annabel Palma",
+	"VoteValueId":46,
+	"VoteValueName":"Medical",
+	"VoteSort":4,
+	"VoteResult":0,
+	"VoteEventItemId":238941
+},
+
+{
+	"VoteId":660732,
+	"VoteGuid":"F5B6B21F-6921-4B5A-9A6E-C5132EBFB31E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABKPQ4=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":238941
+},
+
+{
+	"VoteId":660733,
+	"VoteGuid":"C8AD8E2D-5BC1-489A-9DD4-E9ECFD7F20C1",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABKPQ8=",
+	"VotePersonId":7571,
+	"VotePersonName":"Jumaane D. Williams",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":6,
+	"VoteResult":1,
+	"VoteEventItemId":238941
+},
+
+{
+	"VoteId":660734,
+	"VoteGuid":"3FD8EE64-77B9-493E-9D69-544BE4179E25",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABKPRA=",
+	"VotePersonId":7565,
+	"VotePersonName":"Peter A. Koo",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":7,
+	"VoteResult":1,
+	"VoteEventItemId":238941
+}]

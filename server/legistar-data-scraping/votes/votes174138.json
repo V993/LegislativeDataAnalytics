@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":548388,
+	"VoteGuid":"2B8A14B3-E3E7-4B0E-A644-5235695FC2DF",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkx84=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":174138
+},
+
+{
+	"VoteId":548389,
+	"VoteGuid":"D826715A-3C47-4249-BF78-4FE2ADE3E8A3",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkx88=",
+	"VotePersonId":430,
+	"VotePersonName":"Bill Perkins",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":174138
+},
+
+{
+	"VoteId":548390,
+	"VoteGuid":"8C68BB74-9015-4F36-B43F-377D46BB2E34",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkx9A=",
+	"VotePersonId":434,
+	"VotePersonName":"Christine C. Quinn",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":174138
+},
+
+{
+	"VoteId":548391,
+	"VoteGuid":"5830CC16-948F-40E8-8371-B40E5C0B35F1",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkx9E=",
+	"VotePersonId":5259,
+	"VotePersonName":"Gale A. Brewer",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":40,
+	"VoteResult":1,
+	"VoteEventItemId":174138
+},
+
+{
+	"VoteId":548392,
+	"VoteGuid":"7E120AB5-980C-4DCD-9354-AAC74F941009",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkx9I=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":50,
+	"VoteResult":0,
+	"VoteEventItemId":174138
+},
+
+{
+	"VoteId":548393,
+	"VoteGuid":"AB745A9F-5C50-4C1D-B349-EC8A6D171899",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkx9M=",
+	"VotePersonId":5416,
+	"VotePersonName":"Annabel Palma",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":70,
+	"VoteResult":0,
+	"VoteEventItemId":174138
+},
+
+{
+	"VoteId":548394,
+	"VoteGuid":"C50CE31A-5A3B-45F0-B1C0-AF6D349D527A",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkx9Q=",
+	"VotePersonId":5911,
+	"VotePersonName":"Maria Del Carmen Arroyo",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1005,
+	"VoteResult":1,
+	"VoteEventItemId":174138
+}]

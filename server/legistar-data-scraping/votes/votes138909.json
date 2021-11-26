@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":509744,
+	"VoteGuid":"EEEBB38C-E3D8-4026-9DEE-76F16F1B069B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkOWY=",
+	"VotePersonId":432,
+	"VotePersonName":"Philip Reed",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":138909
+},
+
+{
+	"VoteId":509745,
+	"VoteGuid":"E4AAAF08-242E-439D-9F11-9FDF45EE5BC3",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkOWc=",
+	"VotePersonId":5281,
+	"VotePersonName":"Joseph P. Addabbo, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":19,
+	"VoteResult":1,
+	"VoteEventItemId":138909
+},
+
+{
+	"VoteId":509746,
+	"VoteGuid":"C7CAD5C7-6468-4493-9117-D3C222BA46DB",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkOWg=",
+	"VotePersonId":5288,
+	"VotePersonName":"Charles Barron",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":138909
+},
+
+{
+	"VoteId":509747,
+	"VoteGuid":"4CF45685-54D5-48D6-928F-F3D94A4B7A01",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkOWk=",
+	"VotePersonId":5283,
+	"VotePersonName":"James E. Davis",
+	"VoteValueId":12,
+	"VoteValueName":"Negative",
+	"VoteSort":30,
+	"VoteResult":2,
+	"VoteEventItemId":138909
+},
+
+{
+	"VoteId":509748,
+	"VoteGuid":"EFE7C3E8-1D4D-4229-ACE8-FE0BEAB19243",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkOWo=",
+	"VotePersonId":5262,
+	"VotePersonName":"G. Oliver Koppell",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":138909
+},
+
+{
+	"VoteId":509749,
+	"VoteGuid":"3EF9D3E3-399F-4D11-B326-CD85B21FDDF5",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkOWs=",
+	"VotePersonId":5269,
+	"VotePersonName":"John C. Liu",
+	"VoteValueId":12,
+	"VoteValueName":"Negative",
+	"VoteSort":60,
+	"VoteResult":2,
+	"VoteEventItemId":138909
+},
+
+{
+	"VoteId":509750,
+	"VoteGuid":"675B38F1-A10D-446E-A3B0-260CB9380554",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkOWw=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":138909
+}]

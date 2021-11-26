@@ -1,0 +1,70 @@
+[
+{
+	"VoteId":590970,
+	"VoteGuid":"41D3B33F-9AC3-4EDF-A988-ACF96D581D65",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY2U=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":200923
+},
+
+{
+	"VoteId":590971,
+	"VoteGuid":"0703374A-4827-450F-B869-0E592A54FA4C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY2Y=",
+	"VotePersonId":5259,
+	"VotePersonName":"Gale A. Brewer",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":2,
+	"VoteResult":1,
+	"VoteEventItemId":200923
+},
+
+{
+	"VoteId":590972,
+	"VoteGuid":"AE884675-65AF-4E2F-965A-5E616CB98265",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY2c=",
+	"VotePersonId":6268,
+	"VotePersonName":"Jessica S. Lappin",
+	"VoteValueId":22,
+	"VoteValueName":"Maternity",
+	"VoteSort":3,
+	"VoteResult":0,
+	"VoteEventItemId":200923
+},
+
+{
+	"VoteId":590973,
+	"VoteGuid":"3C39E190-CA47-4AEF-9C6E-F04D018393E7",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY2g=",
+	"VotePersonId":5416,
+	"VotePersonName":"Annabel Palma",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":200923
+},
+
+{
+	"VoteId":590974,
+	"VoteGuid":"DE955C44-F611-4C1C-A3EE-80594BA51F3F",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY2k=",
+	"VotePersonId":6273,
+	"VotePersonName":"Thomas White, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":200923
+}]
