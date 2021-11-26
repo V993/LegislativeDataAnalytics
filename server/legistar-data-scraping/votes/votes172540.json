@@ -1,0 +1,84 @@
+[
+{
+	"VoteId":546587,
+	"VoteGuid":"EB7C13D0-DCC2-4798-B269-B43B0215F583",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkwVI=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":172540
+},
+
+{
+	"VoteId":546588,
+	"VoteGuid":"75BB7E28-C80D-4EBA-ADA8-418D1091B49C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkwVM=",
+	"VotePersonId":430,
+	"VotePersonName":"Bill Perkins",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":172540
+},
+
+{
+	"VoteId":546589,
+	"VoteGuid":"73282E7F-4E07-4BA8-AD9F-D94AD500FBE9",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkwVQ=",
+	"VotePersonId":434,
+	"VotePersonName":"Christine C. Quinn",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":172540
+},
+
+{
+	"VoteId":546590,
+	"VoteGuid":"467B7512-B6A6-4F42-8361-49E39554A9D2",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkwVU=",
+	"VotePersonId":5259,
+	"VotePersonName":"Gale A. Brewer",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":40,
+	"VoteResult":1,
+	"VoteEventItemId":172540
+},
+
+{
+	"VoteId":546591,
+	"VoteGuid":"E37B81A7-F50A-4A7E-80D0-14A0FB1B619E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkwVY=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":172540
+},
+
+{
+	"VoteId":546592,
+	"VoteGuid":"25A86C69-786F-4D82-AD1D-2BE001BD3E8E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkwVc=",
+	"VotePersonId":5416,
+	"VotePersonName":"Annabel Palma",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":172540
+}]

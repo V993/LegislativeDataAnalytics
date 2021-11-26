@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":590936,
+	"VoteGuid":"B9D5D2B0-A5BF-4EE8-8B7D-2DDABCFEDA11",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY0M=",
+	"VotePersonId":5291,
+	"VotePersonName":"Lewis A. Fidler",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":1,
+	"VoteResult":0,
+	"VoteEventItemId":200844
+},
+
+{
+	"VoteId":590937,
+	"VoteGuid":"871D1EA6-B947-4AE4-8B9E-A4E3D4D5838D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY0Q=",
+	"VotePersonId":5258,
+	"VotePersonName":"Alan J. Gerson",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":2,
+	"VoteResult":0,
+	"VoteEventItemId":200844
+},
+
+{
+	"VoteId":590938,
+	"VoteGuid":"062B01BB-8EF6-4B71-B043-553673F6B0D0",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY0U=",
+	"VotePersonId":5376,
+	"VotePersonName":"Sara M. Gonzalez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":3,
+	"VoteResult":1,
+	"VoteEventItemId":200844
+},
+
+{
+	"VoteId":590939,
+	"VoteGuid":"B02B2004-180C-4F0B-9453-262D9074FA08",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY0Y=",
+	"VotePersonId":5261,
+	"VotePersonName":"Miguel Martinez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":200844
+},
+
+{
+	"VoteId":590940,
+	"VoteGuid":"7DBC4AB3-AE3B-4263-9F26-11FD38863EA2",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY0c=",
+	"VotePersonId":6272,
+	"VotePersonName":"Darlene Mealy",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":5,
+	"VoteResult":0,
+	"VoteEventItemId":200844
+},
+
+{
+	"VoteId":590941,
+	"VoteGuid":"706547D4-D76C-4212-ABF3-5A12BC71A3DE",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY0g=",
+	"VotePersonId":6269,
+	"VotePersonName":"Melissa Mark-Viverito",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":6,
+	"VoteResult":1,
+	"VoteEventItemId":200844
+},
+
+{
+	"VoteId":590942,
+	"VoteGuid":"FF4D5A5F-3155-4D90-A421-5018C0E584F4",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlY0k=",
+	"VotePersonId":5279,
+	"VotePersonName":"Dennis P. Gallagher",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":7,
+	"VoteResult":1,
+	"VoteEventItemId":200844
+}]

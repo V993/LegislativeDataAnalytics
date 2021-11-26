@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":521392,
+	"VoteGuid":"BE880E42-A4B7-4F78-A51A-3EBDBF98DC2D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkcZI=",
+	"VotePersonId":5273,
+	"VotePersonName":"James F. Gennaro",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":150767
+},
+
+{
+	"VoteId":521393,
+	"VoteGuid":"DEE91DE8-23CC-4CD3-9DE8-4AC06A4E1924",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkcZM=",
+	"VotePersonId":429,
+	"VotePersonName":"Margarita Lopez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":150767
+},
+
+{
+	"VoteId":521394,
+	"VoteGuid":"24F3F42E-83DC-49A6-A859-982B2E66B9C8",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkcZQ=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":150767
+},
+
+{
+	"VoteId":521395,
+	"VoteGuid":"8D7112D8-3B81-4222-A987-672E6181707D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkcZU=",
+	"VotePersonId":5277,
+	"VotePersonName":"Allan W. Jennings, Jr.",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":40,
+	"VoteResult":0,
+	"VoteEventItemId":150767
+},
+
+{
+	"VoteId":521396,
+	"VoteGuid":"21812526-293A-49F2-9F4B-716A65A21D39",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkcZY=",
+	"VotePersonId":5262,
+	"VotePersonName":"G. Oliver Koppell",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":150767
+},
+
+{
+	"VoteId":521397,
+	"VoteGuid":"FBD5B03B-9DA9-4B37-99FD-5C512FD9A07D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkcZc=",
+	"VotePersonId":5266,
+	"VotePersonName":"Jose M. Serrano",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":60,
+	"VoteResult":1,
+	"VoteEventItemId":150767
+},
+
+{
+	"VoteId":521398,
+	"VoteGuid":"90841FC0-F423-4125-8DDD-35EEA9EDCB3C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkcZg=",
+	"VotePersonId":5271,
+	"VotePersonName":"Peter F. Vallone, Jr.",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":70,
+	"VoteResult":0,
+	"VoteEventItemId":150767
+}]

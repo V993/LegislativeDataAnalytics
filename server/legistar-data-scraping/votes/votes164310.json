@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":535191,
+	"VoteGuid":"2E8972C0-02A0-4D5A-8DB7-78A2661FB58F",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmN8=",
+	"VotePersonId":5289,
+	"VotePersonName":"Simcha Felder",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":164310
+},
+
+{
+	"VoteId":535192,
+	"VoteGuid":"8F19C1D1-10A2-4B89-B9CF-F497F606214A",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmOA=",
+	"VotePersonId":430,
+	"VotePersonName":"Bill Perkins",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":164310
+},
+
+{
+	"VoteId":535193,
+	"VoteGuid":"9E0C85A6-E5B8-43F1-97CC-24A090656960",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmOE=",
+	"VotePersonId":5288,
+	"VotePersonName":"Charles Barron",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":30,
+	"VoteResult":0,
+	"VoteEventItemId":164310
+},
+
+{
+	"VoteId":535194,
+	"VoteGuid":"5E628166-7242-463A-83B1-EC035EBBFB46",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmOI=",
+	"VotePersonId":5276,
+	"VotePersonName":"Leroy G. Comrie, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":40,
+	"VoteResult":1,
+	"VoteEventItemId":164310
+},
+
+{
+	"VoteId":535195,
+	"VoteGuid":"BC3E15FE-7F8F-47E8-BC9D-237564CAA9E6",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmOM=",
+	"VotePersonId":5262,
+	"VotePersonName":"G. Oliver Koppell",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":164310
+},
+
+{
+	"VoteId":535196,
+	"VoteGuid":"E36B0202-04D0-4636-9BCA-1988ADD7A0FF",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmOQ=",
+	"VotePersonId":5416,
+	"VotePersonName":"Annabel Palma",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":60,
+	"VoteResult":0,
+	"VoteEventItemId":164310
+},
+
+{
+	"VoteId":535197,
+	"VoteGuid":"B97D18D3-8D4E-4B83-9AFF-C74C82205566",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmOU=",
+	"VotePersonId":436,
+	"VotePersonName":"James S. Oddo",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":164310
+}]

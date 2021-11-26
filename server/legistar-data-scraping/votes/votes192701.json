@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":577919,
+	"VoteGuid":"10D29AEE-C1E7-4D66-876A-4A8C1F38466E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlMfg=",
+	"VotePersonId":5264,
+	"VotePersonName":"Maria Baez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":192701
+},
+
+{
+	"VoteId":577920,
+	"VoteGuid":"19C7AD33-E65F-46B3-94C7-D484D1F0285B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlMfk=",
+	"VotePersonId":5281,
+	"VotePersonName":"Joseph P. Addabbo, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":2,
+	"VoteResult":1,
+	"VoteEventItemId":192701
+},
+
+{
+	"VoteId":577921,
+	"VoteGuid":"E171E0CE-A191-4BFC-9B43-32865AE9DB8C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlMfo=",
+	"VotePersonId":5285,
+	"VotePersonName":"Erik Martin Dilan",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":3,
+	"VoteResult":0,
+	"VoteEventItemId":192701
+},
+
+{
+	"VoteId":577922,
+	"VoteGuid":"B678BBB7-3F5D-4A86-BF2A-2B29A2B96C03",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlMfs=",
+	"VotePersonId":5291,
+	"VotePersonName":"Lewis A. Fidler",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":4,
+	"VoteResult":0,
+	"VoteEventItemId":192701
+},
+
+{
+	"VoteId":577923,
+	"VoteGuid":"2D46C336-499E-4396-B98C-F253F762BFCE",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlMfw=",
+	"VotePersonId":5293,
+	"VotePersonName":"Michael E. McMahon",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":192701
+},
+
+{
+	"VoteId":577924,
+	"VoteGuid":"7ED4E2FF-F795-4948-8841-470FC9F640D7",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlMf0=",
+	"VotePersonId":5270,
+	"VotePersonName":"Hiram Monserrate",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":6,
+	"VoteResult":1,
+	"VoteEventItemId":192701
+},
+
+{
+	"VoteId":577925,
+	"VoteGuid":"8B1064CA-BD52-424F-912E-83445BD8455D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlMf4=",
+	"VotePersonId":5244,
+	"VotePersonName":"Joel Rivera",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":7,
+	"VoteResult":1,
+	"VoteEventItemId":192701
+}]

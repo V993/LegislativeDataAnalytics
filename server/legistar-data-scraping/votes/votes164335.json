@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":535226,
+	"VoteGuid":"64C0E914-B2C3-4EFD-8414-6B4C2141C85D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmQM=",
+	"VotePersonId":5261,
+	"VotePersonName":"Miguel Martinez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":164335
+},
+
+{
+	"VoteId":535227,
+	"VoteGuid":"9940A04A-B51A-4DB0-AAEA-43C9FCC3A2DF",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmQQ=",
+	"VotePersonId":435,
+	"VotePersonName":"Michael C. Nelson",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":164335
+},
+
+{
+	"VoteId":535228,
+	"VoteGuid":"5D88ED58-87B5-4F04-A075-967C8B04999E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmQU=",
+	"VotePersonId":5244,
+	"VotePersonName":"Joel Rivera",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":30,
+	"VoteResult":0,
+	"VoteEventItemId":164335
+},
+
+{
+	"VoteId":535229,
+	"VoteGuid":"B72D1A56-6C27-4D13-AB2D-1797ED22551C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmQY=",
+	"VotePersonId":5270,
+	"VotePersonName":"Hiram Monserrate",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":40,
+	"VoteResult":1,
+	"VoteEventItemId":164335
+},
+
+{
+	"VoteId":535230,
+	"VoteGuid":"89CEB79F-21C6-4E6C-B72F-D841AA5ADA29",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmQc=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":50,
+	"VoteResult":0,
+	"VoteEventItemId":164335
+},
+
+{
+	"VoteId":535231,
+	"VoteGuid":"61A9358C-CE2A-4F38-9565-2EE1A20B9031",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmQg=",
+	"VotePersonId":5390,
+	"VotePersonName":"Vincent J. Gentile",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":60,
+	"VoteResult":0,
+	"VoteEventItemId":164335
+},
+
+{
+	"VoteId":535232,
+	"VoteGuid":"EEF3242E-804C-4E4E-A601-ADBBBFEC11D1",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkmQk=",
+	"VotePersonId":5255,
+	"VotePersonName":"Andrew J. Lanza",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":164335
+}]

@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":512701,
+	"VoteGuid":"A9DB31EC-A03C-4E5D-84C0-09B28EA3BD88",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUow=",
+	"VotePersonId":5266,
+	"VotePersonName":"Jose M. Serrano",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":142757
+},
+
+{
+	"VoteId":512702,
+	"VoteGuid":"2D860869-E1DD-4E22-8815-6F52C4AF5F71",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUo0=",
+	"VotePersonId":424,
+	"VotePersonName":"Tracy L. Boyland",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":20,
+	"VoteResult":0,
+	"VoteEventItemId":142757
+},
+
+{
+	"VoteId":512703,
+	"VoteGuid":"B2904739-6EC9-4F3D-A7E0-837FDDD2F7FD",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUo4=",
+	"VotePersonId":5275,
+	"VotePersonName":"Eric N. Gioia",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":142757
+},
+
+{
+	"VoteId":512704,
+	"VoteGuid":"19017FA3-B3D7-4939-83D3-367B4AA3AD55",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUo8=",
+	"VotePersonId":5277,
+	"VotePersonName":"Allan W. Jennings, Jr.",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":40,
+	"VoteResult":0,
+	"VoteEventItemId":142757
+},
+
+{
+	"VoteId":512705,
+	"VoteGuid":"E525D3C9-8EB5-41B9-9965-DB25CC10DEC1",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUpA=",
+	"VotePersonId":5292,
+	"VotePersonName":"Domenic M. Recchia, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":142757
+},
+
+{
+	"VoteId":512706,
+	"VoteGuid":"23C33588-F8F0-4E17-9F33-2F45615237EA",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUpE=",
+	"VotePersonId":432,
+	"VotePersonName":"Philip Reed",
+	"VoteValueId":4,
+	"VoteValueName":"Excused",
+	"VoteSort":60,
+	"VoteResult":0,
+	"VoteEventItemId":142757
+},
+
+{
+	"VoteId":512707,
+	"VoteGuid":"D54B6B92-7CE3-46D4-A32F-A8E169C8F459",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUpI=",
+	"VotePersonId":5272,
+	"VotePersonName":"David I. Weprin",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":142757
+}]

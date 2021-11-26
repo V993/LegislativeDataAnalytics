@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":512137,
+	"VoteGuid":"FC9C3968-4A3F-4CF8-A7B5-83AA5EAC9553",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkYHQ=",
+	"VotePersonId":430,
+	"VotePersonName":"Bill Perkins",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":142481
+},
+
+{
+	"VoteId":512138,
+	"VoteGuid":"E4E52E55-6A6D-4962-878D-50995D4CBFD1",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkYGc=",
+	"VotePersonId":434,
+	"VotePersonName":"Christine C. Quinn",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":22,
+	"VoteResult":1,
+	"VoteEventItemId":142481
+},
+
+{
+	"VoteId":512139,
+	"VoteGuid":"99590A66-81D2-45A3-9A6C-931D73746F94",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkYGg=",
+	"VotePersonId":5259,
+	"VotePersonName":"Gale A. Brewer",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":142481
+},
+
+{
+	"VoteId":512140,
+	"VoteGuid":"A0DA2554-A6DD-4EF8-89EE-7AB95A0F50C6",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkYGk=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":60,
+	"VoteResult":1,
+	"VoteEventItemId":142481
+},
+
+{
+	"VoteId":512141,
+	"VoteGuid":"A70C342A-DD14-4AA1-807A-65B811FA8518",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkYGo=",
+	"VotePersonId":5266,
+	"VotePersonName":"Jose M. Serrano",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":142481
+},
+
+{
+	"VoteId":512142,
+	"VoteGuid":"05247F3B-2A63-41A1-9768-3EE5E64771BB",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkYGs=",
+	"VotePersonId":5290,
+	"VotePersonName":"Kendall Stewart",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":75,
+	"VoteResult":1,
+	"VoteEventItemId":142481
+},
+
+{
+	"VoteId":512143,
+	"VoteGuid":"BCD1AE3E-693E-481A-AB5D-BA3CB86FBB3F",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkYGw=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":142481
+}]

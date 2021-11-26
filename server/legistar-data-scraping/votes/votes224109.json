@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":636918,
+	"VoteGuid":"CC1DB23B-3053-40E1-8B40-C36DD0FEB486",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmCt8=",
+	"VotePersonId":5289,
+	"VotePersonName":"Simcha Felder",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":224109
+},
+
+{
+	"VoteId":636919,
+	"VoteGuid":"71F48FE7-3508-4941-A89E-FC7F2269ACC4",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmCuA=",
+	"VotePersonId":5285,
+	"VotePersonName":"Erik Martin Dilan",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":3,
+	"VoteResult":1,
+	"VoteEventItemId":224109
+},
+
+{
+	"VoteId":636920,
+	"VoteGuid":"5F4C5A13-3A61-4EB2-9446-40CFDD16E71E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmCuE=",
+	"VotePersonId":5292,
+	"VotePersonName":"Domenic M. Recchia, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":3,
+	"VoteResult":1,
+	"VoteEventItemId":224109
+},
+
+{
+	"VoteId":636921,
+	"VoteGuid":"5CD4679C-2982-4EA0-8C40-601BC8BD626E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmCuI=",
+	"VotePersonId":6270,
+	"VotePersonName":"Inez E. Dickens",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":224109
+},
+
+{
+	"VoteId":636922,
+	"VoteGuid":"D1521978-7D44-45DD-B29A-11F3EFB1626B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmCuM=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":43,
+	"VoteValueName":"Conflict",
+	"VoteSort":5,
+	"VoteResult":0,
+	"VoteEventItemId":224109
+},
+
+{
+	"VoteId":636923,
+	"VoteGuid":"AE98144A-57EB-4882-9CD6-6B507184605C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmCuQ=",
+	"VotePersonId":5274,
+	"VotePersonName":"Helen Sears",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":6,
+	"VoteResult":1,
+	"VoteEventItemId":224109
+},
+
+{
+	"VoteId":636924,
+	"VoteGuid":"4E44A3E9-09F7-4A9E-BCD2-1E2C495A702E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmCuU=",
+	"VotePersonId":5271,
+	"VotePersonName":"Peter F. Vallone, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":7,
+	"VoteResult":1,
+	"VoteEventItemId":224109
+}]

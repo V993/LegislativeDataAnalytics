@@ -1,0 +1,154 @@
+[
+{
+	"VoteId":564640,
+	"VoteGuid":"2D595392-C647-442A-B0DB-27E1368C9B8C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4M=",
+	"VotePersonId":5271,
+	"VotePersonName":"Peter F. Vallone, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564641,
+	"VoteGuid":"EE17DC14-AEE5-48E0-A8F1-E88031780E51",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4Q=",
+	"VotePersonId":432,
+	"VotePersonName":"Philip Reed",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":20,
+	"VoteResult":0,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564642,
+	"VoteGuid":"813F5AD5-62BE-4D93-9C57-314746BC79AA",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4U=",
+	"VotePersonId":5285,
+	"VotePersonName":"Erik Martin Dilan",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564643,
+	"VoteGuid":"47871C26-9A31-4ED7-9E63-C6D88328801B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4Y=",
+	"VotePersonId":5265,
+	"VotePersonName":"Helen D. Foster",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":40,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564644,
+	"VoteGuid":"B0A1A98E-50BA-4441-A095-4E805D7B8B0A",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4c=",
+	"VotePersonId":5273,
+	"VotePersonName":"James F. Gennaro",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":50,
+	"VoteResult":0,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564645,
+	"VoteGuid":"921DB738-4BCE-430F-8585-F015D9D85BF2",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4g=",
+	"VotePersonId":5277,
+	"VotePersonName":"Allan W. Jennings, Jr.",
+	"VoteValueId":23,
+	"VoteValueName":"Suspended",
+	"VoteSort":60,
+	"VoteResult":0,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564646,
+	"VoteGuid":"CC580B88-DBF4-446F-B4B5-82742BB61776",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4k=",
+	"VotePersonId":5278,
+	"VotePersonName":"Melinda R. Katz",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564647,
+	"VoteGuid":"7D686F9D-29AC-443E-B479-31AE0770E8EF",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4o=",
+	"VotePersonId":5270,
+	"VotePersonName":"Hiram Monserrate",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":80,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564648,
+	"VoteGuid":"7CEEDB7C-0AC9-4F05-B283-DC0670E01CEE",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4s=",
+	"VotePersonId":5282,
+	"VotePersonName":"David Yassky",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":90,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564649,
+	"VoteGuid":"91B5B9D7-7FD7-4D72-9E13-4D8645B59D94",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA4w=",
+	"VotePersonId":5376,
+	"VotePersonName":"Sara M. Gonzalez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":100,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+},
+
+{
+	"VoteId":564650,
+	"VoteGuid":"8CB6F8D5-A980-4FE5-A98D-20284A796A7E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlA40=",
+	"VotePersonId":5390,
+	"VotePersonName":"Vincent J. Gentile",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":110,
+	"VoteResult":1,
+	"VoteEventItemId":183640
+}]

@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":667928,
+	"VoteGuid":"232910F0-FC47-423D-AD38-B3743AAEA10B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABaei4=",
+	"VotePersonId":5265,
+	"VotePersonName":"Helen D. Foster",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":243516
+},
+
+{
+	"VoteId":667929,
+	"VoteGuid":"64899461-01B1-4481-B758-AD90FCAA7EB2",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABaesw=",
+	"VotePersonId":5285,
+	"VotePersonName":"Erik Martin Dilan",
+	"VoteValueId":12,
+	"VoteValueName":"Negative",
+	"VoteSort":2,
+	"VoteResult":2,
+	"VoteEventItemId":243516
+},
+
+{
+	"VoteId":667930,
+	"VoteGuid":"59569AB9-5C1E-4CC9-AEB2-BDA3297B4996",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABaejA=",
+	"VotePersonId":5291,
+	"VotePersonName":"Lewis A. Fidler",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":3,
+	"VoteResult":1,
+	"VoteEventItemId":243516
+},
+
+{
+	"VoteId":667931,
+	"VoteGuid":"C69B8757-5AE4-4975-A108-AC827867FB05",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABaejE=",
+	"VotePersonId":5292,
+	"VotePersonName":"Domenic M. Recchia, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":243516
+},
+
+{
+	"VoteId":667932,
+	"VoteGuid":"DB4A2194-3DFB-4A5C-8ACF-9755FB8467D8",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABaejI=",
+	"VotePersonId":5244,
+	"VotePersonName":"Joel Rivera",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":243516
+},
+
+{
+	"VoteId":667933,
+	"VoteGuid":"E9D5C12E-9646-4284-946E-042FFC9E0684",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABaeiw=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":6,
+	"VoteResult":0,
+	"VoteEventItemId":243516
+},
+
+{
+	"VoteId":667934,
+	"VoteGuid":"B47C8441-0814-4589-AB09-4CAC6DA4E75A",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABaejM=",
+	"VotePersonId":7502,
+	"VotePersonName":"Elizabeth S. Crowley",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":7,
+	"VoteResult":1,
+	"VoteEventItemId":243516
+}]
