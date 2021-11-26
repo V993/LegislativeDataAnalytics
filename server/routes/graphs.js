@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const pool = require("../db")
 const fs = require('fs');
+const { exec } = require('child_process');
 
 router.get("/", function(req, res) {
     res.send("This route is for the graph data");
@@ -68,13 +69,52 @@ router.get("/activeness-by-month", async function(req, res) {
 });
 
 router.get("/proximity-calculation", async function(req, res) {
-    const repx = req.query.repx.replace(' ','_');
-    const repy = req.query.repy.replace(' ','_');
+    console.log("called proximity-calculation");
+    //const repx = req.query.repx.replace(' ','_');
+    //const repy = req.query.repy.replace(' ','_');
+    let refs = req.query.refs;
+    refs = refs[0].split(',');
+    let targets = req.query.targets;
+    targets = targets[0].split(',');
+    console.log(refs);
+    console.log(targets);
     try {
-        fname = "../proximity-calculation/responses/" + repx + "_" + repy + ".json";
-        data = fs.readFileSync('../proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
-        console.log(data);
-        res.json(JSON.parse(data));
+        // Run executable
+        let command = "./proximity-calculation/prox ";
+	for (let i = 0; i < refs.length; i++) {
+		command += refs[i];
+		command += " ";
+	}
+	command += "targets ";
+	for (let i = 0; i < targets.length; i++) {
+		command += targets[i];
+		command += " ";
+	}
+        exec(command, (err, stdout, stderr) => {
+          if (err) {
+		console.log("Error after cl call");
+          }
+          else {
+		console.log("No error after cl call " + command);
+            	// Await output file
+		let fname = "./proximity-calculation/responses/";
+		for (let i = 0; i < refs.length; i++) {
+			fname += refs[i];
+			if (i != refs.length - 1) { fname += "_"; }
+		}
+		fname += ".json";
+        	data = fs.readFileSync(fname, 'utf8');
+		// Read and return output file
+        	console.log(data);
+      		res.json(JSON.parse(data));
+          }
+        });
+        // Await output file
+        // Read and return output file
+        //fname = "../proximity-calculation/responses/" + repx + "_" + repy + ".json";
+        //data = fs.readFileSync('../proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
+        //console.log(data);
+        //res.json(JSON.parse(data));
     } catch (error) {
         console.error(error.message)
     }

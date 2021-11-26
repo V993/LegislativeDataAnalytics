@@ -228,6 +228,7 @@ std::vector<Proximity> ProximityCalculator::get_proximities()
   // Assemble list of representatives as Proximities
   // For each representative, find and assign distance_x and distance_y
   std::vector<Proximity> prox;
+  std::cout << "called get_proximities(): prox length " + prox.size();
   for (int i = 0; i < votingData.size(); i++)
   {
     // Check if current item's rep is in representativeNames

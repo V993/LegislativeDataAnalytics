@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
   vp.append_targets(refs);
   vp.append_targets(targets);
 
-  std::vector<VoteRollItem> testVoteData = vp.read_file("./test_vote_data.json");
+  std::vector<VoteRollItem> testVoteData = vp.read_file("./proximity-calculation/test_vote_data.json");
   std::cout << "VoteParser has completed read_file()" << std::endl;
   /*
   for (int i = 0; i < testVoteData.size(); i++)
@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
   bool done = false;
   ProximityCalculator pc = ProximityCalculator(testVoteData);
 
-  std::string fname = "responses/";
+  std::string fname = "./proximity-calculation/responses/";
   for (int i = 0; i < refs.size(); i++)
   {
     std::cout << "ref: " << refs[i] << std::endl;
