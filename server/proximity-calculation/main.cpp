@@ -19,6 +19,7 @@ bool unused(std::vector<std::string> v, std::string n)
   return true;
 }
 
+// Converts all spaces to underscores
 std::string underscoreSpaces(std::string s)
 {
   std::string n = "";
@@ -44,7 +45,33 @@ std::string underscoreSpaces(std::string s)
   return n;
 }
 
-int main()
+// Converts all underscores to spaces
+std::string spaceUnderscores(std::string s)
+{
+  std::string n = "";
+  bool leading = true;
+  for (int i = 0; i < s.length(); i++)
+  {
+    if (s[i] == '_')
+    {
+      if (leading)
+      {
+      }
+      else
+      {
+        n += ' ';
+      }
+    }
+    else
+    {
+      leading = false;
+      n += s[i];
+    }
+  }
+  return n;
+}
+
+int main(int argc, char *argv[])
 {
   // Parse input
   std::cout << "called main()" << std::endl;
@@ -63,6 +90,18 @@ int main()
   bool done = false;
   ProximityCalculator pc = ProximityCalculator(testVoteData);
 
+  std::string fname = "responses/";
+  for (int i = 1; i < argc; i++)
+  {
+    pc.add_rep(spaceUnderscores(argv[i]));
+    fname += argv[i];
+    if (i != argc - 1) { fname += "_"; }
+  }
+  fname += ".json";
+  std::vector<Proximity> prox = pc.get_proximities();
+  vp.write_file(prox,fname);
+
+  /*
   std::vector<std::string> alreadyCalculatedX;
   std::vector<std::string> alreadyCalculatedY;
 
@@ -109,45 +148,6 @@ int main()
       alreadyCalculatedY.push_back(pc.get_rep_x());
     }
   }
-
-  /*
-  // Set inital reps
-  pc.set_rep_x(testVoteData[0].repName);
-  //pc.set_rep_y(testVoteData[0].repName);
-  alreadyCalculated.push_back(pc.get_rep_x());
-  // Calculate proximities for every rep combination
-  while(alreadyCalculated.size() < testVoteData.size())
-  {
-    std::cout << "Reps X and Y : " << pc.get_rep_x() << " " << pc.get_rep_y() << std::endl;
-    // Iterate through testVoteData to find name not used as axis
-    for (int i = 0; i < testVoteData.size(); i++)
-    {
-      if (unused(alreadyCalculated, testVoteData[i].repName))
-      {
-        bool set = pc.set_rep_y(testVoteData[i].repName);
-        if (!set) { return 0; }
-        else { i = testVoteData.size(); }
-      }
-    }
-    if (pc.get_rep_x() == pc.get_rep_y())
-    {
-      return 0;
-    }
-    else
-    {
-      std::vector<Proximity> prox = pc.get_proximities();
-      //vp.write_file(prox,"responses/" + pc.get_rep_x() + "_" + pc.get_rep_y() + ".json");
-      alreadyCalculated.push_back(pc.get_rep_x());
-      std::string nx = pc.get_rep_y();
-      pc.set_rep_y("");
-      pc.set_rep_x(nx);
-    }
-  }
   */
-  //std::vector<Proximity> prox = pc.get_proximities();
-
-  // Write output
-  //vp.write_file(prox,"responses/out.json");
-
   return 0;
 }
