@@ -27,8 +27,7 @@ namespace ld_proximity
   struct Proximity
   {
     std::string repName;
-    double x;
-    double y;
+    std::vector<double> distances;
   };
 
   class ProximityCalculator
@@ -47,6 +46,8 @@ namespace ld_proximity
     std::vector<std::array<int,2>> representativeYVotes;
     // Proximities : array of size 3 arrays [Representative Name, Distance X, Distance Y] w/ all reps. being compared to X and Y
     std::vector<Proximity> proximities;
+    // representativeNames : array of names corresponding to the representatives used as reference points
+    std::vector<std::string> representativeNames;
 
     // ---- Private Methods ----
     // Rep vote records
@@ -61,6 +62,10 @@ namespace ld_proximity
     // Calculates the distance of the rep whose name == n
     // From rep Y, returning it as a double
     double calc_dist_y(std::string n);
+    // Calculates the distance of the rep whose name == n
+    // From the rep whose name is in representativeNames[i],
+    // returning it as a double
+    double calc_dist(std::string n, int i);
 
 
   public:
@@ -96,11 +101,19 @@ namespace ld_proximity
     // n is equal to some name in votingData and
     // n is not equal to representativeXName
     bool set_rep_y(std::string n);
+    // Appends string n to representativeNames, provided that
+    // n is equal to some name in votingData and
+    // n is not already in representativeNames
+    bool add_rep(std::string n);
+    // Removes string n from representativeNames, provided that
+    // n is already in representativeNames
+    bool remove_rep(std::string n);
 
     // ---- Accessors ----
     std::vector<VoteRollItem> get_voting_data();
     std::string get_rep_x();
     std::string get_rep_y();
+    std::string get_rep(int i);
     std::vector<std::array<int,2>> get_rep_x_votes();
     std::vector<std::array<int,2>> get_rep_y_votes();
     std::vector<Proximity> get_proximities();
