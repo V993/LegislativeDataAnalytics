@@ -70,11 +70,26 @@ router.get("/activeness-by-month", async function(req, res) {
 
 router.get("/proximity-calculation", async function(req, res) {
     console.log("called proximity-calculation");
-    const repx = req.query.repx.replace(' ','_');
-    const repy = req.query.repy.replace(' ','_');
+    //const repx = req.query.repx.replace(' ','_');
+    //const repy = req.query.repy.replace(' ','_');
+    let refs = req.query.refs;
+    refs = refs[0].split(',');
+    let targets = req.query.targets;
+    targets = targets[0].split(',');
+    console.log(refs);
+    console.log(targets);
     try {
         // Run executable
-        let command = "./proximity-calculation/prox George_Costanza Jerry_Seinfeld targets Elaine_Benes Cosmo_Kramer Newman";
+        let command = "./proximity-calculation/prox ";
+	for (let i = 0; i < refs.length; i++) {
+		command += refs[i];
+		command += " ";
+	}
+	command += "targets ";
+	for (let i = 0; i < targets.length; i++) {
+		command += targets[i];
+		command += " ";
+	}
         exec(command, (err, stdout, stderr) => {
           if (err) {
 		console.log("Error after cl call");
@@ -82,7 +97,13 @@ router.get("/proximity-calculation", async function(req, res) {
           else {
 		console.log("No error after cl call " + command);
             	// Await output file
-        	data = fs.readFileSync('./proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
+		let fname = "./proximity-calculation/responses/";
+		for (let i = 0; i < refs.length; i++) {
+			fname += refs[i];
+			if (i != refs.length - 1) { fname += "_"; }
+		}
+		fname += ".json";
+        	data = fs.readFileSync(fname, 'utf8');
 		// Read and return output file
         	console.log(data);
       		res.json(JSON.parse(data));
