@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const pool = require("../db")
 const fs = require('fs');
+const { exec } = require('child_process');
 
 router.get("/", function(req, res) {
     res.send("This route is for the graph data");
@@ -71,10 +72,23 @@ router.get("/proximity-calculation", async function(req, res) {
     const repx = req.query.repx.replace(' ','_');
     const repy = req.query.repy.replace(' ','_');
     try {
-        fname = "../proximity-calculation/responses/" + repx + "_" + repy + ".json";
-        data = fs.readFileSync('../proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
-        console.log(data);
-        res.json(JSON.parse(data));
+        // Run executable
+        let command = "./proximity-calculation/prox George_Costanza Jerry_Seinfeld targets Elaine_Benes Cosmo_Kramer Newman";
+        exec(command, (err, stdout, stderr) => {
+          if (err) {
+
+          }
+          else {
+            // Await output file
+            // Read and return output file
+          }
+        });
+        // Await output file
+        // Read and return output file
+        //fname = "../proximity-calculation/responses/" + repx + "_" + repy + ".json";
+        //data = fs.readFileSync('../proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
+        //console.log(data);
+        //res.json(JSON.parse(data));
     } catch (error) {
         console.error(error.message)
     }
