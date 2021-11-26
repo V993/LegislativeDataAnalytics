@@ -130,7 +130,7 @@ bool VoteParser::write_file(std::vector<Proximity> prox, std::string fname)
         ofile << prox[i].distances[j];
         if (j < prox[i].distances.size() - 1) { ofile << ", "; }
       }
-      ofile << "]," << std::endl;
+      ofile << "]" << std::endl;
       if (i == prox.size() - 1)
       {
         ofile << "\t}" << std::endl;
