@@ -24,6 +24,7 @@ namespace ld_proximity
   {
   private:
     // ---- Variables ----
+    std::vector<std::string> targets;
     // ---- Private Methods ----
   public:
     // Public Methods
@@ -32,7 +33,9 @@ namespace ld_proximity
     // ---- Constructors ----
     VoteParser();
     // ---- Mutators ----
+    bool append_targets(std::vector<std::string> t);
     // ---- Accessors ----
+    bool in_targets(std::string s);
   };
 }
 
