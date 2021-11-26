@@ -42,8 +42,9 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
             v.repName = repName;
             v.matterId = matterId;
             v.vote = vote;
-            std::cout << v.repName << v.matterId << std::endl;
-            prox.push_back(v);
+            std::cout << v.repName << v.matterId;
+            if (in_targets(v.repName)) { prox.push_back(v); std::cout << " IN TARGETS" << std::endl; }
+            else { std::cout << " NOT IN TARGETS" << std::endl; }
           }
         }
         if (in_block)
@@ -144,4 +145,33 @@ bool VoteParser::write_file(std::vector<Proximity> prox, std::string fname)
   else { std::cout << "failed to open file" << std::endl; }
   ofile.close();
   return true;
+}
+
+
+// Mutators
+
+bool VoteParser::append_targets(std::vector<std::string> t)
+{
+  bool any = false;
+  for (int i = 0; i < t.size(); i++)
+  {
+    bool in = false;
+    for (int j = 0; j < targets.size(); j++)
+    {
+      if (t[i] == targets[j]) { in = true; break; }
+    }
+    if (!in) { targets.push_back(t[i]); any = true; }
+  }
+  return any;
+}
+
+// Accessors
+
+bool VoteParser::in_targets(std::string s)
+{
+  for (int i = 0; i < targets.size(); i++)
+  {
+    if (s == targets[i]) { return true; }
+  }
+  return false;
 }
