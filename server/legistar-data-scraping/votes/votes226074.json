@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":640475,
+	"VoteGuid":"E93AED7E-EC60-41D4-8CDF-AFDBB2F626A9",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmGNI=",
+	"VotePersonId":5264,
+	"VotePersonName":"Maria Baez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":226074
+},
+
+{
+	"VoteId":640476,
+	"VoteGuid":"F20173FB-C3CA-48DE-B04C-A2BB67226872",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmGNM=",
+	"VotePersonId":5285,
+	"VotePersonName":"Erik Martin Dilan",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":2,
+	"VoteResult":0,
+	"VoteEventItemId":226074
+},
+
+{
+	"VoteId":640477,
+	"VoteGuid":"0862F0EE-B85A-45E0-85FA-8381D2967CB8",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmGNQ=",
+	"VotePersonId":5291,
+	"VotePersonName":"Lewis A. Fidler",
+	"VoteValueId":11,
+	"VoteValueName":"Abstain",
+	"VoteSort":3,
+	"VoteResult":0,
+	"VoteEventItemId":226074
+},
+
+{
+	"VoteId":640478,
+	"VoteGuid":"21EF38AD-3F24-448F-AB8E-15BBD05064AA",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmGNU=",
+	"VotePersonId":6267,
+	"VotePersonName":"Daniel R. Garodnick",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":226074
+},
+
+{
+	"VoteId":640479,
+	"VoteGuid":"001F9245-F0F2-4060-8E04-E0EFA02BCEF3",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmGNY=",
+	"VotePersonId":6269,
+	"VotePersonName":"Melissa Mark-Viverito",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":226074
+},
+
+{
+	"VoteId":640480,
+	"VoteGuid":"8DAB193F-A4E2-437A-9DE7-CC917F18CDFA",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmGNc=",
+	"VotePersonId":5244,
+	"VotePersonName":"Joel Rivera",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":6,
+	"VoteResult":1,
+	"VoteEventItemId":226074
+},
+
+{
+	"VoteId":640481,
+	"VoteGuid":"FA8019EB-D5B7-4747-8716-58349CD53946",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAmGNg=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":7,
+	"VoteResult":1,
+	"VoteEventItemId":226074
+}]

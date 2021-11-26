@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":666121,
+	"VoteGuid":"662C4A24-FB97-405A-A6FE-B03ECE40D4EA",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABVS90=",
+	"VotePersonId":7566,
+	"VotePersonName":"Brad S. Lander",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":242234
+},
+
+{
+	"VoteId":666122,
+	"VoteGuid":"54951F8E-36CF-43FE-90F2-F95A91469689",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABVS94=",
+	"VotePersonId":5911,
+	"VotePersonName":"Maria Del Carmen Arroyo",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":2,
+	"VoteResult":1,
+	"VoteEventItemId":242234
+},
+
+{
+	"VoteId":666123,
+	"VoteGuid":"EF6C7D14-07C1-4B88-A745-CF6528F2FD16",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABVS98=",
+	"VotePersonId":7564,
+	"VotePersonName":"Daniel J. Halloran III",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":3,
+	"VoteResult":1,
+	"VoteEventItemId":242234
+},
+
+{
+	"VoteId":666124,
+	"VoteGuid":"05646CB0-597D-4E9C-8F4D-A082C4FD4BF0",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABVS+A=",
+	"VotePersonId":6274,
+	"VotePersonName":"Rosie Mendez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":242234
+},
+
+{
+	"VoteId":666125,
+	"VoteGuid":"5672BEAB-CEEC-47CB-9198-D6B116C59787",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABVS+E=",
+	"VotePersonId":5416,
+	"VotePersonName":"Annabel Palma",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":242234
+},
+
+{
+	"VoteId":666126,
+	"VoteGuid":"A55CF4A0-1774-4A3B-899D-1111E20D44C3",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABVS9s=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":6,
+	"VoteResult":0,
+	"VoteEventItemId":242234
+},
+
+{
+	"VoteId":666127,
+	"VoteGuid":"0B3EA548-9E25-49CC-98EB-FE34BD3AB6D5",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABVS9w=",
+	"VotePersonId":7571,
+	"VotePersonName":"Jumaane D. Williams",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":7,
+	"VoteResult":0,
+	"VoteEventItemId":242234
+}]
