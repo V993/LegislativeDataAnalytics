@@ -24,6 +24,7 @@ export default class Data extends React.Component {
       chart: "bills",
       sidebarOpen: false,
       label: "",
+      value: 0,
       member: {},
     };
     this.showBills = (e) => this.setState({ chart: "bills" });
@@ -35,39 +36,63 @@ export default class Data extends React.Component {
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
-  handleData = async (query) => {
-    let url =
-      "http://206.81.7.63:5000/info-apis/council-member-info?name=" + query;
+  handleData = async (query, value = "") => {
+    if (this.state.chart === "bills") {
+      let url =
+        "http://206.81.7.63:5000/info-apis/council-member-info?name=" + query;
 
-    try {
-      let response = await axios.get(url);
-      this.setState({ member: response.data, label: query, sidebarOpen: true });
-    } catch (error) {
-      if (error.response) {
-        console.error(`Error: Not Found - ${error.response.data}`);
-        console.error(`Error: ${error.response.status}`);
+      try {
+        let response = await axios.get(url);
+        this.setState({
+          member: response.data,
+          label: query,
+          sidebarOpen: true,
+        });
+      } catch (error) {
+        if (error.response) {
+          console.error(`Error: Not Found - ${error.response.data}`);
+          console.error(`Error: ${error.response.status}`);
+        }
       }
+    } else if (this.state.chart === "committees") {
+      this.setState({
+        label: query,
+        value,
+        sidebarOpen: true,
+      });
     }
   };
 
   render() {
-    const sidebarContent = (
-      <div>
-        <h2 className="rep-title">Representative Information</h2>
-        {this.state.member === "" ? (
-          <p>No results for "{this.state.label}"</p>
-        ) : (
+    const sidebarContent =
+      this.state.chart === "bills" ? (
+        <div>
+          <h2 className="rep-title">Representative Information</h2>
+          {this.state.member === "" ? (
+            <p>No results for "{this.state.label}"</p>
+          ) : (
+            <div className="rep-info">
+              <h4 className="rep-name">{this.state.member.name}</h4>
+              <small className="rep-details">
+                <p>{this.state.member.politicalparty}</p>
+                <p>District {this.state.member.district}</p>
+                <p>{this.state.member.borough}</p>
+              </small>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div>
+          <h2 className="rep-title">Committee Information</h2>
           <div className="rep-info">
-            <h4 className="rep-name">{this.state.member.name}</h4>
+            <h4 className="rep-name">{this.state.label}</h4>
             <small className="rep-details">
-              <p>{this.state.member.politicalparty}</p>
-              <p>District {this.state.member.district}</p>
-              <p>{this.state.member.borough}</p>
+              <p>{this.state.value} bills passed.</p>
             </small>
           </div>
-        )}
-      </div>
-    );
+        </div>
+      );
+
     return (
       <>
         <Sidebar
@@ -77,7 +102,6 @@ export default class Data extends React.Component {
           pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
-
           <div className="data">
             <div className="container">
               <div className="row align-items-center my-5">
@@ -117,7 +141,11 @@ export default class Data extends React.Component {
                   ) : (
                     <div />
                   )}
-                  {this.state.chart === "committees" ? <Committees /> : <div />}
+                  {this.state.chart === "committees" ? (
+                    <Committees clickedLabel={this.handleData} />
+                  ) : (
+                    <div />
+                  )}
                   {this.state.chart === "proximity" ? <Proximity /> : <div />}
                 </div>
               </div>
