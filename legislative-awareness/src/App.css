@@ -576,3 +576,41 @@ td {
   border-radius: 25px;
   margin: 10px;
 }
+
+#center {
+  /* background-image: linear-gradient(rgb(167, 255, 140), rgba(255,255,255, 0)); */
+  background-image: url("components/assets/404NotFound.jpg");
+
+  background-size: cover;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 5em;
+  width: 100%;
+  height: 100vh;
+  /* padding-bottom: 30em; */
+}
+
+.smolButton {
+  height: 3em;
+  width: 9em;
+  border-radius: 5px;
+
+  padding: 0px;
+  text-align: center;
+
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(138, 182, 169, 0.5));
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.smolButton:hover {
+  transform: scale(1.2);
+  background: rgba(138, 182, 169, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}

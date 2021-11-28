@@ -42,8 +42,9 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
             v.repName = repName;
             v.matterId = matterId;
             v.vote = vote;
-            std::cout << v.repName << v.matterId << std::endl;
-            prox.push_back(v);
+            std::cout << v.repName << v.matterId;
+            if (in_targets(v.repName)) { prox.push_back(v); std::cout << " IN TARGETS" << std::endl; }
+            else { std::cout << " NOT IN TARGETS" << std::endl; }
           }
         }
         if (in_block)
@@ -109,7 +110,7 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
 
 bool VoteParser::write_file(std::vector<Proximity> prox, std::string fname)
 {
-  //std::cout << "Called write_file(" << fname << ")" << std::endl;
+  std::cout << "Called write_file(" << fname << ")" << std::endl;
   if (prox.size() == 0) { std::cout << "Prox size zero" << std::endl; return false; }
   std::ofstream ofile;
   ofile.open(fname);
@@ -121,8 +122,15 @@ bool VoteParser::write_file(std::vector<Proximity> prox, std::string fname)
     {
       ofile << "\t{" << std::endl;
       ofile << "\t\t" << '"' << "repName" << '"' << ": \"" << prox[i].repName << "\"," << std::endl;
-      ofile << "\t\t" << '"' << "x" << '"' << ": " << prox[i].x << "," << std::endl;
-      ofile << "\t\t" << '"' << "y" << '"' << ": " << prox[i].y << std::endl;
+      ofile << "\t\t" << '"' << "coordinates" << '"' << ": [";
+      std::cout << "prox[i].distances.size() : " << prox[i].distances.size() << std::endl;
+      for (int j = 0; j < prox[i].distances.size(); j++)
+      {
+        std::cout << "prox[" << i << "].distances[" << j << "] : " << prox[i].distances[j] << std::endl;
+        ofile << prox[i].distances[j];
+        if (j < prox[i].distances.size() - 1) { ofile << ", "; }
+      }
+      ofile << "]" << std::endl;
       if (i == prox.size() - 1)
       {
         ofile << "\t}" << std::endl;
@@ -137,4 +145,33 @@ bool VoteParser::write_file(std::vector<Proximity> prox, std::string fname)
   else { std::cout << "failed to open file" << std::endl; }
   ofile.close();
   return true;
+}
+
+
+// Mutators
+
+bool VoteParser::append_targets(std::vector<std::string> t)
+{
+  bool any = false;
+  for (int i = 0; i < t.size(); i++)
+  {
+    bool in = false;
+    for (int j = 0; j < targets.size(); j++)
+    {
+      if (t[i] == targets[j]) { in = true; break; }
+    }
+    if (!in) { targets.push_back(t[i]); any = true; }
+  }
+  return any;
+}
+
+// Accessors
+
+bool VoteParser::in_targets(std::string s)
+{
+  for (int i = 0; i < targets.size(); i++)
+  {
+    if (s == targets[i]) { return true; }
+  }
+  return false;
 }

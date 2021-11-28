@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":510834,
+	"VoteGuid":"8C3C4DA8-87B6-4F9B-81CA-5B1339741DB8",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkMA8=",
+	"VotePersonId":5281,
+	"VotePersonName":"Joseph P. Addabbo, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":140070
+},
+
+{
+	"VoteId":510835,
+	"VoteGuid":"84B6995B-0E33-48A9-8F85-4247703C4DA9",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkMBA=",
+	"VotePersonId":5259,
+	"VotePersonName":"Gale A. Brewer",
+	"VoteValueId":9,
+	"VoteValueName":"Non-voting",
+	"VoteSort":20,
+	"VoteResult":0,
+	"VoteEventItemId":140070
+},
+
+{
+	"VoteId":510836,
+	"VoteGuid":"1A94CD90-63DA-422F-A47D-642C6D81E52F",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkMi4=",
+	"VotePersonId":5285,
+	"VotePersonName":"Erik Martin Dilan",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":40,
+	"VoteResult":1,
+	"VoteEventItemId":140070
+},
+
+{
+	"VoteId":510837,
+	"VoteGuid":"F027AC1B-0273-4619-85E7-BB5B78FE2565",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkMi8=",
+	"VotePersonId":5265,
+	"VotePersonName":"Helen D. Foster",
+	"VoteValueId":9,
+	"VoteValueName":"Non-voting",
+	"VoteSort":60,
+	"VoteResult":0,
+	"VoteEventItemId":140070
+},
+
+{
+	"VoteId":510838,
+	"VoteGuid":"BDB1B881-E164-4D59-99DA-ECCAAE7642AE",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkMjA=",
+	"VotePersonId":5258,
+	"VotePersonName":"Alan J. Gerson",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":140070
+},
+
+{
+	"VoteId":510839,
+	"VoteGuid":"59868822-00F8-4D5D-800C-C423F751C270",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkMjE=",
+	"VotePersonId":5260,
+	"VotePersonName":"Robert Jackson",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":75,
+	"VoteResult":1,
+	"VoteEventItemId":140070
+},
+
+{
+	"VoteId":510840,
+	"VoteGuid":"CD9F52CA-BCFA-456A-827B-D76655EEA481",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkMjI=",
+	"VotePersonId":5266,
+	"VotePersonName":"Jose M. Serrano",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":80,
+	"VoteResult":1,
+	"VoteEventItemId":140070
+}]

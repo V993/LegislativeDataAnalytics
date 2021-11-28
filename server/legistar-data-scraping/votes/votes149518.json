@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":520404,
+	"VoteGuid":"49B6113E-F32D-4DAD-BB9E-D4AE3EFB5233",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUic=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":149518
+},
+
+{
+	"VoteId":520405,
+	"VoteGuid":"7C5DF1A9-D960-4B30-99F2-BEAF5462BF64",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUig=",
+	"VotePersonId":430,
+	"VotePersonName":"Bill Perkins",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":149518
+},
+
+{
+	"VoteId":520406,
+	"VoteGuid":"AD8F06BF-42B1-4783-A0F8-B31442271D16",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUik=",
+	"VotePersonId":434,
+	"VotePersonName":"Christine C. Quinn",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":22,
+	"VoteResult":1,
+	"VoteEventItemId":149518
+},
+
+{
+	"VoteId":520407,
+	"VoteGuid":"DEE72300-E990-42E9-8484-9E6E78C6D890",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUio=",
+	"VotePersonId":5259,
+	"VotePersonName":"Gale A. Brewer",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":149518
+},
+
+{
+	"VoteId":520408,
+	"VoteGuid":"21564768-7693-4E1B-B09F-A18D29B6FFC1",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUis=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":60,
+	"VoteResult":0,
+	"VoteEventItemId":149518
+},
+
+{
+	"VoteId":520409,
+	"VoteGuid":"2CA725B4-4247-4A22-991A-93F81DEBA49C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUiw=",
+	"VotePersonId":5266,
+	"VotePersonName":"Jose M. Serrano",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":149518
+},
+
+{
+	"VoteId":520410,
+	"VoteGuid":"C59932DB-EBE4-46EC-A1EF-48D3069BC7CE",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkUi0=",
+	"VotePersonId":5290,
+	"VotePersonName":"Kendall Stewart",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":75,
+	"VoteResult":0,
+	"VoteEventItemId":149518
+}]
