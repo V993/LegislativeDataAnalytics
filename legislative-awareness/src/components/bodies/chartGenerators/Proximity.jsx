@@ -5,6 +5,27 @@ import { Scatter } from "react-chartjs-2";
 import Typography from "@mui/material/Typography";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
+import Select from 'react-select';
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Radar } from 'react-chartjs-2';
+
+ChartJS.register(
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend
+);
+
 
 const options = {
   scales: {
@@ -30,7 +51,7 @@ const options = {
     console.log("this is what i got for label:", label_for_click);
     console.log("this is what i got for datasets:", data_for_click);
 
-    
+
   },
 };
 
@@ -41,31 +62,43 @@ const dropOptions = [
   "Cosmo Kramer",
 ];
 
+const selectRefsOptions = [
+  { value: 'George Costanza', label: 'George Costanza' },
+  { value: 'Jerry Seinfeld', label: 'Jerry Seinfeld' },
+  { value: 'Elaine Benes', label: 'Elaine Benes' },
+  { value: 'Cosmo Kramer', label: 'Cosmo Kramer' },
+  { value: 'Newman', label: 'Newman' }
+]
+
+const selectTargetsOptions = [
+  { value: 'George Costanza', label: 'George Costanza' },
+  { value: 'Jerry Seinfeld', label: 'Jerry Seinfeld' },
+  { value: 'Elaine Benes', label: 'Elaine Benes' },
+  { value: 'Cosmo Kramer', label: 'Cosmo Kramer' },
+  { value: 'Newman', label: 'Newman' }
+]
+
 export default class Proximity extends React.Component {
   API_URL = "http://206.81.7.63:5000/graph-apis/proximity-calculation";
   constructor(props) {
     super(props);
     this.state = {
       apiData: {},
+      labels: [],
       datasets: [],
       names: [],
-      x: [],
-      y: [],
       found: false,
-      repx: "George Costanza",
-      repy: "Jerry Seinfeld",
+      refs: [],
+      targets: []
     };
   }
 
   fetchData = async () => {
-    console.log("fetchData()");
-    const url = this.getApiUrl(this.state.repx, this.state.repy);
-    console.log(url);
+    const url = this.getApiUrl(this.state.refs, this.state.targets);
     try {
       let response = await axios.get(url);
       console.log(response);
-      this.setState({ apiData: response.data, found: true });
-      this.parseData();
+      this.setState({ apiData: response.data, found: true }, function () { this.parseData(); });
     } catch (error) {
       if (error.response) {
         this.setState({ found: false });
@@ -81,86 +114,105 @@ export default class Proximity extends React.Component {
 
   nameToColor = (name) => {
     if (name === "George Costanza") {
-      return "rgba(255, 247, 0, 1.0)";
+      return "rgba(255, 247, 0, 0.5)";
     }
     if (name === "Jerry Seinfeld") {
-      return "rgba(233, 0, 255, 1.0)";
+      return "rgba(233, 0, 255, 0.5)";
     }
     if (name === "Elaine Benes") {
-      return "rgba(0, 204, 255, 1.0)";
+      return "rgba(0, 204, 255, 0.5)";
     }
     if (name === "Cosmo Kramer") {
-      return "rgba(255, 0, 0, 1.0)";
+      return "rgba(255, 0, 0, 0.5)";
     }
     if (name === "Newman") {
-      return "rgba(5, 255, 0, 1.0)";
+      return "rgba(5, 255, 0, 0.5)";
     }
   };
 
   parseData = () => {
     let datasets = [];
+    let labels = [];
+
+    this.state.refs.forEach((obj) => {
+      labels.push(obj.label);
+    });
+    let scatter = (this.state.refs.length == 2);
 
     this.state.apiData.forEach((obj) => {
-      datasets.push({
-        label: obj.repName,
-        data: [{ x: obj.x, y: obj.y }],
-        backgroundColor: this.nameToColor(obj.repName),
-      });
+      if (scatter) {
+        datasets.push({
+          label: obj.repName,
+          data: [{ x: obj.coordinates[0], y: obj.coordinates[1] }],
+          backgroundColor: this.nameToColor(obj.repName),
+        });
+      }
+      else {
+        datasets.push({
+          label: obj.repName,
+          data: obj.coordinates,
+          backgroundColor: this.nameToColor(obj.repName),
+        });
+      }
     });
-    console.log(datasets);
-    this.setState({ datasets });
+    this.setState({ labels, datasets }, function () {
+      console.log(this.state);
+    });
   };
 
-  getApiUrl = (repx, repy) => {
-    if (!repx && !repy) {
+  getApiUrl = (refs, targets) => {
+    if (!refs && !targets) {
       return this.API_URL;
     }
-    return `${this.API_URL}?repx=${repx.replace(" ", "_")}&repy=${repy.replace(
-      " ",
-      "_"
-    )}`;
+    let r = "refs[]=";
+    for (let i = 0; i < refs.length; i++) {
+      r += refs[i].value.replace(" ", "_");
+      if (i != refs.length - 1) { r += ','; }
+    }
+    let t = "targets[]=";
+    for (let i = 0; i < targets.length; i++) {
+      t += targets[i].value.replace(" ", "_");
+      if (i != targets.length - 1) { t += ','; }
+    }
+    return `${this.API_URL}?${r}&${t}`;
   };
 
-  handleRepX = (repx) => {
-    console.log("repx changed to " + repx);
-    this.setState({ repx }, function () {
+  handleRefChange = (refs) => {
+    this.setState({ refs }, function () {
       this.fetchData();
     });
   };
 
-  handleRepY = (repy) => {
-    console.log("repy changed to " + repy);
-    this.setState({ repy }, function () {
+  handleTargetChange = (targets) => {
+    this.setState({ targets }, function () {
       this.fetchData();
     });
   };
 
   render() {
+
+    let graph;
+    if (this.state.refs.length <= 2) { graph = <Scatter data={this.state} options={options} /> }
+    else if (this.state.datasets[0].data.length > 2) { graph = <Radar data={this.state} /> }
+
     return (
       <div>
         <Typography variant="h6" component="div" gutterBottom>
-          Select two representatives to preview data
+          Select at least two representatives to preview data
         </Typography>
         <div>
           <div className="proximity-dropdown-div">
-            <h4>X Axis Representative</h4>
-            <Dropdown
-              options={dropOptions}
-              value={dropOptions[0]}
-              onChange={(e) => this.handleRepX(e.value)}
-            />
+            <h4>Reference representatives</h4>
+            <Select isMulti options={selectRefsOptions} onChange={(e) => this.handleRefChange(e)} />
           </div>
           <div className="proximity-dropdown-div">
-            <h4>Y Axis Representative</h4>
-            <Dropdown
-              options={dropOptions}
-              value={dropOptions[1]}
-              onChange={(e) => this.handleRepY(e.value)}
-            />
+            <h4>Representatives to be compared</h4>
+            <Select isMulti options={selectTargetsOptions} onChange={(e) => this.handleTargetChange(e)} />
           </div>
         </div>
-        <Scatter data={this.state} options={options} />
-        main
+        <div>
+          {graph}
+        </div>
       </div>
     );
   }
