@@ -27,7 +27,7 @@ CREATE TABLE matters (
 	MatterTypeName VARCHAR(255),
 	MatterStatusId INT,
 	MatterStatusName VARCHAR(255),
-	MatterBodyId INT FOREIGN KEY,
+	MatterBodyId INT,
 	MatterBodyName VARCHAR(255),
 	MatterIntroDate DATE,
 	MatterAgendaDate DATE,
@@ -38,8 +38,8 @@ CREATE TABLE mattersponsors (
 	MatterSponsorId INT PRIMARY KEY,
 	MatterSponsorGuid VARCHAR(255),
 	MatterSponsorLastModifiedUtc DATE,
-	MatterSponsorMatterId INT FOREIGN KEY,
-	MatterSponsorNameId INT FOREIGN KEY,
+	MatterSponsorMatterId INT,
+	MatterSponsorNameId INT,
 	MatterSponsorName VARCHAR(255)
 );
 
