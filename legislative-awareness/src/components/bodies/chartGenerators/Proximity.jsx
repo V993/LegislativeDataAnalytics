@@ -148,9 +148,11 @@ export default class Proximity extends React.Component {
         });
       }
       else {
+        let ncords = obj.coordinates;
+        for (let i = 0; i < ncords.length; i++) { ncords[i] = 1 / ncords[i]; }
         datasets.push({
           label: obj.repName,
-          data: obj.coordinates,
+          data: ncords,
           backgroundColor: this.nameToColor(obj.repName),
         });
       }
