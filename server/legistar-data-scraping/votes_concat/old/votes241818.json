@@ -1,0 +1,56 @@
+[
+{
+	"VoteId":665678,
+	"VoteGuid":"124ECBB4-1824-4AF1-A34A-70C1E57CDB65",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABUmWY=",
+	"VotePersonId":5376,
+	"VotePersonName":"Sara M. Gonzalez",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":241818
+},
+
+{
+	"VoteId":665679,
+	"VoteGuid":"4EA9C588-2813-4C09-AD71-B7535E345631",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABUmWc=",
+	"VotePersonId":5911,
+	"VotePersonName":"Maria Del Carmen Arroyo",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":2,
+	"VoteResult":1,
+	"VoteEventItemId":241818
+},
+
+{
+	"VoteId":665680,
+	"VoteGuid":"A2E8D8DA-2F92-4754-82E8-7B5F9915DE02",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABUmWg=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":3,
+	"VoteResult":1,
+	"VoteEventItemId":241818
+},
+
+{
+	"VoteId":665681,
+	"VoteGuid":"8924549D-6B9A-4D4F-8E06-636100836A43",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAABUmWk=",
+	"VotePersonId":7563,
+	"VotePersonName":"Daniel Dromm ",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":241818
+}]

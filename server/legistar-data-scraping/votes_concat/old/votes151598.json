@@ -1,0 +1,84 @@
+[
+{
+	"VoteId":521588,
+	"VoteGuid":"6C8CDDB3-A302-44C8-BBFC-8C70351B225C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkX3E=",
+	"VotePersonId":5287,
+	"VotePersonName":"Yvette D. Clarke",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":151598
+},
+
+{
+	"VoteId":521589,
+	"VoteGuid":"6AC23F7C-3D40-4220-A438-A537433DB4EC",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkX3I=",
+	"VotePersonId":424,
+	"VotePersonName":"Tracy L. Boyland",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":20,
+	"VoteResult":1,
+	"VoteEventItemId":151598
+},
+
+{
+	"VoteId":521590,
+	"VoteGuid":"26904DAB-E44E-47DB-AE7C-B98BA2656AE2",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkX3M=",
+	"VotePersonId":5268,
+	"VotePersonName":"Tony Avella",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":30,
+	"VoteResult":1,
+	"VoteEventItemId":151598
+},
+
+{
+	"VoteId":521591,
+	"VoteGuid":"ED8687C8-47AE-4B54-9E48-DDD57FE3B9B7",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkX3Q=",
+	"VotePersonId":5270,
+	"VotePersonName":"Hiram Monserrate",
+	"VoteValueId":16,
+	"VoteValueName":"Absent",
+	"VoteSort":50,
+	"VoteResult":0,
+	"VoteEventItemId":151598
+},
+
+{
+	"VoteId":521592,
+	"VoteGuid":"51911A10-FCD8-45F1-A730-9D0D2D8F6E36",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkX3U=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":60,
+	"VoteResult":1,
+	"VoteEventItemId":151598
+},
+
+{
+	"VoteId":521593,
+	"VoteGuid":"E84CA390-C018-4533-908D-ABF6E1972393",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkX3Y=",
+	"VotePersonId":5282,
+	"VotePersonName":"David Yassky",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":65,
+	"VoteResult":1,
+	"VoteEventItemId":151598
+}]

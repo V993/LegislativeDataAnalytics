@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":609959,
+	"VoteGuid":"7C98257D-440F-415E-BDB2-64569337A6AB",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlqzw=",
+	"VotePersonId":5293,
+	"VotePersonName":"Michael E. McMahon",
+	"VoteValueId":46,
+	"VoteValueName":"Medical",
+	"VoteSort":1,
+	"VoteResult":0,
+	"VoteEventItemId":211179
+},
+
+{
+	"VoteId":609960,
+	"VoteGuid":"CE414773-C83A-4786-9A6E-63CAD3D5436B",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlqz0=",
+	"VotePersonId":5911,
+	"VotePersonName":"Maria Del Carmen Arroyo",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":2,
+	"VoteResult":1,
+	"VoteEventItemId":211179
+},
+
+{
+	"VoteId":609961,
+	"VoteGuid":"3FB2673A-79FB-4439-8B35-08F24057DB8E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlqz4=",
+	"VotePersonId":5273,
+	"VotePersonName":"James F. Gennaro",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":3,
+	"VoteResult":1,
+	"VoteEventItemId":211179
+},
+
+{
+	"VoteId":609962,
+	"VoteGuid":"8C539399-B352-41CC-A464-9CEABADC6F9C",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlqz8=",
+	"VotePersonId":5260,
+	"VotePersonName":"Robert Jackson",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":211179
+},
+
+{
+	"VoteId":609963,
+	"VoteGuid":"5B1752F9-FD2F-4370-A9BE-C4720AE56A79",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlq0A=",
+	"VotePersonId":6268,
+	"VotePersonName":"Jessica S. Lappin",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":211179
+},
+
+{
+	"VoteId":609964,
+	"VoteGuid":"ED38C34D-B186-483F-807C-4A326AB58E5D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlq0E=",
+	"VotePersonId":5263,
+	"VotePersonName":"Larry B. Seabrook",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":6,
+	"VoteResult":1,
+	"VoteEventItemId":211179
+},
+
+{
+	"VoteId":609965,
+	"VoteGuid":"A46B5F6D-62FB-4729-AC03-595C563F9A9D",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAlq0I=",
+	"VotePersonId":5282,
+	"VotePersonName":"David Yassky",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":7,
+	"VoteResult":1,
+	"VoteEventItemId":211179
+}]
