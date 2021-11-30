@@ -149,7 +149,11 @@ export default class Proximity extends React.Component {
       }
       else {
         let ncords = obj.coordinates;
-        for (let i = 0; i < ncords.length; i++) { ncords[i] = 1 / ncords[i]; }
+        for (let i = 0; i < ncords.length; i++) { 
+          if (ncords[i] != 0) {
+            ncords[i] = 1 / ncords[i]; 
+          }
+        }
         datasets.push({
           label: obj.repName,
           data: ncords,
