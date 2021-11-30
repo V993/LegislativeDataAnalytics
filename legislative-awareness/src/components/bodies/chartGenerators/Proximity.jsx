@@ -153,6 +153,9 @@ export default class Proximity extends React.Component {
           if (ncords[i] != 0) {
             ncords[i] = 1 / ncords[i]; 
           }
+          else {
+            ncords[i] = 1;
+          }
         }
         datasets.push({
           label: obj.repName,
