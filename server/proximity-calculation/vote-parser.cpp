@@ -43,11 +43,11 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
             v.repName = repName;
             v.matterId = matterId;
             v.vote = vote;
-            std::cout << "-------------------------------------------" << std::endl;
-            std::cout << v.repName << " " << v.matterId;
+            //std::cout << "-------------------------------------------" << std::endl;
+            //std::cout << v.repName << " " << v.matterId;
             if (in_targets(v.repName)) { prox.push_back(v); std::cout << " IN TARGETS" << std::endl; }
             else { std::cout << " NOT IN TARGETS" << std::endl; }
-            std::cout << "-------------------------------------------" << std::endl;
+            //std::cout << "-------------------------------------------" << std::endl;
           }
         }
         if (in_block)
