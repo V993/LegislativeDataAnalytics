@@ -69,13 +69,18 @@ router.get("/activeness-by-month", async function(req, res) {
 });
 
 router.get("/proximity-calculation", async function(req, res) {
-    console.log("called proximity-calculation");
     let refs = req.query.refs;
+    if (!refs) {
+        res.status(400).send('Refs is missing!');
+        return;
+    }
     refs = refs[0].split(',');
     let targets = req.query.targets;
+    if (!targets) {
+        res.status(400).send('Targets is missing!');
+        return;
+    }
     targets = targets[0].split(',');
-    console.log(refs);
-    console.log(targets);
     try {
         // Run executable
         let command = "./proximity-calculation/prox ";
@@ -90,10 +95,9 @@ router.get("/proximity-calculation", async function(req, res) {
     	  }
         exec(command, (err, stdout, stderr) => {
             if (err) {
-    		        console.log("Error after cl call");
+    		        console.error(err.message)
             }
             else {
-    		        console.log("No error after cl call " + command);
                 // Await output file
             		let fname = "./proximity-calculation/responses/";
             		for (let i = 0; i < refs.length; i++) {
@@ -101,9 +105,8 @@ router.get("/proximity-calculation", async function(req, res) {
             			if (i != refs.length - 1) { fname += "_"; }
             		}
             		fname += ".json";
-                data = fs.readFileSync(fname, 'utf8');
         		    // Read and return output file
-                console.log(data);
+                data = fs.readFileSync(fname, 'utf8');
               	res.json(JSON.parse(data));
             }
         });
