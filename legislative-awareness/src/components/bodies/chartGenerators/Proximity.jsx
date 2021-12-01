@@ -55,31 +55,8 @@ const options = {
   },
 };
 
-const dropOptions = [
-  "George Costanza",
-  "Jerry Seinfeld",
-  "Elaine Benes",
-  "Cosmo Kramer",
-];
-
-const selectRefsOptions = [
-  { value: 'George Costanza', label: 'George Costanza' },
-  { value: 'Jerry Seinfeld', label: 'Jerry Seinfeld' },
-  { value: 'Elaine Benes', label: 'Elaine Benes' },
-  { value: 'Cosmo Kramer', label: 'Cosmo Kramer' },
-  { value: 'Newman', label: 'Newman' }
-]
-
-const selectTargetsOptions = [
-  { value: 'George Costanza', label: 'George Costanza' },
-  { value: 'Jerry Seinfeld', label: 'Jerry Seinfeld' },
-  { value: 'Elaine Benes', label: 'Elaine Benes' },
-  { value: 'Cosmo Kramer', label: 'Cosmo Kramer' },
-  { value: 'Newman', label: 'Newman' }
-]
-
 export default class Proximity extends React.Component {
-  API_URL = "http://206.81.7.63:5000/graph-apis/proximity-calculation";
+  API_URL = "http://127.0.0.1:5000/graph-apis/proximity-calculation";
   constructor(props) {
     super(props);
     this.state = {
@@ -95,6 +72,7 @@ export default class Proximity extends React.Component {
 
   fetchData = async () => {
     const url = this.getApiUrl(this.state.refs, this.state.targets);
+    console.log(url);
     try {
       let response = await axios.get(url);
       console.log(response);
@@ -112,22 +90,23 @@ export default class Proximity extends React.Component {
     await this.fetchData();
   };
 
+  stringToColour = function(str) {
+    var hash = 0;
+    for (var i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    var colour = '#';
+    for (var i = 0; i < 3; i++) {
+      var value = (hash >> (i * 8)) & 0xFF;
+      colour += ('00' + value.toString(16)).substr(-2);
+    }
+    colour += '90';
+    return colour;
+  }
+
   nameToColor = (name) => {
-    if (name === "George Costanza") {
-      return "rgba(255, 247, 0, 0.5)";
-    }
-    if (name === "Jerry Seinfeld") {
-      return "rgba(233, 0, 255, 0.5)";
-    }
-    if (name === "Elaine Benes") {
-      return "rgba(0, 204, 255, 0.5)";
-    }
-    if (name === "Cosmo Kramer") {
-      return "rgba(255, 0, 0, 0.5)";
-    }
-    if (name === "Newman") {
-      return "rgba(5, 255, 0, 0.5)";
-    }
+    console.log(this.stringToColour(name));
+    return this.stringToColour(name);
   };
 
   parseData = () => {
@@ -149,9 +128,9 @@ export default class Proximity extends React.Component {
       }
       else {
         let ncords = obj.coordinates;
-        for (let i = 0; i < ncords.length; i++) { 
+        for (let i = 0; i < ncords.length; i++) {
           if (ncords[i] != 0) {
-            ncords[i] = 1 / ncords[i]; 
+            ncords[i] = 1 / ncords[i];
           }
           else {
             ncords[i] = 1;
@@ -175,12 +154,14 @@ export default class Proximity extends React.Component {
     }
     let r = "refs[]=";
     for (let i = 0; i < refs.length; i++) {
-      r += refs[i].value.replace(" ", "_");
+      //r += refs[i].value.replace(/ /g,"_");
+      r += refs[i].value.split(' ').join('_');
       if (i != refs.length - 1) { r += ','; }
     }
     let t = "targets[]=";
     for (let i = 0; i < targets.length; i++) {
-      t += targets[i].value.replace(" ", "_");
+      //t += targets[i].value.replace(/ /g,"_ ");
+      t += targets[i].value.split(' ').join('_');
       if (i != targets.length - 1) { t += ','; }
     }
     return `${this.API_URL}?${r}&${t}`;
@@ -199,6 +180,18 @@ export default class Proximity extends React.Component {
   };
 
   render() {
+
+    let selectRefsOptions = [
+      { value: 'Mary Pinkett', label: 'Mary Pinkett' },
+      { value: 'Herbert E. Berman', label: 'Herbert E. Berman' },
+      { value: 'Archie W. Spigner', label: 'Archie W. Spigner' },
+      { value: 'Wendell Foster', label: 'Wendell Foster' },
+      { value: 'Sheldon S. Leffler', label: 'Sheldon S. Leffler' },
+      { value: 'Stanley E. Michels', label: 'Stanley E. Michels' },
+      { value: 'June M. Eisland', label: 'June M. Eisland' }
+    ]
+
+    let selectTargetsOptions = selectRefsOptions;
 
     let graph;
     if (this.state.refs.length <= 2) { graph = <Scatter data={this.state} options={options} /> }
