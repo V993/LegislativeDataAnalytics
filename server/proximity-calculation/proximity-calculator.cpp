@@ -199,6 +199,8 @@ bool ProximityCalculator::add_rep(std::string n)
   if (!in) { return false; }
   // Append n to representativeNames
   representativeNames.push_back(n);
+
+  return true;
 }
 
 // Removes string n from representativeNames, provided that

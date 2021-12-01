@@ -78,7 +78,8 @@ int main(int argc, char *argv[])
   bool post_refs = false;
   std::vector<std::string> refs;
   std::vector<std::string> targets;
-  for (int i = 1; i < argc; i++)
+  std::string ifname = argv[1];
+  for (int i = 2; i < argc; i++)
   {
     std::cout << "'" << argv[i] << "'" << std::endl;
     if (std::string(argv[i]) == "targets") { post_refs = true; std::cout << "HIT TARGETS" << std::endl; }
@@ -93,7 +94,7 @@ int main(int argc, char *argv[])
   vp.append_targets(refs);
   vp.append_targets(targets);
 
-  std::vector<VoteRollItem> testVoteData = vp.read_file("./proximity-calculation/test_vote_data.json");
+  std::vector<VoteRollItem> testVoteData = vp.read_file(ifname);
   std::cout << "VoteParser has completed read_file()" << std::endl;
   /*
   for (int i = 0; i < testVoteData.size(); i++)

@@ -69,52 +69,78 @@ router.get("/activeness-by-month", async function(req, res) {
 });
 
 router.get("/proximity-calculation", async function(req, res) {
-    console.log("called proximity-calculation");
-    //const repx = req.query.repx.replace(' ','_');
-    //const repy = req.query.repy.replace(' ','_');
+    console.log("--------------------------------------------------------------------------------");
     let refs = req.query.refs;
+    if (!refs) {
+        res.status(400).send('Refs is missing!');
+        return;
+    }
     refs = refs[0].split(',');
     let targets = req.query.targets;
+    if (!targets) {
+        res.status(400).send('Targets is missing!');
+        return;
+    }
     targets = targets[0].split(',');
-    console.log(refs);
-    console.log(targets);
     try {
+        // Get votes data from database
+        let allnames = refs.concat(targets);
+        allnames[0] = allnames[0].replace(/_/gi," ");
+        console.log(allnames);
+        let v = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[0]]);
+        console.log(v.rows[0]);
+        let votes = v.rows;
+        for (let i = 1; i < allnames.length; i++) {
+          allnames[i] = allnames[i].replace(/_/gi," ");
+          console.log(allnames[i]);
+          const t = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[i]]);
+          console.log(t.rows[0]);
+          votes = votes.concat(t.rows);
+        }
+
+        // Create input file
+        let ifname = "./proximity-calculation/calls/";
+        for (let i = 0; i < refs.length; i++) {
+          ifname += refs[i];
+          if (i != refs.length - 1) { ifname += "_"; }
+        }
+        ifname += ".json";
+        fs.writeFileSync(ifname, JSON.stringify(votes,null,4), 'utf8');
+
         // Run executable
         let command = "./proximity-calculation/prox ";
-	for (let i = 0; i < refs.length; i++) {
-		command += refs[i];
-		command += " ";
-	}
-	command += "targets ";
-	for (let i = 0; i < targets.length; i++) {
-		command += targets[i];
-		command += " ";
-	}
+        command += ifname + " ";
+    	  for (let i = 0; i < refs.length; i++) {
+    		    command += refs[i];
+    		    command += " ";
+    	  }
+    	  command += "targets ";
+    	  for (let i = 0; i < targets.length; i++) {
+    		    command += targets[i];
+    		    command += " ";
+    	  }
+        console.log(command);
         exec(command, (err, stdout, stderr) => {
-          if (err) {
-		console.log("Error after cl call");
-          }
-          else {
-		console.log("No error after cl call " + command);
-            	// Await output file
-		let fname = "./proximity-calculation/responses/";
-		for (let i = 0; i < refs.length; i++) {
-			fname += refs[i];
-			if (i != refs.length - 1) { fname += "_"; }
-		}
-		fname += ".json";
-        	data = fs.readFileSync(fname, 'utf8');
-		// Read and return output file
-        	console.log(data);
-      		res.json(JSON.parse(data));
-          }
+            if (err) {
+    		        console.error(err.message)
+            }
+            else {
+                // Await output file
+            		let fname = "./proximity-calculation/responses/";
+            		for (let i = 0; i < refs.length; i++) {
+            			fname += refs[i];
+            			if (i != refs.length - 1) { fname += "_"; }
+            		}
+            		fname += ".json";
+        		    // Read and return output file
+                try {
+                  data = fs.readFileSync(fname, 'utf8');
+                  res.json(JSON.parse(data));
+                } catch (err) {
+                  //console.log(err);
+                }
+            }
         });
-        // Await output file
-        // Read and return output file
-        //fname = "../proximity-calculation/responses/" + repx + "_" + repy + ".json";
-        //data = fs.readFileSync('../proximity-calculation/responses/' + repx + '_' + repy + '.json', 'utf8');
-        //console.log(data);
-        //res.json(JSON.parse(data));
     } catch (error) {
         console.error(error.message)
     }
