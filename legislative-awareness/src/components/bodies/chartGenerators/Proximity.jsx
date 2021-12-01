@@ -56,7 +56,7 @@ const options = {
 };
 
 export default class Proximity extends React.Component {
-  API_URL = "http://127.0.0.1:5000/graph-apis/proximity-calculation";
+  API_URL = "http://206.81.7.63:5000/graph-apis/proximity-calculation";
   constructor(props) {
     super(props);
     this.state = {
