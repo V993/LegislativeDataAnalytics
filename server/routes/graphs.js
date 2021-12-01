@@ -69,6 +69,7 @@ router.get("/activeness-by-month", async function(req, res) {
 });
 
 router.get("/proximity-calculation", async function(req, res) {
+    console.log("--------------------------------------------------------------------------------");
     let refs = req.query.refs;
     if (!refs) {
         res.status(400).send('Refs is missing!');
@@ -85,15 +86,15 @@ router.get("/proximity-calculation", async function(req, res) {
         // Get votes data from database
         let allnames = refs.concat(targets);
         allnames[0] = allnames[0].replace(/_/gi," ");
-        //console.log(allnames);
+        console.log(allnames);
         let v = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[0]]);
-        //console.log(v.rows[0]);
+        console.log(v.rows[0]);
         let votes = v.rows;
         for (let i = 1; i < allnames.length; i++) {
           allnames[i] = allnames[i].replace(/_/gi," ");
-          //console.log(allnames[i]);
+          console.log(allnames[i]);
           const t = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[i]]);
-          //console.log(t.rows[0]);
+          console.log(t.rows[0]);
           votes = votes.concat(t.rows);
         }
 
@@ -132,8 +133,12 @@ router.get("/proximity-calculation", async function(req, res) {
             		}
             		fname += ".json";
         		    // Read and return output file
-                data = fs.readFileSync(fname, 'utf8');
-              	res.json(JSON.parse(data));
+                try {
+                  data = fs.readFileSync(fname, 'utf8');
+                  res.json(JSON.parse(data));
+                } catch (err) {
+                  //console.log(err);
+                }
             }
         });
     } catch (error) {
