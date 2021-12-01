@@ -68,7 +68,7 @@ CREATE TABLE senate (
 	districtCode INT
 );
 
-CREATE TABLE vote (
+CREATE TABLE votes (
 	VoteId INT PRIMARY KEY,
 	VotePersonName VARCHAR(255),
 	VoteValueName VARCHAR(255),
