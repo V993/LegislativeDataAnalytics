@@ -67,3 +67,10 @@ CREATE TABLE senate (
 	sessionMemberId INT,
 	districtCode INT
 );
+
+CREATE TABLE vote (
+	VoteId INT PRIMARY KEY,
+	VotePersonName VARCHAR(255),
+	VoteValueName VARCHAR(255),
+	VoteEventItemId INT
+);
