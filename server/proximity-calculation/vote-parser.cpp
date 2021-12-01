@@ -32,6 +32,7 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
     // PARSE FILE
     while (getline (ifile, line))
     {
+        val = "";
         for (int i = 0; i < line.length(); i++)
         {
           if (line[i] == '{' && !in_block) { in_block = true; }
@@ -42,21 +43,27 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
             v.repName = repName;
             v.matterId = matterId;
             v.vote = vote;
-            std::cout << v.repName << v.matterId;
+            std::cout << "-------------------------------------------" << std::endl;
+            std::cout << v.repName << " " << v.matterId;
             if (in_targets(v.repName)) { prox.push_back(v); std::cout << " IN TARGETS" << std::endl; }
             else { std::cout << " NOT IN TARGETS" << std::endl; }
+            std::cout << "-------------------------------------------" << std::endl;
           }
         }
         if (in_block)
         {
-          if (line.find("matterId") != std::string::npos)
+          if (line.find("voteeventitemid") != std::string::npos)
           {
+            //std::cout << "-------------------------------------------" << std::endl;
+            //std::cout << line << std::endl;
             bool post_colon = false;
             for (int j = 0; j < line.length(); j++)
             {
               if (line[j] == ':') { post_colon = true; }  // Ignore "matterId"
-              else if (line[j] == ',')                    // At end of line, turn set matterId and reset val
+              else if (j == line.length() - 1)                    // At end of line, turn set matterId and reset val
               {
+                val += line[j];
+                //std::cout << val << std::endl;
                 matterId = std::stoi(val);
                 //std::cout << matterId << std::endl;
                 val = "";
@@ -68,8 +75,10 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
               }
             }
           }
-          else if (line.find("repName") != std::string::npos)
+          else if (line.find("votepersonname") != std::string::npos)
           {
+            //std::cout << "-------------------------------------------" << std::endl;
+            //std::cout << line << std::endl;
             int quotes = 0;
             for (int j = 0; j < line.length(); j++)
             {
@@ -84,14 +93,17 @@ std::vector<VoteRollItem> VoteParser::read_file(std::string fname)
               else if (quotes < 4 && quotes > 2) { val += line[j]; }
             }
           }
-          else
+          else if (line.find("votevaluename") != std::string::npos)
           {
+            //std::cout << "-------------------------------------------" << std::endl;
+            //std::cout << line << std::endl;
             int quotes = 0;
             for (int j = 0; j < line.length(); j++)
             {
               if (line[j] == '"' && quotes < 3) { quotes++; }
               else if (line[j] == '"' && quotes == 3)
               {
+                //std::cout << val << " ";
                 if (val == "Affirmative") { vote = 1; }
                 else if (val == "Absent") { vote = -1; }
                 else { vote = 0; }

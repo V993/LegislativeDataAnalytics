@@ -82,8 +82,33 @@ router.get("/proximity-calculation", async function(req, res) {
     }
     targets = targets[0].split(',');
     try {
+        // Get votes data from database
+        let allnames = refs.concat(targets);
+        allnames[0] = allnames[0].replace(/_/gi," ");
+        //console.log(allnames);
+        let v = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[0]]);
+        //console.log(v.rows[0]);
+        let votes = v.rows;
+        for (let i = 1; i < allnames.length; i++) {
+          allnames[i] = allnames[i].replace(/_/gi," ");
+          //console.log(allnames[i]);
+          const t = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[i]]);
+          //console.log(t.rows[0]);
+          votes = votes.concat(t.rows);
+        }
+
+        // Create input file
+        let ifname = "./proximity-calculation/calls/";
+        for (let i = 0; i < refs.length; i++) {
+          ifname += refs[i];
+          if (i != refs.length - 1) { ifname += "_"; }
+        }
+        ifname += ".json";
+        fs.writeFileSync(ifname, JSON.stringify(votes,null,4), 'utf8');
+
         // Run executable
         let command = "./proximity-calculation/prox ";
+        command += ifname + " ";
     	  for (let i = 0; i < refs.length; i++) {
     		    command += refs[i];
     		    command += " ";
@@ -93,6 +118,7 @@ router.get("/proximity-calculation", async function(req, res) {
     		    command += targets[i];
     		    command += " ";
     	  }
+        console.log(command);
         exec(command, (err, stdout, stderr) => {
             if (err) {
     		        console.error(err.message)
