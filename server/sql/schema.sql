@@ -34,19 +34,6 @@ CREATE TABLE matters (
 	MatterPassedDate DATE
 );
 
-CREATE TABLE assembly_senate_bills (
-	basePrintNo VARCHAR(255),
-	session INT,
-	billType VARCHAR(255),
-	publishedDateTime DATE,
-	sponsor VARCHAR(255),
-	signed BOOLEAN,
-	adopted BOOLEAN,
-	vetoed BOOLEAN,
-	PRIMARY KEY(basePrintNo, session)
-);
-
-
 CREATE TABLE mattersponsors (
 	MatterSponsorId INT PRIMARY KEY,
 	MatterSponsorGuid VARCHAR(255),
@@ -86,4 +73,16 @@ CREATE TABLE votes (
 	VotePersonName VARCHAR(255),
 	VoteValueName VARCHAR(255),
 	VoteEventItemId INT
+);
+
+CREATE TABLE assembly_senate_bills (
+	basePrintNo VARCHAR(255),
+	session INT,
+	billType VARCHAR(255),
+	publishedDateTime DATE,
+	sponsor VARCHAR(255),
+	signed BOOLEAN,
+	adopted BOOLEAN,
+	vetoed BOOLEAN,
+	PRIMARY KEY(basePrintNo, session)
 );
