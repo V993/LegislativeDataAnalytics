@@ -54,9 +54,7 @@ async function write(year) {
 
 }
 
-/*
+
 for (let i = 2009; i <= 2021; i+=2) {
     write(i);
 }
-*/
-write(2013);
