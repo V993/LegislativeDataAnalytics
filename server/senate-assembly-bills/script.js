@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs')
 
-let key = 'LM3odDFK6YkMApbU4Vt48v4AnLlGnfsY'
+let key = ''
 
 async function fetchData(year, offset) {
     try {
