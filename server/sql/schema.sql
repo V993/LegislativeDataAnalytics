@@ -84,5 +84,6 @@ CREATE TABLE assembly_senate_bills (
 	signed BOOLEAN,
 	adopted BOOLEAN,
 	vetoed BOOLEAN,
+	committeeName VARCHAR(255),
 	PRIMARY KEY(basePrintNo, session)
 );
