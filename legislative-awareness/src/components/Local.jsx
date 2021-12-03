@@ -5,10 +5,6 @@ import { SocialIcon } from "react-social-icons";
 // import Navigation from "./Navigation";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import Typography from "@mui/material/Typography";
 
 const ColorButton = styled(Button)(({ theme }) => ({
@@ -227,26 +223,20 @@ class Local extends Component {
                   <br></br>
                   <br></br>
 
-                  <div className="smolButton">
-                    Top
-                  </div>
+                  <div className="smolButton">Top</div>
                 </div>
-        
               ) : (
                 <div className="box">
                   <div className="">
                     <div className="split">
-                      <img 
-                        alt="Rep"
-                        src="bobbobberson.jpg"
-                      />
+                      <img alt="Rep" src="bobbobberson.jpg" />
                       <div className="splitItem">
-                      <Typography variant="h4" component="div" gutterBottom>
-                        Bob Bobberson (D)
-                        <Typography variant="h5" component="div" gutterBottom>
-                          Representative of Representation
+                        <Typography variant="h4" component="div" gutterBottom>
+                          Bob Bobberson (D)
+                          <Typography variant="h5" component="div" gutterBottom>
+                            Representative of Representation
+                          </Typography>
                         </Typography>
-                      </Typography>
                       </div>
                     </div>
                     <br></br>
@@ -254,10 +244,11 @@ class Local extends Component {
                       <li>Address: Main St, Somewhere, NY </li>
                       <li>Phone: (XXX) XXX-XXXX </li>
                       <li>Website: chasethemoney.com </li>
-                      <li>Social Media: Bob Bobberson is off the grid and hiding 
-                        from federal representatives. If you see him, please 
-                        contact the appropriate authorities.</li>
-
+                      <li>
+                        Social Media: Bob Bobberson is off the grid and hiding
+                        from federal representatives. If you see him, please
+                        contact the appropriate authorities.
+                      </li>
                     </Typography>
                   </div>
                 </div>

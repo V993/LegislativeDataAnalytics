@@ -31,11 +31,9 @@ const options = {
     var label_for_click =
       event.chart.config._config.data.labels[index_for_click];
 
-    console.log(index_for_click)
+    console.log(index_for_click);
     console.log("this is what i got for label:", label_for_click);
     console.log("this is what i got for datasets:", data_for_click);
-
-    
   },
 };
 
@@ -124,7 +122,35 @@ export default class Committees extends React.Component {
               },
             ],
           }}
-          options={options}
+          options={{
+            indexAxis: "x",
+            elements: {
+              bar: {
+                borderWidth: 2,
+              },
+            },
+            responsive: true,
+            plugins: {
+              legend: {
+                position: "right",
+              },
+              title: {
+                display: true,
+                text: "Committees and Number of Bills Voted On",
+              },
+            },
+            events: ["click", "mousemove"],
+            onClick: (event, item) => {
+              if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
+
+              var idx = item[0].index;
+              var value = event.chart.config._config.data.datasets[0].data[idx];
+              var label = event.chart.config._config.data.labels[idx];
+
+              // console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
+              this.props.clickedLabel(label, value);
+            },
+          }}
         />
       </div>
     );
