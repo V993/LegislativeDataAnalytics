@@ -6,7 +6,6 @@ let key = 'LM3odDFK6YkMApbU4Vt48v4AnLlGnfsY'
 async function fetchData(year, offset) {
     try {
         res = await axios.get(`https://legislation.nysenate.gov/api/3/bills/${year}/?key=${key}&limit=1000&offset=${offset}`);
-        data = res.data.result.items
         return res;
     } catch (error) {
         console.log(error)
