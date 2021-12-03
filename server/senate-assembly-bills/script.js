@@ -14,7 +14,7 @@ async function fetchData(year, offset) {
     return;
 }
 
-async function write(year) {
+function write(year) {
     let result = [];
     let offset = 1;
     let stored = false;
