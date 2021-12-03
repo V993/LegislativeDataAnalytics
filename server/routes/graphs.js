@@ -8,7 +8,7 @@ router.get("/", function(req, res) {
     res.send("This route is for the graph data");
 });
 
-//responds with a list of representatives and the number of bills they proposed since a given date
+//responds with a list of representatives and the number of bills they proposed in a given date range
 router.get("/representative-bills", async function(req, res) {
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
@@ -28,7 +28,7 @@ router.get("/representative-bills", async function(req, res) {
     }
 });
 
-//responds with a list of committees and the number of bills they proposed since a given date
+//responds with a list of committees and the number of bills they proposed in a given date range
 router.get("/committee-bills", async function(req, res) {
     const startDate = req.query.startDate;
     const endDate = req.query.endDate;
@@ -63,6 +63,25 @@ router.get("/activeness-by-month", async function(req, res) {
     try {
         const activenessByMonth = await pool.query(query);
         res.json(activenessByMonth.rows)
+    } catch (error) {
+        console.error(error.message)
+    }
+});
+
+//responds with a list of representatives and the number of bills they proposed in a given date range
+router.get("/state-representative-bills/:branch", async function(req, res) {
+    const startDate = req.query.startDate;
+    const endDate = req.query.endDate;
+    const query = `
+        SELECT sponsor, count(*) as numOfBills
+        FROM assembly_senate_bills
+        WHERE billType = '${req.params.branch.toUpperCase()}'
+        ${startDate ? `AND publishedDateTime >= '${startDate}'` : ""}
+        ${endDate ? `AND publishedDateTime <= '${endDate}'` : ""}
+        GROUP BY sponsor;`
+    try {
+        const assemblyBillCount = await pool.query(query);
+        res.json(assemblyBillCount.rows)
     } catch (error) {
         console.error(error.message)
     }
