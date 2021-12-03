@@ -1,11 +1,12 @@
 const axios = require('axios');
 const fs = require('fs')
 
-let key = ''
+let key = 'LM3odDFK6YkMApbU4Vt48v4AnLlGnfsY'
 
 async function fetchData(year, offset) {
     try {
         res = await axios.get(`https://legislation.nysenate.gov/api/3/bills/${year}/?key=${key}&limit=1000&offset=${offset}`);
+        data = res.data.result.items
         return res;
     } catch (error) {
         console.log(error)
@@ -13,7 +14,7 @@ async function fetchData(year, offset) {
     return;
 }
 
-function write(year) {
+async function write(year) {
     let result = [];
     let offset = 1;
     let stored = false;
@@ -26,6 +27,14 @@ function write(year) {
                     bill.sponsor = bill.sponsor.member.fullName;
                 } else {
                     bill.sponsor = null;
+                }
+                bill.committeeName = null;
+                if (bill.status && bill.status.committeeName) {
+                    bill.committeeName = bill.status.committeeName;
+                } else {
+                    for (item of bill.milestones.items) {
+                        if (item.committeeName) bill.committeeName = item.committeeName;
+                    }
                 }
                 delete bill.status;
                 delete bill.milestones;
@@ -53,7 +62,6 @@ function write(year) {
 
 }
 
-
-for (let i = 2009; i <= 2021; i+=2) {
-    write(i);
+for (let i = 2011; i <= 2021; i+=2) {
+   write(i);
 }
