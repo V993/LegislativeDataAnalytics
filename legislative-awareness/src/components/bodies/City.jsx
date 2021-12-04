@@ -2,6 +2,7 @@ import React from "react";
 import Bills from "./chartGenerators/Bills";
 import Committees from "./chartGenerators/Committees";
 import Proximity from "./chartGenerators/Proximity";
+import Activeness from "./chartGenerators/Activeness";
 import Sidebar from "react-sidebar";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -28,6 +29,7 @@ export default class Data extends React.Component {
       member: {},
     };
     this.showBills = (e) => this.setState({ chart: "bills" });
+    this.showActiveness = (e) => this.setState({ chart: "activeness" });
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
@@ -123,6 +125,13 @@ export default class Data extends React.Component {
                       <ColorButton
                         variant="contained"
                         color="success"
+                        onClick={this.showActiveness}
+                      >
+                        Representative Activeness by Month
+                      </ColorButton>
+                      <ColorButton
+                        variant="contained"
+                        color="success"
                         onClick={this.showCommittees}
                       >
                         Bills Considered by a Committee
@@ -141,6 +150,7 @@ export default class Data extends React.Component {
                   ) : (
                     <div />
                   )}
+                  {this.state.chart === "activeness" ? <Activeness /> : <div />}
                   {this.state.chart === "committees" ? (
                     <Committees clickedLabel={this.handleData} />
                   ) : (
