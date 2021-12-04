@@ -147,18 +147,7 @@ export default class Activeness extends React.Component {
                 display: true,
                 text: "Representative Voting History by Month",
               },
-            },
-            events: ["click", "mousemove"],
-            onClick: (event, item) => {
-              if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
-
-              var idx = item[0].index;
-              var value = event.chart.config._config.data.datasets[0].data[idx];
-              var label = event.chart.config._config.data.labels[idx];
-
-              // console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
-              this.props.clickedLabel(label, value);
-            },
+            }
           }}
         />
       </div>
