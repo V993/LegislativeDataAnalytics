@@ -1,0 +1,94 @@
+
+/* .css Layout for data pages: */
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+.four-cell-layout {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    /* border-radius: 20%; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.corner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 50%;
+    width: 50%;
+    max-width: 50%;
+    max-height: 50%;
+    cursor: pointer;
+    /* border: 4px solid grey; */
+}
+
+.option {
+    padding-top: 25%;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black ;
+    /* border-radius: 18px; */
+    transition-duration: 0.4s;
+    background-image: linear-gradient(rgba(138, 182, 169, 1),rgba(138, 182, 169, 1));
+}
+
+.option:hover {
+    /* transform:scale(1.05); */
+    background-image: linear-gradient(rgb(0,0,0,1),rgba(0,0,0,1));
+    opacity: 0.7;
+    transition-duration: 0.2s;
+}
+
+.option.left:hover {
+    transform-origin: center;
+}
+
+.option.right:hover {
+    transform-origin: center;
+}
+
+.option.reps {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("./assets/reps.jpg");
+    background-size: cover;
+
+}   
+.option.coms {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("./assets/coms.jpg");
+    background-size: cover;
+}
+.option.prox {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("./assets/prox.jpg");
+    background-size: cover;
+
+}
+.option.comp {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("./assets/comp.jpg");
+    background-size: cover;
+}
+
+#front-text {
+    color:white;
+}
+
+.divider {
+    height: 10%;
+    width: 100%;
+    border: 3px solid black;
+}
+
+/* .backend */

@@ -7,6 +7,15 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import axios from "axios";
+import Navigation from "./DataNavbar";
+import "./layout.css";
+import { Link, 
+         DirectLink, 
+         Element, 
+         Events, 
+         animateScroll as scroll, 
+         scrollSpy, 
+         scroller } from 'react-scroll'
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -21,17 +30,48 @@ export default class Data extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      chart: "bills",
+      chart: "default",
       sidebarOpen: false,
       label: "",
       value: 0,
       member: {},
     };
-    this.showBills = (e) => this.setState({ chart: "bills" });
+    this.showBills = (e) => {this.setState({ chart: "bills" }); this.scrollToBottom()};
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     this.handleData = this.handleData.bind(this);
+
+    this.scrollToTop = this.scrollToTop.bind(this);
+    this.scrollToBottom = this.scrollToBottom.bind(this);
+  }
+
+  componentDidMount() {
+
+    Events.scrollEvent.register('begin', function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function () {
+      console.log("end", arguments);
+    });
+
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+
+  scrollTo() {
+    scroller.scrollTo("scroll-to-element", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart"
+    });
   }
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
@@ -62,6 +102,11 @@ export default class Data extends React.Component {
       });
     }
   };
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
+  }
 
   render() {
     const sidebarContent =
@@ -102,54 +147,79 @@ export default class Data extends React.Component {
           pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
-          <div className="data">
-            <div className="container">
-              <div className="row align-items-center my-5">
-                <div className="col-lg-12">
-                  <h1 className="font-weight-light">Legislative Data</h1>
-                  <div>
-                    <Stack
-                      spacing={2}
-                      direction="row"
-                      className="toggle-buttons"
-                    >
-                      <ColorButton
-                        variant="contained"
-                        color="success"
-                        onClick={this.showBills}
-                      >
-                        Bills Sponsored by a Representative
-                      </ColorButton>
-                      <ColorButton
-                        variant="contained"
-                        color="success"
-                        onClick={this.showCommittees}
-                      >
-                        Bills Considered by a Committee
-                      </ColorButton>
-                      <ColorButton
-                        variant="contained"
-                        color="success"
-                        onClick={this.showProximity}
-                      >
-                        Voting Proximity Between Representatives
-                      </ColorButton>
-                    </Stack>
+          {/* <Navigation /> */}
+          {/* <div className=""> */}
+            {/* <Stack
+              direction="row"
+            > */}
+              <div className="four-cell-layout">
+                <div className="corner">
+                  <div className="option reps" onClick={this.showBills}>
+                    {/* <div className="centerText"> */}
+                      <h1 className="white">
+                        Bills/Represenative
+                      </h1>
+                      <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
+                    {/* </div> */}
                   </div>
-                  {this.state.chart === "bills" ? (
-                    <Bills clickedLabel={this.handleData} />
-                  ) : (
-                    <div />
-                  )}
-                  {this.state.chart === "committees" ? (
-                    <Committees clickedLabel={this.handleData} />
-                  ) : (
-                    <div />
-                  )}
-                  {this.state.chart === "proximity" ? <Proximity /> : <div />}
+                </div>
+      
+                <div className="corner">
+                  <div className="option coms" onClick={this.showCommittees}>
+                    <h1 className="white">
+                      Bills/Committee
+                    </h1>
+                    <h4 id="front-text">See how many bills each committee in City Council <br></br>has put forward over time and compare.</h4>
+                  </div>
+                </div>
+      
+                <div className="corner">
+                  <div className="option prox" onClick={this.showProximity}>
+                    <h1 className="white">
+                      Voting Proximity Between Representatives
+                    </h1>
+                    <h4 id="front-text">Compare the similarity of your representatives using voting data.</h4>
+                  </div>
+                </div>
+
+                <div className="corner">
+                  <div className="option comp">
+                    <h1 className="white">
+                      Compare Representative Perfomance
+                    </h1>
+                    <h4 id="front-text">Compare your representatives activity against others to see how active they've been.</h4>
+                  </div>
                 </div>
               </div>
+            {/* </Stack> */}
+          {/* </div> */}
+
+          {
+            this.state.chart === "default" ? (
+              <div>Select an option above!</div>
+            ) : (
+              <div className="divider">
+                
+              </div>
+            )
+            
+          }
+
+          <div className="">
+            <div name="chartLocation">
+              {this.state.chart === "bills" ? (
+                <Bills clickedLabel={this.handleData} />
+              ) : (
+                <div />
+              )}
+              {this.state.chart === "committees" ? (
+                <Committees clickedLabel={this.handleData} />
+              ) : (
+                <div />
+              )}
+              {this.state.chart === "proximity" ? <Proximity /> : <div />}
             </div>
+            <div onClick={this.scrollToTop()}>Back to Top</div>
           </div>
         </Sidebar>
       </>
