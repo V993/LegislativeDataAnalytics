@@ -70,7 +70,7 @@ export default class Bills extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="full">
         <Typography variant="h6" component="div" gutterBottom>
           Select a range of dates to preview data
         </Typography>
@@ -106,6 +106,11 @@ export default class Bills extends React.Component {
               },
             },
             events: ["click", "mousemove"],
+            onHover: (event, item) => {
+              if (item.length === 0) return;
+
+              
+            },
             onClick: (event, item) => {
               if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
 
