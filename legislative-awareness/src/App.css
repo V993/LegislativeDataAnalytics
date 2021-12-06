@@ -9,6 +9,15 @@
   position: fixed sticky;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
+a:link {
+  text-decoration-color: none;
+  text-decoration: none;
+}
+
 /* HEADER */
 
 .underline {
@@ -115,6 +124,7 @@ header {
 
 .cell.local {
   background-image: url("./components/assets/localImg.jpg");
+  background-size: cover;
 }
 
 .cell.information {
@@ -337,10 +347,12 @@ header {
 
 .splitItem.Beeg {
   /* float: left; */
-  max-height: 45em;
+  max-height: 86vh;
   overflow-y: scroll;
   max-width: 96%;
-  padding-left: 35em;
+  padding-left: 40%;
+
+  transition-duration: 0.6s;
 }
 
 .splitItem.Beeg::-webkit-scrollbar {

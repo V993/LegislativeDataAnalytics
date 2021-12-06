@@ -1,12 +1,45 @@
 
 /* .css Layout for data pages: */
 
+html {
+    scroll-behavior: smooth !important;
+}
+
+.return {
+    background: linear-gradient(rgb(145, 255, 209), rgba(138, 182, 169, 1));
+    transform: scale(1);
+    transition: 0.5s;
+
+    padding: 3em 2.5em 3em 2.5em;
+
+    color: white;
+    z-index: 1;
+    position: absolute;
+    border-radius: 60px;
+    border-top-left-radius: 0%;
+}
+
+.return:hover {
+    background: rgba(138, 182, 169, 0.9);
+    transition: 0.3s;
+    cursor: pointer;
+
+    transform-origin: left top;
+    transform: scale(2.5);
+}
+
+.clear {
+    border-radius: 15%;
+    box-shadow: 0px 0px 40px rgba(138, 182, 169, .1);
+}
+
 .full {
     height: 100%;
     width: 100%;
 }
 
 .four-cell-layout {
+    z-index: 4;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -16,6 +49,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    /* overflow-y: scroll; */
 }
 
 .corner {
@@ -44,39 +78,32 @@
 
 .option:hover {
     /* transform:scale(1.05); */
-    background-image: linear-gradient(rgb(0,0,0,1),rgba(0,0,0,1));
-    opacity: 0.7;
+    background-image: linear-gradient(rgb(0,0,0,0),rgba(0,0,0,1));
+    opacity: 0.9;
+    background: ivory;
     transition-duration: 0.2s;
 }
 
-.option.left:hover {
-    transform-origin: center;
-}
-
-.option.right:hover {
-    transform-origin: center;
-}
-
 .option.reps {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
             url("./assets/reps.jpg");
     background-size: cover;
 
 }   
 .option.coms {
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
             url("./assets/coms.jpg");
     background-size: cover;
 }
 .option.prox {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
             url("./assets/prox.jpg");
     background-size: cover;
 
 }
 .option.comp {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
             url("./assets/comp.jpg");
     background-size: cover;
 }
@@ -85,10 +112,27 @@
     color:white;
 }
 
+.centered-display {
+    scroll-behavior: smooth;
+    text-align: center;
+    margin: auto;
+}
+
 .divider {
-    height: 10%;
-    width: 100%;
-    border: 3px solid black;
+    position:relative;
+    padding-top: 0%;
+    left: 10%;
+    right: 50%;
+    width: 80%;
+    border-bottom: 3px solid black;
+    border-radius: 15px;
+
+    transition-duration: 0.6s;
+}
+
+#capital {
+    text-transform: capitalize;
+    text-align: center;
 }
 
 /* .backend */

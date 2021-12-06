@@ -6,6 +6,7 @@ import { SocialIcon } from "react-social-icons";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -89,7 +90,7 @@ class Local extends Component {
                 src={
                   official.photoUrl
                     ? official.photoUrl
-                    : "https://www.pinclipart.com/picdir/middle/169-1692839_default-avatar-transparent-clipart.png"
+                    : "bobbobberson.jpg"
                 }
               />
               <div className="splitItem">
@@ -152,6 +153,7 @@ class Local extends Component {
             </Typography>
           </ul>
           <br></br>
+          <br></br>
         </div>
       );
     });
@@ -202,7 +204,7 @@ class Local extends Component {
             <div className="">
               {this.state.found ? (
                 <div>
-                  <h1>{this.state.apiData.name}</h1>
+                  <h1 id ="top">{this.state.apiData.name}</h1>
                   <Typography variant="h6" component="div" gutterBottom>
                     Your Representatives:
                   </Typography>
@@ -223,35 +225,45 @@ class Local extends Component {
                   <br></br>
                   <br></br>
 
-                  <div className="smolButton">Top</div>
+                  <a href="#top" className="smolButton">Top</a>
                 </div>
               ) : (
-                <div className="box">
-                  <div className="">
-                    <div className="split">
-                      <img alt="Rep" src="bobbobberson.jpg" />
-                      <div className="splitItem">
-                        <Typography variant="h4" component="div" gutterBottom>
-                          Bob Bobberson (D)
-                          <Typography variant="h5" component="div" gutterBottom>
-                            Representative of Representation
+                <>
+                  <h1>{this.state.apiData.name}</h1>
+                  <Typography variant="h6" component="div" gutterBottom>
+                    Your Representatives:
+                  </Typography>
+                  <Typography variant="body2" component="div" gutterBottom>
+                    Searched address: 
+                  </Typography>
+                  <br></br>
+                  <div className="box">
+                    <div className=""></div>
+                      <div className="split">
+                        <img alt="Rep" src="bobbobberson.jpg" />
+                        <div className="splitItem">
+                          <Typography variant="h4" component="div" gutterBottom>
+                            Bob Bobberson (D)
+                            <Typography variant="h5" component="div" gutterBottom>
+                              Representative of Representation
+                            </Typography>
                           </Typography>
-                        </Typography>
+                        </div>
                       </div>
-                    </div>
-                    <br></br>
-                    <Typography variant="body1" component="div" gutterBottom>
-                      <li>Address: Main St, Somewhere, NY </li>
-                      <li>Phone: (XXX) XXX-XXXX </li>
-                      <li>Website: chasethemoney.com </li>
-                      <li>
-                        Social Media: Bob Bobberson is off the grid and hiding
-                        from federal representatives. If you see him, please
-                        contact the appropriate authorities.
-                      </li>
-                    </Typography>
+                      <br></br>
+                      <Typography variant="body1" component="div" gutterBottom>
+                        <li>Address: Main St, Somewhere, NY </li>
+                        <li>Phone: (XXX) XXX-XXXX </li>
+                        <li>Website: chasethemoney.com </li>
+                        <li>
+                          Social Media: Bob Bobberson is off the grid and hiding
+                          from federal representatives. If you see him, please
+                          contact the appropriate authorities.
+                        </li>
+                      </Typography>
+                    
                   </div>
-                </div>
+                </>
               )}
             </div>
           </div>

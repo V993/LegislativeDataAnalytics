@@ -109,7 +109,11 @@ export default class Bills extends React.Component {
             onHover: (event, item) => {
               if (item.length === 0) return;
 
+              var idx = item[0].index;
+              var label =
+                event.chart.config._config.data.labels[idx];
               
+              console.log("hovered over this:", label);
             },
             onClick: (event, item) => {
               if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
