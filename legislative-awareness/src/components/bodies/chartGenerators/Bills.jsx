@@ -66,7 +66,7 @@ export default class Bills extends React.Component {
   handleToDate = (endDate) => {
     this.setState({ endDate });
     this.fetchData();
-  };
+};
 
   render() {
     return (
@@ -77,7 +77,9 @@ export default class Bills extends React.Component {
           </Typography>
           <Calendar from={this.handleFromDate} to={this.handleToDate} />
         </div>
+        <button onClick={this.fetchData}>Reset</button>
         <Bar
+          datasetIdKey="id"
           data={{
             labels: this.state.reps,
             datasets: [
@@ -114,7 +116,6 @@ export default class Bills extends React.Component {
               var idx = item[0].index;
               var label =
                 event.chart.config._config.data.labels[idx];
-              
               console.log("hovered over this:", label);
             },
             onClick: (event, item) => {
@@ -129,7 +130,7 @@ export default class Bills extends React.Component {
                 event.chart.config._config.data.labels[idx];
 
               // console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
-              this.props.clickedLabel(label);
+              this.props.clickedLabel(label);              
             },
           }}
         />
