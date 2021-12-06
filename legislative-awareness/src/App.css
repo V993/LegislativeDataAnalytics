@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth !important;
+  background-color: rgb(204, 219, 214);
 }
 
 a:link {
@@ -90,6 +91,8 @@ header {
   cursor: pointer;
   flex-shrink: 1;
   opacity: 1;
+
+  height: 35vh;
 
   /* GRID CELL:   */
 
@@ -258,7 +261,7 @@ header {
 }
 
 #text {
-  font-size: small;
+  font-size: medium;
   padding-top: 2em;
   color: black;
   text-align: left;

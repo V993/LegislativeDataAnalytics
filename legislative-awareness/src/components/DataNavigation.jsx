@@ -19,6 +19,15 @@ class DataNavigation extends Component {
               Here you can find data directly from the Legistar API,
               NY City Council's interface to view data straight from
               the city chambers.
+              <br></br>
+              <br></br>
+              Here you can experiment with different inputs and see
+              how your government has operated over time.
+              <br></br>
+              <br></br>
+              Our data from city council includes information from as
+              far back as 1998 and is continually updated with each 
+              legislative session.
 
 
             </p>
