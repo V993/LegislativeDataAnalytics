@@ -13,23 +13,26 @@ html {
     background: linear-gradient(rgb(145, 255, 209), rgba(138, 182, 169, 1));
     transform: scale(1);
     transition: 0.5s;
-
-    padding: 3em 2.5em 3em 2.5em;
+    padding: 1em;
+    padding-top: 10px !important;
 
     color: white;
     z-index: 1;
     position: absolute;
     border-radius: 60px;
     border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
 }
 
 .return:hover {
+    padding-top: 30px !important;
     background: rgba(138, 182, 169, 0.9);
     transition: 0.3s;
     cursor: pointer;
 
-    transform-origin: left top;
-    transform: scale(2.5);
+    color: black;
+    /* transform-origin: top 5px; */
+    /* transform:translateY(20px); */
 }
 
 .clear {

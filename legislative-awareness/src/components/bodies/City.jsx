@@ -1,15 +1,19 @@
+
+// Aesthetics: 
 import React from "react";
-import Bills from "./chartGenerators/Bills";
-import Committees from "./chartGenerators/Committees";
-import Proximity from "./chartGenerators/Proximity";
 import Sidebar from "react-sidebar";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import axios from "axios";
+import { Link } from 'react-router-dom';
+import {AiFillCaretDown} from 'react-icons/ai';
+
+// Dependencies:
+import Bills from "./chartGenerators/Bills";
+import Committees from "./chartGenerators/Committees";
+import Proximity from "./chartGenerators/Proximity";
 import Navigation from "./DataNavbar";
 import "./layout.css";
-import { Link } from 'react-router-dom';
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -109,80 +113,68 @@ export default class Data extends React.Component {
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
           className="centered-display"
         >
-          <div className="return">
-            <Link to="/data" className="clear">Menu</Link>
-          </div>
-          {/* <Navigation /> */}
-          {/* <div className=""> */}
-            {/* <Stack
-              direction="row"
-            > */}
-              <div id="top" className="four-cell-layout">
-                <div className="corner">
-                  <a className="option reps" onClick={this.showBills} href="#chartLocation">
-                    {/* <div className="centerText"> */}
-                      <h1 className="white">
-                        Bills/Represenative
-                      </h1>
-                      <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
-                    {/* </div> */}
-                  </a>
-                </div>
-      
-                <div className="corner">
-                  <a className="option coms" onClick={this.showCommittees} href="#chartLocation">
-                    <h1 className="white">
-                      Bills/Committee
-                    </h1>
-                    <h4 id="front-text">See how many bills each committee in City Council <br></br>has put forward over time and compare.</h4>
-                  </a>
-                </div>
-      
-                <div className="corner">
-                  <a className="option prox" onClick={this.showProximity} href="#chartLocation">
-                    <h1 className="white">
-                      Voting Proximity Between Representatives
-                    </h1>
-                    <h4 id="front-text">Compare the similarity of your representatives using voting data.</h4>
-                  </a>
-                </div>
+          <Link to="/data" className="return">
+            <div className="clear">Menu</div>
+            < AiFillCaretDown />
+          </Link>
 
-                <div className="corner">
-                  <a className="option comp" href="#chartLocation">
-                    <h1 className="white">
-                      Compare Representative Perfomance
-                    </h1>
-                    <h4 id="front-text">Compare your representatives activity against others to see how active they've been.</h4>
-                  </a>
-                </div>
-              </div>
-            {/* </Stack> */}
-          {/* </div> */}
-          
+          <div id="top" className="four-cell-layout">
+            <div className="corner">
+              <a className="option reps" onClick={this.showBills} href="#chartLocation">
+                {/* <div className="centerText"> */}
+                  <h1 className="white">
+                    Bills/Represenative
+                  </h1>
+                  <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
+                {/* </div> */}
+              </a>
+            </div>
+  
+            <div className="corner">
+              <a className="option coms" onClick={this.showCommittees} href="#chartLocation">
+                <h1 className="white">
+                  Bills/Committee
+                </h1>
+                <h4 id="front-text">See how many bills each committee in City Council <br></br>has put forward over time and compare.</h4>
+              </a>
+            </div>
+  
+            <div className="corner">
+              <a className="option prox" onClick={this.showProximity} href="#chartLocation">
+                <h1 className="white">
+                  Voting Proximity Between Representatives
+                </h1>
+                <h4 id="front-text">Compare the similarity of your representatives using voting data.</h4>
+              </a>
+            </div>
+
+            <div className="corner">
+              <a className="option comp" href="#chartLocation">
+                <h1 className="white">
+                  Compare Representative Perfomance
+                </h1>
+                <h4 id="front-text">Compare your representatives activity against others to see how active they've been.</h4>
+              </a>
+            </div>
+          </div>
+
           {
             this.state.chart === "default" ? (
               <></>
             ) : (
-              <div className="return">
-                <a className="smolButton" href="#top">Back to Top</a>
-              </div>
+              <a className="return" href="#top">
+                <div className="">Top</div>
+              </a>
             )
-            
-            }
-          <br></br>
-          <br></br>
-          <br></br>
+          }
+          <br/>
+          
           <h5 id="capital">{this.state.chart}:</h5>
           <br></br>
           {
             this.state.chart === "default" ? (
               <div>Select an option above!</div>
-            ) : (
-              <div className="divider">
-                
-              </div>
-            )
-            
+            ) : ( <div className="divider" /> )
           }
           <br></br>
 
