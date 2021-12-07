@@ -77,7 +77,6 @@ export default class Bills extends React.Component {
           </Typography>
           <Calendar from={this.handleFromDate} to={this.handleToDate} />
         </div>
-        <button onClick={this.fetchData}>Reset</button>
         <Bar
           datasetIdKey="id"
           data={{
@@ -135,6 +134,9 @@ export default class Bills extends React.Component {
             },
           }}
         />
+
+
+        <button className="smolButton" onClick={this.fetchData}>Reset</button>
       </div>
     );
   }

@@ -140,6 +140,7 @@ export default class Data extends React.Component {
 
     return (
       <>
+        <Navigation className="full"/>
         <Sidebar
           sidebar={sidebarContent}
           open={this.state.sidebarOpen}
@@ -147,53 +148,65 @@ export default class Data extends React.Component {
           pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
-          {/* <Navigation /> */}
-          {/* <div className=""> */}
-            {/* <Stack
-              direction="row"
-            > */}
-              <div className="four-cell-layout">
-                <div className="corner">
-                  <div className="option reps" onClick={this.showBills}>
-                    {/* <div className="centerText"> */}
-                      <h1 className="white">
-                        Bills/Represenative
-                      </h1>
-                      <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
-                    {/* </div> */}
-                  </div>
-                </div>
-      
-                <div className="corner">
-                  <div className="option coms" onClick={this.showCommittees}>
-                    <h1 className="white">
-                      Bills/Committee
-                    </h1>
-                    <h4 id="front-text">See how many bills each committee in City Council <br></br>has put forward over time and compare.</h4>
-                  </div>
-                </div>
-      
-                <div className="corner">
-                  <div className="option prox" onClick={this.showProximity}>
-                    <h1 className="white">
-                      Voting Proximity Between Representatives
-                    </h1>
-                    <h4 id="front-text">Compare the similarity of your representatives using voting data.</h4>
-                  </div>
-                </div>
+          <div className="return">
+            <Link to="/data" className="clear">Menu</Link>
+          </div>
 
-                <div className="corner">
-                  <div className="option comp">
-                    <h1 className="white">
-                      Compare Representative Perfomance
-                    </h1>
-                    <h4 id="front-text">Compare your representatives activity against others to see how active they've been.</h4>
-                  </div>
-                </div>
+          <div className="four-cell-layout">
+            <div className="corner">
+              <a className="option reps" onClick={this.showBills} href="#chartLocation">
+                {/* <div className="centerText"> */}
+                  <h1 className="white">
+                    Bills/Represenative
+                  </h1>
+                  <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
+                {/* </div> */}
+              </a>
+            </div>
+  
+            <div className="corner">
+              <a className="option coms" onClick={this.showCommittees} href="#chartLocation">
+                <h1 className="white">
+                  Bills/Committee
+                </h1>
+                <h4 id="front-text">See how many bills each committee in City Council <br></br>has put forward over time and compare.</h4>
+              </a>
+            </div>
+  
+            <div className="corner">
+              <a className="option prox" onClick={this.showProximity} href="#chartLocation">
+                <h1 className="white">
+                  Voting Proximity Between Representatives
+                </h1>
+                <h4 id="front-text">Compare the similarity of your representatives using voting data.</h4>
+              </a>
+            </div>
+
+            <div className="corner">
+              <a className="option comp" href="#chartLocation">
+                <h1 className="white">
+                  Compare Representative Perfomance
+                </h1>
+                <h4 id="front-text">Compare your representatives activity against others to see how active they've been.</h4>
+              </a>
+            </div>
+          </div>
+
+          {
+            this.state.chart === "default" ? (
+              <></>
+            ) : (
+              <div className="return">
+                <a className="smolButton" href="#top">Back to Top</a>
               </div>
-            {/* </Stack> */}
-          {/* </div> */}
-
+            )
+            
+          }
+          <br></br>
+          <br></br>
+          <br></br>
+          <h5 id="capital">{this.state.chart}:</h5>
+          <br></br>
           {
             this.state.chart === "default" ? (
               <div>Select an option above!</div>
