@@ -66,16 +66,20 @@ export default class Bills extends React.Component {
   handleToDate = (endDate) => {
     this.setState({ endDate });
     this.fetchData();
-  };
+};
 
   render() {
     return (
       <div className="full">
-        <Typography variant="h6" component="div" gutterBottom>
-          Select a range of dates to preview data
-        </Typography>
-        <Calendar from={this.handleFromDate} to={this.handleToDate} />
+        <div className="centered-display">
+          <Typography variant="h6" component="div" gutterBottom>
+            Select a range of dates to preview data
+          </Typography>
+          <Calendar from={this.handleFromDate} to={this.handleToDate} />
+        </div>
+        <button onClick={this.fetchData}>Reset</button>
         <Bar
+          datasetIdKey="id"
           data={{
             labels: this.state.reps,
             datasets: [
@@ -109,6 +113,10 @@ export default class Bills extends React.Component {
             onHover: (event, item) => {
               if (item.length === 0) return;
 
+              var idx = item[0].index;
+              var label =
+                event.chart.config._config.data.labels[idx];
+              console.log("hovered over this:", label);
               
             },
             onClick: (event, item) => {
@@ -123,7 +131,7 @@ export default class Bills extends React.Component {
                 event.chart.config._config.data.labels[idx];
 
               // console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
-              this.props.clickedLabel(label);
+              this.props.clickedLabel(label);              
             },
           }}
         />

@@ -19,8 +19,15 @@ class DataNavigation extends Component {
               Here you can find data directly from the Legistar API,
               NY City Council's interface to view data straight from
               the city chambers.
-
-
+              <br></br>
+              <br></br>
+              You can experiment with different inputs and see
+              how the NY City Council has operated over time.
+              <br></br>
+              <br></br>
+              Our data for the New York City Council includes information 
+              from as far back as 1998 and is continually updated with 
+              each legislative session.
             </p>
           </div>
         </Link>
@@ -28,9 +35,17 @@ class DataNavigation extends Component {
           <div className="centerText">
             <h4 id="title">New York State Assembly</h4>
             <p id="text">
-              Here you can find data from ___
-
-
+              Here you can find data directly from the Open Legislation 
+              API, an open source web service developed in-house by the 
+              New York State Assembly.
+              <br></br>
+              <br></br>
+              You can experiment with different inputs and see
+              how the NY Assembly has operated over time.
+              <br></br>
+              <br></br>
+              Our data for the New York State Assembly includes information 
+              from as far back as 1998.
             </p>
           </div>
         </Link>
@@ -38,9 +53,17 @@ class DataNavigation extends Component {
           <div className="centerText">
           <h3 id="title">New York State Senate</h3>
             <p id="text">
-              Here you can find data from ___
-
-
+              Here you can find data directly from the Open Legislation 
+              API, an open source web service developed in-house by the 
+              New York State Senate.
+              <br></br>
+              <br></br>
+              You can experiment with different inputs and see
+              how the NY Senate has operated over time.
+              <br></br>
+              <br></br>
+              Our data for the New York State Senate includes information 
+              from as far back as 1998.
             </p>
           </div>
         </Link>
