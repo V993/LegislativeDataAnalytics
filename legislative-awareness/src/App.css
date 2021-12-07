@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth !important;
+  background-color: rgb(204, 219, 214);
 }
 
 a:link {
@@ -83,13 +84,16 @@ header {
   /* AESTHETICS:  */
   border: 1px solid black;
   border-radius: 15px;
-  padding: 7em;
+  padding-top: 14vh;
+  padding-left: 9vh;
   text-align: center;
   margin: 0.6em;
   background-color: rgba(138, 182, 169, 0.5);
   cursor: pointer;
   flex-shrink: 1;
   opacity: 1;
+
+  height: 35vh;
 
   /* GRID CELL:   */
 
@@ -134,15 +138,18 @@ header {
 
 .cell.about {
   background-image: url("./components/assets/aboutImg.jpg");
-  background-position: -14em -25.5em;
+  background-position: -13em -22.8em;
 
   backdrop-filter: blur(4px);
 }
 
 .cell.pillar {
+  padding-top: 8vh !important;
+  padding-left: 0vh !important;
+  padding-bottom: 8vh;
   /* padding: 1px !important; */
   border: 0px !important;
-  border-radius: 10px !important;
+  border-radius: 20px !important;
   width: 33% !important;
   height: 100%;
   align-content: center;
@@ -233,21 +240,21 @@ header {
 }
 
 .centerText {
-  padding-top: 20%;
+  padding-top: 22%;
   padding-left: 10%;
   padding-right: 10%;
-
+  max-width: 80%;
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   border-bottom: 0px white !important;
   border-radius: 20px;
-  transform: scale(1);
+  transform: scale(0.5);
   opacity: 0;
   transition-duration: 0.6s;
 }
 
 .centerText:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transform-origin: center;
   opacity: 1;
   transition-duration: 0.6s;
@@ -258,7 +265,7 @@ header {
 }
 
 #text {
-  font-size: small;
+  font-size: medium;
   padding-top: 2em;
   color: black;
   text-align: left;

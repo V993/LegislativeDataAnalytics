@@ -6,11 +6,12 @@ export default function Header() {
     <div>
       <header>
         <Link to="/" className="link">
-          <h1>Legislative Awareness</h1>
+          <h1>New York Legislative Awareness</h1>
         </Link>
       </header>
       <div className="split">
-        <div className="textBlock">
+        <br></br>
+        {/* <div className="textBlock">
           <h3 className="underline">What we are:</h3>
           Legislative Awareness is a project dedicated to making
           readily-available government resources more digestible to the average
@@ -37,7 +38,7 @@ export default function Header() {
             Interaction with representatives and discourse, as well as user
             accounts.
           </li>
-        </div>
+        </div> */}
       </div>
     </div>
   );

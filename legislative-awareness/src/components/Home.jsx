@@ -3,10 +3,11 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 import Header from "./Header";
+import Footer from "./Footer";
 
 function Home() {
   return (
-    <div className="">
+    <div className="full">
       <Header />
       <div className="grid">
         <div className="cell normal data">
@@ -23,7 +24,7 @@ function Home() {
       <div className="grid">
         <div className="cell beegboi information">
           <Link to="/information" className="link">
-            <h1 className="white">Government Information</h1>
+            <h1 className="white">Learn About Your Government</h1>
           </Link>
         </div>
         <div className="cell normal about">
@@ -32,6 +33,7 @@ function Home() {
           </Link>
         </div>
       </div>
+      <Footer />
       <br></br>
       <br></br>
     </div>
