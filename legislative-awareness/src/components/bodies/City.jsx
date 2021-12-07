@@ -38,12 +38,12 @@ export default class Data extends React.Component {
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-    this.handleData = this.handleData.bind(this);
+    this.handleSidebarData = this.handleSidebarData.bind(this);
   }
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
-  handleData = async (query, value = "") => {
+  handleSidebarData = async (query, value = "") => {
     if (this.state.chart === "bills") {
       let url =
         "http://206.81.7.63:5000/info-apis/council-member-info?name=" + query;
@@ -181,12 +181,12 @@ export default class Data extends React.Component {
           <div className="">
             <div id="chartLocation">
               {this.state.chart === "bills" ? (
-                <Bills clickedLabel={this.handleData} />
+                <Bills clickedLabel={this.handleSidebarData} />
               ) : (
                 <div />
               )}
               {this.state.chart === "committees" ? (
-                <Committees clickedLabel={this.handleData} />
+                <Committees clickedLabel={this.handleSidebarData} />
               ) : (
                 <div />
               )}
