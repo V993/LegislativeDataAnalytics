@@ -21,15 +21,13 @@ class DataNavigation extends Component {
               the city chambers.
               <br></br>
               <br></br>
-              Here you can experiment with different inputs and see
-              how your government has operated over time.
+              You can experiment with different inputs and see
+              how the NY City Council has operated over time.
               <br></br>
               <br></br>
-              Our data from city council includes information from as
-              far back as 1998 and is continually updated with each 
-              legislative session.
-
-
+              Our data for the New York City Council includes information 
+              from as far back as 1998 and is continually updated with 
+              each legislative session.
             </p>
           </div>
         </Link>
@@ -37,9 +35,17 @@ class DataNavigation extends Component {
           <div className="centerText">
             <h4 id="title">New York State Assembly</h4>
             <p id="text">
-              Here you can find data from ___
-
-
+              Here you can find data directly from the Open Legislation 
+              API, an open source web service developed in-house by the 
+              New York State Assembly.
+              <br></br>
+              <br></br>
+              You can experiment with different inputs and see
+              how the NY Assembly has operated over time.
+              <br></br>
+              <br></br>
+              Our data for the New York State Assembly includes information 
+              from as far back as 1998.
             </p>
           </div>
         </Link>
@@ -47,9 +53,17 @@ class DataNavigation extends Component {
           <div className="centerText">
           <h3 id="title">New York State Senate</h3>
             <p id="text">
-              Here you can find data from ___
-
-
+              Here you can find data directly from the Open Legislation 
+              API, an open source web service developed in-house by the 
+              New York State Senate.
+              <br></br>
+              <br></br>
+              You can experiment with different inputs and see
+              how the NY Senate has operated over time.
+              <br></br>
+              <br></br>
+              Our data for the New York State Senate includes information 
+              from as far back as 1998.
             </p>
           </div>
         </Link>

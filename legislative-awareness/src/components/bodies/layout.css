@@ -5,6 +5,10 @@ html {
     scroll-behavior: smooth !important;
 }
 
+.full {
+    scroll-behavior: smooth !important;
+}
+
 .return {
     background: linear-gradient(rgb(145, 255, 209), rgba(138, 182, 169, 1));
     transform: scale(1);
@@ -48,7 +52,7 @@ html {
     /* border-radius: 20%; */
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* overflow-y: scroll; */
 }
 
@@ -113,7 +117,7 @@ html {
 }
 
 .centered-display {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     text-align: center;
     justify-content: center;
     align-content: center;

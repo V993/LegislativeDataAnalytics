@@ -98,7 +98,7 @@ export default class Data extends React.Component {
 
     return (
       <>
-      <Navigation />
+      <Navigation className="full"/>
         <Sidebar
           sidebar={sidebarContent}
           open={this.state.sidebarOpen}
