@@ -158,27 +158,27 @@ export default class Data extends React.Component {
             </div>
           </div>
 
-          {
-            this.state.chart === "default" ? (
-              <></>
-            ) : (
-              <a className="return" href="#top">
-                <div className="">Top</div>
-              </a>
-            )
-          }
-          <br/>
-          
-          <h5 id="capital">{this.state.chart}:</h5>
-          <br></br>
-          {
-            this.state.chart === "default" ? (
-              <div>Select an option above!</div>
-            ) : ( <div className="divider" /> )
-          }
-          <br></br>
-
-          <div className="">
+          <div className="full">
+            {
+              this.state.chart === "default" ? (
+                <></>
+              ) : (
+                <a className="return" href="#top">
+                  <div className="">Top</div>
+                  < AiFillCaretDown />
+                </a>
+              )
+            }
+            <br/>
+            
+            <h5 id="capital">{this.state.chart}:</h5>
+            <br></br>
+            {
+              this.state.chart === "default" ? (
+                <div></div>
+              ) : ( <div className="divider" /> )
+            }
+            <br></br>
             <div id="chartLocation">
               {this.state.chart === "bills" ? (
                 <Bills clickedLabel={this.handleData} />
