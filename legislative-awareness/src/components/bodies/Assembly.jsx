@@ -1,21 +1,19 @@
+
+// Aesthetics: 
 import React from "react";
-import Bills from "./chartGenerators/assembly_bills";
-import Committees from "./chartGenerators/assembly_committees";
-import Proximity from "./chartGenerators/Proximity";
 import Sidebar from "react-sidebar";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import axios from "axios";
+import { Link } from 'react-router-dom';
+import {AiFillCaretDown} from 'react-icons/ai';
+
+// Dependencies:
+import Bills from "./chartGenerators/Bills";
+import Committees from "./chartGenerators/Committees";
+import Proximity from "./chartGenerators/Proximity";
 import Navigation from "./DataNavbar";
 import "./layout.css";
-import { Link, 
-         DirectLink, 
-         Element, 
-         Events, 
-         animateScroll as scroll, 
-         scrollSpy, 
-         scroller } from 'react-scroll'
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -36,42 +34,12 @@ export default class Data extends React.Component {
       value: 0,
       member: {},
     };
-    this.showBills = (e) => {this.setState({ chart: "bills" }); this.scrollToBottom()};
+    this.showBills = (e) => {this.setState({ chart: "bills" })};
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     this.handleData = this.handleData.bind(this);
 
-    this.scrollToTop = this.scrollToTop.bind(this);
-    this.scrollToBottom = this.scrollToBottom.bind(this);
-  }
-
-  componentDidMount() {
-
-    Events.scrollEvent.register('begin', function () {
-      console.log("begin", arguments);
-    });
-
-    Events.scrollEvent.register('end', function () {
-      console.log("end", arguments);
-    });
-
-  }
-
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-
-  scrollToBottom() {
-    scroll.scrollToBottom();
-  }
-
-  scrollTo() {
-    scroller.scrollTo("scroll-to-element", {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart"
-    });
   }
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
@@ -102,11 +70,6 @@ export default class Data extends React.Component {
       });
     }
   };
-
-  componentWillUnmount() {
-    Events.scrollEvent.remove("begin");
-    Events.scrollEvent.remove("end");
-  }
 
   render() {
     const sidebarContent =
@@ -148,11 +111,12 @@ export default class Data extends React.Component {
           pullRight={true}
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
-          <div className="return">
-            <Link to="/data" className="clear">Menu</Link>
-          </div>
+          <Link to="/data" className="return">
+            <div className="clear">Menu</div>
+            < AiFillCaretDown />
+          </Link>
 
-          <div className="four-cell-layout">
+          <div id="top" className="four-cell-layout">
             <div className="corner">
               <a className="option reps" onClick={this.showBills} href="#chartLocation">
                 {/* <div className="centerText"> */}
@@ -192,34 +156,31 @@ export default class Data extends React.Component {
             </div>
           </div>
 
-          {
-            this.state.chart === "default" ? (
-              <></>
-            ) : (
-              <div className="return">
-                <a className="smolButton" href="#top">Back to Top</a>
-              </div>
-            )
-            
-          }
-          <br></br>
-          <br></br>
-          <br></br>
-          <h5 id="capital">{this.state.chart}:</h5>
-          <br></br>
-          {
-            this.state.chart === "default" ? (
-              <div>Select an option above!</div>
-            ) : (
-              <div className="divider">
-                
-              </div>
-            )
-            
-          }
 
-          <div className="">
-            <div name="chartLocation">
+          <div className="full">
+            {
+              this.state.chart === "default" ? (
+                <></>
+              ) : (
+                <a className="return" href="#top">
+                  <div className="">Top</div>
+                  < AiFillCaretDown />
+                </a>
+              )
+              
+            }
+            <br></br>
+            
+            <h5 id="capital">{this.state.chart}:</h5>
+
+            <br></br>
+            {
+              this.state.chart === "default" ? (
+                <div></div>
+              ) : ( <div className="divider" />)              
+            }
+            <br />
+            <div id="chartLocation">
               {this.state.chart === "bills" ? (
                 <Bills clickedLabel={this.handleData} />
               ) : (
@@ -232,7 +193,6 @@ export default class Data extends React.Component {
               )}
               {this.state.chart === "proximity" ? <Proximity /> : <div />}
             </div>
-            <div onClick={this.scrollToTop()}>Back to Top</div>
           </div>
         </Sidebar>
       </>

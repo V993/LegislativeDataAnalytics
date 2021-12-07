@@ -172,6 +172,7 @@ export default class Data extends React.Component {
             <br/>
             
             <h5 id="capital">{this.state.chart}:</h5>
+            
             <br></br>
             {
               this.state.chart === "default" ? (
