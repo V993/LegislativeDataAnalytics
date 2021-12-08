@@ -114,6 +114,7 @@ export default class Data extends React.Component {
           className="centered-display"
         >
           <Link to="/data" className="return">
+            <div className="clear">City</div>
             <div className="clear">Menu</div>
             < AiFillCaretDown />
           </Link>
@@ -121,12 +122,10 @@ export default class Data extends React.Component {
           <div id="top" className="four-cell-layout">
             <div className="corner">
               <a className="option reps" onClick={this.showBills} href="#chartLocation">
-                {/* <div className="centerText"> */}
                   <h1 className="white">
                     Bills/Represenative
                   </h1>
                   <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
-                {/* </div> */}
               </a>
             </div>
   

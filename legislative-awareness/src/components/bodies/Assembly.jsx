@@ -112,6 +112,7 @@ export default class Data extends React.Component {
           styles={{ sidebar: { background: "white", padding: "1rem" } }}
         >
           <Link to="/data" className="return">
+            <div className="clear">Assembly</div>
             <div className="clear">Menu</div>
             < AiFillCaretDown />
           </Link>
