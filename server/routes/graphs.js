@@ -130,7 +130,7 @@ router.get("/proximity-calculation", async function(req, res) {
     		        console.error(err.message)
             }
             else {
-                let exists = false;
+                let exists = 0;
 
                 // Await output file
             		let fname = "./proximity-calculation/responses/";
@@ -140,7 +140,7 @@ router.get("/proximity-calculation", async function(req, res) {
             		}
             		fname += ".json";
         		    // Read and return output file
-                while (!exists) {
+                while (exists < 10) {
                   try {
                     data = fs.readFileSync(fname, 'utf8');
                     res.json(JSON.parse(data));
@@ -148,6 +148,7 @@ router.get("/proximity-calculation", async function(req, res) {
                   } catch (err) {
                     console.log("File does not yet exist");
                     await new Promise(resolve => setTimeout(resolve, 500));
+                    exists++;
                   }
                 }
             }
