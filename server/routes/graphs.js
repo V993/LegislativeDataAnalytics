@@ -72,20 +72,20 @@ router.get("/proximity-calculation", async function(req, res) {
     console.log("--------------------------------------------------------------------------------");
     console.log("Call to /proximity-calculation");
     let refs = req.query.refs;
+    refs = refs[0].split(',');
     if (!refs || refs.length <= 1) {
         console.log("Refs too small (size " + refs.length + ")");
         res.status(400).send('Refs is missing!');
         return;
     }
-    refs = refs[0].split(',');
     let targets = req.query.targets;
+    targets = targets[0].split(',');
     if (!targets || targets.length <= 1) {
         console.log("Targets too small (size " + targets.length + ")");
         res.status(400).send('Targets is missing!');
         return;
     }
     console.log("Refs and targets exist");
-    targets = targets[0].split(',');
     try {
         // Get votes data from database
         let allnames = refs.concat(targets);
