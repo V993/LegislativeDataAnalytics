@@ -142,7 +142,7 @@ router.get("/proximity-calculation", async function(req, res) {
                   data = fs.readFileSync(fname, 'utf8');
                   res.json(JSON.parse(data));
                 } catch (err) {
-                  //console.log(err);
+                  console.log(err);
                 }
             }
         });
