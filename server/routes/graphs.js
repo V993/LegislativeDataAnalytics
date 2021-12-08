@@ -70,17 +70,19 @@ router.get("/activeness-by-month", async function(req, res) {
 
 router.get("/proximity-calculation", async function(req, res) {
     console.log("--------------------------------------------------------------------------------");
+    console.log("Call to /proximity-calculation");
     let refs = req.query.refs;
-    if (!refs) {
+    if (!refs || refs.length == 0) {
         res.status(400).send('Refs is missing!');
         return;
     }
     refs = refs[0].split(',');
     let targets = req.query.targets;
-    if (!targets) {
+    if (!targets || targets.length == 0) {
         res.status(400).send('Targets is missing!');
         return;
     }
+    console.log("Refs and targets exist");
     targets = targets[0].split(',');
     try {
         // Get votes data from database
