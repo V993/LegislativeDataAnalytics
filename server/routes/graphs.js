@@ -89,8 +89,9 @@ router.get("/proximity-calculation", async function(req, res) {
     try {
         // Get votes data from database
         let allnames = refs.concat(targets);
-        allnames[0] = allnames[0].replace(/_/gi," ");
         console.log(allnames);
+        allnames[0] = allnames[0].replace(/_/gi," ");
+        console.log(allnames[0]);
         let v = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[0]]);
         console.log(v.rows[0]);
         let votes = v.rows;
