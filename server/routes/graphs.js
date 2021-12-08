@@ -125,7 +125,7 @@ router.get("/proximity-calculation", async function(req, res) {
     		    command += " ";
     	  }
         console.log(command);
-        exec(command, (err, stdout, stderr) => {
+        exec(command, async function (err, stdout, stderr) {
             if (err) {
     		        console.error(err.message)
             }
