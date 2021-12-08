@@ -139,6 +139,8 @@ router.get("/proximity-calculation", async function(req, res) {
             			if (i != refs.length - 1) { fname += "_"; }
             		}
             		fname += ".json";
+                console.log(fname);
+
         		    // Read and return output file
                 while (exists < 10) {
                   try {
