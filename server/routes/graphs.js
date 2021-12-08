@@ -130,7 +130,7 @@ router.get("/proximity-calculation", async function(req, res) {
     		        console.error(err.message)
             }
             else {
-                bool exists = false;
+                let exists = false;
 
                 // Await output file
             		let fname = "./proximity-calculation/responses/";
@@ -147,7 +147,7 @@ router.get("/proximity-calculation", async function(req, res) {
                     exists = true;
                   } catch (err) {
                     console.log("File does not yet exist");
-                    await new Promise(resolve => setTimeout(resolve, 500)); 
+                    await new Promise(resolve => setTimeout(resolve, 500));
                   }
                 }
             }
