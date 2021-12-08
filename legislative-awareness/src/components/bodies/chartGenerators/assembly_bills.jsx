@@ -50,9 +50,11 @@ export default class Bills extends React.Component {
     let reps = [],
       votes = [];
 
+    let count = 1;
     this.state.apiData.forEach((obj) => {
-      reps.push(obj.sponsor);
+      reps.push(obj.sponsor+count.toString());
       votes.push(obj.numofbills);
+      count += 1;
     });
 
     this.setState({ reps, votes });
@@ -77,7 +79,6 @@ export default class Bills extends React.Component {
           </Typography>
           <Calendar from={this.handleFromDate} to={this.handleToDate} />
         </div>
-        <button className="smolButton" onClick={this.fetchData}>Reset</button>
         <Bar
           data={{
             labels: this.state.reps,
@@ -130,6 +131,7 @@ export default class Bills extends React.Component {
             },
           }}
         />
+        <button className="smolButton" onClick={this.fetchData}>Reset</button>
       </div>
     );
   }

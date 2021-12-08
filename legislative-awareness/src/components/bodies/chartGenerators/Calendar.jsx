@@ -45,7 +45,7 @@ export default class Calendar extends React.Component {
       <div className="InputFromTo">
         <DayPickerInput
           value={from}
-          placeholder="From"
+          placeholder="From (Month Day, Year)"
           format="LL"
           formatDate={formatDate}
           parseDate={parseDate}
@@ -64,7 +64,7 @@ export default class Calendar extends React.Component {
           <DayPickerInput
             ref={(el) => (this.to = el)}
             value={to}
-            placeholder="To"
+            placeholder="To (Month Day, Year)"
             format="LL"
             formatDate={formatDate}
             parseDate={parseDate}

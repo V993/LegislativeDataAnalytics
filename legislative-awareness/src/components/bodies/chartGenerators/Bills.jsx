@@ -109,15 +109,15 @@ export default class Bills extends React.Component {
               },
             },
             events: ["click", "mousemove"],
-            onHover: (event, item) => {
-              if (item.length === 0) return;
+            // onHover: (event, item) => {
+            //   if (item.length === 0) return;
 
-              var idx = item[0].index;
-              var label =
-                event.chart.config._config.data.labels[idx];
-              console.log("hovered over this:", label);
+            //   var idx = item[0].index;
+            //   var label =
+            //     event.chart.config._config.data.labels[idx];
+            //   console.log("hovered over this:", label);
               
-            },
+            // },
             onClick: (event, item) => {
               if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
 
@@ -134,8 +134,6 @@ export default class Bills extends React.Component {
             },
           }}
         />
-
-
         <button className="smolButton" onClick={this.fetchData}>Reset</button>
       </div>
     );

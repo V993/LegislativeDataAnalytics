@@ -31,9 +31,9 @@ const options = {
     var label_for_click =
       event.chart.config._config.data.labels[index_for_click];
 
-    console.log(index_for_click);
-    console.log("this is what i got for label:", label_for_click);
-    console.log("this is what i got for datasets:", data_for_click);
+    // console.log(index_for_click);
+    // console.log("this is what i got for label:", label_for_click);
+    // console.log("this is what i got for datasets:", data_for_click);
   },
 };
 
@@ -103,7 +103,7 @@ export default class Committees extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="full">
         <div className="centered-display">
           <Typography variant="h6" component="div" gutterBottom>
             Select a range of dates to preview data
@@ -111,7 +111,7 @@ export default class Committees extends React.Component {
           <Calendar from={this.handleFromDate} to={this.handleToDate} />
         </div>
         <Bar
-          data={{
+          data={{ 
             labels: this.state.committees,
             datasets: [
               {
@@ -154,6 +154,7 @@ export default class Committees extends React.Component {
             },
           }}
         />
+        <button className="smolButton" onClick={this.fetchData}>Reset</button>
       </div>
     );
   }

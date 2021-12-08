@@ -6,6 +6,8 @@ html {
 }
 
 .full {
+    max-height: 100% !important;
+    height: 100% !important;
     scroll-behavior: smooth !important;
 }
 
@@ -22,6 +24,8 @@ html {
     border-radius: 60px;
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
+
+    text-align: center; 
 }
 
 .return:hover {

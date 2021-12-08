@@ -114,6 +114,7 @@ export default class Data extends React.Component {
           className="centered-display"
         >
           <Link to="/data" className="return">
+            <div className="clear">City</div>
             <div className="clear">Menu</div>
             < AiFillCaretDown />
           </Link>
@@ -121,12 +122,10 @@ export default class Data extends React.Component {
           <div id="top" className="four-cell-layout">
             <div className="corner">
               <a className="option reps" onClick={this.showBills} href="#chartLocation">
-                {/* <div className="centerText"> */}
                   <h1 className="white">
                     Bills/Represenative
                   </h1>
                   <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
-                {/* </div> */}
               </a>
             </div>
   
@@ -158,27 +157,28 @@ export default class Data extends React.Component {
             </div>
           </div>
 
-          {
-            this.state.chart === "default" ? (
-              <></>
-            ) : (
-              <a className="return" href="#top">
-                <div className="">Top</div>
-              </a>
-            )
-          }
-          <br/>
-          
-          <h5 id="capital">{this.state.chart}:</h5>
-          <br></br>
-          {
-            this.state.chart === "default" ? (
-              <div>Select an option above!</div>
-            ) : ( <div className="divider" /> )
-          }
-          <br></br>
-
-          <div className="">
+          <div className="full">
+            {
+              this.state.chart === "default" ? (
+                <></>
+              ) : (
+                <a className="return" href="#top">
+                  <div className="">Top</div>
+                  < AiFillCaretDown />
+                </a>
+              )
+            }
+            <br/>
+            
+            <h5 id="capital">{this.state.chart}:</h5>
+            
+            <br></br>
+            {
+              this.state.chart === "default" ? (
+                <div></div>
+              ) : ( <div className="divider" /> )
+            }
+            <br></br>
             <div id="chartLocation">
               {this.state.chart === "bills" ? (
                 <Bills clickedLabel={this.handleSidebarData} />
