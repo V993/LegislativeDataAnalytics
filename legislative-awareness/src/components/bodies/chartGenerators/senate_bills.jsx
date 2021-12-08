@@ -71,10 +71,12 @@ export default class Bills extends React.Component {
   render() {
     return (
       <div className="full">
-        <Typography variant="h6" component="div" gutterBottom>
-          Select a range of dates to preview data
-        </Typography>
-        <Calendar from={this.handleFromDate} to={this.handleToDate} />
+        <div className="centered-display">
+          <Typography variant="h6" component="div" gutterBottom>
+            Select a range of dates to preview data
+          </Typography>
+          <Calendar from={this.handleFromDate} to={this.handleToDate} />
+        </div>
         <Bar
           data={{
             labels: this.state.reps,
@@ -127,6 +129,7 @@ export default class Bills extends React.Component {
             },
           }}
         />
+        <button className="smolButton" onClick={this.fetchData}>Reset</button>
       </div>
     );
   }

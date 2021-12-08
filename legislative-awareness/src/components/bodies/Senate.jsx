@@ -9,13 +9,6 @@ import { styled } from "@mui/material/styles";
 import axios from "axios";
 import Navigation from "./DataNavbar";
 import "./layout.css";
-import { Link, 
-         DirectLink, 
-         Element, 
-         Events, 
-         animateScroll as scroll, 
-         scrollSpy, 
-         scroller } from 'react-scroll'
 
 const ColorButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#648a64",
@@ -36,42 +29,11 @@ export default class Data extends React.Component {
       value: 0,
       member: {},
     };
-    this.showBills = (e) => {this.setState({ chart: "bills" }); this.scrollToBottom()};
+    this.showBills = (e) => {this.setState({ chart: "bills" })};
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     this.handleData = this.handleData.bind(this);
-
-    this.scrollToTop = this.scrollToTop.bind(this);
-    this.scrollToBottom = this.scrollToBottom.bind(this);
-  }
-
-  componentDidMount() {
-
-    Events.scrollEvent.register('begin', function () {
-      console.log("begin", arguments);
-    });
-
-    Events.scrollEvent.register('end', function () {
-      console.log("end", arguments);
-    });
-
-  }
-
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-
-  scrollToBottom() {
-    scroll.scrollToBottom();
-  }
-
-  scrollTo() {
-    scroller.scrollTo("scroll-to-element", {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart"
-    });
   }
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
@@ -102,11 +64,6 @@ export default class Data extends React.Component {
       });
     }
   };
-
-  componentWillUnmount() {
-    Events.scrollEvent.remove("begin");
-    Events.scrollEvent.remove("end");
-  }
 
   render() {
     const sidebarContent =

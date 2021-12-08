@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 import {AiFillCaretDown} from 'react-icons/ai';
 
 // Dependencies:
-import Bills from "./chartGenerators/Bills";
-import Committees from "./chartGenerators/Committees";
+import Bills from "./chartGenerators/assembly_bills";
+import Committees from "./chartGenerators/assembly_committees";
 import Proximity from "./chartGenerators/Proximity";
 import Navigation from "./DataNavbar";
 import "./layout.css";
