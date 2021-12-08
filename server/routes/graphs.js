@@ -146,7 +146,7 @@ router.get("/proximity-calculation", async function(req, res) {
                   try {
                     data = fs.readFileSync(fname, 'utf8');
                     res.json(JSON.parse(data));
-                    exists = true;
+                    exists = 11;
                   } catch (err) {
                     console.log("File does not yet exist");
                     await new Promise(resolve => setTimeout(resolve, 500));
