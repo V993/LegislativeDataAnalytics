@@ -108,23 +108,28 @@ router.get("/state-committee-bills/:branch", async function(req, res) {
 
 router.get("/proximity-calculation", async function(req, res) {
     console.log("--------------------------------------------------------------------------------");
+    console.log("Call to /proximity-calculation");
     let refs = req.query.refs;
-    if (!refs) {
+    refs = refs[0].split(',');
+    if (!refs || refs.length <= 1) {
+        console.log("Refs too small (size " + refs.length + ")");
         res.status(400).send('Refs is missing!');
         return;
     }
-    refs = refs[0].split(',');
     let targets = req.query.targets;
-    if (!targets) {
+    targets = targets[0].split(',');
+    if (!targets || targets.length <= 1) {
+        console.log("Targets too small (size " + targets.length + ")");
         res.status(400).send('Targets is missing!');
         return;
     }
-    targets = targets[0].split(',');
+    console.log("Refs and targets exist");
     try {
         // Get votes data from database
         let allnames = refs.concat(targets);
-        allnames[0] = allnames[0].replace(/_/gi," ");
         console.log(allnames);
+        allnames[0] = allnames[0].replace(/_/gi," ");
+        console.log(allnames[0]);
         let v = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[0]]);
         console.log(v.rows[0]);
         let votes = v.rows;
@@ -158,11 +163,13 @@ router.get("/proximity-calculation", async function(req, res) {
     		    command += " ";
     	  }
         console.log(command);
-        exec(command, (err, stdout, stderr) => {
+        exec(command, async function (err, stdout, stderr) {
             if (err) {
     		        console.error(err.message)
             }
             else {
+                let exists = 0;
+
                 // Await output file
             		let fname = "./proximity-calculation/responses/";
             		for (let i = 0; i < refs.length; i++) {
@@ -170,12 +177,19 @@ router.get("/proximity-calculation", async function(req, res) {
             			if (i != refs.length - 1) { fname += "_"; }
             		}
             		fname += ".json";
+                console.log(fname);
+
         		    // Read and return output file
-                try {
-                  data = fs.readFileSync(fname, 'utf8');
-                  res.json(JSON.parse(data));
-                } catch (err) {
-                  //console.log(err);
+                while (exists < 10) {
+                  try {
+                    data = fs.readFileSync(fname, 'utf8');
+                    res.json(JSON.parse(data));
+                    exists = 11;
+                  } catch (err) {
+                    console.log("File does not yet exist");
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                    exists++;
+                  }
                 }
             }
         });
