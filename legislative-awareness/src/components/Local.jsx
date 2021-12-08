@@ -31,7 +31,8 @@ class Local extends Component {
 
   handleInputChange = (e) => this.setState({ address: e.target.value });
 
-  handleSearchClick = async () => {
+  handleSearchClick = async e => {
+    e.preventDefault();
     let address = this.state.address;
     let key = "AIzaSyDGm2WMjPhv1Ddn9C3ML24u_HtTcT4l6B4"; // Google Cloud API key
     let linkToAPI =
@@ -87,11 +88,7 @@ class Local extends Component {
               <img
                 // className="rep-image"
                 alt={official.name}
-                src={
-                  official.photoUrl
-                    ? official.photoUrl
-                    : "bobbobberson.jpg"
-                }
+                src={official.photoUrl ? official.photoUrl : "bobbobberson.jpg"}
               />
               <div className="splitItem">
                 <Typography variant="h4" component="div" gutterBottom>
@@ -165,7 +162,6 @@ class Local extends Component {
       <div>
         <div className="split">
           {/* First Half: */}
-
           <div className="splitItem Smol">
             <h1 className="headerText">Find Your Representatives</h1>
             <Typography
@@ -180,22 +176,24 @@ class Local extends Component {
               contact them.
             </Typography>
             <br></br>
-            <div className="descriptionText">
-              <input
-                className="searchbar input"
-                type="text"
-                value={this.state.address}
-                onChange={this.handleInputChange}
-                placeholder="695 Park Ave 10065"
-              />
-              <ColorButton
-                variant="contained"
-                color="success"
-                onClick={this.handleSearchClick}
-              >
-                Search
-              </ColorButton>
-            </div>
+            <form onSubmit={this.handleSearchClick}>
+              <div className="descriptionText">
+                <input
+                  className="searchbar input"
+                  type="text"
+                  value={this.state.address}
+                  onChange={this.handleInputChange}
+                  placeholder="695 Park Ave 10065"
+                />
+                <ColorButton
+                  type="submit"
+                  variant="contained"
+                  color="success"
+                >
+                  Search
+                </ColorButton>
+              </div>
+            </form>
           </div>
 
           {/* Second Half: */}
@@ -204,7 +202,7 @@ class Local extends Component {
             <div className="">
               {this.state.found ? (
                 <div>
-                  <h1 id ="top">{this.state.apiData.name}</h1>
+                  <h1 id="top">{this.state.apiData.name}</h1>
                   <Typography variant="h6" component="div" gutterBottom>
                     Your Representatives:
                   </Typography>
@@ -225,7 +223,9 @@ class Local extends Component {
                   <br></br>
                   <br></br>
 
-                  <a href="#top" className="smolButton">Top</a>
+                  <a href="#top" className="smolButton">
+                    Top
+                  </a>
                 </div>
               ) : (
                 <>
@@ -234,34 +234,33 @@ class Local extends Component {
                     Your Representatives:
                   </Typography>
                   <Typography variant="body2" component="div" gutterBottom>
-                    Searched address: 
+                    Searched address:
                   </Typography>
                   <br></br>
                   <div className="box">
                     <div className=""></div>
-                      <div className="split">
-                        <img alt="Rep" src="bobbobberson.jpg" />
-                        <div className="splitItem">
-                          <Typography variant="h4" component="div" gutterBottom>
-                            Bob Bobberson (D)
-                            <Typography variant="h5" component="div" gutterBottom>
-                              Representative of Representation
-                            </Typography>
+                    <div className="split">
+                      <img alt="Rep" src="bobbobberson.jpg" />
+                      <div className="splitItem">
+                        <Typography variant="h4" component="div" gutterBottom>
+                          Bob Bobberson (D)
+                          <Typography variant="h5" component="div" gutterBottom>
+                            Representative of Representation
                           </Typography>
-                        </div>
+                        </Typography>
                       </div>
-                      <br></br>
-                      <Typography variant="body1" component="div" gutterBottom>
-                        <li>Address: Main St, Somewhere, NY </li>
-                        <li>Phone: (XXX) XXX-XXXX </li>
-                        <li>Website: chasethemoney.com </li>
-                        <li>
-                          Social Media: Bob Bobberson is off the grid and hiding
-                          from federal representatives. If you see him, please
-                          contact the appropriate authorities.
-                        </li>
-                      </Typography>
-                    
+                    </div>
+                    <br></br>
+                    <Typography variant="body1" component="div" gutterBottom>
+                      <li>Address: Main St, Somewhere, NY </li>
+                      <li>Phone: (XXX) XXX-XXXX </li>
+                      <li>Website: chasethemoney.com </li>
+                      <li>
+                        Social Media: Bob Bobberson is off the grid and hiding
+                        from federal representatives. If you see him, please
+                        contact the appropriate authorities.
+                      </li>
+                    </Typography>
                   </div>
                 </>
               )}
