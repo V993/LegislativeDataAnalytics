@@ -9,7 +9,6 @@ import { City, Assembly, Senate } from "./components";
 
 function App() {
     return (
-        <html>
             <div>
                 <Router>
                         <Switch>
@@ -42,7 +41,6 @@ function App() {
                 </Router>   
             </div>
             
-        </html>
     );
 
 }
