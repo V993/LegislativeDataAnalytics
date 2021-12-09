@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import { Scatter } from "react-chartjs-2";
-// import Calendar from "./Calendar";
 import Typography from "@mui/material/Typography";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
