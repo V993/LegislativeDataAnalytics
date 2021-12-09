@@ -3,40 +3,6 @@ import axios from "axios";
 import { Bar } from "react-chartjs-2";
 import Calendar from "./Calendar";
 import Typography from "@mui/material/Typography";
-
-const options = {
-  indexAxis: "x",
-  elements: {
-    bar: {
-      borderWidth: 2,
-    },
-  },
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "right",
-    },
-    title: {
-      display: true,
-      text: "Committees and Number of Bills Voted On",
-    },
-  },
-  events: ["click", "mousemove"],
-  onClick: (event, item) => {
-    if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
-
-    var index_for_click = item[0].index;
-    var data_for_click =
-      event.chart.config._config.data.datasets[0].data[index_for_click];
-    var label_for_click =
-      event.chart.config._config.data.labels[index_for_click];
-
-    // console.log(index_for_click);
-    // console.log("this is what i got for label:", label_for_click);
-    // console.log("this is what i got for datasets:", data_for_click);
-  },
-};
-
 export default class Committees extends React.Component {
   API_URL = "http://206.81.7.63:5000/graph-apis/committee-bills";
   constructor(props) {
