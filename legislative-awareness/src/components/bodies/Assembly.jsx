@@ -119,7 +119,7 @@ export default class Data extends React.Component {
 
           <div id="top" className="four-cell-layout">
             <div className="half">
-              <a className="option reps" onClick={this.showBills} href="#chartLocation">
+              <a className="middle-option reps" onClick={this.showBills} href="#chartLocation">
                 {/* <div className="centerText"> */}
                   <h1 className="white">
                     Bills/Represenative
@@ -130,7 +130,7 @@ export default class Data extends React.Component {
             </div>
   
             <div className="half">
-              <a className="option coms" onClick={this.showCommittees} href="#chartLocation">
+              <a className="middle-option coms" onClick={this.showCommittees} href="#chartLocation">
                 <h1 className="white">
                   Bills/Committee
                 </h1>
