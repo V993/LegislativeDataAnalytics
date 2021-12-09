@@ -6,6 +6,7 @@ import { SocialIcon } from "react-social-icons";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import CircularProgress from "@mui/material/CircularProgress";
 import PlacesAutocomplete from "react-places-autocomplete";
 import {
   geocodeByAddress,
@@ -224,7 +225,7 @@ class Local extends Component {
                       })}
                     />
                     <div className="autocomplete-dropdown-container">
-                      {loading && <div>Loading...</div>}
+                      {loading && <CircularProgress />}
                       {suggestions.map((suggestion) => {
                         const className = suggestion.active
                           ? "suggestion-item--active"
