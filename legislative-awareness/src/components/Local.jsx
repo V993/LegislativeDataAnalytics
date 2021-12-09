@@ -46,8 +46,8 @@ class Local extends Component {
     } catch (error) {
       if (error.response) {
         this.setState({ found: false });
-        console.log(`Error: Not Found - ${error.response.data}`); // Not Found
-        console.log(`Error: ${error.response.status}`); // 404
+        console.error(`Error: Not Found - ${error.response.data}`); // Not Found
+        console.error(`Error: ${error.response.status}`); // 404
       }
     }
   };
@@ -67,8 +67,8 @@ class Local extends Component {
     } catch (error) {
       if (error.response) {
         this.setState({ found: false });
-        console.log(`Error: Not Found - ${error.response.data}`); // Not Found
-        console.log(`Error: ${error.response.status}`); // 404
+        console.error(`Error: Not Found - ${error.response.data}`); // Not Found
+        console.error(`Error: ${error.response.status}`); // 404
       }
     }
   };
