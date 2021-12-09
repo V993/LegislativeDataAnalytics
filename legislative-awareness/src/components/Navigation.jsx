@@ -41,11 +41,11 @@ function Navigation(props) {
                 </Link>
               </li>
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/about">
+                <Link className="nav-link" to="/about">
                   About
                 </Link>
               </li>
