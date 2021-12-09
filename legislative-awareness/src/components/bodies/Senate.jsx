@@ -116,8 +116,8 @@ export default class Data extends React.Component {
           </Link>
 
           <div id="top" className="four-cell-layout">
-            <div className="corner">
-              <a className="option reps" onClick={this.showBills} href="#chartLocation">
+            <div className="half">
+              <a className="middle-option reps" onClick={this.showBills} href="#chartLocation">
                   <h1 className="white">
                     Bills/Represenative
                   </h1>
@@ -125,8 +125,8 @@ export default class Data extends React.Component {
               </a>
             </div>
   
-            <div className="corner">
-              <a className="option coms" onClick={this.showCommittees} href="#chartLocation">
+            <div className="half">
+              <a className="middle-option coms" onClick={this.showCommittees} href="#chartLocation">
                 <h1 className="white">
                   Bills/Committee
                 </h1>
@@ -134,7 +134,7 @@ export default class Data extends React.Component {
               </a>
             </div>
   
-            <div className="corner">
+            {/* <div className="corner">
               <a className="option prox" onClick={this.showProximity} href="#chartLocation">
                 <h1 className="white">
                   Voting Proximity Between Representatives
@@ -150,7 +150,7 @@ export default class Data extends React.Component {
                 </h1>
                 <h4 id="front-text">Compare your representatives activity against others to see how active they've been.</h4>
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="full">

@@ -74,6 +74,8 @@ export default class Data extends React.Component {
     const sidebarContent =
       this.state.chart === "bills" ? (
         <div>
+          <br />
+          <br />
           <h2 className="rep-title">Representative Information</h2>
           {this.state.member === "" ? (
             <p>No results for "{this.state.label}"</p>
