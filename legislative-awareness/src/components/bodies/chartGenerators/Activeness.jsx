@@ -435,6 +435,10 @@ export default class Activeness extends React.Component {
                   "Representative Activeness by Month" +
                   ctx.chart.options.scales.y.stacked,
               },
+              legend: {
+                display: true,
+                position: "bottom"
+              },
               tooltip: {
                 mode: "index",
               },
