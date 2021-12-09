@@ -86,7 +86,6 @@ export default class Data extends React.Component {
                 <p>{this.state.member.politicalparty}</p>
                 <p>District {this.state.member.district}</p>
                 <p>{this.state.member.borough}</p>
-                <button>Remove {this.state.label} from graph</button>
               </small>
             </div>
           )}
@@ -98,7 +97,6 @@ export default class Data extends React.Component {
             <h4 className="rep-name">{this.state.label}</h4>
             <small className="rep-details">
               <p>{this.state.value} bills passed.</p>
-              <button>Remove {this.state.label} from graph</button>
             </small>
           </div>
         </div>

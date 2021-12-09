@@ -195,7 +195,9 @@ export default class Proximity extends React.Component {
 
     let graph;
     if (this.state.refs.length <= 2) { graph = <Scatter data={this.state} options={options} /> }
-    else if (this.state.datasets[0].data.length > 2) { graph = <Radar data={this.state} /> }
+    else if (this.state.datasets.length != 0) {
+      if (this.state.datasets[0].data.length > 2) { graph = <Radar data={this.state} /> }  
+    }
 
     return (
       <div>
