@@ -57,6 +57,6 @@ function Navigation(props) {
   );
 }
 
-var NavigationBar = withRouter(Navigation)
+var NavigationBar = withRouter(Navigation);
 
 export default NavigationBar;

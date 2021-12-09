@@ -154,7 +154,9 @@ export default class Committees extends React.Component {
             },
           }}
         />
-        <button className="smolButton" onClick={this.fetchData}>Reset</button>
+        <button className="smolButton" onClick={this.fetchData}>
+          Reset
+        </button>
       </div>
     );
   }

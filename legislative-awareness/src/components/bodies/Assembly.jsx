@@ -1,12 +1,11 @@
-
-// Aesthetics: 
+// Aesthetics:
 import React from "react";
 import Sidebar from "react-sidebar";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import axios from "axios";
-import { Link } from 'react-router-dom';
-import {AiFillCaretDown} from 'react-icons/ai';
+import { Link } from "react-router-dom";
+import { AiFillCaretDown } from "react-icons/ai";
 
 // Dependencies:
 import Bills from "./chartGenerators/assembly_bills";
@@ -34,20 +33,18 @@ export default class Data extends React.Component {
       value: 0,
       member: {},
     };
-    this.showBills = (e) => {this.setState({ chart: "bills" })};
+    this.showBills = (e) => this.setState({ chart: "bills" });
     this.showCommittees = (e) => this.setState({ chart: "committees" });
     this.showProximity = (e) => this.setState({ chart: "proximity" });
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     this.handleData = this.handleData.bind(this);
-
   }
 
   onSetSidebarOpen = (open) => this.setState({ sidebarOpen: open });
 
   handleData = async (query, value = "") => {
     if (this.state.chart === "bills") {
-      let url =
-        "http://206.81.7.63:5000/info-apis/assembly-info?name=" + query;
+      let url = "http://206.81.7.63:5000/info-apis/assembly-info?name=" + query;
 
       try {
         let response = await axios.get(url);
@@ -103,7 +100,7 @@ export default class Data extends React.Component {
 
     return (
       <>
-        <Navigation className="full"/>
+        <Navigation className="full" />
         <Sidebar
           sidebar={sidebarContent}
           open={this.state.sidebarOpen}
@@ -114,30 +111,40 @@ export default class Data extends React.Component {
           <Link to="/data" className="return">
             <div className="clear">Assembly</div>
             <div className="clear">Menu</div>
-            < AiFillCaretDown />
+            <AiFillCaretDown />
           </Link>
 
           <div id="top" className="four-cell-layout">
             <div className="half">
-              <a className="middle-option reps" onClick={this.showBills} href="#chartLocation">
+              <a
+                className="middle-option reps"
+                onClick={this.showBills}
+                href="#chartLocation"
+              >
                 {/* <div className="centerText"> */}
-                  <h1 className="white">
-                    Bills/Represenative
-                  </h1>
-                  <h4 id="front-text">See how many bills your representatives have put <br></br>on the floor over time and compare.</h4>
+                <h1 className="white">Bills/Represenative</h1>
+                <h4 id="front-text">
+                  See how many bills your representatives have put <br></br>on
+                  the floor over time and compare.
+                </h4>
                 {/* </div> */}
               </a>
             </div>
-  
+
             <div className="half">
-              <a className="middle-option coms" onClick={this.showCommittees} href="#chartLocation">
-                <h1 className="white">
-                  Bills/Committee
-                </h1>
-                <h4 id="front-text">See how many bills each committee in City Council <br></br>has put forward over time and compare.</h4>
+              <a
+                className="middle-option coms"
+                onClick={this.showCommittees}
+                href="#chartLocation"
+              >
+                <h1 className="white">Bills/Committee</h1>
+                <h4 id="front-text">
+                  See how many bills each committee in City Council <br></br>has
+                  put forward over time and compare.
+                </h4>
               </a>
             </div>
-  
+
             {/* Future Features:  */}
             {/* <div className="corner">
               <a className="option prox" onClick={this.showProximity} href="#chartLocation">
@@ -156,31 +163,27 @@ export default class Data extends React.Component {
                 <h4 id="front-text">Compare your representatives activity against others to see how active they've been.</h4>
               </a>
             </div>*/}
-          </div> 
-
+          </div>
 
           <div className="full">
-            {
-              this.state.chart === "default" ? (
-                <></>
-              ) : (
-                <a className="return" href="#top">
-                  <div className="">Top</div>
-                  < AiFillCaretDown />
-                </a>
-              )
-              
-            }
+            {this.state.chart === "default" ? (
+              <></>
+            ) : (
+              <a className="return" href="#top">
+                <div className="">Top</div>
+                <AiFillCaretDown />
+              </a>
+            )}
             <br></br>
-            
+
             <h5 id="capital">{this.state.chart}:</h5>
 
             <br></br>
-            {
-              this.state.chart === "default" ? (
-                <div></div>
-              ) : ( <div className="divider" />)              
-            }
+            {this.state.chart === "default" ? (
+              <div></div>
+            ) : (
+              <div className="divider" />
+            )}
             <br />
             <div id="chartLocation">
               {this.state.chart === "bills" ? (

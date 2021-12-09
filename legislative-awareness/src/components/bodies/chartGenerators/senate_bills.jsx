@@ -5,7 +5,8 @@ import Calendar from "./Calendar";
 import Typography from "@mui/material/Typography";
 
 export default class Bills extends React.Component {
-  API_URL = "http://206.81.7.63:5000/graph-apis/state-representative-bills/senate";
+  API_URL =
+    "http://206.81.7.63:5000/graph-apis/state-representative-bills/senate";
   constructor(props) {
     super(props);
     this.state = {
@@ -110,8 +111,6 @@ export default class Bills extends React.Component {
             events: ["click", "mousemove"],
             onHover: (event, item) => {
               if (item.length === 0) return;
-
-              
             },
             onClick: (event, item) => {
               if (item.length === 0) return; // <--- If the item is canvas and not a bar, dip
@@ -121,15 +120,16 @@ export default class Bills extends React.Component {
               //   event.chart.config._config.data.datasets[0].data[
               //     idx
               //   ];
-              var label =
-                event.chart.config._config.data.labels[idx];
+              var label = event.chart.config._config.data.labels[idx];
 
               // console.log(`Label: ${label}, Value: ${value}, Index: ${idx}`)
               this.props.clickedLabel(label);
             },
           }}
         />
-        <button className="smolButton" onClick={this.fetchData}>Reset</button>
+        <button className="smolButton" onClick={this.fetchData}>
+          Reset
+        </button>
       </div>
     );
   }

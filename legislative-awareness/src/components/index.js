@@ -1,8 +1,8 @@
 // Data routes:
 
-export { default as City } from "./bodies/City"
-export { default as Assembly } from "./bodies/Assembly"
-export { default as Senate } from "./bodies/Senate"
+export { default as City } from "./bodies/City";
+export { default as Assembly } from "./bodies/Assembly";
+export { default as Senate } from "./bodies/Senate";
 
 // Pages:
 
@@ -14,8 +14,7 @@ export { default as Data } from "./DataNavigation";
 export { default as Information } from "./Information";
 export { NotFound } from "./NotFound";
 
-
-// Static information: 
+// Static information:
 
 // export { default as About } from "./About";
 // export { default as Contact } from "./Contact";

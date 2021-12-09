@@ -111,7 +111,7 @@ export default class Committees extends React.Component {
           <Calendar from={this.handleFromDate} to={this.handleToDate} />
         </div>
         <Bar
-          data={{ 
+          data={{
             labels: this.state.committees,
             datasets: [
               {
@@ -154,7 +154,9 @@ export default class Committees extends React.Component {
             },
           }}
         />
-        <button className="smolButton" onClick={this.fetchData}>Reset</button>
+        <button className="smolButton" onClick={this.fetchData}>
+          Reset
+        </button>
       </div>
     );
   }
