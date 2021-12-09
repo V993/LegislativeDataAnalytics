@@ -4,9 +4,6 @@ import { Bar } from "react-chartjs-2";
 import Calendar from "./Calendar";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-// import DeleteIcon from "@mui/icons-material/Delete";
-// import IconButton from "@mui/material/IconButton";
-// import Tooltip from "@mui/material/Tooltip";
 
 export default class Bills extends React.Component {
   API_URL = "http://206.81.7.63:5000/graph-apis/representative-bills";
