@@ -6,6 +6,12 @@ import { SocialIcon } from "react-social-icons";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import PlacesAutocomplete from "react-places-autocomplete";
+import {
+  geocodeByAddress,
+  geocodeByPlaceId,
+  getLatLng,
+} from "react-places-autocomplete";
 import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 const ColorButton = styled(Button)(({ theme }) => ({
@@ -29,10 +35,9 @@ class Local extends Component {
     };
   }
 
-  handleInputChange = (e) => this.setState({ address: e.target.value });
+  handleChange = (address) => this.setState({ address });
 
-  handleSearchClick = async e => {
-    e.preventDefault();
+  handleSubmit = async (e) => {
     let address = this.state.address;
     let key = "AIzaSyDGm2WMjPhv1Ddn9C3ML24u_HtTcT4l6B4"; // Google Cloud API key
     let linkToAPI =
@@ -176,24 +181,50 @@ class Local extends Component {
               contact them.
             </Typography>
             <br></br>
-            <form onSubmit={this.handleSearchClick}>
-              <div className="descriptionText">
-                <input
-                  className="searchbar input"
-                  type="text"
-                  value={this.state.address}
-                  onChange={this.handleInputChange}
-                  placeholder="695 Park Ave 10065"
-                />
-                <ColorButton
-                  type="submit"
-                  variant="contained"
-                  color="success"
-                >
-                  Search
-                </ColorButton>
-              </div>
-            </form>
+
+            <PlacesAutocomplete
+              value={this.state.address}
+              onChange={this.handleChange}
+              onSelect={this.handleSubmit}
+            >
+              {({
+                getInputProps,
+                suggestions,
+                getSuggestionItemProps,
+                loading,
+              }) => (
+                <div className="descriptionText">
+                  <input
+                    {...getInputProps({
+                      placeholder: "Search Places ...",
+                      className: "location-search-input searchbar input",
+                    })}
+                  />
+                  <div className="autocomplete-dropdown-container">
+                    {loading && <div>Loading...</div>}
+                    {suggestions.map((suggestion) => {
+                      const className = suggestion.active
+                        ? "suggestion-item--active"
+                        : "suggestion-item";
+                      // inline style for demonstration purpose
+                      const style = suggestion.active
+                        ? { backgroundColor: "#fafafa", cursor: "pointer" }
+                        : { backgroundColor: "#ffffff", cursor: "pointer" };
+                      return (
+                        <div
+                          {...getSuggestionItemProps(suggestion, {
+                            className,
+                            style,
+                          })}
+                        >
+                          <span>{suggestion.description}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </PlacesAutocomplete>
           </div>
 
           {/* Second Half: */}
