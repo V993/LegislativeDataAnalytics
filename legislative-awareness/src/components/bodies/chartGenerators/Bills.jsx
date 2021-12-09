@@ -115,7 +115,6 @@ export default class Bills extends React.Component {
           </Button>
         )}
         <Bar
-          datasetIdKey="id"
           data={{
             labels: this.state.reps,
             datasets: [
