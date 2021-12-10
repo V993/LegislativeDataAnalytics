@@ -5,101 +5,121 @@
 #include <iostream>
 using namespace ld_proximity;
 
-std::vector<VoteRollItem> testVoteDataConstructor()
+bool unused(std::vector<std::string> v, std::string n)
 {
-  VoteRollItem vi_a;
-  vi_a.matterId = 0000;
-  vi_a.repName = "George Constanza";
-  vi_a.vote = 1;
-
-  VoteRollItem vi_b;
-  vi_b.matterId = 0000;
-  vi_b.repName = "Jerry Seinfeld";
-  vi_b.vote = -1;
-
-  VoteRollItem vi_c;
-  vi_c.matterId = 0000;
-  vi_c.repName = "Cosmo Kramer";
-  vi_c.vote = 1;
-
-  VoteRollItem vi_d;
-  vi_d.matterId = 0000;
-  vi_d.repName = "Elaine Benes";
-  vi_d.vote = 1;
-
-  VoteRollItem vi_e;
-  vi_e.matterId = 0001;
-  vi_e.repName = "Cosmo Kramer";
-  vi_e.vote = 0;
-
-  VoteRollItem vi_f;
-  vi_f.matterId = 0001;
-  vi_f.repName = "George Constanza";
-  vi_f.vote = 0;
-
-  VoteRollItem vi_g;
-  vi_g.matterId = 0002;
-  vi_g.repName = "Cosmo Kramer";
-  vi_g.vote = -1;
-
-  VoteRollItem vi_h;
-  vi_h.matterId = 0002;
-  vi_h.repName = "George Constanza";
-  vi_h.vote = -1;
-
-  VoteRollItem vi_i;
-  vi_i.matterId = 0001;
-  vi_i.repName = "Jerry Seinfeld";
-  vi_i.vote = 0;
-
-  VoteRollItem vi_j;
-  vi_j.matterId = 0002;
-  vi_j.repName = "Jerry Seinfeld";
-  vi_j.vote = 1;
-
-  VoteRollItem vi_k;
-  vi_k.matterId = 0003;
-  vi_k.repName = "Cosmo Kramer";
-  vi_k.vote = 1;
-
-  VoteRollItem vi_l;
-  vi_l.matterId = 0003;
-  vi_l.repName = "George Constanza";
-  vi_l.vote = -1;
-
-  std::vector<VoteRollItem> v;
-  v.push_back(vi_a);
-  v.push_back(vi_b);
-  v.push_back(vi_c);
-  v.push_back(vi_d);
-  v.push_back(vi_e);
-  v.push_back(vi_f);
-  v.push_back(vi_g);
-  v.push_back(vi_h);
-  v.push_back(vi_i);
-  v.push_back(vi_j);
-  v.push_back(vi_k);
-  v.push_back(vi_l);
-
-  return v;
+  for (int i = 0; i < v.size(); i++)
+  {
+    if (v[i] == n)
+    {
+      //std::cout << n << " already used" << std::endl;
+      return false;
+    }
+  }
+    //std::cout << n << " not already used" << std::endl;
+  return true;
 }
 
-int main()
+// Converts all spaces to underscores
+std::string underscoreSpaces(std::string s)
 {
-  VoteParser vp;
-  std::vector<VoteRollItem> testVoteData = vp.read_file("calls/test.json");
-  ProximityCalculator pc = ProximityCalculator(testVoteData);
-  bool assignRep = pc.set_rep_x("Cosmo Kramer");
-  assignRep = pc.set_rep_y("Cosmo Kramer");
-  assignRep = pc.set_rep_y("Elaine Benes");
-  std::vector<Proximity> prox = pc.get_proximities();
-  for (int i = 0; i < prox.size(); i++)
+  std::string n = "";
+  bool leading = true;
+  for (int i = 0; i < s.length(); i++)
   {
-    std::cout << "--------------------------------" << std::endl;
-    std::cout << prox[i].repName << ": (" << prox[i].x << ", " << prox[i].y << ")" << std::endl;
-    std::cout << "--------------------------------" << std::endl;
+    if (s[i] == ' ')
+    {
+      if (leading)
+      {
+      }
+      else
+      {
+        n += '_';
+      }
+    }
+    else
+    {
+      leading = false;
+      n += s[i];
+    }
   }
-  vp.write_file(prox,"responses/test.json");
+  return n;
+}
+
+// Converts all underscores to spaces
+std::string spaceUnderscores(std::string s)
+{
+  std::string n = "";
+  bool leading = true;
+  for (int i = 0; i < s.length(); i++)
+  {
+    if (s[i] == '_')
+    {
+      if (leading)
+      {
+      }
+      else
+      {
+        n += ' ';
+      }
+    }
+    else
+    {
+      leading = false;
+      n += s[i];
+    }
+  }
+  return n;
+}
+
+int main(int argc, char *argv[])
+{
+
+  // Parse commandline input
+  bool post_refs = false;
+  std::vector<std::string> refs;
+  std::vector<std::string> targets;
+  std::string ifname = argv[1];
+  for (int i = 2; i < argc; i++)
+  {
+    std::cout << "'" << argv[i] << "'" << std::endl;
+    if (std::string(argv[i]) == "targets") { post_refs = true; std::cout << "HIT TARGETS" << std::endl; }
+    if (!post_refs) { refs.push_back(spaceUnderscores(argv[i])); }
+    else { targets.push_back(spaceUnderscores(argv[i])); }
+  }
+
+  // Parse JSON input
+  std::cout << "called main()" << std::endl;
+  VoteParser vp;
+  std::cout << "Created VoteParser" << std::endl;
+  vp.append_targets(refs);
+  vp.append_targets(targets);
+
+  std::vector<VoteRollItem> testVoteData = vp.read_file(ifname);
+  std::cout << "VoteParser has completed read_file()" << std::endl;
+  /*
+  for (int i = 0; i < testVoteData.size(); i++)
+  {
+    std::cout << "{" << std::endl;
+    std::cout << "\t repname: " << testVoteData[i].repName << std::endl;
+    std::cout << "}" << std::endl;
+  }
+  */
+
+  // Calculate proximities
+  bool done = false;
+  ProximityCalculator pc = ProximityCalculator(testVoteData);
+
+  std::string fname = "./proximity-calculation/responses/";
+  for (int i = 0; i < refs.size(); i++)
+  {
+    std::cout << "ref: " << refs[i] << std::endl;
+    pc.add_rep(refs[i]);
+    fname += underscoreSpaces(refs[i]);
+    if (i != refs.size() - 1) { fname += "_"; }
+  }
+  fname += ".json";
+  std::vector<Proximity> prox = pc.get_proximities();
+  vp.write_file(prox,fname);
 
   return 0;
 }

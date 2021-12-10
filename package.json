@@ -2,6 +2,8 @@
   "dependencies": {
     "axios": "^0.21.4",
     "chart.js": "^3.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "pg": "^8.7.1",
     "react-chartjs-2": "^3.0.5",

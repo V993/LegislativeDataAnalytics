@@ -24,14 +24,18 @@ namespace ld_proximity
   {
   private:
     // ---- Variables ----
+    std::vector<std::string> targets;
     // ---- Private Methods ----
   public:
     // Public Methods
     std::vector<VoteRollItem> read_file(std::string fname);
     bool write_file(std::vector<Proximity> prox, std::string fname);
     // ---- Constructors ----
+    VoteParser();
     // ---- Mutators ----
+    bool append_targets(std::vector<std::string> t);
     // ---- Accessors ----
+    bool in_targets(std::string s);
   };
 }
 

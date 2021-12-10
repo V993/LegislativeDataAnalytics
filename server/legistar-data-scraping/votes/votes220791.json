@@ -1,0 +1,70 @@
+[
+{
+	"VoteId":630607,
+	"VoteGuid":"6958D8E7-D364-443A-87CF-10DB98ABD8AC",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAl8+M=",
+	"VotePersonId":5259,
+	"VotePersonName":"Gale A. Brewer",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":1,
+	"VoteResult":1,
+	"VoteEventItemId":220791
+},
+
+{
+	"VoteId":630608,
+	"VoteGuid":"F6D31E66-70E7-41A4-9278-71A1D990AEEF",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAl8+Q=",
+	"VotePersonId":5286,
+	"VotePersonName":"Bill De Blasio",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":2,
+	"VoteResult":1,
+	"VoteEventItemId":220791
+},
+
+{
+	"VoteId":630609,
+	"VoteGuid":"244C036C-25BF-4084-AE26-74BA5E7F7BA7",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAl8+U=",
+	"VotePersonId":5417,
+	"VotePersonName":"Letitia James",
+	"VoteValueId":11,
+	"VoteValueName":"Abstain",
+	"VoteSort":3,
+	"VoteResult":0,
+	"VoteEventItemId":220791
+},
+
+{
+	"VoteId":630610,
+	"VoteGuid":"F448873A-DCA8-449E-8BA9-1FEB74C33CCD",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAl8+Y=",
+	"VotePersonId":5262,
+	"VotePersonName":"G. Oliver Koppell",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":4,
+	"VoteResult":1,
+	"VoteEventItemId":220791
+},
+
+{
+	"VoteId":630611,
+	"VoteGuid":"8FA5A453-AC49-4DAE-9F7E-840C9A8D895F",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAl8+c=",
+	"VotePersonId":5280,
+	"VotePersonName":"James Sanders, Jr.",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":5,
+	"VoteResult":1,
+	"VoteEventItemId":220791
+}]

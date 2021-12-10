@@ -9,6 +9,7 @@ using namespace ld_proximity;
 
 // ---- Private Methods ----
 
+// Returns vector of size 2 arrays, where array[0] contains matterId and array[1] contains vote
 std::vector<std::array<int,2>> ProximityCalculator::fetch_vote_record(std::string n)
 {
   std::vector<std::array<int,2>> a;
@@ -61,6 +62,29 @@ double ProximityCalculator::calc_dist_y(std::string n)
       if (representativeYVotes[i][0] == nvotes[j][0])
       {
         sum += pow(representativeYVotes[i][1] - nvotes[j][1],2);
+      }
+    }
+  }
+  return pow(sum, .5);
+}
+// Calculates the distance of the rep whose name == n
+// From the rep whose name is in representativeNames[i],
+// returning it as a double
+double ProximityCalculator::calc_dist(std::string n, int i)
+{
+  // Get all votes by rep representativeNames[i]
+  std::vector<std::array<int,2>> referenceVotes = fetch_vote_record(representativeNames[i]);
+  // Get all votes by rep n
+  std::vector<std::array<int,2>> targetVotes = fetch_vote_record(n);
+  // Calculate distance
+  double sum = 0.0;
+  for (int i = 0; i < referenceVotes.size(); i++)
+  {
+    for (int j = 0; j < targetVotes.size(); j++)
+    {
+      if (referenceVotes[i][0] == targetVotes[j][0])
+      {
+        sum += pow(referenceVotes[i][1] - targetVotes[j][1],2);
       }
     }
   }
@@ -156,6 +180,44 @@ bool ProximityCalculator::set_rep_y(std::string n)
   return true;
 }
 
+// Appends string n to representativeNames, provided that
+// n is equal to some name in votingData and
+// n is not already in representativeNames
+bool ProximityCalculator::add_rep(std::string n)
+{
+  // check that n is not in representativeNames
+  for (int i = 0; i < representativeNames.size(); i++)
+  {
+    if (representativeNames[i] == n) { return false; }
+  }
+  // check that n is in votingDatastd::vector<VoteRollItem>
+  bool in = false;
+  for (int i = 0; i < votingData.size(); i++)
+  {
+    if (votingData[i].repName == n) { in = true; break; }
+  }
+  if (!in) { return false; }
+  // Append n to representativeNames
+  representativeNames.push_back(n);
+
+  return true;
+}
+
+// Removes string n from representativeNames, provided that
+// n is already in representativeNames
+bool ProximityCalculator::remove_rep(std::string n)
+{
+  bool found = false;
+  std::vector<std::string> nreps;
+  for (int i = 0; i < representativeNames.size(); i++)
+  {
+    if (representativeNames[i] != n) { nreps.push_back(representativeNames[i]); }
+    else { found = true; }
+  }
+  representativeNames = nreps;
+  return found;
+}
+
 
 // ---- Accessors ----
 std::vector<VoteRollItem> ProximityCalculator::get_voting_data() { return votingData; }
@@ -168,23 +230,29 @@ std::vector<Proximity> ProximityCalculator::get_proximities()
   // Assemble list of representatives as Proximities
   // For each representative, find and assign distance_x and distance_y
   std::vector<Proximity> prox;
+  std::cout << "called get_proximities(): prox length " + prox.size();
   for (int i = 0; i < votingData.size(); i++)
   {
-    bool in = (votingData[i].repName == representativeXName || votingData[i].repName == representativeYName);
+    // Check if current item's rep is in representativeNames
+    // OR if proximity already calculated
+    bool in = false;
+    for (int j = 0; j < representativeNames.size(); j++)
+    {
+      if (representativeNames[j] == votingData[i].repName) { in = true; break; }
+    }
     for (int j = 0; j < prox.size(); j++)
     {
-      if (votingData[i].repName == prox[j].repName)
-      {
-        in = true;
-        j = prox.size();
-      }
+      if (prox[j].repName == votingData[i].repName) { in = true; break; }
     }
+    // If not, calculate proximity and append
     if (!in)
     {
       Proximity n;
       n.repName = votingData[i].repName;
-      n.x = distance_x(n.repName);
-      n.y = distance_y(n.repName);
+      for (int j = 0; j < representativeNames.size(); j++)
+      {
+        n.distances.push_back(calc_dist(n.repName,j));
+      }
       prox.push_back(n);
     }
   }

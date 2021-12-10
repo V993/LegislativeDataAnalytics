@@ -2,15 +2,26 @@
 
 # dependencies
 /legislative-awareness/node_modules
+legislative-awareness/package-lock.json
+legislative-awareness/package.json
 /node_modules
 /.pnp
 .pnp.js
+./package-lock.json
+./package.json
+package-lock.json
+package.json
+
 
 # testing
 /coverage
+notes
 
 # production
 /build
+
+#server
+/server/db.js
 
 # misc
 .DS_Store

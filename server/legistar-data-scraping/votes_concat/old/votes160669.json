@@ -1,0 +1,98 @@
+[
+{
+	"VoteId":528023,
+	"VoteGuid":"4AC012E4-832D-4171-8E90-DAA777D20A35",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkfk8=",
+	"VotePersonId":5268,
+	"VotePersonName":"Tony Avella",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":10,
+	"VoteResult":1,
+	"VoteEventItemId":160669
+},
+
+{
+	"VoteId":528024,
+	"VoteGuid":"399B4F49-33BE-488C-9981-894922363830",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkflA=",
+	"VotePersonId":434,
+	"VotePersonName":"Christine C. Quinn",
+	"VoteValueId":11,
+	"VoteValueName":"Abstain",
+	"VoteSort":20,
+	"VoteResult":0,
+	"VoteEventItemId":160669
+},
+
+{
+	"VoteId":528025,
+	"VoteGuid":"9C4BB526-5F8A-41C2-B33C-E21F419071DA",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkflE=",
+	"VotePersonId":5264,
+	"VotePersonName":"Maria Baez",
+	"VoteValueId":11,
+	"VoteValueName":"Abstain",
+	"VoteSort":30,
+	"VoteResult":0,
+	"VoteEventItemId":160669
+},
+
+{
+	"VoteId":528026,
+	"VoteGuid":"B58C0A0B-C3DE-4E82-A229-D82CEEC76277",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkflI=",
+	"VotePersonId":5275,
+	"VotePersonName":"Eric N. Gioia",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":40,
+	"VoteResult":1,
+	"VoteEventItemId":160669
+},
+
+{
+	"VoteId":528027,
+	"VoteGuid":"3E0A0D67-6C77-47CE-A3B6-2649FBAB240F",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkflM=",
+	"VotePersonId":5278,
+	"VotePersonName":"Melinda R. Katz",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":50,
+	"VoteResult":1,
+	"VoteEventItemId":160669
+},
+
+{
+	"VoteId":528028,
+	"VoteGuid":"1994B45F-429A-4313-92A6-1173F7C83125",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkflQ=",
+	"VotePersonId":5293,
+	"VotePersonName":"Michael E. McMahon",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":60,
+	"VoteResult":1,
+	"VoteEventItemId":160669
+},
+
+{
+	"VoteId":528029,
+	"VoteGuid":"7119DD7B-A9F4-419A-BEE9-CBF8F04F8F5E",
+	"VoteLastModifiedUtc":"2015-08-25T15:56:08.773",
+	"VoteRowVersion":"AAAAAAAkflU=",
+	"VotePersonId":5284,
+	"VotePersonName":"Albert Vann",
+	"VoteValueId":15,
+	"VoteValueName":"Affirmative",
+	"VoteSort":70,
+	"VoteResult":1,
+	"VoteEventItemId":160669
+}]
