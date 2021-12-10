@@ -41,7 +41,3 @@ Usage example:  http://206.81.7.63:5000/graph-apis/state-committee-bills/assembl
 Responds with a list of senate members and the number of bills they proposed in a given date range\
 Usage example:  http://206.81.7.63:5000/graph-apis/state-committee-bills/senate?startDate=2020-01-01&endDate2021-01-01
 
-### Running the backend server locally
-1. Make sure node.js is install on your mechine.
-2. Run `npm install` from the main directory
-3. Run `node server/index.js` from the main directory
