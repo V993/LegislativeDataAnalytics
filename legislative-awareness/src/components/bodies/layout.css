@@ -1,4 +1,3 @@
-
 /* .css Layout for data pages: */
 
 html {
@@ -201,4 +200,207 @@ html {
     padding-left: 4px;
     text-align: left;
     
+
+/* .css Layout for data pages: */
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+.full {
+    max-height: 100% !important;
+    height: 100% !important;
+    scroll-behavior: smooth !important;
+}
+
+.return {
+    background: linear-gradient(rgb(145, 255, 209), rgba(138, 182, 169, 1));
+    transform: scale(1);
+    transition: 0.5s;
+    padding: 1em;
+    padding-top: 10px !important;
+
+    color: white;
+    z-index: 1;
+    position: absolute;
+    border-radius: 60px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+
+    text-align: center; 
+}
+
+.return:hover {
+    padding-top: 30px !important;
+    background: rgba(138, 182, 169, 0.9);
+    transition: 0.3s;
+    cursor: pointer;
+
+    color: black;
+    /* transform-origin: top 5px; */
+    /* transform:translateY(20px); */
+}
+
+.clear {
+    border-radius: 15%;
+    box-shadow: 0px 0px 40px rgba(138, 182, 169, .1);
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+.four-cell-layout {
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    /* border-radius: 20%; */
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+}
+
+.corner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 50%;
+    width: 50%;
+    max-width: 50%;
+    max-height: 50%;
+    cursor: pointer;
+    /* border: 4px solid grey; */
+}
+
+.half {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 50%;
+    max-width: 50%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.middle-option {
+    padding-top: 50%;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black ;
+    /* border-radius: 18px; */
+    transition-duration: 0.4s;
+    background-image: linear-gradient(rgba(138, 182, 169, 1),rgba(138, 182, 169, 1));
+}
+
+.option {
+    padding-top: 25%;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black ;
+    /* border-radius: 18px; */
+    transition-duration: 0.4s;
+    background-image: linear-gradient(rgba(138, 182, 169, 1),rgba(138, 182, 169, 1));
+}
+
+/* .option.m {
+    padding-top: 50% !important;
+} */
+
+
+.option:hover {
+    /* transform:scale(1.05); */
+    background-image: linear-gradient(rgb(0,0,0,0),rgba(0,0,0,1));
+    opacity: 0.9;
+    background: ivory;
+    transition-duration: 0.2s;
+}
+
+.middle-option:hover {
+    /* transform:scale(1.05); */
+    background-image: linear-gradient(rgb(0,0,0,0),rgba(0,0,0,1));
+    opacity: 0.9;
+    background: ivory;
+    transition-duration: 0.2s;
+}
+
+.option.reps {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+            url("./assets/reps.jpg");
+    background-size: cover;
+}   
+
+.middle-option.reps{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+            url("./assets/reps.jpg");
+    background-size: cover;
+}
+.option.coms {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+            url("./assets/coms.jpg");
+    background-size: cover;
+}
+
+.middle-option.coms {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+            url("./assets/coms.jpg");
+    background-size: cover;
+}
+
+.option.prox {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+            url("./assets/prox.jpg");
+    background-size: cover;
+
+}
+.option.comp {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+            url("./assets/comp.jpg");
+    background-size: cover;
+}
+
+#front-text {
+    color:white;
+}
+
+.centered-display {
+    scroll-behavior: smooth !important;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.divider {
+    position:relative;
+    padding-top: 0%;
+    left: 10%;
+    right: 50%;
+    width: 80%;
+    border-bottom: 3px solid black;
+    border-radius: 15px;
+
+    transition-duration: 0.6s;
+}
+
+#capital {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* sidebar: */
+
+.rep-title {
+    padding-left: 4px;
+    text-align: left;
+
 }

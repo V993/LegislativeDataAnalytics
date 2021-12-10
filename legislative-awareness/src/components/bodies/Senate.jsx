@@ -8,8 +8,13 @@ import { Link } from 'react-router-dom';
 import {AiFillCaretDown} from 'react-icons/ai';
 
 // Dependencies:
+
+import Bills from "./chartGenerators/senate_bills";
+import Committees from "./chartGenerators/senate_committees";
+
 import Bills from "./chartGenerators/Bills";
 import Committees from "./chartGenerators/Committees";
+
 import Proximity from "./chartGenerators/Proximity";
 import Navigation from "./DataNavbar";
 import "./layout.css";
@@ -22,6 +27,9 @@ const ColorButton = styled(Button)(({ theme }) => ({
   backgroundImage:
     "linear-gradient(rgba(138, 182, 169, 0.5), rgba(255, 255, 255, 0))",
 }));
+
+
+//const img = require("./assets/imgs");
 
 export default class Data extends React.Component {
   constructor(props) {
@@ -78,6 +86,15 @@ export default class Data extends React.Component {
             <p>No results for "{this.state.label}"</p>
           ) : (
             <div className="rep-info">
+              <h4 className="rep-name">{this.state.member.fullname}</h4>
+              
+             
+              
+              <small className="rep-details">
+               
+             {/*this.state.member.imgname*/}       
+              
+                <p>District {this.state.member.districtcode}</p>
               <h4 className="rep-name">{this.state.member.name}</h4>
               <small className="rep-details">
                 <p>{this.state.member.politicalparty}</p>

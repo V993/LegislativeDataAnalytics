@@ -50,11 +50,9 @@ export default class Bills extends React.Component {
     let reps = [],
       votes = [];
 
-    let count = 1;
     this.state.apiData.forEach((obj) => {
-      reps.push(obj.sponsor+count.toString());
+      reps.push(obj.sponsor);
       votes.push(obj.numofbills);
-      count += 1;
     });
 
     this.setState({ reps, votes });
