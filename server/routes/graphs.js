@@ -106,38 +106,37 @@ router.get("/state-committee-bills/:branch", async function(req, res) {
     }
 });
 
+// Given a (refs,targets), where
+// 	refs 	is a list of representatives to compare against
+// and	targets is a list of representatives to be compared 
+// fetches all the votes objects pertaining to the representatives from the DB
+// and writes a JSON file to proximity-calculation/calls/
+// and runs the C++ program to calculate proximites
+// and reads the output from proximity-calculation/responses/
+// and returns the output
 router.get("/proximity-calculation", async function(req, res) {
-    console.log("--------------------------------------------------------------------------------");
-    console.log("Call to /proximity-calculation");
+    // Check that refs and targets are valid
     let refs = req.query.refs;
     refs = refs[0].split(',');
     if (!refs || refs.length <= 1) {
-        console.log("Refs too small (size " + refs.length + ")");
         res.status(400).send('Refs is missing!');
         return;
     }
     let targets = req.query.targets;
     targets = targets[0].split(',');
     if (!targets || targets.length <= 1) {
-        console.log("Targets too small (size " + targets.length + ")");
         res.status(400).send('Targets is missing!');
         return;
     }
-    console.log("Refs and targets exist");
     try {
         // Get votes data from database
         let allnames = refs.concat(targets);
-        console.log(allnames);
         allnames[0] = allnames[0].replace(/_/gi," ");
-        console.log(allnames[0]);
         let v = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[0]]);
-        console.log(v.rows[0]);
         let votes = v.rows;
         for (let i = 1; i < allnames.length; i++) {
           allnames[i] = allnames[i].replace(/_/gi," ");
-          console.log(allnames[i]);
           const t = await pool.query('SELECT * FROM votes WHERE votepersonname = $1', [allnames[i]]);
-          console.log(t.rows[0]);
           votes = votes.concat(t.rows);
         }
 
@@ -162,7 +161,6 @@ router.get("/proximity-calculation", async function(req, res) {
     		    command += targets[i];
     		    command += " ";
     	  }
-        console.log(command);
         exec(command, async function (err, stdout, stderr) {
             if (err) {
     		        console.error(err.message)
@@ -171,22 +169,20 @@ router.get("/proximity-calculation", async function(req, res) {
                 let exists = 0;
 
                 // Await output file
-            		let fname = "./proximity-calculation/responses/";
-            		for (let i = 0; i < refs.length; i++) {
-            			fname += refs[i];
-            			if (i != refs.length - 1) { fname += "_"; }
-            		}
-            		fname += ".json";
-                console.log(fname);
+            	let fname = "./proximity-calculation/responses/";
+            	for (let i = 0; i < refs.length; i++) {
+            		fname += refs[i];
+            		if (i != refs.length - 1) { fname += "_"; }
+            	}
+            	fname += ".json";
 
-        		    // Read and return output file
+        	// Read and return output file
                 while (exists < 10) {
                   try {
                     data = fs.readFileSync(fname, 'utf8');
                     res.json(JSON.parse(data));
                     exists = 11;
                   } catch (err) {
-                    console.log("File does not yet exist");
                     await new Promise(resolve => setTimeout(resolve, 500));
                     exists++;
                   }
