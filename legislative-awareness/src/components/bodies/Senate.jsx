@@ -23,6 +23,8 @@ const ColorButton = styled(Button)(({ theme }) => ({
     "linear-gradient(rgba(138, 182, 169, 0.5), rgba(255, 255, 255, 0))",
 }));
 
+//const img = require("./assets/imgs");
+
 export default class Data extends React.Component {
   constructor(props) {
     super(props);
@@ -78,11 +80,15 @@ export default class Data extends React.Component {
             <p>No results for "{this.state.label}"</p>
           ) : (
             <div className="rep-info">
-              <h4 className="rep-name">{this.state.member.name}</h4>
+              <h4 className="rep-name">{this.state.member.fullname}</h4>
+              
+             
+              
               <small className="rep-details">
-                <p>{this.state.member.politicalparty}</p>
-                <p>District {this.state.member.district}</p>
-                <p>{this.state.member.borough}</p>
+               
+             {/*this.state.member.imgname*/}       
+              
+                <p>District {this.state.member.districtcode}</p>
               </small>
             </div>
           )}
