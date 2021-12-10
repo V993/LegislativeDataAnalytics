@@ -15,10 +15,9 @@ Usage example: http://206.81.7.63:5000/graph-apis/committee-bills?startDate=2018
 Responds with the list of representatives and the number of bills they proposed for each month in a given year.\
 Usage example: http://206.81.7.63:5000/graph-apis/activeness-by-month?year=2021
 
-####graph-apis/proximity-calculation
+/graph-apis/proximity-calculation\
 Contains voting records for each representative in NYC City Council. Used in our algorithm to determine politican similarity based off of voting histories. 
-
-### In the proximity-calculation directory, you'll find the C++ scripts we use to calculate distance between representatives.
+In the proximity-calculation directory, you'll find the C++ scripts we use to calculate distance between representatives.
 
 ### The following routes uses data from the Open Legistration API
 /info-apis/council-member-info\
