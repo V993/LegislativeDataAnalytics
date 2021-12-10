@@ -19,7 +19,7 @@ Usage example: http://206.81.7.63:5000/graph-apis/activeness-by-month?year=2021
 Contains voting records for each representative in NYC City Council. Used in our algorithm to determine politican similarity based off of voting histories. 
 In the proximity-calculation directory, you'll find the C++ scripts we use to calculate distance between representatives.
 
-### The following routes uses data from the Open Legistration API
+### The following routes use data from the Open Legistration API
 /info-apis/council-member-info\
 Responds with the information of a city counciler member with given name\
 Usage example:  http://206.81.7.63:5000/info-apis/council-member-info?name=Margaret%20Chin 
