@@ -16,8 +16,8 @@ Responds with the list of representatives and the number of bills they proposed 
 Usage example: http://206.81.7.63:5000/graph-apis/activeness-by-month?year=2021
 
 /graph-apis/proximity-calculation\
-Contains voting records for each representative in NYC City Council. Used in our algorithm to determine politican similarity based off of voting histories. 
-In the proximity-calculation directory, you'll find the C++ scripts we use to calculate distance between representatives.
+Responds with a list of council members and coordinates representing similarity in voting patterns to selected references
+Usage example: http://206.81.7.63:5000/graph-apis/proximity-calculation?refs[]=Una_Clarke,Daniel_Dromm_,Diana_Reyna,Annabel_Palma,Bill_Perkins&targets[]=David_Yassky,Alphonse_Stabile,Mark_S._Weprin,Kenneth_K._Fisher,Eric_A._Ulrich,Betsy_Gotbaum
 
 ### The following routes use data from the Open Legistration API
 /info-apis/council-member-info\
@@ -40,10 +40,6 @@ Usage example:  http://206.81.7.63:5000/graph-apis/state-committee-bills/assembl
 /graph-apis/state-committee-bills/senate\
 Responds with a list of senate members and the number of bills they proposed in a given date range\
 Usage example:  http://206.81.7.63:5000/graph-apis/state-committee-bills/senate?startDate=2020-01-01&endDate2021-01-01
-
-/graph-apis/proximity-calculation\
-Responds with a list of council members and coordinates representing similarity in voting patterns to selected references
-Usage example: http://206.81.7.63:5000/graph-apis/proximity-calculation?refs[]=Una_Clarke,Daniel_Dromm_,Diana_Reyna,Annabel_Palma,Bill_Perkins&targets[]=David_Yassky,Alphonse_Stabile,Mark_S._Weprin,Kenneth_K._Fisher,Eric_A._Ulrich,Betsy_Gotbaum
 
 ### Running the backend server locally
 1. Make sure node.js is install on your mechine.
