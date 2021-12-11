@@ -16,7 +16,7 @@ Responds with the list of representatives and the number of bills they proposed 
 Usage example: http://206.81.7.63:5000/graph-apis/activeness-by-month?year=2021
 
 /graph-apis/proximity-calculation\
-Responds with a list of council members and coordinates representing similarity in voting patterns to selected references
+Responds with a list of council members and coordinates representing similarity in voting patterns to selected references.\
 Usage example: http://206.81.7.63:5000/graph-apis/proximity-calculation?refs[]=Una_Clarke,Daniel_Dromm_,Diana_Reyna,Annabel_Palma,Bill_Perkins&targets[]=David_Yassky,Alphonse_Stabile,Mark_S._Weprin,Kenneth_K._Fisher,Eric_A._Ulrich,Betsy_Gotbaum
 
 ### The following routes use data from the Open Legistration API
