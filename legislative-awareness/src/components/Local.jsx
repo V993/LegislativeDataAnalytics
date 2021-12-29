@@ -1,8 +1,6 @@
 import { Component } from "react";
 import axios from "axios";
-// import "./style.css";
 import { SocialIcon } from "react-social-icons";
-// import Navigation from "./Navigation";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
